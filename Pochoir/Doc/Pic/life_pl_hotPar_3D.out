@@ -1,0 +1,2117 @@
++ echo '<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<'
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
++ (( step = 200 ))
++ (( step <= 3200 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 200 200'
+life_parallel_loop 200 200
++ ./life_pl 200 200
+N_SIZE = 200, T_SIZE = 200
+Game of Life : 200 x 200, 200 time steps
+Naive Loop: consumed time :48.668ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 400 200'
+life_parallel_loop 400 200
++ ./life_pl 400 200
+N_SIZE = 400, T_SIZE = 200
+Game of Life : 400 x 400, 200 time steps
+Naive Loop: consumed time :162.816ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 600 200'
+life_parallel_loop 600 200
++ ./life_pl 600 200
+N_SIZE = 600, T_SIZE = 200
+Game of Life : 600 x 600, 200 time steps
+Naive Loop: consumed time :333.673ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 800 200'
+life_parallel_loop 800 200
++ ./life_pl 800 200
+N_SIZE = 800, T_SIZE = 200
+Game of Life : 800 x 800, 200 time steps
+Naive Loop: consumed time :561.164ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 1000 200'
+life_parallel_loop 1000 200
++ ./life_pl 1000 200
+N_SIZE = 1000, T_SIZE = 200
+Game of Life : 1000 x 1000, 200 time steps
+Naive Loop: consumed time :809.575ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 1200 200'
+life_parallel_loop 1200 200
++ ./life_pl 1200 200
+N_SIZE = 1200, T_SIZE = 200
+Game of Life : 1200 x 1200, 200 time steps
+Naive Loop: consumed time :1111.45ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 1400 200'
+life_parallel_loop 1400 200
++ ./life_pl 1400 200
+N_SIZE = 1400, T_SIZE = 200
+Game of Life : 1400 x 1400, 200 time steps
+Naive Loop: consumed time :1435.73ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 1600 200'
+life_parallel_loop 1600 200
++ ./life_pl 1600 200
+N_SIZE = 1600, T_SIZE = 200
+Game of Life : 1600 x 1600, 200 time steps
+Naive Loop: consumed time :1907.24ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 1800 200'
+life_parallel_loop 1800 200
++ ./life_pl 1800 200
+N_SIZE = 1800, T_SIZE = 200
+Game of Life : 1800 x 1800, 200 time steps
+Naive Loop: consumed time :2389.13ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 2000 200'
+life_parallel_loop 2000 200
++ ./life_pl 2000 200
+N_SIZE = 2000, T_SIZE = 200
+Game of Life : 2000 x 2000, 200 time steps
+Naive Loop: consumed time :2802.49ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 2200 200'
+life_parallel_loop 2200 200
++ ./life_pl 2200 200
+N_SIZE = 2200, T_SIZE = 200
+Game of Life : 2200 x 2200, 200 time steps
+Naive Loop: consumed time :3418.64ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 2400 200'
+life_parallel_loop 2400 200
++ ./life_pl 2400 200
+N_SIZE = 2400, T_SIZE = 200
+Game of Life : 2400 x 2400, 200 time steps
+Naive Loop: consumed time :3958.93ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 2600 200'
+life_parallel_loop 2600 200
++ ./life_pl 2600 200
+N_SIZE = 2600, T_SIZE = 200
+Game of Life : 2600 x 2600, 200 time steps
+Naive Loop: consumed time :4611.29ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 2800 200'
+life_parallel_loop 2800 200
++ ./life_pl 2800 200
+N_SIZE = 2800, T_SIZE = 200
+Game of Life : 2800 x 2800, 200 time steps
+Naive Loop: consumed time :5299.28ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 3000 200'
+life_parallel_loop 3000 200
++ ./life_pl 3000 200
+N_SIZE = 3000, T_SIZE = 200
+Game of Life : 3000 x 3000, 200 time steps
+Naive Loop: consumed time :6042.56ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 3200 200'
+life_parallel_loop 3200 200
++ ./life_pl 3200 200
+N_SIZE = 3200, T_SIZE = 200
+Game of Life : 3200 x 3200, 200 time steps
+Naive Loop: consumed time :6837.04ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ (( step += 200 ))
++ (( step <= 3200 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 200 400'
+life_parallel_loop 200 400
++ ./life_pl 200 400
+N_SIZE = 200, T_SIZE = 400
+Game of Life : 200 x 200, 400 time steps
+Naive Loop: consumed time :108.449ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 400 400'
+life_parallel_loop 400 400
++ ./life_pl 400 400
+N_SIZE = 400, T_SIZE = 400
+Game of Life : 400 x 400, 400 time steps
+Naive Loop: consumed time :262.804ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 600 400'
+life_parallel_loop 600 400
++ ./life_pl 600 400
+N_SIZE = 600, T_SIZE = 400
+Game of Life : 600 x 600, 400 time steps
+Naive Loop: consumed time :658.235ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 800 400'
+life_parallel_loop 800 400
++ ./life_pl 800 400
+N_SIZE = 800, T_SIZE = 400
+Game of Life : 800 x 800, 400 time steps
+Naive Loop: consumed time :1088.92ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 1000 400'
+life_parallel_loop 1000 400
++ ./life_pl 1000 400
+N_SIZE = 1000, T_SIZE = 400
+Game of Life : 1000 x 1000, 400 time steps
+Naive Loop: consumed time :1571.1ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 1200 400'
+life_parallel_loop 1200 400
++ ./life_pl 1200 400
+N_SIZE = 1200, T_SIZE = 400
+Game of Life : 1200 x 1200, 400 time steps
+Naive Loop: consumed time :2141.12ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 1400 400'
+life_parallel_loop 1400 400
++ ./life_pl 1400 400
+N_SIZE = 1400, T_SIZE = 400
+Game of Life : 1400 x 1400, 400 time steps
+Naive Loop: consumed time :2860.37ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 1600 400'
+life_parallel_loop 1600 400
++ ./life_pl 1600 400
+N_SIZE = 1600, T_SIZE = 400
+Game of Life : 1600 x 1600, 400 time steps
+Naive Loop: consumed time :3807.14ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 1800 400'
+life_parallel_loop 1800 400
++ ./life_pl 1800 400
+N_SIZE = 1800, T_SIZE = 400
+Game of Life : 1800 x 1800, 400 time steps
+Naive Loop: consumed time :4658.53ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 2000 400'
+life_parallel_loop 2000 400
++ ./life_pl 2000 400
+N_SIZE = 2000, T_SIZE = 400
+Game of Life : 2000 x 2000, 400 time steps
+Naive Loop: consumed time :5618.18ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 2200 400'
+life_parallel_loop 2200 400
++ ./life_pl 2200 400
+N_SIZE = 2200, T_SIZE = 400
+Game of Life : 2200 x 2200, 400 time steps
+Naive Loop: consumed time :6757.74ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 2400 400'
+life_parallel_loop 2400 400
++ ./life_pl 2400 400
+N_SIZE = 2400, T_SIZE = 400
+Game of Life : 2400 x 2400, 400 time steps
+Naive Loop: consumed time :8032.5ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 2600 400'
+life_parallel_loop 2600 400
++ ./life_pl 2600 400
+N_SIZE = 2600, T_SIZE = 400
+Game of Life : 2600 x 2600, 400 time steps
+Naive Loop: consumed time :9203.25ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 2800 400'
+life_parallel_loop 2800 400
++ ./life_pl 2800 400
+N_SIZE = 2800, T_SIZE = 400
+Game of Life : 2800 x 2800, 400 time steps
+Naive Loop: consumed time :10518.4ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 3000 400'
+life_parallel_loop 3000 400
++ ./life_pl 3000 400
+N_SIZE = 3000, T_SIZE = 400
+Game of Life : 3000 x 3000, 400 time steps
+Naive Loop: consumed time :12002.3ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 3200 400'
+life_parallel_loop 3200 400
++ ./life_pl 3200 400
+N_SIZE = 3200, T_SIZE = 400
+Game of Life : 3200 x 3200, 400 time steps
+Naive Loop: consumed time :13551.5ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ (( step += 200 ))
++ (( step <= 3200 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 200 600'
+life_parallel_loop 200 600
++ ./life_pl 200 600
+N_SIZE = 200, T_SIZE = 600
+Game of Life : 200 x 200, 600 time steps
+Naive Loop: consumed time :139.107ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 400 600'
+life_parallel_loop 400 600
++ ./life_pl 400 600
+N_SIZE = 400, T_SIZE = 600
+Game of Life : 400 x 400, 600 time steps
+Naive Loop: consumed time :463.371ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 600 600'
+life_parallel_loop 600 600
++ ./life_pl 600 600
+N_SIZE = 600, T_SIZE = 600
+Game of Life : 600 x 600, 600 time steps
+Naive Loop: consumed time :872.417ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 800 600'
+life_parallel_loop 800 600
++ ./life_pl 800 600
+N_SIZE = 800, T_SIZE = 600
+Game of Life : 800 x 800, 600 time steps
+Naive Loop: consumed time :1601ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 1000 600'
+life_parallel_loop 1000 600
++ ./life_pl 1000 600
+N_SIZE = 1000, T_SIZE = 600
+Game of Life : 1000 x 1000, 600 time steps
+Naive Loop: consumed time :2343.19ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 1200 600'
+life_parallel_loop 1200 600
++ ./life_pl 1200 600
+N_SIZE = 1200, T_SIZE = 600
+Game of Life : 1200 x 1200, 600 time steps
+Naive Loop: consumed time :3211.8ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 1400 600'
+life_parallel_loop 1400 600
++ ./life_pl 1400 600
+N_SIZE = 1400, T_SIZE = 600
+Game of Life : 1400 x 1400, 600 time steps
+Naive Loop: consumed time :4483.39ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 1600 600'
+life_parallel_loop 1600 600
++ ./life_pl 1600 600
+N_SIZE = 1600, T_SIZE = 600
+Game of Life : 1600 x 1600, 600 time steps
+Naive Loop: consumed time :5641.38ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 1800 600'
+life_parallel_loop 1800 600
++ ./life_pl 1800 600
+N_SIZE = 1800, T_SIZE = 600
+Game of Life : 1800 x 1800, 600 time steps
+Naive Loop: consumed time :6851.93ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 2000 600'
+life_parallel_loop 2000 600
++ ./life_pl 2000 600
+N_SIZE = 2000, T_SIZE = 600
+Game of Life : 2000 x 2000, 600 time steps
+Naive Loop: consumed time :8371.93ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 2200 600'
+life_parallel_loop 2200 600
++ ./life_pl 2200 600
+N_SIZE = 2200, T_SIZE = 600
+Game of Life : 2200 x 2200, 600 time steps
+Naive Loop: consumed time :10075.2ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 2400 600'
+life_parallel_loop 2400 600
++ ./life_pl 2400 600
+N_SIZE = 2400, T_SIZE = 600
+Game of Life : 2400 x 2400, 600 time steps
+Naive Loop: consumed time :11877.4ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 2600 600'
+life_parallel_loop 2600 600
++ ./life_pl 2600 600
+N_SIZE = 2600, T_SIZE = 600
+Game of Life : 2600 x 2600, 600 time steps
+Naive Loop: consumed time :13725.9ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 2800 600'
+life_parallel_loop 2800 600
++ ./life_pl 2800 600
+N_SIZE = 2800, T_SIZE = 600
+Game of Life : 2800 x 2800, 600 time steps
+Naive Loop: consumed time :15691.9ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 3000 600'
+life_parallel_loop 3000 600
++ ./life_pl 3000 600
+N_SIZE = 3000, T_SIZE = 600
+Game of Life : 3000 x 3000, 600 time steps
+Naive Loop: consumed time :17971.5ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 3200 600'
+life_parallel_loop 3200 600
++ ./life_pl 3200 600
+N_SIZE = 3200, T_SIZE = 600
+Game of Life : 3200 x 3200, 600 time steps
+Naive Loop: consumed time :20245.5ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ (( step += 200 ))
++ (( step <= 3200 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 200 800'
+life_parallel_loop 200 800
++ ./life_pl 200 800
+N_SIZE = 200, T_SIZE = 800
+Game of Life : 200 x 200, 800 time steps
+Naive Loop: consumed time :178.464ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 400 800'
+life_parallel_loop 400 800
++ ./life_pl 400 800
+N_SIZE = 400, T_SIZE = 800
+Game of Life : 400 x 400, 800 time steps
+Naive Loop: consumed time :516.377ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 600 800'
+life_parallel_loop 600 800
++ ./life_pl 600 800
+N_SIZE = 600, T_SIZE = 800
+Game of Life : 600 x 600, 800 time steps
+Naive Loop: consumed time :1180.51ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 800 800'
+life_parallel_loop 800 800
++ ./life_pl 800 800
+N_SIZE = 800, T_SIZE = 800
+Game of Life : 800 x 800, 800 time steps
+Naive Loop: consumed time :2133.36ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 1000 800'
+life_parallel_loop 1000 800
++ ./life_pl 1000 800
+N_SIZE = 1000, T_SIZE = 800
+Game of Life : 1000 x 1000, 800 time steps
+Naive Loop: consumed time :3135.49ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 1200 800'
+life_parallel_loop 1200 800
++ ./life_pl 1200 800
+N_SIZE = 1200, T_SIZE = 800
+Game of Life : 1200 x 1200, 800 time steps
+Naive Loop: consumed time :4360.53ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 1400 800'
+life_parallel_loop 1400 800
++ ./life_pl 1400 800
+N_SIZE = 1400, T_SIZE = 800
+Game of Life : 1400 x 1400, 800 time steps
+Naive Loop: consumed time :5711.66ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 1600 800'
+life_parallel_loop 1600 800
++ ./life_pl 1600 800
+N_SIZE = 1600, T_SIZE = 800
+Game of Life : 1600 x 1600, 800 time steps
+Naive Loop: consumed time :7341.88ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 1800 800'
+life_parallel_loop 1800 800
++ ./life_pl 1800 800
+N_SIZE = 1800, T_SIZE = 800
+Game of Life : 1800 x 1800, 800 time steps
+Naive Loop: consumed time :9290.02ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 2000 800'
+life_parallel_loop 2000 800
++ ./life_pl 2000 800
+N_SIZE = 2000, T_SIZE = 800
+Game of Life : 2000 x 2000, 800 time steps
+Naive Loop: consumed time :11118.6ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 2200 800'
+life_parallel_loop 2200 800
++ ./life_pl 2200 800
+N_SIZE = 2200, T_SIZE = 800
+Game of Life : 2200 x 2200, 800 time steps
+Naive Loop: consumed time :13417.7ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 2400 800'
+life_parallel_loop 2400 800
++ ./life_pl 2400 800
+N_SIZE = 2400, T_SIZE = 800
+Game of Life : 2400 x 2400, 800 time steps
+Naive Loop: consumed time :15672.7ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 2600 800'
+life_parallel_loop 2600 800
++ ./life_pl 2600 800
+N_SIZE = 2600, T_SIZE = 800
+Game of Life : 2600 x 2600, 800 time steps
+Naive Loop: consumed time :18236.6ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 2800 800'
+life_parallel_loop 2800 800
++ ./life_pl 2800 800
+N_SIZE = 2800, T_SIZE = 800
+Game of Life : 2800 x 2800, 800 time steps
+Naive Loop: consumed time :20831.6ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 3000 800'
+life_parallel_loop 3000 800
++ ./life_pl 3000 800
+N_SIZE = 3000, T_SIZE = 800
+Game of Life : 3000 x 3000, 800 time steps
+Naive Loop: consumed time :23847.3ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 3200 800'
+life_parallel_loop 3200 800
++ ./life_pl 3200 800
+N_SIZE = 3200, T_SIZE = 800
+Game of Life : 3200 x 3200, 800 time steps
+Naive Loop: consumed time :26991.6ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ (( step += 200 ))
++ (( step <= 3200 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 200 1000'
+life_parallel_loop 200 1000
++ ./life_pl 200 1000
+N_SIZE = 200, T_SIZE = 1000
+Game of Life : 200 x 200, 1000 time steps
+Naive Loop: consumed time :241.86ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 400 1000'
+life_parallel_loop 400 1000
++ ./life_pl 400 1000
+N_SIZE = 400, T_SIZE = 1000
+Game of Life : 400 x 400, 1000 time steps
+Naive Loop: consumed time :700.854ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 600 1000'
+life_parallel_loop 600 1000
++ ./life_pl 600 1000
+N_SIZE = 600, T_SIZE = 1000
+Game of Life : 600 x 600, 1000 time steps
+Naive Loop: consumed time :1535.61ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 800 1000'
+life_parallel_loop 800 1000
++ ./life_pl 800 1000
+N_SIZE = 800, T_SIZE = 1000
+Game of Life : 800 x 800, 1000 time steps
+Naive Loop: consumed time :2674.76ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 1000 1000'
+life_parallel_loop 1000 1000
++ ./life_pl 1000 1000
+N_SIZE = 1000, T_SIZE = 1000
+Game of Life : 1000 x 1000, 1000 time steps
+Naive Loop: consumed time :3918.7ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 1200 1000'
+life_parallel_loop 1200 1000
++ ./life_pl 1200 1000
+N_SIZE = 1200, T_SIZE = 1000
+Game of Life : 1200 x 1200, 1000 time steps
+Naive Loop: consumed time :5411.74ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 1400 1000'
+life_parallel_loop 1400 1000
++ ./life_pl 1400 1000
+N_SIZE = 1400, T_SIZE = 1000
+Game of Life : 1400 x 1400, 1000 time steps
+Naive Loop: consumed time :7156.98ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 1600 1000'
+life_parallel_loop 1600 1000
++ ./life_pl 1600 1000
+N_SIZE = 1600, T_SIZE = 1000
+Game of Life : 1600 x 1600, 1000 time steps
+Naive Loop: consumed time :9183.58ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 1800 1000'
+life_parallel_loop 1800 1000
++ ./life_pl 1800 1000
+N_SIZE = 1800, T_SIZE = 1000
+Game of Life : 1800 x 1800, 1000 time steps
+Naive Loop: consumed time :11502.4ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 2000 1000'
+life_parallel_loop 2000 1000
++ ./life_pl 2000 1000
+N_SIZE = 2000, T_SIZE = 1000
+Game of Life : 2000 x 2000, 1000 time steps
+Naive Loop: consumed time :13912.5ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 2200 1000'
+life_parallel_loop 2200 1000
++ ./life_pl 2200 1000
+N_SIZE = 2200, T_SIZE = 1000
+Game of Life : 2200 x 2200, 1000 time steps
+Naive Loop: consumed time :16706.5ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 2400 1000'
+life_parallel_loop 2400 1000
++ ./life_pl 2400 1000
+N_SIZE = 2400, T_SIZE = 1000
+Game of Life : 2400 x 2400, 1000 time steps
+Naive Loop: consumed time :19607ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 2600 1000'
+life_parallel_loop 2600 1000
++ ./life_pl 2600 1000
+N_SIZE = 2600, T_SIZE = 1000
+Game of Life : 2600 x 2600, 1000 time steps
+Naive Loop: consumed time :22759.7ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 2800 1000'
+life_parallel_loop 2800 1000
++ ./life_pl 2800 1000
+N_SIZE = 2800, T_SIZE = 1000
+Game of Life : 2800 x 2800, 1000 time steps
+Naive Loop: consumed time :26007ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 3000 1000'
+life_parallel_loop 3000 1000
++ ./life_pl 3000 1000
+N_SIZE = 3000, T_SIZE = 1000
+Game of Life : 3000 x 3000, 1000 time steps
+Naive Loop: consumed time :29772.3ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 3200 1000'
+life_parallel_loop 3200 1000
++ ./life_pl 3200 1000
+N_SIZE = 3200, T_SIZE = 1000
+Game of Life : 3200 x 3200, 1000 time steps
+Naive Loop: consumed time :33610.4ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ (( step += 200 ))
++ (( step <= 3200 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 200 1200'
+life_parallel_loop 200 1200
++ ./life_pl 200 1200
+N_SIZE = 200, T_SIZE = 1200
+Game of Life : 200 x 200, 1200 time steps
+Naive Loop: consumed time :270.888ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 400 1200'
+life_parallel_loop 400 1200
++ ./life_pl 400 1200
+N_SIZE = 400, T_SIZE = 1200
+Game of Life : 400 x 400, 1200 time steps
+Naive Loop: consumed time :970.509ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 600 1200'
+life_parallel_loop 600 1200
++ ./life_pl 600 1200
+N_SIZE = 600, T_SIZE = 1200
+Game of Life : 600 x 600, 1200 time steps
+Naive Loop: consumed time :1673.5ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 800 1200'
+life_parallel_loop 800 1200
++ ./life_pl 800 1200
+N_SIZE = 800, T_SIZE = 1200
+Game of Life : 800 x 800, 1200 time steps
+Naive Loop: consumed time :3240.13ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 1000 1200'
+life_parallel_loop 1000 1200
++ ./life_pl 1000 1200
+N_SIZE = 1000, T_SIZE = 1200
+Game of Life : 1000 x 1000, 1200 time steps
+Naive Loop: consumed time :4742.06ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 1200 1200'
+life_parallel_loop 1200 1200
++ ./life_pl 1200 1200
+N_SIZE = 1200, T_SIZE = 1200
+Game of Life : 1200 x 1200, 1200 time steps
+Naive Loop: consumed time :6418.68ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 1400 1200'
+life_parallel_loop 1400 1200
++ ./life_pl 1400 1200
+N_SIZE = 1400, T_SIZE = 1200
+Game of Life : 1400 x 1400, 1200 time steps
+Naive Loop: consumed time :8529.56ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 1600 1200'
+life_parallel_loop 1600 1200
++ ./life_pl 1600 1200
+N_SIZE = 1600, T_SIZE = 1200
+Game of Life : 1600 x 1600, 1200 time steps
+Naive Loop: consumed time :11102.8ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 1800 1200'
+life_parallel_loop 1800 1200
++ ./life_pl 1800 1200
+N_SIZE = 1800, T_SIZE = 1200
+Game of Life : 1800 x 1800, 1200 time steps
+Naive Loop: consumed time :13791.6ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 2000 1200'
+life_parallel_loop 2000 1200
++ ./life_pl 2000 1200
+N_SIZE = 2000, T_SIZE = 1200
+Game of Life : 2000 x 2000, 1200 time steps
+Naive Loop: consumed time :16591.8ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 2200 1200'
+life_parallel_loop 2200 1200
++ ./life_pl 2200 1200
+N_SIZE = 2200, T_SIZE = 1200
+Game of Life : 2200 x 2200, 1200 time steps
+Naive Loop: consumed time :20113.6ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 2400 1200'
+life_parallel_loop 2400 1200
++ ./life_pl 2400 1200
+N_SIZE = 2400, T_SIZE = 1200
+Game of Life : 2400 x 2400, 1200 time steps
+Naive Loop: consumed time :23509.1ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 2600 1200'
+life_parallel_loop 2600 1200
++ ./life_pl 2600 1200
+N_SIZE = 2600, T_SIZE = 1200
+Game of Life : 2600 x 2600, 1200 time steps
+Naive Loop: consumed time :27256.8ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 2800 1200'
+life_parallel_loop 2800 1200
++ ./life_pl 2800 1200
+N_SIZE = 2800, T_SIZE = 1200
+Game of Life : 2800 x 2800, 1200 time steps
+Naive Loop: consumed time :31156.1ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 3000 1200'
+life_parallel_loop 3000 1200
++ ./life_pl 3000 1200
+N_SIZE = 3000, T_SIZE = 1200
+Game of Life : 3000 x 3000, 1200 time steps
+Naive Loop: consumed time :35691.7ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 3200 1200'
+life_parallel_loop 3200 1200
++ ./life_pl 3200 1200
+N_SIZE = 3200, T_SIZE = 1200
+Game of Life : 3200 x 3200, 1200 time steps
+Naive Loop: consumed time :40257.1ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ (( step += 200 ))
++ (( step <= 3200 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 200 1400'
+life_parallel_loop 200 1400
++ ./life_pl 200 1400
+N_SIZE = 200, T_SIZE = 1400
+Game of Life : 200 x 200, 1400 time steps
+Naive Loop: consumed time :346.668ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 400 1400'
+life_parallel_loop 400 1400
++ ./life_pl 400 1400
+N_SIZE = 400, T_SIZE = 1400
+Game of Life : 400 x 400, 1400 time steps
+Naive Loop: consumed time :1008.34ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 600 1400'
+life_parallel_loop 600 1400
++ ./life_pl 600 1400
+N_SIZE = 600, T_SIZE = 1400
+Game of Life : 600 x 600, 1400 time steps
+Naive Loop: consumed time :2213.7ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 800 1400'
+life_parallel_loop 800 1400
++ ./life_pl 800 1400
+N_SIZE = 800, T_SIZE = 1400
+Game of Life : 800 x 800, 1400 time steps
+Naive Loop: consumed time :3733.65ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 1000 1400'
+life_parallel_loop 1000 1400
++ ./life_pl 1000 1400
+N_SIZE = 1000, T_SIZE = 1400
+Game of Life : 1000 x 1000, 1400 time steps
+Naive Loop: consumed time :5527.03ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 1200 1400'
+life_parallel_loop 1200 1400
++ ./life_pl 1200 1400
+N_SIZE = 1200, T_SIZE = 1400
+Game of Life : 1200 x 1200, 1400 time steps
+Naive Loop: consumed time :7600.45ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 1400 1400'
+life_parallel_loop 1400 1400
++ ./life_pl 1400 1400
+N_SIZE = 1400, T_SIZE = 1400
+Game of Life : 1400 x 1400, 1400 time steps
+Naive Loop: consumed time :10054.7ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 1600 1400'
+life_parallel_loop 1600 1400
++ ./life_pl 1600 1400
+N_SIZE = 1600, T_SIZE = 1400
+Game of Life : 1600 x 1600, 1400 time steps
+Naive Loop: consumed time :12925.1ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 1800 1400'
+life_parallel_loop 1800 1400
++ ./life_pl 1800 1400
+N_SIZE = 1800, T_SIZE = 1400
+Game of Life : 1800 x 1800, 1400 time steps
+Naive Loop: consumed time :16068.9ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 2000 1400'
+life_parallel_loop 2000 1400
++ ./life_pl 2000 1400
+N_SIZE = 2000, T_SIZE = 1400
+Game of Life : 2000 x 2000, 1400 time steps
+Naive Loop: consumed time :19406.8ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 2200 1400'
+life_parallel_loop 2200 1400
++ ./life_pl 2200 1400
+N_SIZE = 2200, T_SIZE = 1400
+Game of Life : 2200 x 2200, 1400 time steps
+Naive Loop: consumed time :23323.5ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 2400 1400'
+life_parallel_loop 2400 1400
++ ./life_pl 2400 1400
+N_SIZE = 2400, T_SIZE = 1400
+Game of Life : 2400 x 2400, 1400 time steps
+Naive Loop: consumed time :27479ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 2600 1400'
+life_parallel_loop 2600 1400
++ ./life_pl 2600 1400
+N_SIZE = 2600, T_SIZE = 1400
+Game of Life : 2600 x 2600, 1400 time steps
+Naive Loop: consumed time :31779.9ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 2800 1400'
+life_parallel_loop 2800 1400
++ ./life_pl 2800 1400
+N_SIZE = 2800, T_SIZE = 1400
+Game of Life : 2800 x 2800, 1400 time steps
+Naive Loop: consumed time :36350.8ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 3000 1400'
+life_parallel_loop 3000 1400
++ ./life_pl 3000 1400
+N_SIZE = 3000, T_SIZE = 1400
+Game of Life : 3000 x 3000, 1400 time steps
+Naive Loop: consumed time :41501.3ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 3200 1400'
+life_parallel_loop 3200 1400
++ ./life_pl 3200 1400
+N_SIZE = 3200, T_SIZE = 1400
+Game of Life : 3200 x 3200, 1400 time steps
+Naive Loop: consumed time :47023.3ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ (( step += 200 ))
++ (( step <= 3200 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 200 1600'
+life_parallel_loop 200 1600
++ ./life_pl 200 1600
+N_SIZE = 200, T_SIZE = 1600
+Game of Life : 200 x 200, 1600 time steps
+Naive Loop: consumed time :399.895ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 400 1600'
+life_parallel_loop 400 1600
++ ./life_pl 400 1600
+N_SIZE = 400, T_SIZE = 1600
+Game of Life : 400 x 400, 1600 time steps
+Naive Loop: consumed time :1265.58ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 600 1600'
+life_parallel_loop 600 1600
++ ./life_pl 600 1600
+N_SIZE = 600, T_SIZE = 1600
+Game of Life : 600 x 600, 1600 time steps
+Naive Loop: consumed time :2280.76ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 800 1600'
+life_parallel_loop 800 1600
++ ./life_pl 800 1600
+N_SIZE = 800, T_SIZE = 1600
+Game of Life : 800 x 800, 1600 time steps
+Naive Loop: consumed time :4245.41ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 1000 1600'
+life_parallel_loop 1000 1600
++ ./life_pl 1000 1600
+N_SIZE = 1000, T_SIZE = 1600
+Game of Life : 1000 x 1000, 1600 time steps
+Naive Loop: consumed time :6289.43ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 1200 1600'
+life_parallel_loop 1200 1600
++ ./life_pl 1200 1600
+N_SIZE = 1200, T_SIZE = 1600
+Game of Life : 1200 x 1200, 1600 time steps
+Naive Loop: consumed time :8488.58ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 1400 1600'
+life_parallel_loop 1400 1600
++ ./life_pl 1400 1600
+N_SIZE = 1400, T_SIZE = 1600
+Game of Life : 1400 x 1400, 1600 time steps
+Naive Loop: consumed time :11427.9ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 1600 1600'
+life_parallel_loop 1600 1600
++ ./life_pl 1600 1600
+N_SIZE = 1600, T_SIZE = 1600
+Game of Life : 1600 x 1600, 1600 time steps
+Naive Loop: consumed time :14659.7ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 1800 1600'
+life_parallel_loop 1800 1600
++ ./life_pl 1800 1600
+N_SIZE = 1800, T_SIZE = 1600
+Game of Life : 1800 x 1800, 1600 time steps
+Naive Loop: consumed time :18291.6ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 2000 1600'
+life_parallel_loop 2000 1600
++ ./life_pl 2000 1600
+N_SIZE = 2000, T_SIZE = 1600
+Game of Life : 2000 x 2000, 1600 time steps
+Naive Loop: consumed time :22089.7ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 2200 1600'
+life_parallel_loop 2200 1600
++ ./life_pl 2200 1600
+N_SIZE = 2200, T_SIZE = 1600
+Game of Life : 2200 x 2200, 1600 time steps
+Naive Loop: consumed time :26773.4ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 2400 1600'
+life_parallel_loop 2400 1600
++ ./life_pl 2400 1600
+N_SIZE = 2400, T_SIZE = 1600
+Game of Life : 2400 x 2400, 1600 time steps
+Naive Loop: consumed time :31324.5ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 2600 1600'
+life_parallel_loop 2600 1600
++ ./life_pl 2600 1600
+N_SIZE = 2600, T_SIZE = 1600
+Game of Life : 2600 x 2600, 1600 time steps
+Naive Loop: consumed time :36256.3ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 2800 1600'
+life_parallel_loop 2800 1600
++ ./life_pl 2800 1600
+N_SIZE = 2800, T_SIZE = 1600
+Game of Life : 2800 x 2800, 1600 time steps
+Naive Loop: consumed time :41761.7ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 3000 1600'
+life_parallel_loop 3000 1600
++ ./life_pl 3000 1600
+N_SIZE = 3000, T_SIZE = 1600
+Game of Life : 3000 x 3000, 1600 time steps
+Naive Loop: consumed time :47416.2ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 3200 1600'
+life_parallel_loop 3200 1600
++ ./life_pl 3200 1600
+N_SIZE = 3200, T_SIZE = 1600
+Game of Life : 3200 x 3200, 1600 time steps
+Naive Loop: consumed time :53587ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ (( step += 200 ))
++ (( step <= 3200 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 200 1800'
+life_parallel_loop 200 1800
++ ./life_pl 200 1800
+N_SIZE = 200, T_SIZE = 1800
+Game of Life : 200 x 200, 1800 time steps
+Naive Loop: consumed time :439.164ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 400 1800'
+life_parallel_loop 400 1800
++ ./life_pl 400 1800
+N_SIZE = 400, T_SIZE = 1800
+Game of Life : 400 x 400, 1800 time steps
+Naive Loop: consumed time :1315.82ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 600 1800'
+life_parallel_loop 600 1800
++ ./life_pl 600 1800
+N_SIZE = 600, T_SIZE = 1800
+Game of Life : 600 x 600, 1800 time steps
+Naive Loop: consumed time :2695.84ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 800 1800'
+life_parallel_loop 800 1800
++ ./life_pl 800 1800
+N_SIZE = 800, T_SIZE = 1800
+Game of Life : 800 x 800, 1800 time steps
+Naive Loop: consumed time :4809.52ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 1000 1800'
+life_parallel_loop 1000 1800
++ ./life_pl 1000 1800
+N_SIZE = 1000, T_SIZE = 1800
+Game of Life : 1000 x 1000, 1800 time steps
+Naive Loop: consumed time :7091.24ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 1200 1800'
+life_parallel_loop 1200 1800
++ ./life_pl 1200 1800
+N_SIZE = 1200, T_SIZE = 1800
+Game of Life : 1200 x 1200, 1800 time steps
+Naive Loop: consumed time :9702.92ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 1400 1800'
+life_parallel_loop 1400 1800
++ ./life_pl 1400 1800
+N_SIZE = 1400, T_SIZE = 1800
+Game of Life : 1400 x 1400, 1800 time steps
+Naive Loop: consumed time :12903.3ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 1600 1800'
+life_parallel_loop 1600 1800
++ ./life_pl 1600 1800
+N_SIZE = 1600, T_SIZE = 1800
+Game of Life : 1600 x 1600, 1800 time steps
+Naive Loop: consumed time :16547.5ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 1800 1800'
+life_parallel_loop 1800 1800
++ ./life_pl 1800 1800
+N_SIZE = 1800, T_SIZE = 1800
+Game of Life : 1800 x 1800, 1800 time steps
+Naive Loop: consumed time :20631.6ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 2000 1800'
+life_parallel_loop 2000 1800
++ ./life_pl 2000 1800
+N_SIZE = 2000, T_SIZE = 1800
+Game of Life : 2000 x 2000, 1800 time steps
+Naive Loop: consumed time :24824.3ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 2200 1800'
+life_parallel_loop 2200 1800
++ ./life_pl 2200 1800
+N_SIZE = 2200, T_SIZE = 1800
+Game of Life : 2200 x 2200, 1800 time steps
+Naive Loop: consumed time :30028.3ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 2400 1800'
+life_parallel_loop 2400 1800
++ ./life_pl 2400 1800
+N_SIZE = 2400, T_SIZE = 1800
+Game of Life : 2400 x 2400, 1800 time steps
+Naive Loop: consumed time :35204.3ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 2600 1800'
+life_parallel_loop 2600 1800
++ ./life_pl 2600 1800
+N_SIZE = 2600, T_SIZE = 1800
+Game of Life : 2600 x 2600, 1800 time steps
+Naive Loop: consumed time :40913.7ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 2800 1800'
+life_parallel_loop 2800 1800
++ ./life_pl 2800 1800
+N_SIZE = 2800, T_SIZE = 1800
+Game of Life : 2800 x 2800, 1800 time steps
+Naive Loop: consumed time :46759.8ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 3000 1800'
+life_parallel_loop 3000 1800
++ ./life_pl 3000 1800
+N_SIZE = 3000, T_SIZE = 1800
+Game of Life : 3000 x 3000, 1800 time steps
+Naive Loop: consumed time :53519.5ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 3200 1800'
+life_parallel_loop 3200 1800
++ ./life_pl 3200 1800
+N_SIZE = 3200, T_SIZE = 1800
+Game of Life : 3200 x 3200, 1800 time steps
+Naive Loop: consumed time :60216.4ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ (( step += 200 ))
++ (( step <= 3200 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 200 2000'
+life_parallel_loop 200 2000
++ ./life_pl 200 2000
+N_SIZE = 200, T_SIZE = 2000
+Game of Life : 200 x 200, 2000 time steps
+Naive Loop: consumed time :498.587ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 400 2000'
+life_parallel_loop 400 2000
++ ./life_pl 400 2000
+N_SIZE = 400, T_SIZE = 2000
+Game of Life : 400 x 400, 2000 time steps
+Naive Loop: consumed time :1553.2ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 600 2000'
+life_parallel_loop 600 2000
++ ./life_pl 600 2000
+N_SIZE = 600, T_SIZE = 2000
+Game of Life : 600 x 600, 2000 time steps
+Naive Loop: consumed time :2840.24ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 800 2000'
+life_parallel_loop 800 2000
++ ./life_pl 800 2000
+N_SIZE = 800, T_SIZE = 2000
+Game of Life : 800 x 800, 2000 time steps
+Naive Loop: consumed time :5389.56ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 1000 2000'
+life_parallel_loop 1000 2000
++ ./life_pl 1000 2000
+N_SIZE = 1000, T_SIZE = 2000
+Game of Life : 1000 x 1000, 2000 time steps
+Naive Loop: consumed time :7878.81ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 1200 2000'
+life_parallel_loop 1200 2000
++ ./life_pl 1200 2000
+N_SIZE = 1200, T_SIZE = 2000
+Game of Life : 1200 x 1200, 2000 time steps
+Naive Loop: consumed time :10787.4ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 1400 2000'
+life_parallel_loop 1400 2000
++ ./life_pl 1400 2000
+N_SIZE = 1400, T_SIZE = 2000
+Game of Life : 1400 x 1400, 2000 time steps
+Naive Loop: consumed time :14129.2ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 1600 2000'
+life_parallel_loop 1600 2000
++ ./life_pl 1600 2000
+N_SIZE = 1600, T_SIZE = 2000
+Game of Life : 1600 x 1600, 2000 time steps
+Naive Loop: consumed time :18220.3ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 1800 2000'
+life_parallel_loop 1800 2000
++ ./life_pl 1800 2000
+N_SIZE = 1800, T_SIZE = 2000
+Game of Life : 1800 x 1800, 2000 time steps
+Naive Loop: consumed time :22655ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 2000 2000'
+life_parallel_loop 2000 2000
++ ./life_pl 2000 2000
+N_SIZE = 2000, T_SIZE = 2000
+Game of Life : 2000 x 2000, 2000 time steps
+Naive Loop: consumed time :27763.3ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 2200 2000'
+life_parallel_loop 2200 2000
++ ./life_pl 2200 2000
+N_SIZE = 2200, T_SIZE = 2000
+Game of Life : 2200 x 2200, 2000 time steps
+Naive Loop: consumed time :33322.2ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 2400 2000'
+life_parallel_loop 2400 2000
++ ./life_pl 2400 2000
+N_SIZE = 2400, T_SIZE = 2000
+Game of Life : 2400 x 2400, 2000 time steps
+Naive Loop: consumed time :39085.9ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 2600 2000'
+life_parallel_loop 2600 2000
++ ./life_pl 2600 2000
+N_SIZE = 2600, T_SIZE = 2000
+Game of Life : 2600 x 2600, 2000 time steps
+Naive Loop: consumed time :45152.4ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 2800 2000'
+life_parallel_loop 2800 2000
++ ./life_pl 2800 2000
+N_SIZE = 2800, T_SIZE = 2000
+Game of Life : 2800 x 2800, 2000 time steps
+Naive Loop: consumed time :51903.8ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 3000 2000'
+life_parallel_loop 3000 2000
++ ./life_pl 3000 2000
+N_SIZE = 3000, T_SIZE = 2000
+Game of Life : 3000 x 3000, 2000 time steps
+Naive Loop: consumed time :59266.4ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 3200 2000'
+life_parallel_loop 3200 2000
++ ./life_pl 3200 2000
+N_SIZE = 3200, T_SIZE = 2000
+Game of Life : 3200 x 3200, 2000 time steps
+Naive Loop: consumed time :66888.4ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ (( step += 200 ))
++ (( step <= 3200 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 200 2200'
+life_parallel_loop 200 2200
++ ./life_pl 200 2200
+N_SIZE = 200, T_SIZE = 2200
+Game of Life : 200 x 200, 2200 time steps
+Naive Loop: consumed time :497.279ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 400 2200'
+life_parallel_loop 400 2200
++ ./life_pl 400 2200
+N_SIZE = 400, T_SIZE = 2200
+Game of Life : 400 x 400, 2200 time steps
+Naive Loop: consumed time :1703.37ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 600 2200'
+life_parallel_loop 600 2200
++ ./life_pl 600 2200
+N_SIZE = 600, T_SIZE = 2200
+Game of Life : 600 x 600, 2200 time steps
+Naive Loop: consumed time :3250ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 800 2200'
+life_parallel_loop 800 2200
++ ./life_pl 800 2200
+N_SIZE = 800, T_SIZE = 2200
+Game of Life : 800 x 800, 2200 time steps
+Naive Loop: consumed time :5892.17ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 1000 2200'
+life_parallel_loop 1000 2200
++ ./life_pl 1000 2200
+N_SIZE = 1000, T_SIZE = 2200
+Game of Life : 1000 x 1000, 2200 time steps
+Naive Loop: consumed time :8612.65ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 1200 2200'
+life_parallel_loop 1200 2200
++ ./life_pl 1200 2200
+N_SIZE = 1200, T_SIZE = 2200
+Game of Life : 1200 x 1200, 2200 time steps
+Naive Loop: consumed time :11811.8ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 1400 2200'
+life_parallel_loop 1400 2200
++ ./life_pl 1400 2200
+N_SIZE = 1400, T_SIZE = 2200
+Game of Life : 1400 x 1400, 2200 time steps
+Naive Loop: consumed time :15657ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 1600 2200'
+life_parallel_loop 1600 2200
++ ./life_pl 1600 2200
+N_SIZE = 1600, T_SIZE = 2200
+Game of Life : 1600 x 1600, 2200 time steps
+Naive Loop: consumed time :20166.5ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 1800 2200'
+life_parallel_loop 1800 2200
++ ./life_pl 1800 2200
+N_SIZE = 1800, T_SIZE = 2200
+Game of Life : 1800 x 1800, 2200 time steps
+Naive Loop: consumed time :25138.9ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 2000 2200'
+life_parallel_loop 2000 2200
++ ./life_pl 2000 2200
+N_SIZE = 2000, T_SIZE = 2200
+Game of Life : 2000 x 2000, 2200 time steps
+Naive Loop: consumed time :30420.1ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 2200 2200'
+life_parallel_loop 2200 2200
++ ./life_pl 2200 2200
+N_SIZE = 2200, T_SIZE = 2200
+Game of Life : 2200 x 2200, 2200 time steps
+Naive Loop: consumed time :36674ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 2400 2200'
+life_parallel_loop 2400 2200
++ ./life_pl 2400 2200
+N_SIZE = 2400, T_SIZE = 2200
+Game of Life : 2400 x 2400, 2200 time steps
+Naive Loop: consumed time :42924.8ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 2600 2200'
+life_parallel_loop 2600 2200
++ ./life_pl 2600 2200
+N_SIZE = 2600, T_SIZE = 2200
+Game of Life : 2600 x 2600, 2200 time steps
+Naive Loop: consumed time :49773.4ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 2800 2200'
+life_parallel_loop 2800 2200
++ ./life_pl 2800 2200
+N_SIZE = 2800, T_SIZE = 2200
+Game of Life : 2800 x 2800, 2200 time steps
+Naive Loop: consumed time :57263.4ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 3000 2200'
+life_parallel_loop 3000 2200
++ ./life_pl 3000 2200
+N_SIZE = 3000, T_SIZE = 2200
+Game of Life : 3000 x 3000, 2200 time steps
+Naive Loop: consumed time :65206.8ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 3200 2200'
+life_parallel_loop 3200 2200
++ ./life_pl 3200 2200
+N_SIZE = 3200, T_SIZE = 2200
+Game of Life : 3200 x 3200, 2200 time steps
+Naive Loop: consumed time :73506ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ (( step += 200 ))
++ (( step <= 3200 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 200 2400'
+life_parallel_loop 200 2400
++ ./life_pl 200 2400
+N_SIZE = 200, T_SIZE = 2400
+Game of Life : 200 x 200, 2400 time steps
+Naive Loop: consumed time :539.417ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 400 2400'
+life_parallel_loop 400 2400
++ ./life_pl 400 2400
+N_SIZE = 400, T_SIZE = 2400
+Game of Life : 400 x 400, 2400 time steps
+Naive Loop: consumed time :1813.96ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 600 2400'
+life_parallel_loop 600 2400
++ ./life_pl 600 2400
+N_SIZE = 600, T_SIZE = 2400
+Game of Life : 600 x 600, 2400 time steps
+Naive Loop: consumed time :3837.63ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 800 2400'
+life_parallel_loop 800 2400
++ ./life_pl 800 2400
+N_SIZE = 800, T_SIZE = 2400
+Game of Life : 800 x 800, 2400 time steps
+Naive Loop: consumed time :6404.35ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 1000 2400'
+life_parallel_loop 1000 2400
++ ./life_pl 1000 2400
+N_SIZE = 1000, T_SIZE = 2400
+Game of Life : 1000 x 1000, 2400 time steps
+Naive Loop: consumed time :9430.31ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 1200 2400'
+life_parallel_loop 1200 2400
++ ./life_pl 1200 2400
+N_SIZE = 1200, T_SIZE = 2400
+Game of Life : 1200 x 1200, 2400 time steps
+Naive Loop: consumed time :12838.1ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 1400 2400'
+life_parallel_loop 1400 2400
++ ./life_pl 1400 2400
+N_SIZE = 1400, T_SIZE = 2400
+Game of Life : 1400 x 1400, 2400 time steps
+Naive Loop: consumed time :16965ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 1600 2400'
+life_parallel_loop 1600 2400
++ ./life_pl 1600 2400
+N_SIZE = 1600, T_SIZE = 2400
+Game of Life : 1600 x 1600, 2400 time steps
+Naive Loop: consumed time :22196.2ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 1800 2400'
+life_parallel_loop 1800 2400
++ ./life_pl 1800 2400
+N_SIZE = 1800, T_SIZE = 2400
+Game of Life : 1800 x 1800, 2400 time steps
+Naive Loop: consumed time :27268ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 2000 2400'
+life_parallel_loop 2000 2400
++ ./life_pl 2000 2400
+N_SIZE = 2000, T_SIZE = 2400
+Game of Life : 2000 x 2000, 2400 time steps
+Naive Loop: consumed time :33152.3ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 2200 2400'
+life_parallel_loop 2200 2400
++ ./life_pl 2200 2400
+N_SIZE = 2200, T_SIZE = 2400
+Game of Life : 2200 x 2200, 2400 time steps
+Naive Loop: consumed time :39887.9ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 2400 2400'
+life_parallel_loop 2400 2400
++ ./life_pl 2400 2400
+N_SIZE = 2400, T_SIZE = 2400
+Game of Life : 2400 x 2400, 2400 time steps
+Naive Loop: consumed time :46906.7ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 2600 2400'
+life_parallel_loop 2600 2400
++ ./life_pl 2600 2400
+N_SIZE = 2600, T_SIZE = 2400
+Game of Life : 2600 x 2600, 2400 time steps
+Naive Loop: consumed time :54199.1ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 2800 2400'
+life_parallel_loop 2800 2400
++ ./life_pl 2800 2400
+N_SIZE = 2800, T_SIZE = 2400
+Game of Life : 2800 x 2800, 2400 time steps
+Naive Loop: consumed time :62165.8ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 3000 2400'
+life_parallel_loop 3000 2400
++ ./life_pl 3000 2400
+N_SIZE = 3000, T_SIZE = 2400
+Game of Life : 3000 x 3000, 2400 time steps
+Naive Loop: consumed time :71123.8ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 3200 2400'
+life_parallel_loop 3200 2400
++ ./life_pl 3200 2400
+N_SIZE = 3200, T_SIZE = 2400
+Game of Life : 3200 x 3200, 2400 time steps
+Naive Loop: consumed time :80144.1ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ (( step += 200 ))
++ (( step <= 3200 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 200 2600'
+life_parallel_loop 200 2600
++ ./life_pl 200 2600
+N_SIZE = 200, T_SIZE = 2600
+Game of Life : 200 x 200, 2600 time steps
+Naive Loop: consumed time :595.035ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 400 2600'
+life_parallel_loop 400 2600
++ ./life_pl 400 2600
+N_SIZE = 400, T_SIZE = 2600
+Game of Life : 400 x 400, 2600 time steps
+Naive Loop: consumed time :1897.33ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 600 2600'
+life_parallel_loop 600 2600
++ ./life_pl 600 2600
+N_SIZE = 600, T_SIZE = 2600
+Game of Life : 600 x 600, 2600 time steps
+Naive Loop: consumed time :3712.91ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 800 2600'
+life_parallel_loop 800 2600
++ ./life_pl 800 2600
+N_SIZE = 800, T_SIZE = 2600
+Game of Life : 800 x 800, 2600 time steps
+Naive Loop: consumed time :6943.97ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 1000 2600'
+life_parallel_loop 1000 2600
++ ./life_pl 1000 2600
+N_SIZE = 1000, T_SIZE = 2600
+Game of Life : 1000 x 1000, 2600 time steps
+Naive Loop: consumed time :10184.5ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 1200 2600'
+life_parallel_loop 1200 2600
++ ./life_pl 1200 2600
+N_SIZE = 1200, T_SIZE = 2600
+Game of Life : 1200 x 1200, 2600 time steps
+Naive Loop: consumed time :13845.5ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 1400 2600'
+life_parallel_loop 1400 2600
++ ./life_pl 1400 2600
+N_SIZE = 1400, T_SIZE = 2600
+Game of Life : 1400 x 1400, 2600 time steps
+Naive Loop: consumed time :18500ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 1600 2600'
+life_parallel_loop 1600 2600
++ ./life_pl 1600 2600
+N_SIZE = 1600, T_SIZE = 2600
+Game of Life : 1600 x 1600, 2600 time steps
+Naive Loop: consumed time :23799.7ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 1800 2600'
+life_parallel_loop 1800 2600
++ ./life_pl 1800 2600
+N_SIZE = 1800, T_SIZE = 2600
+Game of Life : 1800 x 1800, 2600 time steps
+Naive Loop: consumed time :29599.5ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 2000 2600'
+life_parallel_loop 2000 2600
++ ./life_pl 2000 2600
+N_SIZE = 2000, T_SIZE = 2600
+Game of Life : 2000 x 2000, 2600 time steps
+Naive Loop: consumed time :35933.5ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 2200 2600'
+life_parallel_loop 2200 2600
++ ./life_pl 2200 2600
+N_SIZE = 2200, T_SIZE = 2600
+Game of Life : 2200 x 2200, 2600 time steps
+Naive Loop: consumed time :43368.4ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 2400 2600'
+life_parallel_loop 2400 2600
++ ./life_pl 2400 2600
+N_SIZE = 2400, T_SIZE = 2600
+Game of Life : 2400 x 2400, 2600 time steps
+Naive Loop: consumed time :50637.7ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 2600 2600'
+life_parallel_loop 2600 2600
++ ./life_pl 2600 2600
+N_SIZE = 2600, T_SIZE = 2600
+Game of Life : 2600 x 2600, 2600 time steps
+Naive Loop: consumed time :58761.7ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 2800 2600'
+life_parallel_loop 2800 2600
++ ./life_pl 2800 2600
+N_SIZE = 2800, T_SIZE = 2600
+Game of Life : 2800 x 2800, 2600 time steps
+Naive Loop: consumed time :67447.6ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 3000 2600'
+life_parallel_loop 3000 2600
++ ./life_pl 3000 2600
+N_SIZE = 3000, T_SIZE = 2600
+Game of Life : 3000 x 3000, 2600 time steps
+Naive Loop: consumed time :76996.4ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 3200 2600'
+life_parallel_loop 3200 2600
++ ./life_pl 3200 2600
+N_SIZE = 3200, T_SIZE = 2600
+Game of Life : 3200 x 3200, 2600 time steps
+Naive Loop: consumed time :86813.5ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ (( step += 200 ))
++ (( step <= 3200 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 200 2800'
+life_parallel_loop 200 2800
++ ./life_pl 200 2800
+N_SIZE = 200, T_SIZE = 2800
+Game of Life : 200 x 200, 2800 time steps
+Naive Loop: consumed time :698.971ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 400 2800'
+life_parallel_loop 400 2800
++ ./life_pl 400 2800
+N_SIZE = 400, T_SIZE = 2800
+Game of Life : 400 x 400, 2800 time steps
+Naive Loop: consumed time :2069.1ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 600 2800'
+life_parallel_loop 600 2800
++ ./life_pl 600 2800
+N_SIZE = 600, T_SIZE = 2800
+Game of Life : 600 x 600, 2800 time steps
+Naive Loop: consumed time :4159.49ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 800 2800'
+life_parallel_loop 800 2800
++ ./life_pl 800 2800
+N_SIZE = 800, T_SIZE = 2800
+Game of Life : 800 x 800, 2800 time steps
+Naive Loop: consumed time :7504.88ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 1000 2800'
+life_parallel_loop 1000 2800
++ ./life_pl 1000 2800
+N_SIZE = 1000, T_SIZE = 2800
+Game of Life : 1000 x 1000, 2800 time steps
+Naive Loop: consumed time :11169.6ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 1200 2800'
+life_parallel_loop 1200 2800
++ ./life_pl 1200 2800
+N_SIZE = 1200, T_SIZE = 2800
+Game of Life : 1200 x 1200, 2800 time steps
+Naive Loop: consumed time :14985.9ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 1400 2800'
+life_parallel_loop 1400 2800
++ ./life_pl 1400 2800
+N_SIZE = 1400, T_SIZE = 2800
+Game of Life : 1400 x 1400, 2800 time steps
+Naive Loop: consumed time :19731.4ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 1600 2800'
+life_parallel_loop 1600 2800
++ ./life_pl 1600 2800
+N_SIZE = 1600, T_SIZE = 2800
+Game of Life : 1600 x 1600, 2800 time steps
+Naive Loop: consumed time :25585ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 1800 2800'
+life_parallel_loop 1800 2800
++ ./life_pl 1800 2800
+N_SIZE = 1800, T_SIZE = 2800
+Game of Life : 1800 x 1800, 2800 time steps
+Naive Loop: consumed time :31893.9ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 2000 2800'
+life_parallel_loop 2000 2800
++ ./life_pl 2000 2800
+N_SIZE = 2000, T_SIZE = 2800
+Game of Life : 2000 x 2000, 2800 time steps
+Naive Loop: consumed time :38588ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 2200 2800'
+life_parallel_loop 2200 2800
++ ./life_pl 2200 2800
+N_SIZE = 2200, T_SIZE = 2800
+Game of Life : 2200 x 2200, 2800 time steps
+Naive Loop: consumed time :46745.6ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 2400 2800'
+life_parallel_loop 2400 2800
++ ./life_pl 2400 2800
+N_SIZE = 2400, T_SIZE = 2800
+Game of Life : 2400 x 2400, 2800 time steps
+Naive Loop: consumed time :54653.9ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 2600 2800'
+life_parallel_loop 2600 2800
++ ./life_pl 2600 2800
+N_SIZE = 2600, T_SIZE = 2800
+Game of Life : 2600 x 2600, 2800 time steps
+Naive Loop: consumed time :63303.6ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 2800 2800'
+life_parallel_loop 2800 2800
++ ./life_pl 2800 2800
+N_SIZE = 2800, T_SIZE = 2800
+Game of Life : 2800 x 2800, 2800 time steps
+Naive Loop: consumed time :72596.1ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 3000 2800'
+life_parallel_loop 3000 2800
++ ./life_pl 3000 2800
+N_SIZE = 3000, T_SIZE = 2800
+Game of Life : 3000 x 3000, 2800 time steps
+Naive Loop: consumed time :82810.9ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 3200 2800'
+life_parallel_loop 3200 2800
++ ./life_pl 3200 2800
+N_SIZE = 3200, T_SIZE = 2800
+Game of Life : 3200 x 3200, 2800 time steps
+Naive Loop: consumed time :93507.8ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ (( step += 200 ))
++ (( step <= 3200 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 200 3000'
+life_parallel_loop 200 3000
++ ./life_pl 200 3000
+N_SIZE = 200, T_SIZE = 3000
+Game of Life : 200 x 200, 3000 time steps
+Naive Loop: consumed time :613.031ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 400 3000'
+life_parallel_loop 400 3000
++ ./life_pl 400 3000
+N_SIZE = 400, T_SIZE = 3000
+Game of Life : 400 x 400, 3000 time steps
+Naive Loop: consumed time :2189.34ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 600 3000'
+life_parallel_loop 600 3000
++ ./life_pl 600 3000
+N_SIZE = 600, T_SIZE = 3000
+Game of Life : 600 x 600, 3000 time steps
+Naive Loop: consumed time :4725.58ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 800 3000'
+life_parallel_loop 800 3000
++ ./life_pl 800 3000
+N_SIZE = 800, T_SIZE = 3000
+Game of Life : 800 x 800, 3000 time steps
+Naive Loop: consumed time :8026.91ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 1000 3000'
+life_parallel_loop 1000 3000
++ ./life_pl 1000 3000
+N_SIZE = 1000, T_SIZE = 3000
+Game of Life : 1000 x 1000, 3000 time steps
+Naive Loop: consumed time :11744.2ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 1200 3000'
+life_parallel_loop 1200 3000
++ ./life_pl 1200 3000
+N_SIZE = 1200, T_SIZE = 3000
+Game of Life : 1200 x 1200, 3000 time steps
+Naive Loop: consumed time :16150.8ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 1400 3000'
+life_parallel_loop 1400 3000
++ ./life_pl 1400 3000
+N_SIZE = 1400, T_SIZE = 3000
+Game of Life : 1400 x 1400, 3000 time steps
+Naive Loop: consumed time :21310ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 1600 3000'
+life_parallel_loop 1600 3000
++ ./life_pl 1600 3000
+N_SIZE = 1600, T_SIZE = 3000
+Game of Life : 1600 x 1600, 3000 time steps
+Naive Loop: consumed time :27248.3ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 1800 3000'
+life_parallel_loop 1800 3000
++ ./life_pl 1800 3000
+N_SIZE = 1800, T_SIZE = 3000
+Game of Life : 1800 x 1800, 3000 time steps
+Naive Loop: consumed time :33961ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 2000 3000'
+life_parallel_loop 2000 3000
++ ./life_pl 2000 3000
+N_SIZE = 2000, T_SIZE = 3000
+Game of Life : 2000 x 2000, 3000 time steps
+Naive Loop: consumed time :41478ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 2200 3000'
+life_parallel_loop 2200 3000
++ ./life_pl 2200 3000
+N_SIZE = 2200, T_SIZE = 3000
+Game of Life : 2200 x 2200, 3000 time steps
+Naive Loop: consumed time :50080.2ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 2400 3000'
+life_parallel_loop 2400 3000
++ ./life_pl 2400 3000
+N_SIZE = 2400, T_SIZE = 3000
+Game of Life : 2400 x 2400, 3000 time steps
+Naive Loop: consumed time :58454.2ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 2600 3000'
+life_parallel_loop 2600 3000
++ ./life_pl 2600 3000
+N_SIZE = 2600, T_SIZE = 3000
+Game of Life : 2600 x 2600, 3000 time steps
+Naive Loop: consumed time :67843.1ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 2800 3000'
+life_parallel_loop 2800 3000
++ ./life_pl 2800 3000
+N_SIZE = 2800, T_SIZE = 3000
+Game of Life : 2800 x 2800, 3000 time steps
+Naive Loop: consumed time :77737.2ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 3000 3000'
+life_parallel_loop 3000 3000
++ ./life_pl 3000 3000
+N_SIZE = 3000, T_SIZE = 3000
+Game of Life : 3000 x 3000, 3000 time steps
+Naive Loop: consumed time :88773.7ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 3200 3000'
+life_parallel_loop 3200 3000
++ ./life_pl 3200 3000
+N_SIZE = 3200, T_SIZE = 3000
+Game of Life : 3200 x 3200, 3000 time steps
+Naive Loop: consumed time :100167ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ (( step += 200 ))
++ (( step <= 3200 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 200 3200'
+life_parallel_loop 200 3200
++ ./life_pl 200 3200
+N_SIZE = 200, T_SIZE = 3200
+Game of Life : 200 x 200, 3200 time steps
+Naive Loop: consumed time :652.706ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 400 3200'
+life_parallel_loop 400 3200
++ ./life_pl 400 3200
+N_SIZE = 400, T_SIZE = 3200
+Game of Life : 400 x 400, 3200 time steps
+Naive Loop: consumed time :2286.93ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 600 3200'
+life_parallel_loop 600 3200
++ ./life_pl 600 3200
+N_SIZE = 600, T_SIZE = 3200
+Game of Life : 600 x 600, 3200 time steps
+Naive Loop: consumed time :4740.94ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 800 3200'
+life_parallel_loop 800 3200
++ ./life_pl 800 3200
+N_SIZE = 800, T_SIZE = 3200
+Game of Life : 800 x 800, 3200 time steps
+Naive Loop: consumed time :8514.58ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 1000 3200'
+life_parallel_loop 1000 3200
++ ./life_pl 1000 3200
+N_SIZE = 1000, T_SIZE = 3200
+Game of Life : 1000 x 1000, 3200 time steps
+Naive Loop: consumed time :12570.3ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 1200 3200'
+life_parallel_loop 1200 3200
++ ./life_pl 1200 3200
+N_SIZE = 1200, T_SIZE = 3200
+Game of Life : 1200 x 1200, 3200 time steps
+Naive Loop: consumed time :17372.1ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 1400 3200'
+life_parallel_loop 1400 3200
++ ./life_pl 1400 3200
+N_SIZE = 1400, T_SIZE = 3200
+Game of Life : 1400 x 1400, 3200 time steps
+Naive Loop: consumed time :22879.6ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 1600 3200'
+life_parallel_loop 1600 3200
++ ./life_pl 1600 3200
+N_SIZE = 1600, T_SIZE = 3200
+Game of Life : 1600 x 1600, 3200 time steps
+Naive Loop: consumed time :29260.6ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 1800 3200'
+life_parallel_loop 1800 3200
++ ./life_pl 1800 3200
+N_SIZE = 1800, T_SIZE = 3200
+Game of Life : 1800 x 1800, 3200 time steps
+Naive Loop: consumed time :36142.4ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 2000 3200'
+life_parallel_loop 2000 3200
++ ./life_pl 2000 3200
+N_SIZE = 2000, T_SIZE = 3200
+Game of Life : 2000 x 2000, 3200 time steps
+Naive Loop: consumed time :44258.7ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 2200 3200'
+life_parallel_loop 2200 3200
++ ./life_pl 2200 3200
+N_SIZE = 2200, T_SIZE = 3200
+Game of Life : 2200 x 2200, 3200 time steps
+Naive Loop: consumed time :53225.8ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 2400 3200'
+life_parallel_loop 2400 3200
++ ./life_pl 2400 3200
+N_SIZE = 2400, T_SIZE = 3200
+Game of Life : 2400 x 2400, 3200 time steps
+Naive Loop: consumed time :62309.9ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 2600 3200'
+life_parallel_loop 2600 3200
++ ./life_pl 2600 3200
+N_SIZE = 2600, T_SIZE = 3200
+Game of Life : 2600 x 2600, 3200 time steps
+Naive Loop: consumed time :72282.6ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 2800 3200'
+life_parallel_loop 2800 3200
++ ./life_pl 2800 3200
+N_SIZE = 2800, T_SIZE = 3200
+Game of Life : 2800 x 2800, 3200 time steps
+Naive Loop: consumed time :82847.8ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 3000 3200'
+life_parallel_loop 3000 3200
++ ./life_pl 3000 3200
+N_SIZE = 3000, T_SIZE = 3200
+Game of Life : 3000 x 3000, 3200 time steps
+Naive Loop: consumed time :94735.4ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 3200 3200'
+life_parallel_loop 3200 3200
++ ./life_pl 3200 3200
+N_SIZE = 3200, T_SIZE = 3200
+Game of Life : 3200 x 3200, 3200 time steps
+Naive Loop: consumed time :106727ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ (( step += 200 ))
++ (( step <= 3200 ))
+

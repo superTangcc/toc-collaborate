@@ -1,0 +1,26 @@
+load('coarsen_3D_0.mdat', '-ascii');
+%load('heat_3D_0_P_hotPar_3D_0_pl.mdat', '-ascii');
+%load('heat_3D_0_P_hotPar_3D_0_pochoir.mdat', '-ascii');
+% load('heat_3D_0_P_hotPar_3D_0_pochoir_bt.mdat', '-ascii');
+size = coarsen_3D_0(:, 1);
+%y = [200:200:3200];
+z = (size .^ 2) .* 200;
+adaptive_10 = coarsen_3D_0(:, 2);
+adaptive_20 = coarsen_3D_0(:, 3);
+adaptive_40 = coarsen_3D_0(:, 4);
+adaptive_100 = coarsen_3D_0(:, 5);
+adaptive_5_10_10_600 = coarsen_3D_0(:, 6);
+
+%semilogy(z, z' ./ sLoop, 'gx-', z, z' ./ pLoop, 'b+-', z, z' ./ pochoir, 'ro-');
+%plot(z, z' ./ macro, 'gx-', z, z' ./ pointer, 'b+-', z, z' ./ optPointer, 'ro-');
+loglog(z, adaptive_10, 'bx-', z, adaptive_20, 'ro-', z, adaptive_40, 'md-', z, adaptive_100, 'ch-', z, adaptive_5_10_10_600, 'm>-');
+xlabel('Grid Points');
+ylabel('execution time in ms');
+legend('Adaptive 10', 'Adaptive 20', 'Adaptive 40', 'Adaptive 100', 'Adaptive with prefetching');
+grid off;
+% hold on;
+% plot(x, y_parallel_for ./ y_iter);
+% hold on;
+% plot(x, pfor1 ./ pointer, x, pfor2 ./ iter, x, pfor1 ./ macro);
+% hold on;
+% plot(x, pfor2 ./ iter);

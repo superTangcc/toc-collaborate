@@ -1,0 +1,6 @@
+%size   seq_space_cut (Parallelism)  sim_space_cut (Parallelism)
+% Gridsize = size^3 * 1000
+100     23.03   27.70
+200     49.85   57.28
+400     137.90  160.82
+800     301.28  337.18

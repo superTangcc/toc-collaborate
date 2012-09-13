@@ -1,0 +1,2392 @@
++ (( step = 100 ))
++ (( step <= 1000 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 200 200 200 100'
+tb_3dfd_pochoir 200 200 200 100
++ ./tb_3dfd_pochoir 200 200 200 100
+Order-4 3D-Stencil (25 points) with space 200x200x200 and time 100
+N_CORES = 12
+++++++++++++++++++++ Serial Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 3.893807
+Perf: 181.772957 Mcells/sec (4726.096879 M-FAdd/s, 1272.410698 M-FMul/s)
+Perf per worker: 181.772957 Mcells/sec (4726.096879 M-FAdd/s, 1272.410698 M-FMul/s)
+
+N_CORES = 12
+++++++++++++++++++++ Parallel Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 0.948518
+Perf: 746.204892 Mcells/sec (19401.327193 M-FAdd/s, 5223.434244 M-FMul/s)
+Perf per worker: 746.204892 Mcells/sec (19401.327193 M-FAdd/s, 5223.434244 M-FMul/s)
+
+++++++++++++++++++++ Pochoir ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 0.538280
+Perf: 1314.908201 Mcells/sec (34187.613232 M-FAdd/s, 9204.357409 M-FMul/s)
+Perf per worker: 1314.908201 Mcells/sec (34187.613232 M-FAdd/s, 9204.357409 M-FMul/s)
+
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 400 400 400 100'
+tb_3dfd_pochoir 400 400 400 100
++ ./tb_3dfd_pochoir 400 400 400 100
+Order-4 3D-Stencil (25 points) with space 400x400x400 and time 100
+N_CORES = 12
+++++++++++++++++++++ Serial Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 31.197063
+Perf: 193.083200 Mcells/sec (5020.163204 M-FAdd/s, 1351.582401 M-FMul/s)
+Perf per worker: 193.083200 Mcells/sec (5020.163204 M-FAdd/s, 1351.582401 M-FMul/s)
+
+N_CORES = 12
+++++++++++++++++++++ Parallel Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 14.042967
+Perf: 428.942742 Mcells/sec (11152.511282 M-FAdd/s, 3002.599191 M-FMul/s)
+Perf per worker: 428.942742 Mcells/sec (11152.511282 M-FAdd/s, 3002.599191 M-FMul/s)
+
+++++++++++++++++++++ Pochoir ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 5.029557
+Perf: 1197.645998 Mcells/sec (31138.795946 M-FAdd/s, 8383.521985 M-FMul/s)
+Perf per worker: 1197.645998 Mcells/sec (31138.795946 M-FAdd/s, 8383.521985 M-FMul/s)
+
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 600 600 600 100'
+tb_3dfd_pochoir 600 600 600 100
++ ./tb_3dfd_pochoir 600 600 600 100
+Order-4 3D-Stencil (25 points) with space 600x600x600 and time 100
+N_CORES = 12
+++++++++++++++++++++ Serial Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 119.590357
+Perf: 173.487807 Mcells/sec (4510.682985 M-FAdd/s, 1214.414650 M-FMul/s)
+Perf per worker: 173.487807 Mcells/sec (4510.682985 M-FAdd/s, 1214.414650 M-FMul/s)
+
+N_CORES = 12
+++++++++++++++++++++ Parallel Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 49.089474
+Perf: 422.645979 Mcells/sec (10988.795464 M-FAdd/s, 2958.521856 M-FMul/s)
+Perf per worker: 422.645979 Mcells/sec (10988.795464 M-FAdd/s, 2958.521856 M-FMul/s)
+
+++++++++++++++++++++ Pochoir ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 19.139081
+Perf: 1084.036835 Mcells/sec (28184.957719 M-FAdd/s, 7588.257847 M-FMul/s)
+Perf per worker: 1084.036835 Mcells/sec (28184.957719 M-FAdd/s, 7588.257847 M-FMul/s)
+
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 800 800 800 100'
+tb_3dfd_pochoir 800 800 800 100
++ ./tb_3dfd_pochoir 800 800 800 100
+Order-4 3D-Stencil (25 points) with space 800x800x800 and time 100
+N_CORES = 12
+++++++++++++++++++++ Serial Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 307.901582
+Perf: 161.348014 Mcells/sec (4195.048367 M-FAdd/s, 1129.436099 M-FMul/s)
+Perf per worker: 161.348014 Mcells/sec (4195.048367 M-FAdd/s, 1129.436099 M-FMul/s)
+
+N_CORES = 12
+++++++++++++++++++++ Parallel Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 118.161060
+Perf: 420.437230 Mcells/sec (10931.367980 M-FAdd/s, 2943.060610 M-FMul/s)
+Perf per worker: 420.437230 Mcells/sec (10931.367980 M-FAdd/s, 2943.060610 M-FMul/s)
+
+++++++++++++++++++++ Pochoir ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 48.382366
+Perf: 1026.806107 Mcells/sec (26696.958771 M-FAdd/s, 7187.642746 M-FMul/s)
+Perf per worker: 1026.806107 Mcells/sec (26696.958771 M-FAdd/s, 7187.642746 M-FMul/s)
+
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 1000 1000 1000 100'
+tb_3dfd_pochoir 1000 1000 1000 100
++ ./tb_3dfd_pochoir 1000 1000 1000 100
+Order-4 3D-Stencil (25 points) with space 1000x1000x1000 and time 100
+N_CORES = 12
+++++++++++++++++++++ Serial Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 572.657062
+Perf: 170.467030 Mcells/sec (4432.142790 M-FAdd/s, 1193.269213 M-FMul/s)
+Perf per worker: 170.467030 Mcells/sec (4432.142790 M-FAdd/s, 1193.269213 M-FMul/s)
+
+N_CORES = 12
+++++++++++++++++++++ Parallel Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 233.468133
+Perf: 418.126224 Mcells/sec (10871.281817 M-FAdd/s, 2926.883566 M-FMul/s)
+Perf per worker: 418.126224 Mcells/sec (10871.281817 M-FAdd/s, 2926.883566 M-FMul/s)
+
+++++++++++++++++++++ Pochoir ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 97.787331
+Perf: 998.280122 Mcells/sec (25955.283165 M-FAdd/s, 6987.960852 M-FMul/s)
+Perf per worker: 998.280122 Mcells/sec (25955.283165 M-FAdd/s, 6987.960852 M-FMul/s)
+
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 1200 1200 1200 100'
+tb_3dfd_pochoir 1200 1200 1200 100
++ ./tb_3dfd_pochoir 1200 1200 1200 100
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 1200x1200x1200 and time 100
+./run_hotPar.sh: line 148: 11869 Aborted                 ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 1400 1400 1400 100'
+tb_3dfd_pochoir 1400 1400 1400 100
++ ./tb_3dfd_pochoir 1400 1400 1400 100
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 1400x1400x1400 and time 100
+./run_hotPar.sh: line 148: 11870 Aborted                 ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 1600 1600 1600 100'
+tb_3dfd_pochoir 1600 1600 1600 100
++ ./tb_3dfd_pochoir 1600 1600 1600 100
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 1600x1600x1600 and time 100
+./run_hotPar.sh: line 148: 11871 Aborted                 ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 1800 1800 1800 100'
+tb_3dfd_pochoir 1800 1800 1800 100
++ ./tb_3dfd_pochoir 1800 1800 1800 100
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 1800x1800x1800 and time 100
+./run_hotPar.sh: line 148: 11872 Aborted                 ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 2000 2000 2000 100'
+tb_3dfd_pochoir 2000 2000 2000 100
++ ./tb_3dfd_pochoir 2000 2000 2000 100
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 2000x2000x2000 and time 100
+./run_hotPar.sh: line 148: 11873 Aborted                 ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 2200 2200 2200 100'
+tb_3dfd_pochoir 2200 2200 2200 100
++ ./tb_3dfd_pochoir 2200 2200 2200 100
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 2200x2200x2200 and time 100
+./run_hotPar.sh: line 148: 11874 Aborted                 ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 2400 2400 2400 100'
+tb_3dfd_pochoir 2400 2400 2400 100
++ ./tb_3dfd_pochoir 2400 2400 2400 100
+./run_hotPar.sh: line 148: 11875 Segmentation fault      ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 2600 2600 2600 100'
+tb_3dfd_pochoir 2600 2600 2600 100
++ ./tb_3dfd_pochoir 2600 2600 2600 100
+./run_hotPar.sh: line 148: 11877 Segmentation fault      ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 2800 2800 2800 100'
+tb_3dfd_pochoir 2800 2800 2800 100
++ ./tb_3dfd_pochoir 2800 2800 2800 100
+./run_hotPar.sh: line 148: 11878 Segmentation fault      ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 3000 3000 3000 100'
+tb_3dfd_pochoir 3000 3000 3000 100
++ ./tb_3dfd_pochoir 3000 3000 3000 100
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 3000x3000x3000 and time 100
+./run_hotPar.sh: line 148: 11879 Aborted                 ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 3200 3200 3200 100'
+tb_3dfd_pochoir 3200 3200 3200 100
++ ./tb_3dfd_pochoir 3200 3200 3200 100
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 3200x3200x3200 and time 100
+./run_hotPar.sh: line 148: 11880 Aborted                 ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ (( step += 100 ))
++ (( step <= 1000 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 200 200 200 200'
+tb_3dfd_pochoir 200 200 200 200
++ ./tb_3dfd_pochoir 200 200 200 200
+Order-4 3D-Stencil (25 points) with space 200x200x200 and time 200
+N_CORES = 12
+++++++++++++++++++++ Serial Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 7.785744
+Perf: 181.816614 Mcells/sec (4727.231955 M-FAdd/s, 1272.716295 M-FMul/s)
+Perf per worker: 181.816614 Mcells/sec (4727.231955 M-FAdd/s, 1272.716295 M-FMul/s)
+
+N_CORES = 12
+++++++++++++++++++++ Parallel Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 1.852112
+Perf: 764.304512 Mcells/sec (19871.917309 M-FAdd/s, 5350.131583 M-FMul/s)
+Perf per worker: 764.304512 Mcells/sec (19871.917309 M-FAdd/s, 5350.131583 M-FMul/s)
+
+++++++++++++++++++++ Pochoir ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 1.051531
+Perf: 1346.206148 Mcells/sec (35001.359850 M-FAdd/s, 9423.443037 M-FMul/s)
+Perf per worker: 1346.206148 Mcells/sec (35001.359850 M-FAdd/s, 9423.443037 M-FMul/s)
+
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 400 400 400 200'
+tb_3dfd_pochoir 400 400 400 200
++ ./tb_3dfd_pochoir 400 400 400 200
+Order-4 3D-Stencil (25 points) with space 400x400x400 and time 200
+N_CORES = 12
+++++++++++++++++++++ Serial Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 62.379079
+Perf: 193.129776 Mcells/sec (5021.374187 M-FAdd/s, 1351.908435 M-FMul/s)
+Perf per worker: 193.129776 Mcells/sec (5021.374187 M-FAdd/s, 1351.908435 M-FMul/s)
+
+N_CORES = 12
+++++++++++++++++++++ Parallel Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 28.063167
+Perf: 429.290734 Mcells/sec (11161.559083 M-FAdd/s, 3005.035138 M-FMul/s)
+Perf per worker: 429.290734 Mcells/sec (11161.559083 M-FAdd/s, 3005.035138 M-FMul/s)
+
+++++++++++++++++++++ Pochoir ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 10.052782
+Perf: 1198.400356 Mcells/sec (31158.409261 M-FAdd/s, 8388.802493 M-FMul/s)
+Perf per worker: 1198.400356 Mcells/sec (31158.409261 M-FAdd/s, 8388.802493 M-FMul/s)
+
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 600 600 600 200'
+tb_3dfd_pochoir 600 600 600 200
++ ./tb_3dfd_pochoir 600 600 600 200
+Order-4 3D-Stencil (25 points) with space 600x600x600 and time 200
+N_CORES = 12
+++++++++++++++++++++ Serial Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 238.107880
+Perf: 174.269485 Mcells/sec (4531.006605 M-FAdd/s, 1219.886394 M-FMul/s)
+Perf per worker: 174.269485 Mcells/sec (4531.006605 M-FAdd/s, 1219.886394 M-FMul/s)
+
+N_CORES = 12
+++++++++++++++++++++ Parallel Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 98.394014
+Perf: 421.722175 Mcells/sec (10964.776539 M-FAdd/s, 2952.055222 M-FMul/s)
+Perf per worker: 421.722175 Mcells/sec (10964.776539 M-FAdd/s, 2952.055222 M-FMul/s)
+
+++++++++++++++++++++ Pochoir ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 38.461142
+Perf: 1078.879497 Mcells/sec (28050.866920 M-FAdd/s, 7552.156478 M-FMul/s)
+Perf per worker: 1078.879497 Mcells/sec (28050.866920 M-FAdd/s, 7552.156478 M-FMul/s)
+
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 800 800 800 200'
+tb_3dfd_pochoir 800 800 800 200
++ ./tb_3dfd_pochoir 800 800 800 200
+Order-4 3D-Stencil (25 points) with space 800x800x800 and time 200
+N_CORES = 12
+++++++++++++++++++++ Serial Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 616.341593
+Perf: 161.207062 Mcells/sec (4191.383620 M-FAdd/s, 1128.449436 M-FMul/s)
+Perf per worker: 161.207062 Mcells/sec (4191.383620 M-FAdd/s, 1128.449436 M-FMul/s)
+
+N_CORES = 12
+++++++++++++++++++++ Parallel Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 236.761236
+Perf: 419.657454 Mcells/sec (10911.093806 M-FAdd/s, 2937.602178 M-FMul/s)
+Perf per worker: 419.657454 Mcells/sec (10911.093806 M-FAdd/s, 2937.602178 M-FMul/s)
+
+++++++++++++++++++++ Pochoir ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 96.741229
+Perf: 1027.055564 Mcells/sec (26703.444672 M-FAdd/s, 7189.388950 M-FMul/s)
+Perf per worker: 1027.055564 Mcells/sec (26703.444672 M-FAdd/s, 7189.388950 M-FMul/s)
+
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 1000 1000 1000 200'
+tb_3dfd_pochoir 1000 1000 1000 200
++ ./tb_3dfd_pochoir 1000 1000 1000 200
+Order-4 3D-Stencil (25 points) with space 1000x1000x1000 and time 200
+N_CORES = 12
+++++++++++++++++++++ Serial Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 1150.437057
+Perf: 169.707935 Mcells/sec (4412.406317 M-FAdd/s, 1187.955547 M-FMul/s)
+Perf per worker: 169.707935 Mcells/sec (4412.406317 M-FAdd/s, 1187.955547 M-FMul/s)
+
+N_CORES = 12
+++++++++++++++++++++ Parallel Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 467.363032
+Perf: 417.744417 Mcells/sec (10861.354855 M-FAdd/s, 2924.210922 M-FMul/s)
+Perf per worker: 417.744417 Mcells/sec (10861.354855 M-FAdd/s, 2924.210922 M-FMul/s)
+
+++++++++++++++++++++ Pochoir ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 195.632148
+Perf: 997.986781 Mcells/sec (25947.656297 M-FAdd/s, 6985.907464 M-FMul/s)
+Perf per worker: 997.986781 Mcells/sec (25947.656297 M-FAdd/s, 6985.907464 M-FMul/s)
+
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 1200 1200 1200 200'
+tb_3dfd_pochoir 1200 1200 1200 200
++ ./tb_3dfd_pochoir 1200 1200 1200 200
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 1200x1200x1200 and time 200
+./run_hotPar.sh: line 148: 12910 Aborted                 ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 1400 1400 1400 200'
+tb_3dfd_pochoir 1400 1400 1400 200
++ ./tb_3dfd_pochoir 1400 1400 1400 200
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 1400x1400x1400 and time 200
+./run_hotPar.sh: line 148: 12911 Aborted                 ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 1600 1600 1600 200'
+tb_3dfd_pochoir 1600 1600 1600 200
++ ./tb_3dfd_pochoir 1600 1600 1600 200
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 1600x1600x1600 and time 200
+./run_hotPar.sh: line 148: 12912 Aborted                 ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 1800 1800 1800 200'
+tb_3dfd_pochoir 1800 1800 1800 200
++ ./tb_3dfd_pochoir 1800 1800 1800 200
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 1800x1800x1800 and time 200
+./run_hotPar.sh: line 148: 12913 Aborted                 ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 2000 2000 2000 200'
+tb_3dfd_pochoir 2000 2000 2000 200
++ ./tb_3dfd_pochoir 2000 2000 2000 200
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 2000x2000x2000 and time 200
+./run_hotPar.sh: line 148: 12914 Aborted                 ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 2200 2200 2200 200'
+tb_3dfd_pochoir 2200 2200 2200 200
++ ./tb_3dfd_pochoir 2200 2200 2200 200
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 2200x2200x2200 and time 200
+./run_hotPar.sh: line 148: 12915 Aborted                 ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 2400 2400 2400 200'
+tb_3dfd_pochoir 2400 2400 2400 200
++ ./tb_3dfd_pochoir 2400 2400 2400 200
+./run_hotPar.sh: line 148: 12916 Segmentation fault      ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 2600 2600 2600 200'
+tb_3dfd_pochoir 2600 2600 2600 200
++ ./tb_3dfd_pochoir 2600 2600 2600 200
+./run_hotPar.sh: line 148: 12918 Segmentation fault      ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 2800 2800 2800 200'
+tb_3dfd_pochoir 2800 2800 2800 200
++ ./tb_3dfd_pochoir 2800 2800 2800 200
+./run_hotPar.sh: line 148: 12920 Segmentation fault      ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 3000 3000 3000 200'
+tb_3dfd_pochoir 3000 3000 3000 200
++ ./tb_3dfd_pochoir 3000 3000 3000 200
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 3000x3000x3000 and time 200
+./run_hotPar.sh: line 148: 12921 Aborted                 ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 3200 3200 3200 200'
+tb_3dfd_pochoir 3200 3200 3200 200
++ ./tb_3dfd_pochoir 3200 3200 3200 200
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 3200x3200x3200 and time 200
+./run_hotPar.sh: line 148: 12922 Aborted                 ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ (( step += 100 ))
++ (( step <= 1000 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 200 200 200 300'
+tb_3dfd_pochoir 200 200 200 300
++ ./tb_3dfd_pochoir 200 200 200 300
+Order-4 3D-Stencil (25 points) with space 200x200x200 and time 300
+N_CORES = 12
+++++++++++++++++++++ Serial Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 11.680823
+Perf: 181.782258 Mcells/sec (4726.338717 M-FAdd/s, 1272.475808 M-FMul/s)
+Perf per worker: 181.782258 Mcells/sec (4726.338717 M-FAdd/s, 1272.475808 M-FMul/s)
+
+N_CORES = 12
+++++++++++++++++++++ Parallel Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 2.820774
+Perf: 752.760179 Mcells/sec (19571.764653 M-FAdd/s, 5269.321253 M-FMul/s)
+Perf per worker: 752.760179 Mcells/sec (19571.764653 M-FAdd/s, 5269.321253 M-FMul/s)
+
+++++++++++++++++++++ Pochoir ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 1.689469
+Perf: 1256.824822 Mcells/sec (32677.445372 M-FAdd/s, 8797.773754 M-FMul/s)
+Perf per worker: 1256.824822 Mcells/sec (32677.445372 M-FAdd/s, 8797.773754 M-FMul/s)
+
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 400 400 400 300'
+tb_3dfd_pochoir 400 400 400 300
++ ./tb_3dfd_pochoir 400 400 400 300
+Order-4 3D-Stencil (25 points) with space 400x400x400 and time 300
+N_CORES = 12
+++++++++++++++++++++ Serial Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 94.737116
+Perf: 190.747694 Mcells/sec (4959.440048 M-FAdd/s, 1335.233859 M-FMul/s)
+Perf per worker: 190.747694 Mcells/sec (4959.440048 M-FAdd/s, 1335.233859 M-FMul/s)
+
+N_CORES = 12
+++++++++++++++++++++ Parallel Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 42.095935
+Perf: 429.278657 Mcells/sec (11161.245091 M-FAdd/s, 3004.950601 M-FMul/s)
+Perf per worker: 429.278657 Mcells/sec (11161.245091 M-FAdd/s, 3004.950601 M-FMul/s)
+
+++++++++++++++++++++ Pochoir ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 16.230197
+Perf: 1113.411405 Mcells/sec (28948.696542 M-FAdd/s, 7793.879838 M-FMul/s)
+Perf per worker: 1113.411405 Mcells/sec (28948.696542 M-FAdd/s, 7793.879838 M-FMul/s)
+
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 600 600 600 300'
+tb_3dfd_pochoir 600 600 600 300
++ ./tb_3dfd_pochoir 600 600 600 300
+Order-4 3D-Stencil (25 points) with space 600x600x600 and time 300
+N_CORES = 12
+++++++++++++++++++++ Serial Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 358.950744
+Perf: 173.400968 Mcells/sec (4508.425164 M-FAdd/s, 1213.806775 M-FMul/s)
+Perf per worker: 173.400968 Mcells/sec (4508.425164 M-FAdd/s, 1213.806775 M-FMul/s)
+
+N_CORES = 12
+++++++++++++++++++++ Parallel Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 147.341472
+Perf: 422.436437 Mcells/sec (10983.347359 M-FAdd/s, 2957.055058 M-FMul/s)
+Perf per worker: 422.436437 Mcells/sec (10983.347359 M-FAdd/s, 2957.055058 M-FMul/s)
+
+++++++++++++++++++++ Pochoir ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 58.453187
+Perf: 1064.824856 Mcells/sec (27685.446248 M-FAdd/s, 7453.773990 M-FMul/s)
+Perf per worker: 1064.824856 Mcells/sec (27685.446248 M-FAdd/s, 7453.773990 M-FMul/s)
+
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 800 800 800 300'
+tb_3dfd_pochoir 800 800 800 300
++ ./tb_3dfd_pochoir 800 800 800 300
+Order-4 3D-Stencil (25 points) with space 800x800x800 and time 300
+N_CORES = 12
+++++++++++++++++++++ Serial Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 925.195637
+Perf: 161.088013 Mcells/sec (4188.288327 M-FAdd/s, 1127.616088 M-FMul/s)
+Perf per worker: 161.088013 Mcells/sec (4188.288327 M-FAdd/s, 1127.616088 M-FMul/s)
+
+N_CORES = 12
+++++++++++++++++++++ Parallel Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 352.864045
+Perf: 422.366429 Mcells/sec (10981.527142 M-FAdd/s, 2956.565000 M-FMul/s)
+Perf per worker: 422.366429 Mcells/sec (10981.527142 M-FAdd/s, 2956.565000 M-FMul/s)
+
+++++++++++++++++++++ Pochoir ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 147.696800
+Perf: 1009.080267 Mcells/sec (26236.086947 M-FAdd/s, 7063.561870 M-FMul/s)
+Perf per worker: 1009.080267 Mcells/sec (26236.086947 M-FAdd/s, 7063.561870 M-FMul/s)
+
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 1000 1000 1000 300'
+tb_3dfd_pochoir 1000 1000 1000 300
++ ./tb_3dfd_pochoir 1000 1000 1000 300
+Order-4 3D-Stencil (25 points) with space 1000x1000x1000 and time 300
+N_CORES = 12
+++++++++++++++++++++ Serial Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 1771.876549
+Perf: 165.280954 Mcells/sec (4297.304804 M-FAdd/s, 1156.966678 M-FMul/s)
+Perf per worker: 165.280954 Mcells/sec (4297.304804 M-FAdd/s, 1156.966678 M-FMul/s)
+
+N_CORES = 12
+++++++++++++++++++++ Parallel Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 556.570677
+Perf: 526.181954 Mcells/sec (13680.730805 M-FAdd/s, 3683.273678 M-FMul/s)
+Perf per worker: 526.181954 Mcells/sec (13680.730805 M-FAdd/s, 3683.273678 M-FMul/s)
+
+++++++++++++++++++++ Pochoir ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 280.670138
+Perf: 1043.422177 Mcells/sec (27128.976612 M-FAdd/s, 7303.955242 M-FMul/s)
+Perf per worker: 1043.422177 Mcells/sec (27128.976612 M-FAdd/s, 7303.955242 M-FMul/s)
+
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 1200 1200 1200 300'
+tb_3dfd_pochoir 1200 1200 1200 300
++ ./tb_3dfd_pochoir 1200 1200 1200 300
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 1200x1200x1200 and time 300
+./run_hotPar.sh: line 148: 13950 Aborted                 ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 1400 1400 1400 300'
+tb_3dfd_pochoir 1400 1400 1400 300
++ ./tb_3dfd_pochoir 1400 1400 1400 300
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 1400x1400x1400 and time 300
+./run_hotPar.sh: line 148: 13951 Aborted                 ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 1600 1600 1600 300'
+tb_3dfd_pochoir 1600 1600 1600 300
++ ./tb_3dfd_pochoir 1600 1600 1600 300
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 1600x1600x1600 and time 300
+./run_hotPar.sh: line 148: 13952 Aborted                 ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 1800 1800 1800 300'
+tb_3dfd_pochoir 1800 1800 1800 300
++ ./tb_3dfd_pochoir 1800 1800 1800 300
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 1800x1800x1800 and time 300
+./run_hotPar.sh: line 148: 13953 Aborted                 ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 2000 2000 2000 300'
+tb_3dfd_pochoir 2000 2000 2000 300
++ ./tb_3dfd_pochoir 2000 2000 2000 300
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 2000x2000x2000 and time 300
+./run_hotPar.sh: line 148: 13954 Aborted                 ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 2200 2200 2200 300'
+tb_3dfd_pochoir 2200 2200 2200 300
++ ./tb_3dfd_pochoir 2200 2200 2200 300
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 2200x2200x2200 and time 300
+./run_hotPar.sh: line 148: 13955 Aborted                 ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 2400 2400 2400 300'
+tb_3dfd_pochoir 2400 2400 2400 300
++ ./tb_3dfd_pochoir 2400 2400 2400 300
+./run_hotPar.sh: line 148: 13956 Segmentation fault      ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 2600 2600 2600 300'
+tb_3dfd_pochoir 2600 2600 2600 300
++ ./tb_3dfd_pochoir 2600 2600 2600 300
+./run_hotPar.sh: line 148: 13958 Segmentation fault      ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 2800 2800 2800 300'
+tb_3dfd_pochoir 2800 2800 2800 300
++ ./tb_3dfd_pochoir 2800 2800 2800 300
+./run_hotPar.sh: line 148: 13960 Segmentation fault      ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 3000 3000 3000 300'
+tb_3dfd_pochoir 3000 3000 3000 300
++ ./tb_3dfd_pochoir 3000 3000 3000 300
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 3000x3000x3000 and time 300
+./run_hotPar.sh: line 148: 13961 Aborted                 ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 3200 3200 3200 300'
+tb_3dfd_pochoir 3200 3200 3200 300
++ ./tb_3dfd_pochoir 3200 3200 3200 300
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 3200x3200x3200 and time 300
+./run_hotPar.sh: line 148: 13962 Aborted                 ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ (( step += 100 ))
++ (( step <= 1000 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 200 200 200 400'
+tb_3dfd_pochoir 200 200 200 400
++ ./tb_3dfd_pochoir 200 200 200 400
+Order-4 3D-Stencil (25 points) with space 200x200x200 and time 400
+N_CORES = 12
+++++++++++++++++++++ Serial Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 15.574570
+Perf: 181.780634 Mcells/sec (4726.296487 M-FAdd/s, 1272.464439 M-FMul/s)
+Perf per worker: 181.780634 Mcells/sec (4726.296487 M-FAdd/s, 1272.464439 M-FMul/s)
+
+N_CORES = 12
+++++++++++++++++++++ Parallel Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 3.731727
+Perf: 758.671550 Mcells/sec (19725.460295 M-FAdd/s, 5310.700849 M-FMul/s)
+Perf per worker: 758.671550 Mcells/sec (19725.460295 M-FAdd/s, 5310.700849 M-FMul/s)
+
+++++++++++++++++++++ Pochoir ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 2.089341
+Perf: 1355.047023 Mcells/sec (35231.222589 M-FAdd/s, 9485.329158 M-FMul/s)
+Perf per worker: 1355.047023 Mcells/sec (35231.222589 M-FAdd/s, 9485.329158 M-FMul/s)
+
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 400 400 400 400'
+tb_3dfd_pochoir 400 400 400 400
++ ./tb_3dfd_pochoir 400 400 400 400
+Order-4 3D-Stencil (25 points) with space 400x400x400 and time 400
+N_CORES = 12
+++++++++++++++++++++ Serial Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 126.266540
+Perf: 190.822645 Mcells/sec (4961.388781 M-FAdd/s, 1335.758518 M-FMul/s)
+Perf per worker: 190.822645 Mcells/sec (4961.388781 M-FAdd/s, 1335.758518 M-FMul/s)
+
+N_CORES = 12
+++++++++++++++++++++ Parallel Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 55.981360
+Perf: 430.402463 Mcells/sec (11190.464034 M-FAdd/s, 3012.817240 M-FMul/s)
+Perf per worker: 430.402463 Mcells/sec (11190.464034 M-FAdd/s, 3012.817240 M-FMul/s)
+
+++++++++++++++++++++ Pochoir ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 20.159177
+Perf: 1195.213233 Mcells/sec (31075.544065 M-FAdd/s, 8366.492633 M-FMul/s)
+Perf per worker: 1195.213233 Mcells/sec (31075.544065 M-FAdd/s, 8366.492633 M-FMul/s)
+
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 600 600 600 400'
+tb_3dfd_pochoir 600 600 600 400
++ ./tb_3dfd_pochoir 600 600 600 400
+Order-4 3D-Stencil (25 points) with space 600x600x600 and time 400
+N_CORES = 12
+++++++++++++++++++++ Serial Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 478.717673
+Perf: 173.358704 Mcells/sec (4507.326294 M-FAdd/s, 1213.510925 M-FMul/s)
+Perf per worker: 173.358704 Mcells/sec (4507.326294 M-FAdd/s, 1213.510925 M-FMul/s)
+
+N_CORES = 12
+++++++++++++++++++++ Parallel Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 196.667160
+Perf: 421.981358 Mcells/sec (10971.515299 M-FAdd/s, 2953.869504 M-FMul/s)
+Perf per worker: 421.981358 Mcells/sec (10971.515299 M-FAdd/s, 2953.869504 M-FMul/s)
+
+++++++++++++++++++++ Pochoir ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 76.506741
+Perf: 1084.739385 Mcells/sec (28203.223999 M-FAdd/s, 7593.175692 M-FMul/s)
+Perf per worker: 1084.739385 Mcells/sec (28203.223999 M-FAdd/s, 7593.175692 M-FMul/s)
+
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 800 800 800 400'
+tb_3dfd_pochoir 800 800 800 400
++ ./tb_3dfd_pochoir 800 800 800 400
+Order-4 3D-Stencil (25 points) with space 800x800x800 and time 400
+N_CORES = 12
+++++++++++++++++++++ Serial Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 1231.439179
+Perf: 161.369915 Mcells/sec (4195.617781 M-FAdd/s, 1129.589403 M-FMul/s)
+Perf per worker: 161.369915 Mcells/sec (4195.617781 M-FAdd/s, 1129.589403 M-FMul/s)
+
+N_CORES = 12
+++++++++++++++++++++ Parallel Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 470.457908
+Perf: 422.391104 Mcells/sec (10982.168709 M-FAdd/s, 2956.737729 M-FMul/s)
+Perf per worker: 422.391104 Mcells/sec (10982.168709 M-FAdd/s, 2956.737729 M-FMul/s)
+
+++++++++++++++++++++ Pochoir ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 193.513796
+Perf: 1026.889242 Mcells/sec (26699.120300 M-FAdd/s, 7188.224696 M-FMul/s)
+Perf per worker: 1026.889242 Mcells/sec (26699.120300 M-FAdd/s, 7188.224696 M-FMul/s)
+
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 1000 1000 1000 400'
+tb_3dfd_pochoir 1000 1000 1000 400
++ ./tb_3dfd_pochoir 1000 1000 1000 400
+Order-4 3D-Stencil (25 points) with space 1000x1000x1000 and time 400
+N_CORES = 12
+++++++++++++++++++++ Serial Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 2291.452408
+Perf: 170.405719 Mcells/sec (4430.548695 M-FAdd/s, 1192.840033 M-FMul/s)
+Perf per worker: 170.405719 Mcells/sec (4430.548695 M-FAdd/s, 1192.840033 M-FMul/s)
+
+N_CORES = 12
+++++++++++++++++++++ Parallel Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 935.099475
+Perf: 417.577601 Mcells/sec (10857.017620 M-FAdd/s, 2923.043205 M-FMul/s)
+Perf per worker: 417.577601 Mcells/sec (10857.017620 M-FAdd/s, 2923.043205 M-FMul/s)
+
+++++++++++++++++++++ Pochoir ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 391.032924
+Perf: 998.577284 Mcells/sec (25963.009372 M-FAdd/s, 6990.040985 M-FMul/s)
+Perf per worker: 998.577284 Mcells/sec (25963.009372 M-FAdd/s, 6990.040985 M-FMul/s)
+
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 1200 1200 1200 400'
+tb_3dfd_pochoir 1200 1200 1200 400
++ ./tb_3dfd_pochoir 1200 1200 1200 400
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 1200x1200x1200 and time 400
+./run_hotPar.sh: line 148: 15870 Aborted                 ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 1400 1400 1400 400'
+tb_3dfd_pochoir 1400 1400 1400 400
++ ./tb_3dfd_pochoir 1400 1400 1400 400
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 1400x1400x1400 and time 400
+./run_hotPar.sh: line 148: 15871 Aborted                 ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 1600 1600 1600 400'
+tb_3dfd_pochoir 1600 1600 1600 400
++ ./tb_3dfd_pochoir 1600 1600 1600 400
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 1600x1600x1600 and time 400
+./run_hotPar.sh: line 148: 15872 Aborted                 ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 1800 1800 1800 400'
+tb_3dfd_pochoir 1800 1800 1800 400
++ ./tb_3dfd_pochoir 1800 1800 1800 400
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 1800x1800x1800 and time 400
+./run_hotPar.sh: line 148: 15873 Aborted                 ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 2000 2000 2000 400'
+tb_3dfd_pochoir 2000 2000 2000 400
++ ./tb_3dfd_pochoir 2000 2000 2000 400
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 2000x2000x2000 and time 400
+./run_hotPar.sh: line 148: 15874 Aborted                 ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 2200 2200 2200 400'
+tb_3dfd_pochoir 2200 2200 2200 400
++ ./tb_3dfd_pochoir 2200 2200 2200 400
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 2200x2200x2200 and time 400
+./run_hotPar.sh: line 148: 15875 Aborted                 ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 2400 2400 2400 400'
+tb_3dfd_pochoir 2400 2400 2400 400
++ ./tb_3dfd_pochoir 2400 2400 2400 400
+./run_hotPar.sh: line 148: 15876 Segmentation fault      ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 2600 2600 2600 400'
+tb_3dfd_pochoir 2600 2600 2600 400
++ ./tb_3dfd_pochoir 2600 2600 2600 400
+./run_hotPar.sh: line 148: 15878 Segmentation fault      ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 2800 2800 2800 400'
+tb_3dfd_pochoir 2800 2800 2800 400
++ ./tb_3dfd_pochoir 2800 2800 2800 400
+./run_hotPar.sh: line 148: 15880 Segmentation fault      ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 3000 3000 3000 400'
+tb_3dfd_pochoir 3000 3000 3000 400
++ ./tb_3dfd_pochoir 3000 3000 3000 400
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 3000x3000x3000 and time 400
+./run_hotPar.sh: line 148: 15881 Aborted                 ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 3200 3200 3200 400'
+tb_3dfd_pochoir 3200 3200 3200 400
++ ./tb_3dfd_pochoir 3200 3200 3200 400
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 3200x3200x3200 and time 400
+./run_hotPar.sh: line 148: 15882 Aborted                 ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ (( step += 100 ))
++ (( step <= 1000 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 200 200 200 500'
+tb_3dfd_pochoir 200 200 200 500
++ ./tb_3dfd_pochoir 200 200 200 500
+Order-4 3D-Stencil (25 points) with space 200x200x200 and time 500
+N_CORES = 12
+++++++++++++++++++++ Serial Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 19.459777
+Perf: 181.859431 Mcells/sec (4728.345214 M-FAdd/s, 1273.016019 M-FMul/s)
+Perf per worker: 181.859431 Mcells/sec (4728.345214 M-FAdd/s, 1273.016019 M-FMul/s)
+
+N_CORES = 12
+++++++++++++++++++++ Parallel Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 4.792344
+Perf: 738.457826 Mcells/sec (19199.903473 M-FAdd/s, 5169.204781 M-FMul/s)
+Perf per worker: 738.457826 Mcells/sec (19199.903473 M-FAdd/s, 5169.204781 M-FMul/s)
+
+++++++++++++++++++++ Pochoir ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 2.654958
+Perf: 1332.956675 Mcells/sec (34656.873541 M-FAdd/s, 9330.696723 M-FMul/s)
+Perf per worker: 1332.956675 Mcells/sec (34656.873541 M-FAdd/s, 9330.696723 M-FMul/s)
+
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 400 400 400 500'
+tb_3dfd_pochoir 400 400 400 500
++ ./tb_3dfd_pochoir 400 400 400 500
+Order-4 3D-Stencil (25 points) with space 400x400x400 and time 500
+N_CORES = 12
+++++++++++++++++++++ Serial Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 156.000303
+Perf: 193.064651 Mcells/sec (5019.680916 M-FAdd/s, 1351.452554 M-FMul/s)
+Perf per worker: 193.064651 Mcells/sec (5019.680916 M-FAdd/s, 1351.452554 M-FMul/s)
+
+N_CORES = 12
+++++++++++++++++++++ Parallel Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 70.058877
+Perf: 429.897613 Mcells/sec (11177.337942 M-FAdd/s, 3009.283292 M-FMul/s)
+Perf per worker: 429.897613 Mcells/sec (11177.337942 M-FAdd/s, 3009.283292 M-FMul/s)
+
+++++++++++++++++++++ Pochoir ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 24.743617
+Perf: 1217.208621 Mcells/sec (31647.424149 M-FAdd/s, 8520.460348 M-FMul/s)
+Perf per worker: 1217.208621 Mcells/sec (31647.424149 M-FAdd/s, 8520.460348 M-FMul/s)
+
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 600 600 600 500'
+tb_3dfd_pochoir 600 600 600 500
++ ./tb_3dfd_pochoir 600 600 600 500
+Order-4 3D-Stencil (25 points) with space 600x600x600 and time 500
+N_CORES = 12
+++++++++++++++++++++ Serial Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 598.177914
+Perf: 173.422224 Mcells/sec (4508.977816 M-FAdd/s, 1213.955566 M-FMul/s)
+Perf per worker: 173.422224 Mcells/sec (4508.977816 M-FAdd/s, 1213.955566 M-FMul/s)
+
+N_CORES = 12
+++++++++++++++++++++ Parallel Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 245.946277
+Perf: 421.788633 Mcells/sec (10966.504466 M-FAdd/s, 2952.520433 M-FMul/s)
+Perf per worker: 421.788633 Mcells/sec (10966.504466 M-FAdd/s, 2952.520433 M-FMul/s)
+
+++++++++++++++++++++ Pochoir ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 98.197292
+Perf: 1056.417563 Mcells/sec (27466.856637 M-FAdd/s, 7394.922941 M-FMul/s)
+Perf per worker: 1056.417563 Mcells/sec (27466.856637 M-FAdd/s, 7394.922941 M-FMul/s)
+
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 800 800 800 500'
+tb_3dfd_pochoir 800 800 800 500
++ ./tb_3dfd_pochoir 800 800 800 500
+Order-4 3D-Stencil (25 points) with space 800x800x800 and time 500
+N_CORES = 12
+++++++++++++++++++++ Serial Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 1540.581827
+Perf: 161.235541 Mcells/sec (4192.124060 M-FAdd/s, 1128.648785 M-FMul/s)
+Perf per worker: 161.235541 Mcells/sec (4192.124060 M-FAdd/s, 1128.648785 M-FMul/s)
+
+N_CORES = 12
+++++++++++++++++++++ Parallel Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 591.017173
+Perf: 420.286508 Mcells/sec (10927.449215 M-FAdd/s, 2942.005558 M-FMul/s)
+Perf per worker: 420.286508 Mcells/sec (10927.449215 M-FAdd/s, 2942.005558 M-FMul/s)
+
+++++++++++++++++++++ Pochoir ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 245.992980
+Perf: 1009.770864 Mcells/sec (26254.042469 M-FAdd/s, 7068.396049 M-FMul/s)
+Perf per worker: 1009.770864 Mcells/sec (26254.042469 M-FAdd/s, 7068.396049 M-FMul/s)
+
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 1000 1000 1000 500'
+tb_3dfd_pochoir 1000 1000 1000 500
++ ./tb_3dfd_pochoir 1000 1000 1000 500
+Order-4 3D-Stencil (25 points) with space 1000x1000x1000 and time 500
+N_CORES = 12
+++++++++++++++++++++ Serial Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 2876.266347
+Perf: 169.697686 Mcells/sec (4412.139841 M-FAdd/s, 1187.883803 M-FMul/s)
+Perf per worker: 169.697686 Mcells/sec (4412.139841 M-FAdd/s, 1187.883803 M-FMul/s)
+
+N_CORES = 12
+++++++++++++++++++++ Parallel Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 1167.837648
+Perf: 417.948287 Mcells/sec (10866.655452 M-FAdd/s, 2925.638006 M-FMul/s)
+Perf per worker: 417.948287 Mcells/sec (10866.655452 M-FAdd/s, 2925.638006 M-FMul/s)
+
+++++++++++++++++++++ Pochoir ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 498.023899
+Perf: 980.064902 Mcells/sec (25481.687460 M-FAdd/s, 6860.454316 M-FMul/s)
+Perf per worker: 980.064902 Mcells/sec (25481.687460 M-FAdd/s, 6860.454316 M-FMul/s)
+
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 1200 1200 1200 500'
+tb_3dfd_pochoir 1200 1200 1200 500
++ ./tb_3dfd_pochoir 1200 1200 1200 500
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 1200x1200x1200 and time 500
+./run_hotPar.sh: line 148: 17939 Aborted                 ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 1400 1400 1400 500'
+tb_3dfd_pochoir 1400 1400 1400 500
++ ./tb_3dfd_pochoir 1400 1400 1400 500
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 1400x1400x1400 and time 500
+./run_hotPar.sh: line 148: 17940 Aborted                 ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 1600 1600 1600 500'
+tb_3dfd_pochoir 1600 1600 1600 500
++ ./tb_3dfd_pochoir 1600 1600 1600 500
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 1600x1600x1600 and time 500
+./run_hotPar.sh: line 148: 17941 Aborted                 ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 1800 1800 1800 500'
+tb_3dfd_pochoir 1800 1800 1800 500
++ ./tb_3dfd_pochoir 1800 1800 1800 500
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 1800x1800x1800 and time 500
+./run_hotPar.sh: line 148: 17942 Aborted                 ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 2000 2000 2000 500'
+tb_3dfd_pochoir 2000 2000 2000 500
++ ./tb_3dfd_pochoir 2000 2000 2000 500
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 2000x2000x2000 and time 500
+./run_hotPar.sh: line 148: 17943 Aborted                 ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 2200 2200 2200 500'
+tb_3dfd_pochoir 2200 2200 2200 500
++ ./tb_3dfd_pochoir 2200 2200 2200 500
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 2200x2200x2200 and time 500
+./run_hotPar.sh: line 148: 17944 Aborted                 ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 2400 2400 2400 500'
+tb_3dfd_pochoir 2400 2400 2400 500
++ ./tb_3dfd_pochoir 2400 2400 2400 500
+./run_hotPar.sh: line 148: 17945 Segmentation fault      ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 2600 2600 2600 500'
+tb_3dfd_pochoir 2600 2600 2600 500
++ ./tb_3dfd_pochoir 2600 2600 2600 500
+./run_hotPar.sh: line 148: 17947 Segmentation fault      ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 2800 2800 2800 500'
+tb_3dfd_pochoir 2800 2800 2800 500
++ ./tb_3dfd_pochoir 2800 2800 2800 500
+./run_hotPar.sh: line 148: 17948 Segmentation fault      ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 3000 3000 3000 500'
+tb_3dfd_pochoir 3000 3000 3000 500
++ ./tb_3dfd_pochoir 3000 3000 3000 500
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 3000x3000x3000 and time 500
+./run_hotPar.sh: line 148: 17950 Aborted                 ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 3200 3200 3200 500'
+tb_3dfd_pochoir 3200 3200 3200 500
++ ./tb_3dfd_pochoir 3200 3200 3200 500
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 3200x3200x3200 and time 500
+./run_hotPar.sh: line 148: 17951 Aborted                 ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ (( step += 100 ))
++ (( step <= 1000 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 200 200 200 600'
+tb_3dfd_pochoir 200 200 200 600
++ ./tb_3dfd_pochoir 200 200 200 600
+Order-4 3D-Stencil (25 points) with space 200x200x200 and time 600
+N_CORES = 12
+++++++++++++++++++++ Serial Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 23.372642
+Perf: 181.696737 Mcells/sec (4724.115169 M-FAdd/s, 1271.877161 M-FMul/s)
+Perf per worker: 181.696737 Mcells/sec (4724.115169 M-FAdd/s, 1271.877161 M-FMul/s)
+
+N_CORES = 12
+++++++++++++++++++++ Parallel Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 5.940796
+Perf: 714.842372 Mcells/sec (18585.901663 M-FAdd/s, 5003.896602 M-FMul/s)
+Perf per worker: 714.842372 Mcells/sec (18585.901663 M-FAdd/s, 5003.896602 M-FMul/s)
+
+++++++++++++++++++++ Pochoir ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 3.501746
+Perf: 1212.747179 Mcells/sec (31531.426665 M-FAdd/s, 8489.230256 M-FMul/s)
+Perf per worker: 1212.747179 Mcells/sec (31531.426665 M-FAdd/s, 8489.230256 M-FMul/s)
+
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 400 400 400 600'
+tb_3dfd_pochoir 400 400 400 600
++ ./tb_3dfd_pochoir 400 400 400 600
+Order-4 3D-Stencil (25 points) with space 400x400x400 and time 600
+N_CORES = 12
+++++++++++++++++++++ Serial Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 189.186829
+Perf: 191.037468 Mcells/sec (4966.974167 M-FAdd/s, 1337.262276 M-FMul/s)
+Perf per worker: 191.037468 Mcells/sec (4966.974167 M-FAdd/s, 1337.262276 M-FMul/s)
+
+N_CORES = 12
+++++++++++++++++++++ Parallel Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 84.236248
+Perf: 429.052500 Mcells/sec (11155.364999 M-FAdd/s, 3003.367500 M-FMul/s)
+Perf per worker: 429.052500 Mcells/sec (11155.364999 M-FAdd/s, 3003.367500 M-FMul/s)
+
+++++++++++++++++++++ Pochoir ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 32.650423
+Perf: 1106.931226 Mcells/sec (28780.211863 M-FAdd/s, 7748.518579 M-FMul/s)
+Perf per worker: 1106.931226 Mcells/sec (28780.211863 M-FAdd/s, 7748.518579 M-FMul/s)
+
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 600 600 600 600'
+tb_3dfd_pochoir 600 600 600 600
++ ./tb_3dfd_pochoir 600 600 600 600
+Order-4 3D-Stencil (25 points) with space 600x600x600 and time 600
+N_CORES = 12
+++++++++++++++++++++ Serial Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 713.693006
+Perf: 174.423473 Mcells/sec (4535.010301 M-FAdd/s, 1220.964312 M-FMul/s)
+Perf per worker: 174.423473 Mcells/sec (4535.010301 M-FAdd/s, 1220.964312 M-FMul/s)
+
+N_CORES = 12
+++++++++++++++++++++ Parallel Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 295.285975
+Perf: 421.573740 Mcells/sec (10960.917236 M-FAdd/s, 2951.016179 M-FMul/s)
+Perf per worker: 421.573740 Mcells/sec (10960.917236 M-FAdd/s, 2951.016179 M-FMul/s)
+
+++++++++++++++++++++ Pochoir ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 117.487286
+Perf: 1059.559863 Mcells/sec (27548.556448 M-FAdd/s, 7416.919044 M-FMul/s)
+Perf per worker: 1059.559863 Mcells/sec (27548.556448 M-FAdd/s, 7416.919044 M-FMul/s)
+
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 800 800 800 600'
+tb_3dfd_pochoir 800 800 800 600
++ ./tb_3dfd_pochoir 800 800 800 600
+Order-4 3D-Stencil (25 points) with space 800x800x800 and time 600
+N_CORES = 12
+++++++++++++++++++++ Serial Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 1848.343405
+Perf: 161.266490 Mcells/sec (4192.928734 M-FAdd/s, 1128.865428 M-FMul/s)
+Perf per worker: 161.266490 Mcells/sec (4192.928734 M-FAdd/s, 1128.865428 M-FMul/s)
+
+N_CORES = 12
+++++++++++++++++++++ Parallel Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 705.391532
+Perf: 422.567949 Mcells/sec (10986.766670 M-FAdd/s, 2957.975642 M-FMul/s)
+Perf per worker: 422.567949 Mcells/sec (10986.766670 M-FAdd/s, 2957.975642 M-FMul/s)
+
+++++++++++++++++++++ Pochoir ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 295.194699
+Perf: 1009.760182 Mcells/sec (26253.764732 M-FAdd/s, 7068.321274 M-FMul/s)
+Perf per worker: 1009.760182 Mcells/sec (26253.764732 M-FAdd/s, 7068.321274 M-FMul/s)
+
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 1000 1000 1000 600'
+tb_3dfd_pochoir 1000 1000 1000 600
++ ./tb_3dfd_pochoir 1000 1000 1000 600
+Order-4 3D-Stencil (25 points) with space 1000x1000x1000 and time 600
+N_CORES = 12
+++++++++++++++++++++ Serial Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 3543.496532
+Perf: 165.292921 Mcells/sec (4297.615950 M-FAdd/s, 1157.050448 M-FMul/s)
+Perf per worker: 165.292921 Mcells/sec (4297.615950 M-FAdd/s, 1157.050448 M-FMul/s)
+
+N_CORES = 12
+++++++++++++++++++++ Parallel Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 1119.726015
+Perf: 523.087688 Mcells/sec (13600.279897 M-FAdd/s, 3661.613818 M-FMul/s)
+Perf per worker: 523.087688 Mcells/sec (13600.279897 M-FAdd/s, 3661.613818 M-FMul/s)
+
+++++++++++++++++++++ Pochoir ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 561.417249
+Perf: 1043.279119 Mcells/sec (27125.257090 M-FAdd/s, 7302.953832 M-FMul/s)
+Perf per worker: 1043.279119 Mcells/sec (27125.257090 M-FAdd/s, 7302.953832 M-FMul/s)
+
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 1200 1200 1200 600'
+tb_3dfd_pochoir 1200 1200 1200 600
++ ./tb_3dfd_pochoir 1200 1200 1200 600
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 1200x1200x1200 and time 600
+./run_hotPar.sh: line 148: 20706 Aborted                 ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 1400 1400 1400 600'
+tb_3dfd_pochoir 1400 1400 1400 600
++ ./tb_3dfd_pochoir 1400 1400 1400 600
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 1400x1400x1400 and time 600
+./run_hotPar.sh: line 148: 20707 Aborted                 ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 1600 1600 1600 600'
+tb_3dfd_pochoir 1600 1600 1600 600
++ ./tb_3dfd_pochoir 1600 1600 1600 600
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 1600x1600x1600 and time 600
+./run_hotPar.sh: line 148: 20708 Aborted                 ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 1800 1800 1800 600'
+tb_3dfd_pochoir 1800 1800 1800 600
++ ./tb_3dfd_pochoir 1800 1800 1800 600
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 1800x1800x1800 and time 600
+./run_hotPar.sh: line 148: 20709 Aborted                 ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 2000 2000 2000 600'
+tb_3dfd_pochoir 2000 2000 2000 600
++ ./tb_3dfd_pochoir 2000 2000 2000 600
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 2000x2000x2000 and time 600
+./run_hotPar.sh: line 148: 20710 Aborted                 ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 2200 2200 2200 600'
+tb_3dfd_pochoir 2200 2200 2200 600
++ ./tb_3dfd_pochoir 2200 2200 2200 600
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 2200x2200x2200 and time 600
+./run_hotPar.sh: line 148: 20711 Aborted                 ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 2400 2400 2400 600'
+tb_3dfd_pochoir 2400 2400 2400 600
++ ./tb_3dfd_pochoir 2400 2400 2400 600
+./run_hotPar.sh: line 148: 20712 Segmentation fault      ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 2600 2600 2600 600'
+tb_3dfd_pochoir 2600 2600 2600 600
++ ./tb_3dfd_pochoir 2600 2600 2600 600
+./run_hotPar.sh: line 148: 20714 Segmentation fault      ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 2800 2800 2800 600'
+tb_3dfd_pochoir 2800 2800 2800 600
++ ./tb_3dfd_pochoir 2800 2800 2800 600
+./run_hotPar.sh: line 148: 20716 Segmentation fault      ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 3000 3000 3000 600'
+tb_3dfd_pochoir 3000 3000 3000 600
++ ./tb_3dfd_pochoir 3000 3000 3000 600
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 3000x3000x3000 and time 600
+./run_hotPar.sh: line 148: 20717 Aborted                 ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 3200 3200 3200 600'
+tb_3dfd_pochoir 3200 3200 3200 600
++ ./tb_3dfd_pochoir 3200 3200 3200 600
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 3200x3200x3200 and time 600
+./run_hotPar.sh: line 148: 20718 Aborted                 ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ (( step += 100 ))
++ (( step <= 1000 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 200 200 200 700'
+tb_3dfd_pochoir 200 200 200 700
++ ./tb_3dfd_pochoir 200 200 200 700
+Order-4 3D-Stencil (25 points) with space 200x200x200 and time 700
+N_CORES = 12
+++++++++++++++++++++ Serial Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 27.250358
+Perf: 181.814917 Mcells/sec (4727.187845 M-FAdd/s, 1272.704420 M-FMul/s)
+Perf per worker: 181.814917 Mcells/sec (4727.187845 M-FAdd/s, 1272.704420 M-FMul/s)
+
+N_CORES = 12
+++++++++++++++++++++ Parallel Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 6.634375
+Perf: 746.795520 Mcells/sec (19416.683523 M-FAdd/s, 5227.568641 M-FMul/s)
+Perf per worker: 746.795520 Mcells/sec (19416.683523 M-FAdd/s, 5227.568641 M-FMul/s)
+
+++++++++++++++++++++ Pochoir ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 4.105035
+Perf: 1206.937704 Mcells/sec (31380.380316 M-FAdd/s, 8448.563931 M-FMul/s)
+Perf per worker: 1206.937704 Mcells/sec (31380.380316 M-FAdd/s, 8448.563931 M-FMul/s)
+
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 400 400 400 700'
+tb_3dfd_pochoir 400 400 400 700
++ ./tb_3dfd_pochoir 400 400 400 700
+Order-4 3D-Stencil (25 points) with space 400x400x400 and time 700
+N_CORES = 12
+++++++++++++++++++++ Serial Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 218.492221
+Perf: 192.983537 Mcells/sec (5017.571957 M-FAdd/s, 1350.884758 M-FMul/s)
+Perf per worker: 192.983537 Mcells/sec (5017.571957 M-FAdd/s, 1350.884758 M-FMul/s)
+
+N_CORES = 12
+++++++++++++++++++++ Parallel Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 98.598240
+Perf: 427.648623 Mcells/sec (11118.864191 M-FAdd/s, 2993.540359 M-FMul/s)
+Perf per worker: 427.648623 Mcells/sec (11118.864191 M-FAdd/s, 2993.540359 M-FMul/s)
+
+++++++++++++++++++++ Pochoir ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 37.966293
+Perf: 1110.600968 Mcells/sec (28875.625168 M-FAdd/s, 7774.206776 M-FMul/s)
+Perf per worker: 1110.600968 Mcells/sec (28875.625168 M-FAdd/s, 7774.206776 M-FMul/s)
+
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 600 600 600 700'
+tb_3dfd_pochoir 600 600 600 700
++ ./tb_3dfd_pochoir 600 600 600 700
+Order-4 3D-Stencil (25 points) with space 600x600x600 and time 700
+N_CORES = 12
+++++++++++++++++++++ Serial Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 837.677531
+Perf: 173.374928 Mcells/sec (4507.748127 M-FAdd/s, 1213.624496 M-FMul/s)
+Perf per worker: 173.374928 Mcells/sec (4507.748127 M-FAdd/s, 1213.624496 M-FMul/s)
+
+N_CORES = 12
+++++++++++++++++++++ Parallel Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 344.370655
+Perf: 421.732454 Mcells/sec (10965.043816 M-FAdd/s, 2952.127181 M-FMul/s)
+Perf per worker: 421.732454 Mcells/sec (10965.043816 M-FAdd/s, 2952.127181 M-FMul/s)
+
+++++++++++++++++++++ Pochoir ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 137.014113
+Perf: 1059.980454 Mcells/sec (27559.491795 M-FAdd/s, 7419.863176 M-FMul/s)
+Perf per worker: 1059.980454 Mcells/sec (27559.491795 M-FAdd/s, 7419.863176 M-FMul/s)
+
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 800 800 800 700'
+tb_3dfd_pochoir 800 800 800 700
++ ./tb_3dfd_pochoir 800 800 800 700
+Order-4 3D-Stencil (25 points) with space 800x800x800 and time 700
+N_CORES = 12
+++++++++++++++++++++ Serial Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 2153.705806
+Perf: 161.468275 Mcells/sec (4198.175153 M-FAdd/s, 1130.277926 M-FMul/s)
+Perf per worker: 161.468275 Mcells/sec (4198.175153 M-FAdd/s, 1130.277926 M-FMul/s)
+
+N_CORES = 12
+++++++++++++++++++++ Parallel Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 824.995147
+Perf: 421.523888 Mcells/sec (10959.621077 M-FAdd/s, 2950.667213 M-FMul/s)
+Perf per worker: 421.523888 Mcells/sec (10959.621077 M-FAdd/s, 2950.667213 M-FMul/s)
+
+++++++++++++++++++++ Pochoir ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 341.217094
+Perf: 1019.161020 Mcells/sec (26498.186527 M-FAdd/s, 7134.127142 M-FMul/s)
+Perf per worker: 1019.161020 Mcells/sec (26498.186527 M-FAdd/s, 7134.127142 M-FMul/s)
+
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 1000 1000 1000 700'
+tb_3dfd_pochoir 1000 1000 1000 700
++ ./tb_3dfd_pochoir 1000 1000 1000 700
+Order-4 3D-Stencil (25 points) with space 1000x1000x1000 and time 700
+N_CORES = 12
+++++++++++++++++++++ Serial Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 4025.517374
+Perf: 169.750613 Mcells/sec (4413.515936 M-FAdd/s, 1188.254291 M-FMul/s)
+Perf per worker: 169.750613 Mcells/sec (4413.515936 M-FAdd/s, 1188.254291 M-FMul/s)
+
+N_CORES = 12
+++++++++++++++++++++ Parallel Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 1637.455101
+Perf: 417.314674 Mcells/sec (10850.181523 M-FAdd/s, 2921.202718 M-FMul/s)
+Perf per worker: 417.314674 Mcells/sec (10850.181523 M-FAdd/s, 2921.202718 M-FMul/s)
+
+++++++++++++++++++++ Pochoir ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 689.594905
+Perf: 990.920955 Mcells/sec (25763.944825 M-FAdd/s, 6936.446684 M-FMul/s)
+Perf per worker: 990.920955 Mcells/sec (25763.944825 M-FAdd/s, 6936.446684 M-FMul/s)
+
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 1200 1200 1200 700'
+tb_3dfd_pochoir 1200 1200 1200 700
++ ./tb_3dfd_pochoir 1200 1200 1200 700
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 1200x1200x1200 and time 700
+./run_hotPar.sh: line 148: 23573 Aborted                 ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 1400 1400 1400 700'
+tb_3dfd_pochoir 1400 1400 1400 700
++ ./tb_3dfd_pochoir 1400 1400 1400 700
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 1400x1400x1400 and time 700
+./run_hotPar.sh: line 148: 23574 Aborted                 ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 1600 1600 1600 700'
+tb_3dfd_pochoir 1600 1600 1600 700
++ ./tb_3dfd_pochoir 1600 1600 1600 700
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 1600x1600x1600 and time 700
+./run_hotPar.sh: line 148: 23575 Aborted                 ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 1800 1800 1800 700'
+tb_3dfd_pochoir 1800 1800 1800 700
++ ./tb_3dfd_pochoir 1800 1800 1800 700
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 1800x1800x1800 and time 700
+./run_hotPar.sh: line 148: 23576 Aborted                 ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 2000 2000 2000 700'
+tb_3dfd_pochoir 2000 2000 2000 700
++ ./tb_3dfd_pochoir 2000 2000 2000 700
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 2000x2000x2000 and time 700
+./run_hotPar.sh: line 148: 23577 Aborted                 ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 2200 2200 2200 700'
+tb_3dfd_pochoir 2200 2200 2200 700
++ ./tb_3dfd_pochoir 2200 2200 2200 700
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 2200x2200x2200 and time 700
+./run_hotPar.sh: line 148: 23578 Aborted                 ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 2400 2400 2400 700'
+tb_3dfd_pochoir 2400 2400 2400 700
++ ./tb_3dfd_pochoir 2400 2400 2400 700
+./run_hotPar.sh: line 148: 23579 Segmentation fault      ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 2600 2600 2600 700'
+tb_3dfd_pochoir 2600 2600 2600 700
++ ./tb_3dfd_pochoir 2600 2600 2600 700
+./run_hotPar.sh: line 148: 23582 Segmentation fault      ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 2800 2800 2800 700'
+tb_3dfd_pochoir 2800 2800 2800 700
++ ./tb_3dfd_pochoir 2800 2800 2800 700
+./run_hotPar.sh: line 148: 23583 Segmentation fault      ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 3000 3000 3000 700'
+tb_3dfd_pochoir 3000 3000 3000 700
++ ./tb_3dfd_pochoir 3000 3000 3000 700
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 3000x3000x3000 and time 700
+./run_hotPar.sh: line 148: 23584 Aborted                 ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 3200 3200 3200 700'
+tb_3dfd_pochoir 3200 3200 3200 700
++ ./tb_3dfd_pochoir 3200 3200 3200 700
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 3200x3200x3200 and time 700
+./run_hotPar.sh: line 148: 23585 Aborted                 ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ (( step += 100 ))
++ (( step <= 1000 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 200 200 200 800'
+tb_3dfd_pochoir 200 200 200 800
++ ./tb_3dfd_pochoir 200 200 200 800
+Order-4 3D-Stencil (25 points) with space 200x200x200 and time 800
+N_CORES = 12
+++++++++++++++++++++ Serial Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 31.131338
+Perf: 181.884581 Mcells/sec (4728.999114 M-FAdd/s, 1273.192069 M-FMul/s)
+Perf per worker: 181.884581 Mcells/sec (4728.999114 M-FAdd/s, 1273.192069 M-FMul/s)
+
+N_CORES = 12
+++++++++++++++++++++ Parallel Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 7.919172
+Perf: 715.012929 Mcells/sec (18590.336148 M-FAdd/s, 5005.090501 M-FMul/s)
+Perf per worker: 715.012929 Mcells/sec (18590.336148 M-FAdd/s, 5005.090501 M-FMul/s)
+
+++++++++++++++++++++ Pochoir ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 4.296840
+Perf: 1317.784805 Mcells/sec (34262.404937 M-FAdd/s, 9224.493637 M-FMul/s)
+Perf per worker: 1317.784805 Mcells/sec (34262.404937 M-FAdd/s, 9224.493637 M-FMul/s)
+
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 400 400 400 800'
+tb_3dfd_pochoir 400 400 400 800
++ ./tb_3dfd_pochoir 400 400 400 800
+Order-4 3D-Stencil (25 points) with space 400x400x400 and time 800
+N_CORES = 12
+++++++++++++++++++++ Serial Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 249.278017
+Perf: 193.314401 Mcells/sec (5026.174415 M-FAdd/s, 1353.200804 M-FMul/s)
+Perf per worker: 193.314401 Mcells/sec (5026.174415 M-FAdd/s, 1353.200804 M-FMul/s)
+
+N_CORES = 12
+++++++++++++++++++++ Parallel Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 112.722140
+Perf: 427.502799 Mcells/sec (11115.072776 M-FAdd/s, 2992.519594 M-FMul/s)
+Perf per worker: 427.502799 Mcells/sec (11115.072776 M-FAdd/s, 2992.519594 M-FMul/s)
+
+++++++++++++++++++++ Pochoir ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 40.276565
+Perf: 1196.453337 Mcells/sec (31107.786761 M-FAdd/s, 8375.173359 M-FMul/s)
+Perf per worker: 1196.453337 Mcells/sec (31107.786761 M-FAdd/s, 8375.173359 M-FMul/s)
+
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 600 600 600 800'
+tb_3dfd_pochoir 600 600 600 800
++ ./tb_3dfd_pochoir 600 600 600 800
+Order-4 3D-Stencil (25 points) with space 600x600x600 and time 800
+N_CORES = 12
+++++++++++++++++++++ Serial Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 957.220337
+Perf: 173.397643 Mcells/sec (4508.338722 M-FAdd/s, 1213.783502 M-FMul/s)
+Perf per worker: 173.397643 Mcells/sec (4508.338722 M-FAdd/s, 1213.783502 M-FMul/s)
+
+N_CORES = 12
+++++++++++++++++++++ Parallel Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 393.033820
+Perf: 422.303990 Mcells/sec (10979.903736 M-FAdd/s, 2956.127929 M-FMul/s)
+Perf per worker: 422.303990 Mcells/sec (10979.903736 M-FAdd/s, 2956.127929 M-FMul/s)
+
+++++++++++++++++++++ Pochoir ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 153.145487
+Perf: 1083.804385 Mcells/sec (28178.914005 M-FAdd/s, 7586.630694 M-FMul/s)
+Perf per worker: 1083.804385 Mcells/sec (28178.914005 M-FAdd/s, 7586.630694 M-FMul/s)
+
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 800 800 800 800'
+tb_3dfd_pochoir 800 800 800 800
++ ./tb_3dfd_pochoir 800 800 800 800
+Order-4 3D-Stencil (25 points) with space 800x800x800 and time 800
+N_CORES = 12
+++++++++++++++++++++ Serial Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 2463.367427
+Perf: 161.337877 Mcells/sec (4194.784796 M-FAdd/s, 1129.365138 M-FMul/s)
+Perf per worker: 161.337877 Mcells/sec (4194.784796 M-FAdd/s, 1129.365138 M-FMul/s)
+
+N_CORES = 12
+++++++++++++++++++++ Parallel Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 941.096494
+Perf: 422.310011 Mcells/sec (10980.060277 M-FAdd/s, 2956.170075 M-FMul/s)
+Perf per worker: 422.310011 Mcells/sec (10980.060277 M-FAdd/s, 2956.170075 M-FMul/s)
+
+++++++++++++++++++++ Pochoir ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 387.260234
+Perf: 1026.272350 Mcells/sec (26683.081108 M-FAdd/s, 7183.906452 M-FMul/s)
+Perf per worker: 1026.272350 Mcells/sec (26683.081108 M-FAdd/s, 7183.906452 M-FMul/s)
+
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 1000 1000 1000 800'
+tb_3dfd_pochoir 1000 1000 1000 800
++ ./tb_3dfd_pochoir 1000 1000 1000 800
+Order-4 3D-Stencil (25 points) with space 1000x1000x1000 and time 800
+N_CORES = 12
+++++++++++++++++++++ Serial Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 5228.381532
+Perf: 149.368057 Mcells/sec (3883.569480 M-FAdd/s, 1045.576399 M-FMul/s)
+Perf per worker: 149.368057 Mcells/sec (3883.569480 M-FAdd/s, 1045.576399 M-FMul/s)
+
+N_CORES = 12
+++++++++++++++++++++ Parallel Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 1871.216824
+Perf: 417.350454 Mcells/sec (10851.111795 M-FAdd/s, 2921.453176 M-FMul/s)
+Perf per worker: 417.350454 Mcells/sec (10851.111795 M-FAdd/s, 2921.453176 M-FMul/s)
+
+++++++++++++++++++++ Pochoir ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 782.462502
+Perf: 998.071075 Mcells/sec (25949.847946 M-FAdd/s, 6986.497524 M-FMul/s)
+Perf per worker: 998.071075 Mcells/sec (25949.847946 M-FAdd/s, 6986.497524 M-FMul/s)
+
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 1200 1200 1200 800'
+tb_3dfd_pochoir 1200 1200 1200 800
++ ./tb_3dfd_pochoir 1200 1200 1200 800
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 1200x1200x1200 and time 800
+./run_hotPar.sh: line 148: 27296 Aborted                 ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 1400 1400 1400 800'
+tb_3dfd_pochoir 1400 1400 1400 800
++ ./tb_3dfd_pochoir 1400 1400 1400 800
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 1400x1400x1400 and time 800
+./run_hotPar.sh: line 148: 27297 Aborted                 ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 1600 1600 1600 800'
+tb_3dfd_pochoir 1600 1600 1600 800
++ ./tb_3dfd_pochoir 1600 1600 1600 800
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 1600x1600x1600 and time 800
+./run_hotPar.sh: line 148: 27298 Aborted                 ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 1800 1800 1800 800'
+tb_3dfd_pochoir 1800 1800 1800 800
++ ./tb_3dfd_pochoir 1800 1800 1800 800
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 1800x1800x1800 and time 800
+./run_hotPar.sh: line 148: 27299 Aborted                 ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 2000 2000 2000 800'
+tb_3dfd_pochoir 2000 2000 2000 800
++ ./tb_3dfd_pochoir 2000 2000 2000 800
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 2000x2000x2000 and time 800
+./run_hotPar.sh: line 148: 27300 Aborted                 ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 2200 2200 2200 800'
+tb_3dfd_pochoir 2200 2200 2200 800
++ ./tb_3dfd_pochoir 2200 2200 2200 800
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 2200x2200x2200 and time 800
+./run_hotPar.sh: line 148: 27301 Aborted                 ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 2400 2400 2400 800'
+tb_3dfd_pochoir 2400 2400 2400 800
++ ./tb_3dfd_pochoir 2400 2400 2400 800
+./run_hotPar.sh: line 148: 27302 Segmentation fault      ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 2600 2600 2600 800'
+tb_3dfd_pochoir 2600 2600 2600 800
++ ./tb_3dfd_pochoir 2600 2600 2600 800
+./run_hotPar.sh: line 148: 27305 Segmentation fault      ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 2800 2800 2800 800'
+tb_3dfd_pochoir 2800 2800 2800 800
++ ./tb_3dfd_pochoir 2800 2800 2800 800
+./run_hotPar.sh: line 148: 27306 Segmentation fault      ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 3000 3000 3000 800'
+tb_3dfd_pochoir 3000 3000 3000 800
++ ./tb_3dfd_pochoir 3000 3000 3000 800
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 3000x3000x3000 and time 800
+./run_hotPar.sh: line 148: 27317 Aborted                 ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 3200 3200 3200 800'
+tb_3dfd_pochoir 3200 3200 3200 800
++ ./tb_3dfd_pochoir 3200 3200 3200 800
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 3200x3200x3200 and time 800
+./run_hotPar.sh: line 148: 27318 Aborted                 ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ (( step += 100 ))
++ (( step <= 1000 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 200 200 200 900'
+tb_3dfd_pochoir 200 200 200 900
++ ./tb_3dfd_pochoir 200 200 200 900
+Order-4 3D-Stencil (25 points) with space 200x200x200 and time 900
+N_CORES = 12
+++++++++++++++++++++ Serial Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 35.028165
+Perf: 181.856492 Mcells/sec (4728.268804 M-FAdd/s, 1272.995447 M-FMul/s)
+Perf per worker: 181.856492 Mcells/sec (4728.268804 M-FAdd/s, 1272.995447 M-FMul/s)
+
+N_CORES = 12
+++++++++++++++++++++ Parallel Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 8.481550
+Perf: 751.053665 Mcells/sec (19527.395302 M-FAdd/s, 5257.375658 M-FMul/s)
+Perf per worker: 751.053665 Mcells/sec (19527.395302 M-FAdd/s, 5257.375658 M-FMul/s)
+
+++++++++++++++++++++ Pochoir ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 4.847354
+Perf: 1314.139420 Mcells/sec (34167.624908 M-FAdd/s, 9198.975937 M-FMul/s)
+Perf per worker: 1314.139420 Mcells/sec (34167.624908 M-FAdd/s, 9198.975937 M-FMul/s)
+
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 400 400 400 900'
+tb_3dfd_pochoir 400 400 400 900
++ ./tb_3dfd_pochoir 400 400 400 900
+Order-4 3D-Stencil (25 points) with space 400x400x400 and time 900
+N_CORES = 12
+++++++++++++++++++++ Serial Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 283.734931
+Perf: 191.067977 Mcells/sec (4967.767396 M-FAdd/s, 1337.475837 M-FMul/s)
+Perf per worker: 191.067977 Mcells/sec (4967.767396 M-FAdd/s, 1337.475837 M-FMul/s)
+
+N_CORES = 12
+++++++++++++++++++++ Parallel Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 126.213181
+Perf: 429.532468 Mcells/sec (11167.844181 M-FAdd/s, 3006.727279 M-FMul/s)
+Perf per worker: 429.532468 Mcells/sec (11167.844181 M-FAdd/s, 3006.727279 M-FMul/s)
+
+++++++++++++++++++++ Pochoir ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 46.956110
+Perf: 1154.538977 Mcells/sec (30018.013400 M-FAdd/s, 8081.772838 M-FMul/s)
+Perf per worker: 1154.538977 Mcells/sec (30018.013400 M-FAdd/s, 8081.772838 M-FMul/s)
+
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 600 600 600 900'
+tb_3dfd_pochoir 600 600 600 900
++ ./tb_3dfd_pochoir 600 600 600 900
+Order-4 3D-Stencil (25 points) with space 600x600x600 and time 900
+N_CORES = 12
+++++++++++++++++++++ Serial Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 1076.477321
+Perf: 173.461359 Mcells/sec (4509.995338 M-FAdd/s, 1214.229514 M-FMul/s)
+Perf per worker: 173.461359 Mcells/sec (4509.995338 M-FAdd/s, 1214.229514 M-FMul/s)
+
+N_CORES = 12
+++++++++++++++++++++ Parallel Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 442.307897
+Perf: 422.165691 Mcells/sec (10976.307977 M-FAdd/s, 2955.159840 M-FMul/s)
+Perf per worker: 422.165691 Mcells/sec (10976.307977 M-FAdd/s, 2955.159840 M-FMul/s)
+
+++++++++++++++++++++ Pochoir ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 176.743237
+Perf: 1056.488624 Mcells/sec (27468.704212 M-FAdd/s, 7395.420365 M-FMul/s)
+Perf per worker: 1056.488624 Mcells/sec (27468.704212 M-FAdd/s, 7395.420365 M-FMul/s)
+
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 800 800 800 900'
+tb_3dfd_pochoir 800 800 800 900
++ ./tb_3dfd_pochoir 800 800 800 900
+Order-4 3D-Stencil (25 points) with space 800x800x800 and time 900
+N_CORES = 12
+++++++++++++++++++++ Serial Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 2779.920698
+Perf: 160.836883 Mcells/sec (4181.758950 M-FAdd/s, 1125.858179 M-FMul/s)
+Perf per worker: 160.836883 Mcells/sec (4181.758950 M-FAdd/s, 1125.858179 M-FMul/s)
+
+N_CORES = 12
+++++++++++++++++++++ Parallel Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 1058.420591
+Perf: 422.434884 Mcells/sec (10983.306973 M-FAdd/s, 2957.044185 M-FMul/s)
+Perf per worker: 422.434884 Mcells/sec (10983.306973 M-FAdd/s, 2957.044185 M-FMul/s)
+
+++++++++++++++++++++ Pochoir ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 444.780363
+Perf: 1005.246221 Mcells/sec (26136.401748 M-FAdd/s, 7036.723548 M-FMul/s)
+Perf per worker: 1005.246221 Mcells/sec (26136.401748 M-FAdd/s, 7036.723548 M-FMul/s)
+
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 1000 1000 1000 900'
+tb_3dfd_pochoir 1000 1000 1000 900
++ ./tb_3dfd_pochoir 1000 1000 1000 900
+Order-4 3D-Stencil (25 points) with space 1000x1000x1000 and time 900
+N_CORES = 12
+++++++++++++++++++++ Serial Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 5155.233041
+Perf: 170.423399 Mcells/sec (4431.008383 M-FAdd/s, 1192.963795 M-FMul/s)
+Perf per worker: 170.423399 Mcells/sec (4431.008383 M-FAdd/s, 1192.963795 M-FMul/s)
+
+N_CORES = 12
+++++++++++++++++++++ Parallel Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 2103.499141
+Perf: 417.671832 Mcells/sec (10859.467624 M-FAdd/s, 2923.702822 M-FMul/s)
+Perf per worker: 417.671832 Mcells/sec (10859.467624 M-FAdd/s, 2923.702822 M-FMul/s)
+
+++++++++++++++++++++ Pochoir ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 891.705399
+Perf: 985.271975 Mcells/sec (25617.071338 M-FAdd/s, 6896.903822 M-FMul/s)
+Perf per worker: 985.271975 Mcells/sec (25617.071338 M-FAdd/s, 6896.903822 M-FMul/s)
+
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 1200 1200 1200 900'
+tb_3dfd_pochoir 1200 1200 1200 900
++ ./tb_3dfd_pochoir 1200 1200 1200 900
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 1200x1200x1200 and time 900
+./run_hotPar.sh: line 148: 31049 Aborted                 ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 1400 1400 1400 900'
+tb_3dfd_pochoir 1400 1400 1400 900
++ ./tb_3dfd_pochoir 1400 1400 1400 900
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 1400x1400x1400 and time 900
+./run_hotPar.sh: line 148: 31050 Aborted                 ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 1600 1600 1600 900'
+tb_3dfd_pochoir 1600 1600 1600 900
++ ./tb_3dfd_pochoir 1600 1600 1600 900
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 1600x1600x1600 and time 900
+./run_hotPar.sh: line 148: 31051 Aborted                 ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 1800 1800 1800 900'
+tb_3dfd_pochoir 1800 1800 1800 900
++ ./tb_3dfd_pochoir 1800 1800 1800 900
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 1800x1800x1800 and time 900
+./run_hotPar.sh: line 148: 31052 Aborted                 ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 2000 2000 2000 900'
+tb_3dfd_pochoir 2000 2000 2000 900
++ ./tb_3dfd_pochoir 2000 2000 2000 900
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 2000x2000x2000 and time 900
+./run_hotPar.sh: line 148: 31053 Aborted                 ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 2200 2200 2200 900'
+tb_3dfd_pochoir 2200 2200 2200 900
++ ./tb_3dfd_pochoir 2200 2200 2200 900
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 2200x2200x2200 and time 900
+./run_hotPar.sh: line 148: 31054 Aborted                 ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 2400 2400 2400 900'
+tb_3dfd_pochoir 2400 2400 2400 900
++ ./tb_3dfd_pochoir 2400 2400 2400 900
+./run_hotPar.sh: line 148: 31055 Segmentation fault      ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 2600 2600 2600 900'
+tb_3dfd_pochoir 2600 2600 2600 900
++ ./tb_3dfd_pochoir 2600 2600 2600 900
+./run_hotPar.sh: line 148: 31057 Segmentation fault      ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 2800 2800 2800 900'
+tb_3dfd_pochoir 2800 2800 2800 900
++ ./tb_3dfd_pochoir 2800 2800 2800 900
+./run_hotPar.sh: line 148: 31058 Segmentation fault      ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 3000 3000 3000 900'
+tb_3dfd_pochoir 3000 3000 3000 900
++ ./tb_3dfd_pochoir 3000 3000 3000 900
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 3000x3000x3000 and time 900
+./run_hotPar.sh: line 148: 31060 Aborted                 ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 3200 3200 3200 900'
+tb_3dfd_pochoir 3200 3200 3200 900
++ ./tb_3dfd_pochoir 3200 3200 3200 900
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 3200x3200x3200 and time 900
+./run_hotPar.sh: line 148: 31061 Aborted                 ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ (( step += 100 ))
++ (( step <= 1000 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 200 200 200 1000'
+tb_3dfd_pochoir 200 200 200 1000
++ ./tb_3dfd_pochoir 200 200 200 1000
+Order-4 3D-Stencil (25 points) with space 200x200x200 and time 1000
+N_CORES = 12
+++++++++++++++++++++ Serial Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 38.901458
+Perf: 181.944029 Mcells/sec (4730.544749 M-FAdd/s, 1273.608202 M-FMul/s)
+Perf per worker: 181.944029 Mcells/sec (4730.544749 M-FAdd/s, 1273.608202 M-FMul/s)
+
+N_CORES = 12
+++++++++++++++++++++ Parallel Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 9.463504
+Perf: 747.914105 Mcells/sec (19445.766722 M-FAdd/s, 5235.398733 M-FMul/s)
+Perf per worker: 747.914105 Mcells/sec (19445.766722 M-FAdd/s, 5235.398733 M-FMul/s)
+
+++++++++++++++++++++ Pochoir ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 5.323762
+Perf: 1329.489951 Mcells/sec (34566.738722 M-FAdd/s, 9306.429656 M-FMul/s)
+Perf per worker: 1329.489951 Mcells/sec (34566.738722 M-FAdd/s, 9306.429656 M-FMul/s)
+
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 400 400 400 1000'
+tb_3dfd_pochoir 400 400 400 1000
++ ./tb_3dfd_pochoir 400 400 400 1000
+Order-4 3D-Stencil (25 points) with space 400x400x400 and time 1000
+N_CORES = 12
+++++++++++++++++++++ Serial Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 314.933377
+Perf: 191.266764 Mcells/sec (4972.935876 M-FAdd/s, 1338.867351 M-FMul/s)
+Perf per worker: 191.266764 Mcells/sec (4972.935876 M-FAdd/s, 1338.867351 M-FMul/s)
+
+N_CORES = 12
+++++++++++++++++++++ Parallel Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 140.283731
+Perf: 429.388979 Mcells/sec (11164.113451 M-FAdd/s, 3005.722852 M-FMul/s)
+Perf per worker: 429.388979 Mcells/sec (11164.113451 M-FAdd/s, 3005.722852 M-FMul/s)
+
+++++++++++++++++++++ Pochoir ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 49.587622
+Perf: 1214.744434 Mcells/sec (31583.355273 M-FAdd/s, 8503.211035 M-FMul/s)
+Perf per worker: 1214.744434 Mcells/sec (31583.355273 M-FAdd/s, 8503.211035 M-FMul/s)
+
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 600 600 600 1000'
+tb_3dfd_pochoir 600 600 600 1000
++ ./tb_3dfd_pochoir 600 600 600 1000
+Order-4 3D-Stencil (25 points) with space 600x600x600 and time 1000
+N_CORES = 12
+++++++++++++++++++++ Serial Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 1190.181543
+Perf: 174.321883 Mcells/sec (4532.368964 M-FAdd/s, 1220.253183 M-FMul/s)
+Perf per worker: 174.321883 Mcells/sec (4532.368964 M-FAdd/s, 1220.253183 M-FMul/s)
+
+N_CORES = 12
+++++++++++++++++++++ Parallel Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 491.824868
+Perf: 421.846681 Mcells/sec (10968.013696 M-FAdd/s, 2952.926764 M-FMul/s)
+Perf per worker: 421.846681 Mcells/sec (10968.013696 M-FAdd/s, 2952.926764 M-FMul/s)
+
+++++++++++++++++++++ Pochoir ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 197.304116
+Perf: 1051.547694 Mcells/sec (27340.240050 M-FAdd/s, 7360.833860 M-FMul/s)
+Perf per worker: 1051.547694 Mcells/sec (27340.240050 M-FAdd/s, 7360.833860 M-FMul/s)
+
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 800 800 800 1000'
+tb_3dfd_pochoir 800 800 800 1000
++ ./tb_3dfd_pochoir 800 800 800 1000
+Order-4 3D-Stencil (25 points) with space 800x800x800 and time 1000
+N_CORES = 12
+++++++++++++++++++++ Serial Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 3424.166469
+Perf: 145.084385 Mcells/sec (3772.194023 M-FAdd/s, 1015.590698 M-FMul/s)
+Perf per worker: 145.084385 Mcells/sec (3772.194023 M-FAdd/s, 1015.590698 M-FMul/s)
+
+N_CORES = 12
+++++++++++++++++++++ Parallel Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 1176.684942
+Perf: 422.197200 Mcells/sec (10977.127204 M-FAdd/s, 2955.380401 M-FMul/s)
+Perf per worker: 422.197200 Mcells/sec (10977.127204 M-FAdd/s, 2955.380401 M-FMul/s)
+
+++++++++++++++++++++ Pochoir ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 491.516620
+Perf: 1010.735075 Mcells/sec (26279.111953 M-FAdd/s, 7075.145526 M-FMul/s)
+Perf per worker: 1010.735075 Mcells/sec (26279.111953 M-FAdd/s, 7075.145526 M-FMul/s)
+
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 1000 1000 1000 1000'
+tb_3dfd_pochoir 1000 1000 1000 1000
++ ./tb_3dfd_pochoir 1000 1000 1000 1000
+Order-4 3D-Stencil (25 points) with space 1000x1000x1000 and time 1000
+N_CORES = 12
+++++++++++++++++++++ Serial Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 5735.789228
+Perf: 170.193054 Mcells/sec (4425.019414 M-FAdd/s, 1191.351381 M-FMul/s)
+Perf per worker: 170.193054 Mcells/sec (4425.019414 M-FAdd/s, 1191.351381 M-FMul/s)
+
+N_CORES = 12
+++++++++++++++++++++ Parallel Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 2340.044041
+Perf: 417.167998 Mcells/sec (10846.367950 M-FAdd/s, 2920.175987 M-FMul/s)
+Perf per worker: 417.167998 Mcells/sec (10846.367950 M-FAdd/s, 2920.175987 M-FMul/s)
+
+++++++++++++++++++++ Pochoir ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 996.161271
+Perf: 979.953263 Mcells/sec (25478.784842 M-FAdd/s, 6859.672842 M-FMul/s)
+Perf per worker: 979.953263 Mcells/sec (25478.784842 M-FAdd/s, 6859.672842 M-FMul/s)
+
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 1200 1200 1200 1000'
+tb_3dfd_pochoir 1200 1200 1200 1000
++ ./tb_3dfd_pochoir 1200 1200 1200 1000
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 1200x1200x1200 and time 1000
+./run_hotPar.sh: line 148:  3040 Aborted                 ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 1400 1400 1400 1000'
+tb_3dfd_pochoir 1400 1400 1400 1000
++ ./tb_3dfd_pochoir 1400 1400 1400 1000
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 1400x1400x1400 and time 1000
+./run_hotPar.sh: line 148:  3041 Aborted                 ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 1600 1600 1600 1000'
+tb_3dfd_pochoir 1600 1600 1600 1000
++ ./tb_3dfd_pochoir 1600 1600 1600 1000
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 1600x1600x1600 and time 1000
+./run_hotPar.sh: line 148:  3070 Aborted                 ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 1800 1800 1800 1000'
+tb_3dfd_pochoir 1800 1800 1800 1000
++ ./tb_3dfd_pochoir 1800 1800 1800 1000
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 1800x1800x1800 and time 1000
+./run_hotPar.sh: line 148:  3071 Aborted                 ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 2000 2000 2000 1000'
+tb_3dfd_pochoir 2000 2000 2000 1000
++ ./tb_3dfd_pochoir 2000 2000 2000 1000
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 2000x2000x2000 and time 1000
+./run_hotPar.sh: line 148:  3072 Aborted                 ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 2200 2200 2200 1000'
+tb_3dfd_pochoir 2200 2200 2200 1000
++ ./tb_3dfd_pochoir 2200 2200 2200 1000
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 2200x2200x2200 and time 1000
+./run_hotPar.sh: line 148:  3073 Aborted                 ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 2400 2400 2400 1000'
+tb_3dfd_pochoir 2400 2400 2400 1000
++ ./tb_3dfd_pochoir 2400 2400 2400 1000
+./run_hotPar.sh: line 148:  3074 Segmentation fault      ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 2600 2600 2600 1000'
+tb_3dfd_pochoir 2600 2600 2600 1000
++ ./tb_3dfd_pochoir 2600 2600 2600 1000
+./run_hotPar.sh: line 148:  3077 Segmentation fault      ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 2800 2800 2800 1000'
+tb_3dfd_pochoir 2800 2800 2800 1000
++ ./tb_3dfd_pochoir 2800 2800 2800 1000
+./run_hotPar.sh: line 148:  3152 Segmentation fault      ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 3000 3000 3000 1000'
+tb_3dfd_pochoir 3000 3000 3000 1000
++ ./tb_3dfd_pochoir 3000 3000 3000 1000
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 3000x3000x3000 and time 1000
+./run_hotPar.sh: line 148:  3153 Aborted                 ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 3200 3200 3200 1000'
+tb_3dfd_pochoir 3200 3200 3200 1000
++ ./tb_3dfd_pochoir 3200 3200 3200 1000
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 3200x3200x3200 and time 1000
+./run_hotPar.sh: line 148:  3154 Aborted                 ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 200 ))
++ (( size <= 3200 ))
++ (( step += 100 ))
++ (( step <= 1000 ))

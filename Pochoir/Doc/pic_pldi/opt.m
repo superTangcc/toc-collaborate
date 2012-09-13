@@ -1,0 +1,23 @@
+load('opt_0.mdat', '-ascii');
+%load('heat_2D_0_P_hotPar_3D_pl.mdat', '-ascii');
+%load('heat_2D_0_P_hotPar_3D_pochoir.mdat', '-ascii');
+% load('heat_2D_0_P_hotPar_3D_pochoir_bt.mdat', '-ascii');
+size = opt_0(:, 1);
+%y = [200:200:3200];
+z = (size .^ 2) .* 200;
+macro = opt_0(:, 2);
+c_pointer = opt_0(:, 3);
+pointer = opt_0(:, 4);
+opt_pointer = opt_0(:, 5);
+
+loglog(z, macro, 'bx-', z, c_pointer, 'ro-', z, opt_pointer, 'g+-');
+xlabel('Grid Points');
+ylabel('execution time in ms');
+legend('-split-macro-shadow', '-split-c-pointer', '-split-opt-pointer');
+grid off;
+% hold on;
+% plot(x, y_parallel_for ./ y_iter);
+% hold on;
+% plot(x, pfor1 ./ pointer, x, pfor2 ./ iter, x, pfor1 ./ macro);
+% hold on;
+% plot(x, pfor2 ./ iter);

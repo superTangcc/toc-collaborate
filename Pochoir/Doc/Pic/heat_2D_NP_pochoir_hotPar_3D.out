@@ -1,0 +1,2117 @@
++ echo '<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<'
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
++ (( step = 200 ))
++ (( step <= 3200 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 200 200'
+heat_2D_NP_pochoir 200 200
++ ./heat_2D_NP_pochoir 200 200
+N_SIZE = 200, T_SIZE = 200
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :20.629ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 400 200'
+heat_2D_NP_pochoir 400 200
++ ./heat_2D_NP_pochoir 400 200
+N_SIZE = 400, T_SIZE = 200
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :32.904ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 600 200'
+heat_2D_NP_pochoir 600 200
++ ./heat_2D_NP_pochoir 600 200
+N_SIZE = 600, T_SIZE = 200
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :46.536ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 800 200'
+heat_2D_NP_pochoir 800 200
++ ./heat_2D_NP_pochoir 800 200
+N_SIZE = 800, T_SIZE = 200
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :64.267ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 1000 200'
+heat_2D_NP_pochoir 1000 200
++ ./heat_2D_NP_pochoir 1000 200
+N_SIZE = 1000, T_SIZE = 200
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :80.277ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 1200 200'
+heat_2D_NP_pochoir 1200 200
++ ./heat_2D_NP_pochoir 1200 200
+N_SIZE = 1200, T_SIZE = 200
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :100.514ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 1400 200'
+heat_2D_NP_pochoir 1400 200
++ ./heat_2D_NP_pochoir 1400 200
+N_SIZE = 1400, T_SIZE = 200
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :126.275ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 1600 200'
+heat_2D_NP_pochoir 1600 200
++ ./heat_2D_NP_pochoir 1600 200
+N_SIZE = 1600, T_SIZE = 200
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :155.694ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 1800 200'
+heat_2D_NP_pochoir 1800 200
++ ./heat_2D_NP_pochoir 1800 200
+N_SIZE = 1800, T_SIZE = 200
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :188.676ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 2000 200'
+heat_2D_NP_pochoir 2000 200
++ ./heat_2D_NP_pochoir 2000 200
+N_SIZE = 2000, T_SIZE = 200
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :217.009ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 2200 200'
+heat_2D_NP_pochoir 2200 200
++ ./heat_2D_NP_pochoir 2200 200
+N_SIZE = 2200, T_SIZE = 200
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :253.141ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 2400 200'
+heat_2D_NP_pochoir 2400 200
++ ./heat_2D_NP_pochoir 2400 200
+N_SIZE = 2400, T_SIZE = 200
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :297.349ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 2600 200'
+heat_2D_NP_pochoir 2600 200
++ ./heat_2D_NP_pochoir 2600 200
+N_SIZE = 2600, T_SIZE = 200
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :341.993ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 2800 200'
+heat_2D_NP_pochoir 2800 200
++ ./heat_2D_NP_pochoir 2800 200
+N_SIZE = 2800, T_SIZE = 200
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :388.66ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 3000 200'
+heat_2D_NP_pochoir 3000 200
++ ./heat_2D_NP_pochoir 3000 200
+N_SIZE = 3000, T_SIZE = 200
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :433.662ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 3200 200'
+heat_2D_NP_pochoir 3200 200
++ ./heat_2D_NP_pochoir 3200 200
+N_SIZE = 3200, T_SIZE = 200
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :499.837ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ (( step += 200 ))
++ (( step <= 3200 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 200 400'
+heat_2D_NP_pochoir 200 400
++ ./heat_2D_NP_pochoir 200 400
+N_SIZE = 200, T_SIZE = 400
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :43.792ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 400 400'
+heat_2D_NP_pochoir 400 400
++ ./heat_2D_NP_pochoir 400 400
+N_SIZE = 400, T_SIZE = 400
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :70.486ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 600 400'
+heat_2D_NP_pochoir 600 400
++ ./heat_2D_NP_pochoir 600 400
+N_SIZE = 600, T_SIZE = 400
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :92.06ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 800 400'
+heat_2D_NP_pochoir 800 400
++ ./heat_2D_NP_pochoir 800 400
+N_SIZE = 800, T_SIZE = 400
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :132.407ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 1000 400'
+heat_2D_NP_pochoir 1000 400
++ ./heat_2D_NP_pochoir 1000 400
+N_SIZE = 1000, T_SIZE = 400
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :159.642ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 1200 400'
+heat_2D_NP_pochoir 1200 400
++ ./heat_2D_NP_pochoir 1200 400
+N_SIZE = 1200, T_SIZE = 400
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :207.861ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 1400 400'
+heat_2D_NP_pochoir 1400 400
++ ./heat_2D_NP_pochoir 1400 400
+N_SIZE = 1400, T_SIZE = 400
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :252.468ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 1600 400'
+heat_2D_NP_pochoir 1600 400
++ ./heat_2D_NP_pochoir 1600 400
+N_SIZE = 1600, T_SIZE = 400
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :316.323ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 1800 400'
+heat_2D_NP_pochoir 1800 400
++ ./heat_2D_NP_pochoir 1800 400
+N_SIZE = 1800, T_SIZE = 400
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :356.981ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 2000 400'
+heat_2D_NP_pochoir 2000 400
++ ./heat_2D_NP_pochoir 2000 400
+N_SIZE = 2000, T_SIZE = 400
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :419.657ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 2200 400'
+heat_2D_NP_pochoir 2200 400
++ ./heat_2D_NP_pochoir 2200 400
+N_SIZE = 2200, T_SIZE = 400
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :494.394ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 2400 400'
+heat_2D_NP_pochoir 2400 400
++ ./heat_2D_NP_pochoir 2400 400
+N_SIZE = 2400, T_SIZE = 400
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :583.917ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 2600 400'
+heat_2D_NP_pochoir 2600 400
++ ./heat_2D_NP_pochoir 2600 400
+N_SIZE = 2600, T_SIZE = 400
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :660.863ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 2800 400'
+heat_2D_NP_pochoir 2800 400
++ ./heat_2D_NP_pochoir 2800 400
+N_SIZE = 2800, T_SIZE = 400
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :742.55ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 3000 400'
+heat_2D_NP_pochoir 3000 400
++ ./heat_2D_NP_pochoir 3000 400
+N_SIZE = 3000, T_SIZE = 400
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :846.799ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 3200 400'
+heat_2D_NP_pochoir 3200 400
++ ./heat_2D_NP_pochoir 3200 400
+N_SIZE = 3200, T_SIZE = 400
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :958.349ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ (( step += 200 ))
++ (( step <= 3200 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 200 600'
+heat_2D_NP_pochoir 200 600
++ ./heat_2D_NP_pochoir 200 600
+N_SIZE = 200, T_SIZE = 600
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :65.213ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 400 600'
+heat_2D_NP_pochoir 400 600
++ ./heat_2D_NP_pochoir 400 600
+N_SIZE = 400, T_SIZE = 600
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :114.209ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 600 600'
+heat_2D_NP_pochoir 600 600
++ ./heat_2D_NP_pochoir 600 600
+N_SIZE = 600, T_SIZE = 600
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :149.409ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 800 600'
+heat_2D_NP_pochoir 800 600
++ ./heat_2D_NP_pochoir 800 600
+N_SIZE = 800, T_SIZE = 600
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :195.342ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 1000 600'
+heat_2D_NP_pochoir 1000 600
++ ./heat_2D_NP_pochoir 1000 600
+N_SIZE = 1000, T_SIZE = 600
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :252.392ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 1200 600'
+heat_2D_NP_pochoir 1200 600
++ ./heat_2D_NP_pochoir 1200 600
+N_SIZE = 1200, T_SIZE = 600
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :324.7ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 1400 600'
+heat_2D_NP_pochoir 1400 600
++ ./heat_2D_NP_pochoir 1400 600
+N_SIZE = 1400, T_SIZE = 600
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :379.568ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 1600 600'
+heat_2D_NP_pochoir 1600 600
++ ./heat_2D_NP_pochoir 1600 600
+N_SIZE = 1600, T_SIZE = 600
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :472.891ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 1800 600'
+heat_2D_NP_pochoir 1800 600
++ ./heat_2D_NP_pochoir 1800 600
+N_SIZE = 1800, T_SIZE = 600
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :557.106ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 2000 600'
+heat_2D_NP_pochoir 2000 600
++ ./heat_2D_NP_pochoir 2000 600
+N_SIZE = 2000, T_SIZE = 600
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :657.652ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 2200 600'
+heat_2D_NP_pochoir 2200 600
++ ./heat_2D_NP_pochoir 2200 600
+N_SIZE = 2200, T_SIZE = 600
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :770.674ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 2400 600'
+heat_2D_NP_pochoir 2400 600
++ ./heat_2D_NP_pochoir 2400 600
+N_SIZE = 2400, T_SIZE = 600
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :910.312ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 2600 600'
+heat_2D_NP_pochoir 2600 600
++ ./heat_2D_NP_pochoir 2600 600
+N_SIZE = 2600, T_SIZE = 600
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :999.552ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 2800 600'
+heat_2D_NP_pochoir 2800 600
++ ./heat_2D_NP_pochoir 2800 600
+N_SIZE = 2800, T_SIZE = 600
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :1135.05ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 3000 600'
+heat_2D_NP_pochoir 3000 600
++ ./heat_2D_NP_pochoir 3000 600
+N_SIZE = 3000, T_SIZE = 600
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :1295.11ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 3200 600'
+heat_2D_NP_pochoir 3200 600
++ ./heat_2D_NP_pochoir 3200 600
+N_SIZE = 3200, T_SIZE = 600
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :1482.41ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ (( step += 200 ))
++ (( step <= 3200 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 200 800'
+heat_2D_NP_pochoir 200 800
++ ./heat_2D_NP_pochoir 200 800
+N_SIZE = 200, T_SIZE = 800
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :89.892ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 400 800'
+heat_2D_NP_pochoir 400 800
++ ./heat_2D_NP_pochoir 400 800
+N_SIZE = 400, T_SIZE = 800
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :133.95ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 600 800'
+heat_2D_NP_pochoir 600 800
++ ./heat_2D_NP_pochoir 600 800
+N_SIZE = 600, T_SIZE = 800
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :191.673ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 800 800'
+heat_2D_NP_pochoir 800 800
++ ./heat_2D_NP_pochoir 800 800
+N_SIZE = 800, T_SIZE = 800
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :265.031ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 1000 800'
+heat_2D_NP_pochoir 1000 800
++ ./heat_2D_NP_pochoir 1000 800
+N_SIZE = 1000, T_SIZE = 800
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :321.22ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 1200 800'
+heat_2D_NP_pochoir 1200 800
++ ./heat_2D_NP_pochoir 1200 800
+N_SIZE = 1200, T_SIZE = 800
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :406.829ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 1400 800'
+heat_2D_NP_pochoir 1400 800
++ ./heat_2D_NP_pochoir 1400 800
+N_SIZE = 1400, T_SIZE = 800
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :497.315ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 1600 800'
+heat_2D_NP_pochoir 1600 800
++ ./heat_2D_NP_pochoir 1600 800
+N_SIZE = 1600, T_SIZE = 800
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :626.304ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 1800 800'
+heat_2D_NP_pochoir 1800 800
++ ./heat_2D_NP_pochoir 1800 800
+N_SIZE = 1800, T_SIZE = 800
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :712.957ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 2000 800'
+heat_2D_NP_pochoir 2000 800
++ ./heat_2D_NP_pochoir 2000 800
+N_SIZE = 2000, T_SIZE = 800
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :845.835ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 2200 800'
+heat_2D_NP_pochoir 2200 800
++ ./heat_2D_NP_pochoir 2200 800
+N_SIZE = 2200, T_SIZE = 800
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :984.907ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 2400 800'
+heat_2D_NP_pochoir 2400 800
++ ./heat_2D_NP_pochoir 2400 800
+N_SIZE = 2400, T_SIZE = 800
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :1163.93ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 2600 800'
+heat_2D_NP_pochoir 2600 800
++ ./heat_2D_NP_pochoir 2600 800
+N_SIZE = 2600, T_SIZE = 800
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :1318.01ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 2800 800'
+heat_2D_NP_pochoir 2800 800
++ ./heat_2D_NP_pochoir 2800 800
+N_SIZE = 2800, T_SIZE = 800
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :1499.93ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 3000 800'
+heat_2D_NP_pochoir 3000 800
++ ./heat_2D_NP_pochoir 3000 800
+N_SIZE = 3000, T_SIZE = 800
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :1715.9ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 3200 800'
+heat_2D_NP_pochoir 3200 800
++ ./heat_2D_NP_pochoir 3200 800
+N_SIZE = 3200, T_SIZE = 800
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :1925.75ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ (( step += 200 ))
++ (( step <= 3200 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 200 1000'
+heat_2D_NP_pochoir 200 1000
++ ./heat_2D_NP_pochoir 200 1000
+N_SIZE = 200, T_SIZE = 1000
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :115.219ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 400 1000'
+heat_2D_NP_pochoir 400 1000
++ ./heat_2D_NP_pochoir 400 1000
+N_SIZE = 400, T_SIZE = 1000
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :194.534ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 600 1000'
+heat_2D_NP_pochoir 600 1000
++ ./heat_2D_NP_pochoir 600 1000
+N_SIZE = 600, T_SIZE = 1000
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :251.269ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 800 1000'
+heat_2D_NP_pochoir 800 1000
++ ./heat_2D_NP_pochoir 800 1000
+N_SIZE = 800, T_SIZE = 1000
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :346.89ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 1000 1000'
+heat_2D_NP_pochoir 1000 1000
++ ./heat_2D_NP_pochoir 1000 1000
+N_SIZE = 1000, T_SIZE = 1000
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :435.199ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 1200 1000'
+heat_2D_NP_pochoir 1200 1000
++ ./heat_2D_NP_pochoir 1200 1000
+N_SIZE = 1200, T_SIZE = 1000
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :521.663ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 1400 1000'
+heat_2D_NP_pochoir 1400 1000
++ ./heat_2D_NP_pochoir 1400 1000
+N_SIZE = 1400, T_SIZE = 1000
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :646.459ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 1600 1000'
+heat_2D_NP_pochoir 1600 1000
++ ./heat_2D_NP_pochoir 1600 1000
+N_SIZE = 1600, T_SIZE = 1000
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :805.408ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 1800 1000'
+heat_2D_NP_pochoir 1800 1000
++ ./heat_2D_NP_pochoir 1800 1000
+N_SIZE = 1800, T_SIZE = 1000
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :947.586ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 2000 1000'
+heat_2D_NP_pochoir 2000 1000
++ ./heat_2D_NP_pochoir 2000 1000
+N_SIZE = 2000, T_SIZE = 1000
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :1133.87ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 2200 1000'
+heat_2D_NP_pochoir 2200 1000
++ ./heat_2D_NP_pochoir 2200 1000
+N_SIZE = 2200, T_SIZE = 1000
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :1282.49ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 2400 1000'
+heat_2D_NP_pochoir 2400 1000
++ ./heat_2D_NP_pochoir 2400 1000
+N_SIZE = 2400, T_SIZE = 1000
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :1502.75ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 2600 1000'
+heat_2D_NP_pochoir 2600 1000
++ ./heat_2D_NP_pochoir 2600 1000
+N_SIZE = 2600, T_SIZE = 1000
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :1688.96ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 2800 1000'
+heat_2D_NP_pochoir 2800 1000
++ ./heat_2D_NP_pochoir 2800 1000
+N_SIZE = 2800, T_SIZE = 1000
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :1906.43ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 3000 1000'
+heat_2D_NP_pochoir 3000 1000
++ ./heat_2D_NP_pochoir 3000 1000
+N_SIZE = 3000, T_SIZE = 1000
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :2196.24ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 3200 1000'
+heat_2D_NP_pochoir 3200 1000
++ ./heat_2D_NP_pochoir 3200 1000
+N_SIZE = 3200, T_SIZE = 1000
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :2499.31ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ (( step += 200 ))
++ (( step <= 3200 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 200 1200'
+heat_2D_NP_pochoir 200 1200
++ ./heat_2D_NP_pochoir 200 1200
+N_SIZE = 200, T_SIZE = 1200
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :137.235ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 400 1200'
+heat_2D_NP_pochoir 400 1200
++ ./heat_2D_NP_pochoir 400 1200
+N_SIZE = 400, T_SIZE = 1200
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :225.967ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 600 1200'
+heat_2D_NP_pochoir 600 1200
++ ./heat_2D_NP_pochoir 600 1200
+N_SIZE = 600, T_SIZE = 1200
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :296.733ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 800 1200'
+heat_2D_NP_pochoir 800 1200
++ ./heat_2D_NP_pochoir 800 1200
+N_SIZE = 800, T_SIZE = 1200
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :395.953ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 1000 1200'
+heat_2D_NP_pochoir 1000 1200
++ ./heat_2D_NP_pochoir 1000 1200
+N_SIZE = 1000, T_SIZE = 1200
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :508.196ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 1200 1200'
+heat_2D_NP_pochoir 1200 1200
++ ./heat_2D_NP_pochoir 1200 1200
+N_SIZE = 1200, T_SIZE = 1200
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :636.737ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 1400 1200'
+heat_2D_NP_pochoir 1400 1200
++ ./heat_2D_NP_pochoir 1400 1200
+N_SIZE = 1400, T_SIZE = 1200
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :771.317ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 1600 1200'
+heat_2D_NP_pochoir 1600 1200
++ ./heat_2D_NP_pochoir 1600 1200
+N_SIZE = 1600, T_SIZE = 1200
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :947.689ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 1800 1200'
+heat_2D_NP_pochoir 1800 1200
++ ./heat_2D_NP_pochoir 1800 1200
+N_SIZE = 1800, T_SIZE = 1200
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :1113.42ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 2000 1200'
+heat_2D_NP_pochoir 2000 1200
++ ./heat_2D_NP_pochoir 2000 1200
+N_SIZE = 2000, T_SIZE = 1200
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :1315.62ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 2200 1200'
+heat_2D_NP_pochoir 2200 1200
++ ./heat_2D_NP_pochoir 2200 1200
+N_SIZE = 2200, T_SIZE = 1200
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :1538.87ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 2400 1200'
+heat_2D_NP_pochoir 2400 1200
++ ./heat_2D_NP_pochoir 2400 1200
+N_SIZE = 2400, T_SIZE = 1200
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :1835.91ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 2600 1200'
+heat_2D_NP_pochoir 2600 1200
++ ./heat_2D_NP_pochoir 2600 1200
+N_SIZE = 2600, T_SIZE = 1200
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :1997.3ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 2800 1200'
+heat_2D_NP_pochoir 2800 1200
++ ./heat_2D_NP_pochoir 2800 1200
+N_SIZE = 2800, T_SIZE = 1200
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :2269.04ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 3000 1200'
+heat_2D_NP_pochoir 3000 1200
++ ./heat_2D_NP_pochoir 3000 1200
+N_SIZE = 3000, T_SIZE = 1200
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :2583.58ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 3200 1200'
+heat_2D_NP_pochoir 3200 1200
++ ./heat_2D_NP_pochoir 3200 1200
+N_SIZE = 3200, T_SIZE = 1200
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :2952.08ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ (( step += 200 ))
++ (( step <= 3200 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 200 1400'
+heat_2D_NP_pochoir 200 1400
++ ./heat_2D_NP_pochoir 200 1400
+N_SIZE = 200, T_SIZE = 1400
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :155.107ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 400 1400'
+heat_2D_NP_pochoir 400 1400
++ ./heat_2D_NP_pochoir 400 1400
+N_SIZE = 400, T_SIZE = 1400
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :229.426ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 600 1400'
+heat_2D_NP_pochoir 600 1400
++ ./heat_2D_NP_pochoir 600 1400
+N_SIZE = 600, T_SIZE = 1400
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :358.669ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 800 1400'
+heat_2D_NP_pochoir 800 1400
++ ./heat_2D_NP_pochoir 800 1400
+N_SIZE = 800, T_SIZE = 1400
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :451.82ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 1000 1400'
+heat_2D_NP_pochoir 1000 1400
++ ./heat_2D_NP_pochoir 1000 1400
+N_SIZE = 1000, T_SIZE = 1400
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :566.431ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 1200 1400'
+heat_2D_NP_pochoir 1200 1400
++ ./heat_2D_NP_pochoir 1200 1400
+N_SIZE = 1200, T_SIZE = 1400
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :741.197ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 1400 1400'
+heat_2D_NP_pochoir 1400 1400
++ ./heat_2D_NP_pochoir 1400 1400
+N_SIZE = 1400, T_SIZE = 1400
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :894.28ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 1600 1400'
+heat_2D_NP_pochoir 1600 1400
++ ./heat_2D_NP_pochoir 1600 1400
+N_SIZE = 1600, T_SIZE = 1400
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :1093.85ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 1800 1400'
+heat_2D_NP_pochoir 1800 1400
++ ./heat_2D_NP_pochoir 1800 1400
+N_SIZE = 1800, T_SIZE = 1400
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :1290.39ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 2000 1400'
+heat_2D_NP_pochoir 2000 1400
++ ./heat_2D_NP_pochoir 2000 1400
+N_SIZE = 2000, T_SIZE = 1400
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :1522.7ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 2200 1400'
+heat_2D_NP_pochoir 2200 1400
++ ./heat_2D_NP_pochoir 2200 1400
+N_SIZE = 2200, T_SIZE = 1400
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :1776.59ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 2400 1400'
+heat_2D_NP_pochoir 2400 1400
++ ./heat_2D_NP_pochoir 2400 1400
+N_SIZE = 2400, T_SIZE = 1400
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :2087.45ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 2600 1400'
+heat_2D_NP_pochoir 2600 1400
++ ./heat_2D_NP_pochoir 2600 1400
+N_SIZE = 2600, T_SIZE = 1400
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :2359.71ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 2800 1400'
+heat_2D_NP_pochoir 2800 1400
++ ./heat_2D_NP_pochoir 2800 1400
+N_SIZE = 2800, T_SIZE = 1400
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :2660.26ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 3000 1400'
+heat_2D_NP_pochoir 3000 1400
++ ./heat_2D_NP_pochoir 3000 1400
+N_SIZE = 3000, T_SIZE = 1400
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :2997.81ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 3200 1400'
+heat_2D_NP_pochoir 3200 1400
++ ./heat_2D_NP_pochoir 3200 1400
+N_SIZE = 3200, T_SIZE = 1400
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :3407.8ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ (( step += 200 ))
++ (( step <= 3200 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 200 1600'
+heat_2D_NP_pochoir 200 1600
++ ./heat_2D_NP_pochoir 200 1600
+N_SIZE = 200, T_SIZE = 1600
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :175.942ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 400 1600'
+heat_2D_NP_pochoir 400 1600
++ ./heat_2D_NP_pochoir 400 1600
+N_SIZE = 400, T_SIZE = 1600
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :282.777ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 600 1600'
+heat_2D_NP_pochoir 600 1600
++ ./heat_2D_NP_pochoir 600 1600
+N_SIZE = 600, T_SIZE = 1600
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :392.911ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 800 1600'
+heat_2D_NP_pochoir 800 1600
++ ./heat_2D_NP_pochoir 800 1600
+N_SIZE = 800, T_SIZE = 1600
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :541.181ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 1000 1600'
+heat_2D_NP_pochoir 1000 1600
++ ./heat_2D_NP_pochoir 1000 1600
+N_SIZE = 1000, T_SIZE = 1600
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :633.364ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 1200 1600'
+heat_2D_NP_pochoir 1200 1600
++ ./heat_2D_NP_pochoir 1200 1600
+N_SIZE = 1200, T_SIZE = 1600
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :801.015ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 1400 1600'
+heat_2D_NP_pochoir 1400 1600
++ ./heat_2D_NP_pochoir 1400 1600
+N_SIZE = 1400, T_SIZE = 1600
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :1004.34ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 1600 1600'
+heat_2D_NP_pochoir 1600 1600
++ ./heat_2D_NP_pochoir 1600 1600
+N_SIZE = 1600, T_SIZE = 1600
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :1262.05ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 1800 1600'
+heat_2D_NP_pochoir 1800 1600
++ ./heat_2D_NP_pochoir 1800 1600
+N_SIZE = 1800, T_SIZE = 1600
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :1437.12ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 2000 1600'
+heat_2D_NP_pochoir 2000 1600
++ ./heat_2D_NP_pochoir 2000 1600
+N_SIZE = 2000, T_SIZE = 1600
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :1698.53ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 2200 1600'
+heat_2D_NP_pochoir 2200 1600
++ ./heat_2D_NP_pochoir 2200 1600
+N_SIZE = 2200, T_SIZE = 1600
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :1972.7ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 2400 1600'
+heat_2D_NP_pochoir 2400 1600
++ ./heat_2D_NP_pochoir 2400 1600
+N_SIZE = 2400, T_SIZE = 1600
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :2327.62ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 2600 1600'
+heat_2D_NP_pochoir 2600 1600
++ ./heat_2D_NP_pochoir 2600 1600
+N_SIZE = 2600, T_SIZE = 1600
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :2647.56ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 2800 1600'
+heat_2D_NP_pochoir 2800 1600
++ ./heat_2D_NP_pochoir 2800 1600
+N_SIZE = 2800, T_SIZE = 1600
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :2989.49ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 3000 1600'
+heat_2D_NP_pochoir 3000 1600
++ ./heat_2D_NP_pochoir 3000 1600
+N_SIZE = 3000, T_SIZE = 1600
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :3406.83ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 3200 1600'
+heat_2D_NP_pochoir 3200 1600
++ ./heat_2D_NP_pochoir 3200 1600
+N_SIZE = 3200, T_SIZE = 1600
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :3874.38ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ (( step += 200 ))
++ (( step <= 3200 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 200 1800'
+heat_2D_NP_pochoir 200 1800
++ ./heat_2D_NP_pochoir 200 1800
+N_SIZE = 200, T_SIZE = 1800
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :212.535ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 400 1800'
+heat_2D_NP_pochoir 400 1800
++ ./heat_2D_NP_pochoir 400 1800
+N_SIZE = 400, T_SIZE = 1800
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :322.028ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 600 1800'
+heat_2D_NP_pochoir 600 1800
++ ./heat_2D_NP_pochoir 600 1800
+N_SIZE = 600, T_SIZE = 1800
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :423.834ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 800 1800'
+heat_2D_NP_pochoir 800 1800
++ ./heat_2D_NP_pochoir 800 1800
+N_SIZE = 800, T_SIZE = 1800
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :581.298ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 1000 1800'
+heat_2D_NP_pochoir 1000 1800
++ ./heat_2D_NP_pochoir 1000 1800
+N_SIZE = 1000, T_SIZE = 1800
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :730.68ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 1200 1800'
+heat_2D_NP_pochoir 1200 1800
++ ./heat_2D_NP_pochoir 1200 1800
+N_SIZE = 1200, T_SIZE = 1800
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :920.393ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 1400 1800'
+heat_2D_NP_pochoir 1400 1800
++ ./heat_2D_NP_pochoir 1400 1800
+N_SIZE = 1400, T_SIZE = 1800
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :1159.64ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 1600 1800'
+heat_2D_NP_pochoir 1600 1800
++ ./heat_2D_NP_pochoir 1600 1800
+N_SIZE = 1600, T_SIZE = 1800
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :1420.33ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 1800 1800'
+heat_2D_NP_pochoir 1800 1800
++ ./heat_2D_NP_pochoir 1800 1800
+N_SIZE = 1800, T_SIZE = 1800
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :1709.51ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 2000 1800'
+heat_2D_NP_pochoir 2000 1800
++ ./heat_2D_NP_pochoir 2000 1800
+N_SIZE = 2000, T_SIZE = 1800
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :1950.43ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 2200 1800'
+heat_2D_NP_pochoir 2200 1800
++ ./heat_2D_NP_pochoir 2200 1800
+N_SIZE = 2200, T_SIZE = 1800
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :2274.89ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 2400 1800'
+heat_2D_NP_pochoir 2400 1800
++ ./heat_2D_NP_pochoir 2400 1800
+N_SIZE = 2400, T_SIZE = 1800
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :2694.43ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 2600 1800'
+heat_2D_NP_pochoir 2600 1800
++ ./heat_2D_NP_pochoir 2600 1800
+N_SIZE = 2600, T_SIZE = 1800
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :2998.69ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 2800 1800'
+heat_2D_NP_pochoir 2800 1800
++ ./heat_2D_NP_pochoir 2800 1800
+N_SIZE = 2800, T_SIZE = 1800
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :3455.94ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 3000 1800'
+heat_2D_NP_pochoir 3000 1800
++ ./heat_2D_NP_pochoir 3000 1800
+N_SIZE = 3000, T_SIZE = 1800
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :3879.97ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 3200 1800'
+heat_2D_NP_pochoir 3200 1800
++ ./heat_2D_NP_pochoir 3200 1800
+N_SIZE = 3200, T_SIZE = 1800
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :4480.45ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ (( step += 200 ))
++ (( step <= 3200 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 200 2000'
+heat_2D_NP_pochoir 200 2000
++ ./heat_2D_NP_pochoir 200 2000
+N_SIZE = 200, T_SIZE = 2000
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :227.332ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 400 2000'
+heat_2D_NP_pochoir 400 2000
++ ./heat_2D_NP_pochoir 400 2000
+N_SIZE = 400, T_SIZE = 2000
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :373.799ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 600 2000'
+heat_2D_NP_pochoir 600 2000
++ ./heat_2D_NP_pochoir 600 2000
+N_SIZE = 600, T_SIZE = 2000
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :491.58ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 800 2000'
+heat_2D_NP_pochoir 800 2000
++ ./heat_2D_NP_pochoir 800 2000
+N_SIZE = 800, T_SIZE = 2000
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :671.599ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 1000 2000'
+heat_2D_NP_pochoir 1000 2000
++ ./heat_2D_NP_pochoir 1000 2000
+N_SIZE = 1000, T_SIZE = 2000
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :862.048ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 1200 2000'
+heat_2D_NP_pochoir 1200 2000
++ ./heat_2D_NP_pochoir 1200 2000
+N_SIZE = 1200, T_SIZE = 2000
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :1045.91ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 1400 2000'
+heat_2D_NP_pochoir 1400 2000
++ ./heat_2D_NP_pochoir 1400 2000
+N_SIZE = 1400, T_SIZE = 2000
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :1305.3ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 1600 2000'
+heat_2D_NP_pochoir 1600 2000
++ ./heat_2D_NP_pochoir 1600 2000
+N_SIZE = 1600, T_SIZE = 2000
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :1616.73ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 1800 2000'
+heat_2D_NP_pochoir 1800 2000
++ ./heat_2D_NP_pochoir 1800 2000
+N_SIZE = 1800, T_SIZE = 2000
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :1894.04ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 2000 2000'
+heat_2D_NP_pochoir 2000 2000
++ ./heat_2D_NP_pochoir 2000 2000
+N_SIZE = 2000, T_SIZE = 2000
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :2280.42ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 2200 2000'
+heat_2D_NP_pochoir 2200 2000
++ ./heat_2D_NP_pochoir 2200 2000
+N_SIZE = 2200, T_SIZE = 2000
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :2558.59ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 2400 2000'
+heat_2D_NP_pochoir 2400 2000
++ ./heat_2D_NP_pochoir 2400 2000
+N_SIZE = 2400, T_SIZE = 2000
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :3030.99ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 2600 2000'
+heat_2D_NP_pochoir 2600 2000
++ ./heat_2D_NP_pochoir 2600 2000
+N_SIZE = 2600, T_SIZE = 2000
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :3384.04ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 2800 2000'
+heat_2D_NP_pochoir 2800 2000
++ ./heat_2D_NP_pochoir 2800 2000
+N_SIZE = 2800, T_SIZE = 2000
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :3838.81ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 3000 2000'
+heat_2D_NP_pochoir 3000 2000
++ ./heat_2D_NP_pochoir 3000 2000
+N_SIZE = 3000, T_SIZE = 2000
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :4395.77ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 3200 2000'
+heat_2D_NP_pochoir 3200 2000
++ ./heat_2D_NP_pochoir 3200 2000
+N_SIZE = 3200, T_SIZE = 2000
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :4985.18ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ (( step += 200 ))
++ (( step <= 3200 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 200 2200'
+heat_2D_NP_pochoir 200 2200
++ ./heat_2D_NP_pochoir 200 2200
+N_SIZE = 200, T_SIZE = 2200
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :262.391ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 400 2200'
+heat_2D_NP_pochoir 400 2200
++ ./heat_2D_NP_pochoir 400 2200
+N_SIZE = 400, T_SIZE = 2200
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :415.834ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 600 2200'
+heat_2D_NP_pochoir 600 2200
++ ./heat_2D_NP_pochoir 600 2200
+N_SIZE = 600, T_SIZE = 2200
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :549.401ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 800 2200'
+heat_2D_NP_pochoir 800 2200
++ ./heat_2D_NP_pochoir 800 2200
+N_SIZE = 800, T_SIZE = 2200
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :729.511ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 1000 2200'
+heat_2D_NP_pochoir 1000 2200
++ ./heat_2D_NP_pochoir 1000 2200
+N_SIZE = 1000, T_SIZE = 2200
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :936.547ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 1200 2200'
+heat_2D_NP_pochoir 1200 2200
++ ./heat_2D_NP_pochoir 1200 2200
+N_SIZE = 1200, T_SIZE = 2200
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :1166.21ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 1400 2200'
+heat_2D_NP_pochoir 1400 2200
++ ./heat_2D_NP_pochoir 1400 2200
+N_SIZE = 1400, T_SIZE = 2200
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :1434.31ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 1600 2200'
+heat_2D_NP_pochoir 1600 2200
++ ./heat_2D_NP_pochoir 1600 2200
+N_SIZE = 1600, T_SIZE = 2200
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :1782.25ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 1800 2200'
+heat_2D_NP_pochoir 1800 2200
++ ./heat_2D_NP_pochoir 1800 2200
+N_SIZE = 1800, T_SIZE = 2200
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :2093.41ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 2000 2200'
+heat_2D_NP_pochoir 2000 2200
++ ./heat_2D_NP_pochoir 2000 2200
+N_SIZE = 2000, T_SIZE = 2200
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :2475.33ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 2200 2200'
+heat_2D_NP_pochoir 2200 2200
++ ./heat_2D_NP_pochoir 2200 2200
+N_SIZE = 2200, T_SIZE = 2200
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :2923.54ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 2400 2200'
+heat_2D_NP_pochoir 2400 2200
++ ./heat_2D_NP_pochoir 2400 2200
+N_SIZE = 2400, T_SIZE = 2200
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :3342.95ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 2600 2200'
+heat_2D_NP_pochoir 2600 2200
++ ./heat_2D_NP_pochoir 2600 2200
+N_SIZE = 2600, T_SIZE = 2200
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :3730.96ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 2800 2200'
+heat_2D_NP_pochoir 2800 2200
++ ./heat_2D_NP_pochoir 2800 2200
+N_SIZE = 2800, T_SIZE = 2200
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :4251.22ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 3000 2200'
+heat_2D_NP_pochoir 3000 2200
++ ./heat_2D_NP_pochoir 3000 2200
+N_SIZE = 3000, T_SIZE = 2200
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :4821.87ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 3200 2200'
+heat_2D_NP_pochoir 3200 2200
++ ./heat_2D_NP_pochoir 3200 2200
+N_SIZE = 3200, T_SIZE = 2200
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :5488.55ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ (( step += 200 ))
++ (( step <= 3200 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 200 2400'
+heat_2D_NP_pochoir 200 2400
++ ./heat_2D_NP_pochoir 200 2400
+N_SIZE = 200, T_SIZE = 2400
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :282.594ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 400 2400'
+heat_2D_NP_pochoir 400 2400
++ ./heat_2D_NP_pochoir 400 2400
+N_SIZE = 400, T_SIZE = 2400
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :439.97ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 600 2400'
+heat_2D_NP_pochoir 600 2400
++ ./heat_2D_NP_pochoir 600 2400
+N_SIZE = 600, T_SIZE = 2400
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :629.19ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 800 2400'
+heat_2D_NP_pochoir 800 2400
++ ./heat_2D_NP_pochoir 800 2400
+N_SIZE = 800, T_SIZE = 2400
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :802.378ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 1000 2400'
+heat_2D_NP_pochoir 1000 2400
++ ./heat_2D_NP_pochoir 1000 2400
+N_SIZE = 1000, T_SIZE = 2400
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :1021.85ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 1200 2400'
+heat_2D_NP_pochoir 1200 2400
++ ./heat_2D_NP_pochoir 1200 2400
+N_SIZE = 1200, T_SIZE = 2400
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :1300.32ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 1400 2400'
+heat_2D_NP_pochoir 1400 2400
++ ./heat_2D_NP_pochoir 1400 2400
+N_SIZE = 1400, T_SIZE = 2400
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :1534.65ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 1600 2400'
+heat_2D_NP_pochoir 1600 2400
++ ./heat_2D_NP_pochoir 1600 2400
+N_SIZE = 1600, T_SIZE = 2400
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :1908.14ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 1800 2400'
+heat_2D_NP_pochoir 1800 2400
++ ./heat_2D_NP_pochoir 1800 2400
+N_SIZE = 1800, T_SIZE = 2400
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :2233.97ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 2000 2400'
+heat_2D_NP_pochoir 2000 2400
++ ./heat_2D_NP_pochoir 2000 2400
+N_SIZE = 2000, T_SIZE = 2400
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :2658.58ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 2200 2400'
+heat_2D_NP_pochoir 2200 2400
++ ./heat_2D_NP_pochoir 2200 2400
+N_SIZE = 2200, T_SIZE = 2400
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :3093.2ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 2400 2400'
+heat_2D_NP_pochoir 2400 2400
++ ./heat_2D_NP_pochoir 2400 2400
+N_SIZE = 2400, T_SIZE = 2400
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :3647.96ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 2600 2400'
+heat_2D_NP_pochoir 2600 2400
++ ./heat_2D_NP_pochoir 2600 2400
+N_SIZE = 2600, T_SIZE = 2400
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :4000.61ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 2800 2400'
+heat_2D_NP_pochoir 2800 2400
++ ./heat_2D_NP_pochoir 2800 2400
+N_SIZE = 2800, T_SIZE = 2400
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :4542ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 3000 2400'
+heat_2D_NP_pochoir 3000 2400
++ ./heat_2D_NP_pochoir 3000 2400
+N_SIZE = 3000, T_SIZE = 2400
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :5183.67ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 3200 2400'
+heat_2D_NP_pochoir 3200 2400
++ ./heat_2D_NP_pochoir 3200 2400
+N_SIZE = 3200, T_SIZE = 2400
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :5912.02ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ (( step += 200 ))
++ (( step <= 3200 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 200 2600'
+heat_2D_NP_pochoir 200 2600
++ ./heat_2D_NP_pochoir 200 2600
+N_SIZE = 200, T_SIZE = 2600
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :265.954ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 400 2600'
+heat_2D_NP_pochoir 400 2600
++ ./heat_2D_NP_pochoir 400 2600
+N_SIZE = 400, T_SIZE = 2600
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :439.67ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 600 2600'
+heat_2D_NP_pochoir 600 2600
++ ./heat_2D_NP_pochoir 600 2600
+N_SIZE = 600, T_SIZE = 2600
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :628.339ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 800 2600'
+heat_2D_NP_pochoir 800 2600
++ ./heat_2D_NP_pochoir 800 2600
+N_SIZE = 800, T_SIZE = 2600
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :826.777ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 1000 2600'
+heat_2D_NP_pochoir 1000 2600
++ ./heat_2D_NP_pochoir 1000 2600
+N_SIZE = 1000, T_SIZE = 2600
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :1078.92ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 1200 2600'
+heat_2D_NP_pochoir 1200 2600
++ ./heat_2D_NP_pochoir 1200 2600
+N_SIZE = 1200, T_SIZE = 2600
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :1328.77ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 1400 2600'
+heat_2D_NP_pochoir 1400 2600
++ ./heat_2D_NP_pochoir 1400 2600
+N_SIZE = 1400, T_SIZE = 2600
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :1628.77ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 1600 2600'
+heat_2D_NP_pochoir 1600 2600
++ ./heat_2D_NP_pochoir 1600 2600
+N_SIZE = 1600, T_SIZE = 2600
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :2023.92ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 1800 2600'
+heat_2D_NP_pochoir 1800 2600
++ ./heat_2D_NP_pochoir 1800 2600
+N_SIZE = 1800, T_SIZE = 2600
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :2385.99ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 2000 2600'
+heat_2D_NP_pochoir 2000 2600
++ ./heat_2D_NP_pochoir 2000 2600
+N_SIZE = 2000, T_SIZE = 2600
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :2828.71ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 2200 2600'
+heat_2D_NP_pochoir 2200 2600
++ ./heat_2D_NP_pochoir 2200 2600
+N_SIZE = 2200, T_SIZE = 2600
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :3308.93ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 2400 2600'
+heat_2D_NP_pochoir 2400 2600
++ ./heat_2D_NP_pochoir 2400 2600
+N_SIZE = 2400, T_SIZE = 2600
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :3920.86ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 2600 2600'
+heat_2D_NP_pochoir 2600 2600
++ ./heat_2D_NP_pochoir 2600 2600
+N_SIZE = 2600, T_SIZE = 2600
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :4374.07ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 2800 2600'
+heat_2D_NP_pochoir 2800 2600
++ ./heat_2D_NP_pochoir 2800 2600
+N_SIZE = 2800, T_SIZE = 2600
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :4883.7ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 3000 2600'
+heat_2D_NP_pochoir 3000 2600
++ ./heat_2D_NP_pochoir 3000 2600
+N_SIZE = 3000, T_SIZE = 2600
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :5562.41ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 3200 2600'
+heat_2D_NP_pochoir 3200 2600
++ ./heat_2D_NP_pochoir 3200 2600
+N_SIZE = 3200, T_SIZE = 2600
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :6354.61ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ (( step += 200 ))
++ (( step <= 3200 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 200 2800'
+heat_2D_NP_pochoir 200 2800
++ ./heat_2D_NP_pochoir 200 2800
+N_SIZE = 200, T_SIZE = 2800
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :295.452ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 400 2800'
+heat_2D_NP_pochoir 400 2800
++ ./heat_2D_NP_pochoir 400 2800
+N_SIZE = 400, T_SIZE = 2800
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :491.516ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 600 2800'
+heat_2D_NP_pochoir 600 2800
++ ./heat_2D_NP_pochoir 600 2800
+N_SIZE = 600, T_SIZE = 2800
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :695.458ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 800 2800'
+heat_2D_NP_pochoir 800 2800
++ ./heat_2D_NP_pochoir 800 2800
+N_SIZE = 800, T_SIZE = 2800
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :900.012ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 1000 2800'
+heat_2D_NP_pochoir 1000 2800
++ ./heat_2D_NP_pochoir 1000 2800
+N_SIZE = 1000, T_SIZE = 2800
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :1160.21ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 1200 2800'
+heat_2D_NP_pochoir 1200 2800
++ ./heat_2D_NP_pochoir 1200 2800
+N_SIZE = 1200, T_SIZE = 2800
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :1479.84ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 1400 2800'
+heat_2D_NP_pochoir 1400 2800
++ ./heat_2D_NP_pochoir 1400 2800
+N_SIZE = 1400, T_SIZE = 2800
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :1817.53ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 1600 2800'
+heat_2D_NP_pochoir 1600 2800
++ ./heat_2D_NP_pochoir 1600 2800
+N_SIZE = 1600, T_SIZE = 2800
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :2187.38ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 1800 2800'
+heat_2D_NP_pochoir 1800 2800
++ ./heat_2D_NP_pochoir 1800 2800
+N_SIZE = 1800, T_SIZE = 2800
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :2570.66ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 2000 2800'
+heat_2D_NP_pochoir 2000 2800
++ ./heat_2D_NP_pochoir 2000 2800
+N_SIZE = 2000, T_SIZE = 2800
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :3022.25ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 2200 2800'
+heat_2D_NP_pochoir 2200 2800
++ ./heat_2D_NP_pochoir 2200 2800
+N_SIZE = 2200, T_SIZE = 2800
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :3557.79ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 2400 2800'
+heat_2D_NP_pochoir 2400 2800
++ ./heat_2D_NP_pochoir 2400 2800
+N_SIZE = 2400, T_SIZE = 2800
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :4206.3ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 2600 2800'
+heat_2D_NP_pochoir 2600 2800
++ ./heat_2D_NP_pochoir 2600 2800
+N_SIZE = 2600, T_SIZE = 2800
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :4708.87ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 2800 2800'
+heat_2D_NP_pochoir 2800 2800
++ ./heat_2D_NP_pochoir 2800 2800
+N_SIZE = 2800, T_SIZE = 2800
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :5330.27ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 3000 2800'
+heat_2D_NP_pochoir 3000 2800
++ ./heat_2D_NP_pochoir 3000 2800
+N_SIZE = 3000, T_SIZE = 2800
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :5975.9ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 3200 2800'
+heat_2D_NP_pochoir 3200 2800
++ ./heat_2D_NP_pochoir 3200 2800
+N_SIZE = 3200, T_SIZE = 2800
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :6823.01ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ (( step += 200 ))
++ (( step <= 3200 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 200 3000'
+heat_2D_NP_pochoir 200 3000
++ ./heat_2D_NP_pochoir 200 3000
+N_SIZE = 200, T_SIZE = 3000
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :315.926ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 400 3000'
+heat_2D_NP_pochoir 400 3000
++ ./heat_2D_NP_pochoir 400 3000
+N_SIZE = 400, T_SIZE = 3000
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :518.122ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 600 3000'
+heat_2D_NP_pochoir 600 3000
++ ./heat_2D_NP_pochoir 600 3000
+N_SIZE = 600, T_SIZE = 3000
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :752.7ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 800 3000'
+heat_2D_NP_pochoir 800 3000
++ ./heat_2D_NP_pochoir 800 3000
+N_SIZE = 800, T_SIZE = 3000
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :975.038ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 1000 3000'
+heat_2D_NP_pochoir 1000 3000
++ ./heat_2D_NP_pochoir 1000 3000
+N_SIZE = 1000, T_SIZE = 3000
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :1244.02ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 1200 3000'
+heat_2D_NP_pochoir 1200 3000
++ ./heat_2D_NP_pochoir 1200 3000
+N_SIZE = 1200, T_SIZE = 3000
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :1577.29ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 1400 3000'
+heat_2D_NP_pochoir 1400 3000
++ ./heat_2D_NP_pochoir 1400 3000
+N_SIZE = 1400, T_SIZE = 3000
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :1940.1ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 1600 3000'
+heat_2D_NP_pochoir 1600 3000
++ ./heat_2D_NP_pochoir 1600 3000
+N_SIZE = 1600, T_SIZE = 3000
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :2370.84ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 1800 3000'
+heat_2D_NP_pochoir 1800 3000
++ ./heat_2D_NP_pochoir 1800 3000
+N_SIZE = 1800, T_SIZE = 3000
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :2764.55ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 2000 3000'
+heat_2D_NP_pochoir 2000 3000
++ ./heat_2D_NP_pochoir 2000 3000
+N_SIZE = 2000, T_SIZE = 3000
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :3280.56ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 2200 3000'
+heat_2D_NP_pochoir 2200 3000
++ ./heat_2D_NP_pochoir 2200 3000
+N_SIZE = 2200, T_SIZE = 3000
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :3777.89ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 2400 3000'
+heat_2D_NP_pochoir 2400 3000
++ ./heat_2D_NP_pochoir 2400 3000
+N_SIZE = 2400, T_SIZE = 3000
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :4511.13ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 2600 3000'
+heat_2D_NP_pochoir 2600 3000
++ ./heat_2D_NP_pochoir 2600 3000
+N_SIZE = 2600, T_SIZE = 3000
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :5021.09ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 2800 3000'
+heat_2D_NP_pochoir 2800 3000
++ ./heat_2D_NP_pochoir 2800 3000
+N_SIZE = 2800, T_SIZE = 3000
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :5712.17ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 3000 3000'
+heat_2D_NP_pochoir 3000 3000
++ ./heat_2D_NP_pochoir 3000 3000
+N_SIZE = 3000, T_SIZE = 3000
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :6465.58ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 3200 3000'
+heat_2D_NP_pochoir 3200 3000
++ ./heat_2D_NP_pochoir 3200 3000
+N_SIZE = 3200, T_SIZE = 3000
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :7346.87ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ (( step += 200 ))
++ (( step <= 3200 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 200 3200'
+heat_2D_NP_pochoir 200 3200
++ ./heat_2D_NP_pochoir 200 3200
+N_SIZE = 200, T_SIZE = 3200
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :364.281ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 400 3200'
+heat_2D_NP_pochoir 400 3200
++ ./heat_2D_NP_pochoir 400 3200
+N_SIZE = 400, T_SIZE = 3200
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :558.48ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 600 3200'
+heat_2D_NP_pochoir 600 3200
++ ./heat_2D_NP_pochoir 600 3200
+N_SIZE = 600, T_SIZE = 3200
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :776.818ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 800 3200'
+heat_2D_NP_pochoir 800 3200
++ ./heat_2D_NP_pochoir 800 3200
+N_SIZE = 800, T_SIZE = 3200
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :1065.62ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 1000 3200'
+heat_2D_NP_pochoir 1000 3200
++ ./heat_2D_NP_pochoir 1000 3200
+N_SIZE = 1000, T_SIZE = 3200
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :1302.08ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 1200 3200'
+heat_2D_NP_pochoir 1200 3200
++ ./heat_2D_NP_pochoir 1200 3200
+N_SIZE = 1200, T_SIZE = 3200
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :1616.44ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 1400 3200'
+heat_2D_NP_pochoir 1400 3200
++ ./heat_2D_NP_pochoir 1400 3200
+N_SIZE = 1400, T_SIZE = 3200
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :2026.86ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 1600 3200'
+heat_2D_NP_pochoir 1600 3200
++ ./heat_2D_NP_pochoir 1600 3200
+N_SIZE = 1600, T_SIZE = 3200
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :2514.25ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 1800 3200'
+heat_2D_NP_pochoir 1800 3200
++ ./heat_2D_NP_pochoir 1800 3200
+N_SIZE = 1800, T_SIZE = 3200
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :2881.49ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 2000 3200'
+heat_2D_NP_pochoir 2000 3200
++ ./heat_2D_NP_pochoir 2000 3200
+N_SIZE = 2000, T_SIZE = 3200
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :3389.1ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 2200 3200'
+heat_2D_NP_pochoir 2200 3200
++ ./heat_2D_NP_pochoir 2200 3200
+N_SIZE = 2200, T_SIZE = 3200
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :3965.38ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 2400 3200'
+heat_2D_NP_pochoir 2400 3200
++ ./heat_2D_NP_pochoir 2400 3200
+N_SIZE = 2400, T_SIZE = 3200
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :4666.96ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 2600 3200'
+heat_2D_NP_pochoir 2600 3200
++ ./heat_2D_NP_pochoir 2600 3200
+N_SIZE = 2600, T_SIZE = 3200
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :5319.13ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 2800 3200'
+heat_2D_NP_pochoir 2800 3200
++ ./heat_2D_NP_pochoir 2800 3200
+N_SIZE = 2800, T_SIZE = 3200
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :5951.2ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 3000 3200'
+heat_2D_NP_pochoir 3000 3200
++ ./heat_2D_NP_pochoir 3000 3200
+N_SIZE = 3000, T_SIZE = 3200
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :6826.16ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 3200 3200'
+heat_2D_NP_pochoir 3200 3200
++ ./heat_2D_NP_pochoir 3200 3200
+N_SIZE = 3200, T_SIZE = 3200
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :7726.94ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ (( step += 200 ))
++ (( step <= 3200 ))
+

@@ -1,0 +1,2117 @@
++ echo '<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<'
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
++ (( step = 200 ))
++ (( step <= 3200 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 200 200'
+life_serial_loop 200 200
++ ./life_sl 200 200
+N_SIZE = 200, T_SIZE = 200
+Game of Life : 200 x 200, 200 time steps
+Naive Loop: consumed time :173.102ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 400 200'
+life_serial_loop 400 200
++ ./life_sl 400 200
+N_SIZE = 400, T_SIZE = 200
+Game of Life : 400 x 400, 200 time steps
+Naive Loop: consumed time :686.882ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 600 200'
+life_serial_loop 600 200
++ ./life_sl 600 200
+N_SIZE = 600, T_SIZE = 200
+Game of Life : 600 x 600, 200 time steps
+Naive Loop: consumed time :1544.4ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 800 200'
+life_serial_loop 800 200
++ ./life_sl 800 200
+N_SIZE = 800, T_SIZE = 200
+Game of Life : 800 x 800, 200 time steps
+Naive Loop: consumed time :2745.35ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 1000 200'
+life_serial_loop 1000 200
++ ./life_sl 1000 200
+N_SIZE = 1000, T_SIZE = 200
+Game of Life : 1000 x 1000, 200 time steps
+Naive Loop: consumed time :4283.68ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 1200 200'
+life_serial_loop 1200 200
++ ./life_sl 1200 200
+N_SIZE = 1200, T_SIZE = 200
+Game of Life : 1200 x 1200, 200 time steps
+Naive Loop: consumed time :6167.87ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 1400 200'
+life_serial_loop 1400 200
++ ./life_sl 1400 200
+N_SIZE = 1400, T_SIZE = 200
+Game of Life : 1400 x 1400, 200 time steps
+Naive Loop: consumed time :8386.94ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 1600 200'
+life_serial_loop 1600 200
++ ./life_sl 1600 200
+N_SIZE = 1600, T_SIZE = 200
+Game of Life : 1600 x 1600, 200 time steps
+Naive Loop: consumed time :10954.5ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 1800 200'
+life_serial_loop 1800 200
++ ./life_sl 1800 200
+N_SIZE = 1800, T_SIZE = 200
+Game of Life : 1800 x 1800, 200 time steps
+Naive Loop: consumed time :13873.1ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 2000 200'
+life_serial_loop 2000 200
++ ./life_sl 2000 200
+N_SIZE = 2000, T_SIZE = 200
+Game of Life : 2000 x 2000, 200 time steps
+Naive Loop: consumed time :17125.2ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 2200 200'
+life_serial_loop 2200 200
++ ./life_sl 2200 200
+N_SIZE = 2200, T_SIZE = 200
+Game of Life : 2200 x 2200, 200 time steps
+Naive Loop: consumed time :20717.6ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 2400 200'
+life_serial_loop 2400 200
++ ./life_sl 2400 200
+N_SIZE = 2400, T_SIZE = 200
+Game of Life : 2400 x 2400, 200 time steps
+Naive Loop: consumed time :24656.3ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 2600 200'
+life_serial_loop 2600 200
++ ./life_sl 2600 200
+N_SIZE = 2600, T_SIZE = 200
+Game of Life : 2600 x 2600, 200 time steps
+Naive Loop: consumed time :28955.7ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 2800 200'
+life_serial_loop 2800 200
++ ./life_sl 2800 200
+N_SIZE = 2800, T_SIZE = 200
+Game of Life : 2800 x 2800, 200 time steps
+Naive Loop: consumed time :33614.9ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 3000 200'
+life_serial_loop 3000 200
++ ./life_sl 3000 200
+N_SIZE = 3000, T_SIZE = 200
+Game of Life : 3000 x 3000, 200 time steps
+Naive Loop: consumed time :38566.5ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 3200 200'
+life_serial_loop 3200 200
++ ./life_sl 3200 200
+N_SIZE = 3200, T_SIZE = 200
+Game of Life : 3200 x 3200, 200 time steps
+Naive Loop: consumed time :43868.1ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ (( step += 200 ))
++ (( step <= 3200 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 200 400'
+life_serial_loop 200 400
++ ./life_sl 200 400
+N_SIZE = 200, T_SIZE = 400
+Game of Life : 200 x 200, 400 time steps
+Naive Loop: consumed time :339.911ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 400 400'
+life_serial_loop 400 400
++ ./life_sl 400 400
+N_SIZE = 400, T_SIZE = 400
+Game of Life : 400 x 400, 400 time steps
+Naive Loop: consumed time :1348.88ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 600 400'
+life_serial_loop 600 400
++ ./life_sl 600 400
+N_SIZE = 600, T_SIZE = 400
+Game of Life : 600 x 600, 400 time steps
+Naive Loop: consumed time :3037.67ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 800 400'
+life_serial_loop 800 400
++ ./life_sl 800 400
+N_SIZE = 800, T_SIZE = 400
+Game of Life : 800 x 800, 400 time steps
+Naive Loop: consumed time :5398.18ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 1000 400'
+life_serial_loop 1000 400
++ ./life_sl 1000 400
+N_SIZE = 1000, T_SIZE = 400
+Game of Life : 1000 x 1000, 400 time steps
+Naive Loop: consumed time :8427.91ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 1200 400'
+life_serial_loop 1200 400
++ ./life_sl 1200 400
+N_SIZE = 1200, T_SIZE = 400
+Game of Life : 1200 x 1200, 400 time steps
+Naive Loop: consumed time :12126.3ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 1400 400'
+life_serial_loop 1400 400
++ ./life_sl 1400 400
+N_SIZE = 1400, T_SIZE = 400
+Game of Life : 1400 x 1400, 400 time steps
+Naive Loop: consumed time :16488.2ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 1600 400'
+life_serial_loop 1600 400
++ ./life_sl 1600 400
+N_SIZE = 1600, T_SIZE = 400
+Game of Life : 1600 x 1600, 400 time steps
+Naive Loop: consumed time :21533.6ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 1800 400'
+life_serial_loop 1800 400
++ ./life_sl 1800 400
+N_SIZE = 1800, T_SIZE = 400
+Game of Life : 1800 x 1800, 400 time steps
+Naive Loop: consumed time :27290.2ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 2000 400'
+life_serial_loop 2000 400
++ ./life_sl 2000 400
+N_SIZE = 2000, T_SIZE = 400
+Game of Life : 2000 x 2000, 400 time steps
+Naive Loop: consumed time :33668.3ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 2200 400'
+life_serial_loop 2200 400
++ ./life_sl 2200 400
+N_SIZE = 2200, T_SIZE = 400
+Game of Life : 2200 x 2200, 400 time steps
+Naive Loop: consumed time :40742.3ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 2400 400'
+life_serial_loop 2400 400
++ ./life_sl 2400 400
+N_SIZE = 2400, T_SIZE = 400
+Game of Life : 2400 x 2400, 400 time steps
+Naive Loop: consumed time :48501.1ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 2600 400'
+life_serial_loop 2600 400
++ ./life_sl 2600 400
+N_SIZE = 2600, T_SIZE = 400
+Game of Life : 2600 x 2600, 400 time steps
+Naive Loop: consumed time :56940.7ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 2800 400'
+life_serial_loop 2800 400
++ ./life_sl 2800 400
+N_SIZE = 2800, T_SIZE = 400
+Game of Life : 2800 x 2800, 400 time steps
+Naive Loop: consumed time :66103.9ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 3000 400'
+life_serial_loop 3000 400
++ ./life_sl 3000 400
+N_SIZE = 3000, T_SIZE = 400
+Game of Life : 3000 x 3000, 400 time steps
+Naive Loop: consumed time :75830.3ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 3200 400'
+life_serial_loop 3200 400
++ ./life_sl 3200 400
+N_SIZE = 3200, T_SIZE = 400
+Game of Life : 3200 x 3200, 400 time steps
+Naive Loop: consumed time :86258.8ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ (( step += 200 ))
++ (( step <= 3200 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 200 600'
+life_serial_loop 200 600
++ ./life_sl 200 600
+N_SIZE = 200, T_SIZE = 600
+Game of Life : 200 x 200, 600 time steps
+Naive Loop: consumed time :505.877ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 400 600'
+life_serial_loop 400 600
++ ./life_sl 400 600
+N_SIZE = 400, T_SIZE = 600
+Game of Life : 400 x 400, 600 time steps
+Naive Loop: consumed time :2007.04ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 600 600'
+life_serial_loop 600 600
++ ./life_sl 600 600
+N_SIZE = 600, T_SIZE = 600
+Game of Life : 600 x 600, 600 time steps
+Naive Loop: consumed time :4518.13ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 800 600'
+life_serial_loop 800 600
++ ./life_sl 800 600
+N_SIZE = 800, T_SIZE = 600
+Game of Life : 800 x 800, 600 time steps
+Naive Loop: consumed time :8033.13ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 1000 600'
+life_serial_loop 1000 600
++ ./life_sl 1000 600
+N_SIZE = 1000, T_SIZE = 600
+Game of Life : 1000 x 1000, 600 time steps
+Naive Loop: consumed time :12538.1ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 1200 600'
+life_serial_loop 1200 600
++ ./life_sl 1200 600
+N_SIZE = 1200, T_SIZE = 600
+Game of Life : 1200 x 1200, 600 time steps
+Naive Loop: consumed time :18038.4ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 1400 600'
+life_serial_loop 1400 600
++ ./life_sl 1400 600
+N_SIZE = 1400, T_SIZE = 600
+Game of Life : 1400 x 1400, 600 time steps
+Naive Loop: consumed time :24527.6ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 1600 600'
+life_serial_loop 1600 600
++ ./life_sl 1600 600
+N_SIZE = 1600, T_SIZE = 600
+Game of Life : 1600 x 1600, 600 time steps
+Naive Loop: consumed time :32039.3ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 1800 600'
+life_serial_loop 1800 600
++ ./life_sl 1800 600
+N_SIZE = 1800, T_SIZE = 600
+Game of Life : 1800 x 1800, 600 time steps
+Naive Loop: consumed time :40601.1ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 2000 600'
+life_serial_loop 2000 600
++ ./life_sl 2000 600
+N_SIZE = 2000, T_SIZE = 600
+Game of Life : 2000 x 2000, 600 time steps
+Naive Loop: consumed time :50077.5ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 2200 600'
+life_serial_loop 2200 600
++ ./life_sl 2200 600
+N_SIZE = 2200, T_SIZE = 600
+Game of Life : 2200 x 2200, 600 time steps
+Naive Loop: consumed time :60597.7ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 2400 600'
+life_serial_loop 2400 600
++ ./life_sl 2400 600
+N_SIZE = 2400, T_SIZE = 600
+Game of Life : 2400 x 2400, 600 time steps
+Naive Loop: consumed time :72127.6ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 2600 600'
+life_serial_loop 2600 600
++ ./life_sl 2600 600
+N_SIZE = 2600, T_SIZE = 600
+Game of Life : 2600 x 2600, 600 time steps
+Naive Loop: consumed time :84677.5ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 2800 600'
+life_serial_loop 2800 600
++ ./life_sl 2800 600
+N_SIZE = 2800, T_SIZE = 600
+Game of Life : 2800 x 2800, 600 time steps
+Naive Loop: consumed time :98319.2ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 3000 600'
+life_serial_loop 3000 600
++ ./life_sl 3000 600
+N_SIZE = 3000, T_SIZE = 600
+Game of Life : 3000 x 3000, 600 time steps
+Naive Loop: consumed time :112756ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 3200 600'
+life_serial_loop 3200 600
++ ./life_sl 3200 600
+N_SIZE = 3200, T_SIZE = 600
+Game of Life : 3200 x 3200, 600 time steps
+Naive Loop: consumed time :128301ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ (( step += 200 ))
++ (( step <= 3200 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 200 800'
+life_serial_loop 200 800
++ ./life_sl 200 800
+N_SIZE = 200, T_SIZE = 800
+Game of Life : 200 x 200, 800 time steps
+Naive Loop: consumed time :670.267ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 400 800'
+life_serial_loop 400 800
++ ./life_sl 400 800
+N_SIZE = 400, T_SIZE = 800
+Game of Life : 400 x 400, 800 time steps
+Naive Loop: consumed time :2667.31ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 600 800'
+life_serial_loop 600 800
++ ./life_sl 600 800
+N_SIZE = 600, T_SIZE = 800
+Game of Life : 600 x 600, 800 time steps
+Naive Loop: consumed time :5993.15ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 800 800'
+life_serial_loop 800 800
++ ./life_sl 800 800
+N_SIZE = 800, T_SIZE = 800
+Game of Life : 800 x 800, 800 time steps
+Naive Loop: consumed time :10653.7ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 1000 800'
+life_serial_loop 1000 800
++ ./life_sl 1000 800
+N_SIZE = 1000, T_SIZE = 800
+Game of Life : 1000 x 1000, 800 time steps
+Naive Loop: consumed time :16620ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 1200 800'
+life_serial_loop 1200 800
++ ./life_sl 1200 800
+N_SIZE = 1200, T_SIZE = 800
+Game of Life : 1200 x 1200, 800 time steps
+Naive Loop: consumed time :23921.6ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 1400 800'
+life_serial_loop 1400 800
++ ./life_sl 1400 800
+N_SIZE = 1400, T_SIZE = 800
+Game of Life : 1400 x 1400, 800 time steps
+Naive Loop: consumed time :32541.3ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 1600 800'
+life_serial_loop 1600 800
++ ./life_sl 1600 800
+N_SIZE = 1600, T_SIZE = 800
+Game of Life : 1600 x 1600, 800 time steps
+Naive Loop: consumed time :42486.7ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 1800 800'
+life_serial_loop 1800 800
++ ./life_sl 1800 800
+N_SIZE = 1800, T_SIZE = 800
+Game of Life : 1800 x 1800, 800 time steps
+Naive Loop: consumed time :53840.7ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 2000 800'
+life_serial_loop 2000 800
++ ./life_sl 2000 800
+N_SIZE = 2000, T_SIZE = 800
+Game of Life : 2000 x 2000, 800 time steps
+Naive Loop: consumed time :66406.6ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 2200 800'
+life_serial_loop 2200 800
++ ./life_sl 2200 800
+N_SIZE = 2200, T_SIZE = 800
+Game of Life : 2200 x 2200, 800 time steps
+Naive Loop: consumed time :80360.9ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 2400 800'
+life_serial_loop 2400 800
++ ./life_sl 2400 800
+N_SIZE = 2400, T_SIZE = 800
+Game of Life : 2400 x 2400, 800 time steps
+Naive Loop: consumed time :95649.6ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 2600 800'
+life_serial_loop 2600 800
++ ./life_sl 2600 800
+N_SIZE = 2600, T_SIZE = 800
+Game of Life : 2600 x 2600, 800 time steps
+Naive Loop: consumed time :112295ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 2800 800'
+life_serial_loop 2800 800
++ ./life_sl 2800 800
+N_SIZE = 2800, T_SIZE = 800
+Game of Life : 2800 x 2800, 800 time steps
+Naive Loop: consumed time :130376ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 3000 800'
+life_serial_loop 3000 800
++ ./life_sl 3000 800
+N_SIZE = 3000, T_SIZE = 800
+Game of Life : 3000 x 3000, 800 time steps
+Naive Loop: consumed time :149553ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 3200 800'
+life_serial_loop 3200 800
++ ./life_sl 3200 800
+N_SIZE = 3200, T_SIZE = 800
+Game of Life : 3200 x 3200, 800 time steps
+Naive Loop: consumed time :170185ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ (( step += 200 ))
++ (( step <= 3200 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 200 1000'
+life_serial_loop 200 1000
++ ./life_sl 200 1000
+N_SIZE = 200, T_SIZE = 1000
+Game of Life : 200 x 200, 1000 time steps
+Naive Loop: consumed time :833.656ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 400 1000'
+life_serial_loop 400 1000
++ ./life_sl 400 1000
+N_SIZE = 400, T_SIZE = 1000
+Game of Life : 400 x 400, 1000 time steps
+Naive Loop: consumed time :3325.22ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 600 1000'
+life_serial_loop 600 1000
++ ./life_sl 600 1000
+N_SIZE = 600, T_SIZE = 1000
+Game of Life : 600 x 600, 1000 time steps
+Naive Loop: consumed time :7463.66ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 800 1000'
+life_serial_loop 800 1000
++ ./life_sl 800 1000
+N_SIZE = 800, T_SIZE = 1000
+Game of Life : 800 x 800, 1000 time steps
+Naive Loop: consumed time :13270.7ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 1000 1000'
+life_serial_loop 1000 1000
++ ./life_sl 1000 1000
+N_SIZE = 1000, T_SIZE = 1000
+Game of Life : 1000 x 1000, 1000 time steps
+Naive Loop: consumed time :20690.7ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 1200 1000'
+life_serial_loop 1200 1000
++ ./life_sl 1200 1000
+N_SIZE = 1200, T_SIZE = 1000
+Game of Life : 1200 x 1200, 1000 time steps
+Naive Loop: consumed time :29792.2ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 1400 1000'
+life_serial_loop 1400 1000
++ ./life_sl 1400 1000
+N_SIZE = 1400, T_SIZE = 1000
+Game of Life : 1400 x 1400, 1000 time steps
+Naive Loop: consumed time :40537.6ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 1600 1000'
+life_serial_loop 1600 1000
++ ./life_sl 1600 1000
+N_SIZE = 1600, T_SIZE = 1000
+Game of Life : 1600 x 1600, 1000 time steps
+Naive Loop: consumed time :52919.7ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 1800 1000'
+life_serial_loop 1800 1000
++ ./life_sl 1800 1000
+N_SIZE = 1800, T_SIZE = 1000
+Game of Life : 1800 x 1800, 1000 time steps
+Naive Loop: consumed time :67051.6ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 2000 1000'
+life_serial_loop 2000 1000
++ ./life_sl 2000 1000
+N_SIZE = 2000, T_SIZE = 1000
+Game of Life : 2000 x 2000, 1000 time steps
+Naive Loop: consumed time :82680.6ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 2200 1000'
+life_serial_loop 2200 1000
++ ./life_sl 2200 1000
+N_SIZE = 2200, T_SIZE = 1000
+Game of Life : 2200 x 2200, 1000 time steps
+Naive Loop: consumed time :100085ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 2400 1000'
+life_serial_loop 2400 1000
++ ./life_sl 2400 1000
+N_SIZE = 2400, T_SIZE = 1000
+Game of Life : 2400 x 2400, 1000 time steps
+Naive Loop: consumed time :119141ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 2600 1000'
+life_serial_loop 2600 1000
++ ./life_sl 2600 1000
+N_SIZE = 2600, T_SIZE = 1000
+Game of Life : 2600 x 2600, 1000 time steps
+Naive Loop: consumed time :139854ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 2800 1000'
+life_serial_loop 2800 1000
++ ./life_sl 2800 1000
+N_SIZE = 2800, T_SIZE = 1000
+Game of Life : 2800 x 2800, 1000 time steps
+Naive Loop: consumed time :162360ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 3000 1000'
+life_serial_loop 3000 1000
++ ./life_sl 3000 1000
+N_SIZE = 3000, T_SIZE = 1000
+Game of Life : 3000 x 3000, 1000 time steps
+Naive Loop: consumed time :186254ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 3200 1000'
+life_serial_loop 3200 1000
++ ./life_sl 3200 1000
+N_SIZE = 3200, T_SIZE = 1000
+Game of Life : 3200 x 3200, 1000 time steps
+Naive Loop: consumed time :211949ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ (( step += 200 ))
++ (( step <= 3200 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 200 1200'
+life_serial_loop 200 1200
++ ./life_sl 200 1200
+N_SIZE = 200, T_SIZE = 1200
+Game of Life : 200 x 200, 1200 time steps
+Naive Loop: consumed time :996.629ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 400 1200'
+life_serial_loop 400 1200
++ ./life_sl 400 1200
+N_SIZE = 400, T_SIZE = 1200
+Game of Life : 400 x 400, 1200 time steps
+Naive Loop: consumed time :3980.64ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 600 1200'
+life_serial_loop 600 1200
++ ./life_sl 600 1200
+N_SIZE = 600, T_SIZE = 1200
+Game of Life : 600 x 600, 1200 time steps
+Naive Loop: consumed time :8928.71ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 800 1200'
+life_serial_loop 800 1200
++ ./life_sl 800 1200
+N_SIZE = 800, T_SIZE = 1200
+Game of Life : 800 x 800, 1200 time steps
+Naive Loop: consumed time :15890.3ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 1000 1200'
+life_serial_loop 1000 1200
++ ./life_sl 1000 1200
+N_SIZE = 1000, T_SIZE = 1200
+Game of Life : 1000 x 1000, 1200 time steps
+Naive Loop: consumed time :24760.2ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 1200 1200'
+life_serial_loop 1200 1200
++ ./life_sl 1200 1200
+N_SIZE = 1200, T_SIZE = 1200
+Game of Life : 1200 x 1200, 1200 time steps
+Naive Loop: consumed time :35651.7ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 1400 1200'
+life_serial_loop 1400 1200
++ ./life_sl 1400 1200
+N_SIZE = 1400, T_SIZE = 1200
+Game of Life : 1400 x 1400, 1200 time steps
+Naive Loop: consumed time :48519.3ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 1600 1200'
+life_serial_loop 1600 1200
++ ./life_sl 1600 1200
+N_SIZE = 1600, T_SIZE = 1200
+Game of Life : 1600 x 1600, 1200 time steps
+Naive Loop: consumed time :63338.1ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 1800 1200'
+life_serial_loop 1800 1200
++ ./life_sl 1800 1200
+N_SIZE = 1800, T_SIZE = 1200
+Game of Life : 1800 x 1800, 1200 time steps
+Naive Loop: consumed time :80227ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 2000 1200'
+life_serial_loop 2000 1200
++ ./life_sl 2000 1200
+N_SIZE = 2000, T_SIZE = 1200
+Game of Life : 2000 x 2000, 1200 time steps
+Naive Loop: consumed time :98965ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 2200 1200'
+life_serial_loop 2200 1200
++ ./life_sl 2200 1200
+N_SIZE = 2200, T_SIZE = 1200
+Game of Life : 2200 x 2200, 1200 time steps
+Naive Loop: consumed time :119768ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 2400 1200'
+life_serial_loop 2400 1200
++ ./life_sl 2400 1200
+N_SIZE = 2400, T_SIZE = 1200
+Game of Life : 2400 x 2400, 1200 time steps
+Naive Loop: consumed time :142554ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 2600 1200'
+life_serial_loop 2600 1200
++ ./life_sl 2600 1200
+N_SIZE = 2600, T_SIZE = 1200
+Game of Life : 2600 x 2600, 1200 time steps
+Naive Loop: consumed time :167352ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 2800 1200'
+life_serial_loop 2800 1200
++ ./life_sl 2800 1200
+N_SIZE = 2800, T_SIZE = 1200
+Game of Life : 2800 x 2800, 1200 time steps
+Naive Loop: consumed time :194274ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 3000 1200'
+life_serial_loop 3000 1200
++ ./life_sl 3000 1200
+N_SIZE = 3000, T_SIZE = 1200
+Game of Life : 3000 x 3000, 1200 time steps
+Naive Loop: consumed time :222896ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 3200 1200'
+life_serial_loop 3200 1200
++ ./life_sl 3200 1200
+N_SIZE = 3200, T_SIZE = 1200
+Game of Life : 3200 x 3200, 1200 time steps
+Naive Loop: consumed time :253632ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ (( step += 200 ))
++ (( step <= 3200 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 200 1400'
+life_serial_loop 200 1400
++ ./life_sl 200 1400
+N_SIZE = 200, T_SIZE = 1400
+Game of Life : 200 x 200, 1400 time steps
+Naive Loop: consumed time :1159.48ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 400 1400'
+life_serial_loop 400 1400
++ ./life_sl 400 1400
+N_SIZE = 400, T_SIZE = 1400
+Game of Life : 400 x 400, 1400 time steps
+Naive Loop: consumed time :4636.96ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 600 1400'
+life_serial_loop 600 1400
++ ./life_sl 600 1400
+N_SIZE = 600, T_SIZE = 1400
+Game of Life : 600 x 600, 1400 time steps
+Naive Loop: consumed time :10401.9ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 800 1400'
+life_serial_loop 800 1400
++ ./life_sl 800 1400
+N_SIZE = 800, T_SIZE = 1400
+Game of Life : 800 x 800, 1400 time steps
+Naive Loop: consumed time :18497.9ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 1000 1400'
+life_serial_loop 1000 1400
++ ./life_sl 1000 1400
+N_SIZE = 1000, T_SIZE = 1400
+Game of Life : 1000 x 1000, 1400 time steps
+Naive Loop: consumed time :28824ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 1200 1400'
+life_serial_loop 1200 1400
++ ./life_sl 1200 1400
+N_SIZE = 1200, T_SIZE = 1400
+Game of Life : 1200 x 1200, 1400 time steps
+Naive Loop: consumed time :41501.5ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 1400 1400'
+life_serial_loop 1400 1400
++ ./life_sl 1400 1400
+N_SIZE = 1400, T_SIZE = 1400
+Game of Life : 1400 x 1400, 1400 time steps
+Naive Loop: consumed time :56486.6ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 1600 1400'
+life_serial_loop 1600 1400
++ ./life_sl 1600 1400
+N_SIZE = 1600, T_SIZE = 1400
+Game of Life : 1600 x 1600, 1400 time steps
+Naive Loop: consumed time :73735.8ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 1800 1400'
+life_serial_loop 1800 1400
++ ./life_sl 1800 1400
+N_SIZE = 1800, T_SIZE = 1400
+Game of Life : 1800 x 1800, 1400 time steps
+Naive Loop: consumed time :93389.9ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 2000 1400'
+life_serial_loop 2000 1400
++ ./life_sl 2000 1400
+N_SIZE = 2000, T_SIZE = 1400
+Game of Life : 2000 x 2000, 1400 time steps
+Naive Loop: consumed time :115190ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 2200 1400'
+life_serial_loop 2200 1400
++ ./life_sl 2200 1400
+N_SIZE = 2200, T_SIZE = 1400
+Game of Life : 2200 x 2200, 1400 time steps
+Naive Loop: consumed time :139438ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 2400 1400'
+life_serial_loop 2400 1400
++ ./life_sl 2400 1400
+N_SIZE = 2400, T_SIZE = 1400
+Game of Life : 2400 x 2400, 1400 time steps
+Naive Loop: consumed time :165952ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 2600 1400'
+life_serial_loop 2600 1400
++ ./life_sl 2600 1400
+N_SIZE = 2600, T_SIZE = 1400
+Game of Life : 2600 x 2600, 1400 time steps
+Naive Loop: consumed time :194825ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 2800 1400'
+life_serial_loop 2800 1400
++ ./life_sl 2800 1400
+N_SIZE = 2800, T_SIZE = 1400
+Game of Life : 2800 x 2800, 1400 time steps
+Naive Loop: consumed time :226195ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 3000 1400'
+life_serial_loop 3000 1400
++ ./life_sl 3000 1400
+N_SIZE = 3000, T_SIZE = 1400
+Game of Life : 3000 x 3000, 1400 time steps
+Naive Loop: consumed time :259543ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 3200 1400'
+life_serial_loop 3200 1400
++ ./life_sl 3200 1400
+N_SIZE = 3200, T_SIZE = 1400
+Game of Life : 3200 x 3200, 1400 time steps
+Naive Loop: consumed time :295267ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ (( step += 200 ))
++ (( step <= 3200 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 200 1600'
+life_serial_loop 200 1600
++ ./life_sl 200 1600
+N_SIZE = 200, T_SIZE = 1600
+Game of Life : 200 x 200, 1600 time steps
+Naive Loop: consumed time :1322.32ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 400 1600'
+life_serial_loop 400 1600
++ ./life_sl 400 1600
+N_SIZE = 400, T_SIZE = 1600
+Game of Life : 400 x 400, 1600 time steps
+Naive Loop: consumed time :5289.08ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 600 1600'
+life_serial_loop 600 1600
++ ./life_sl 600 1600
+N_SIZE = 600, T_SIZE = 1600
+Game of Life : 600 x 600, 1600 time steps
+Naive Loop: consumed time :11866.3ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 800 1600'
+life_serial_loop 800 1600
++ ./life_sl 800 1600
+N_SIZE = 800, T_SIZE = 1600
+Game of Life : 800 x 800, 1600 time steps
+Naive Loop: consumed time :21102.1ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 1000 1600'
+life_serial_loop 1000 1600
++ ./life_sl 1000 1600
+N_SIZE = 1000, T_SIZE = 1600
+Game of Life : 1000 x 1000, 1600 time steps
+Naive Loop: consumed time :32875.2ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 1200 1600'
+life_serial_loop 1200 1600
++ ./life_sl 1200 1600
+N_SIZE = 1200, T_SIZE = 1600
+Game of Life : 1200 x 1200, 1600 time steps
+Naive Loop: consumed time :47349ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 1400 1600'
+life_serial_loop 1400 1600
++ ./life_sl 1400 1600
+N_SIZE = 1400, T_SIZE = 1600
+Game of Life : 1400 x 1400, 1600 time steps
+Naive Loop: consumed time :64456.7ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 1600 1600'
+life_serial_loop 1600 1600
++ ./life_sl 1600 1600
+N_SIZE = 1600, T_SIZE = 1600
+Game of Life : 1600 x 1600, 1600 time steps
+Naive Loop: consumed time :84127.9ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 1800 1600'
+life_serial_loop 1800 1600
++ ./life_sl 1800 1600
+N_SIZE = 1800, T_SIZE = 1600
+Game of Life : 1800 x 1800, 1600 time steps
+Naive Loop: consumed time :106538ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 2000 1600'
+life_serial_loop 2000 1600
++ ./life_sl 2000 1600
+N_SIZE = 2000, T_SIZE = 1600
+Game of Life : 2000 x 2000, 1600 time steps
+Naive Loop: consumed time :131447ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 2200 1600'
+life_serial_loop 2200 1600
++ ./life_sl 2200 1600
+N_SIZE = 2200, T_SIZE = 1600
+Game of Life : 2200 x 2200, 1600 time steps
+Naive Loop: consumed time :159099ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 2400 1600'
+life_serial_loop 2400 1600
++ ./life_sl 2400 1600
+N_SIZE = 2400, T_SIZE = 1600
+Game of Life : 2400 x 2400, 1600 time steps
+Naive Loop: consumed time :189363ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 2600 1600'
+life_serial_loop 2600 1600
++ ./life_sl 2600 1600
+N_SIZE = 2600, T_SIZE = 1600
+Game of Life : 2600 x 2600, 1600 time steps
+Naive Loop: consumed time :222268ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 2800 1600'
+life_serial_loop 2800 1600
++ ./life_sl 2800 1600
+N_SIZE = 2800, T_SIZE = 1600
+Game of Life : 2800 x 2800, 1600 time steps
+Naive Loop: consumed time :258027ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 3000 1600'
+life_serial_loop 3000 1600
++ ./life_sl 3000 1600
+N_SIZE = 3000, T_SIZE = 1600
+Game of Life : 3000 x 3000, 1600 time steps
+Naive Loop: consumed time :296099ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 3200 1600'
+life_serial_loop 3200 1600
++ ./life_sl 3200 1600
+N_SIZE = 3200, T_SIZE = 1600
+Game of Life : 3200 x 3200, 1600 time steps
+Naive Loop: consumed time :336850ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ (( step += 200 ))
++ (( step <= 3200 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 200 1800'
+life_serial_loop 200 1800
++ ./life_sl 200 1800
+N_SIZE = 200, T_SIZE = 1800
+Game of Life : 200 x 200, 1800 time steps
+Naive Loop: consumed time :1485.21ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 400 1800'
+life_serial_loop 400 1800
++ ./life_sl 400 1800
+N_SIZE = 400, T_SIZE = 1800
+Game of Life : 400 x 400, 1800 time steps
+Naive Loop: consumed time :5943.38ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 600 1800'
+life_serial_loop 600 1800
++ ./life_sl 600 1800
+N_SIZE = 600, T_SIZE = 1800
+Game of Life : 600 x 600, 1800 time steps
+Naive Loop: consumed time :13326.5ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 800 1800'
+life_serial_loop 800 1800
++ ./life_sl 800 1800
+N_SIZE = 800, T_SIZE = 1800
+Game of Life : 800 x 800, 1800 time steps
+Naive Loop: consumed time :23705.1ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 1000 1800'
+life_serial_loop 1000 1800
++ ./life_sl 1000 1800
+N_SIZE = 1000, T_SIZE = 1800
+Game of Life : 1000 x 1000, 1800 time steps
+Naive Loop: consumed time :36935.9ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 1200 1800'
+life_serial_loop 1200 1800
++ ./life_sl 1200 1800
+N_SIZE = 1200, T_SIZE = 1800
+Game of Life : 1200 x 1200, 1800 time steps
+Naive Loop: consumed time :53197.6ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 1400 1800'
+life_serial_loop 1400 1800
++ ./life_sl 1400 1800
+N_SIZE = 1400, T_SIZE = 1800
+Game of Life : 1400 x 1400, 1800 time steps
+Naive Loop: consumed time :72410ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 1600 1800'
+life_serial_loop 1600 1800
++ ./life_sl 1600 1800
+N_SIZE = 1600, T_SIZE = 1800
+Game of Life : 1600 x 1600, 1800 time steps
+Naive Loop: consumed time :94503.4ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 1800 1800'
+life_serial_loop 1800 1800
++ ./life_sl 1800 1800
+N_SIZE = 1800, T_SIZE = 1800
+Game of Life : 1800 x 1800, 1800 time steps
+Naive Loop: consumed time :119686ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 2000 1800'
+life_serial_loop 2000 1800
++ ./life_sl 2000 1800
+N_SIZE = 2000, T_SIZE = 1800
+Game of Life : 2000 x 2000, 1800 time steps
+Naive Loop: consumed time :147668ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 2200 1800'
+life_serial_loop 2200 1800
++ ./life_sl 2200 1800
+N_SIZE = 2200, T_SIZE = 1800
+Game of Life : 2200 x 2200, 1800 time steps
+Naive Loop: consumed time :178732ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 2400 1800'
+life_serial_loop 2400 1800
++ ./life_sl 2400 1800
+N_SIZE = 2400, T_SIZE = 1800
+Game of Life : 2400 x 2400, 1800 time steps
+Naive Loop: consumed time :212737ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 2600 1800'
+life_serial_loop 2600 1800
++ ./life_sl 2600 1800
+N_SIZE = 2600, T_SIZE = 1800
+Game of Life : 2600 x 2600, 1800 time steps
+Naive Loop: consumed time :249701ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 2800 1800'
+life_serial_loop 2800 1800
++ ./life_sl 2800 1800
+N_SIZE = 2800, T_SIZE = 1800
+Game of Life : 2800 x 2800, 1800 time steps
+Naive Loop: consumed time :289864ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 3000 1800'
+life_serial_loop 3000 1800
++ ./life_sl 3000 1800
+N_SIZE = 3000, T_SIZE = 1800
+Game of Life : 3000 x 3000, 1800 time steps
+Naive Loop: consumed time :332644ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 3200 1800'
+life_serial_loop 3200 1800
++ ./life_sl 3200 1800
+N_SIZE = 3200, T_SIZE = 1800
+Game of Life : 3200 x 3200, 1800 time steps
+Naive Loop: consumed time :378442ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ (( step += 200 ))
++ (( step <= 3200 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 200 2000'
+life_serial_loop 200 2000
++ ./life_sl 200 2000
+N_SIZE = 200, T_SIZE = 2000
+Game of Life : 200 x 200, 2000 time steps
+Naive Loop: consumed time :1647.97ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 400 2000'
+life_serial_loop 400 2000
++ ./life_sl 400 2000
+N_SIZE = 400, T_SIZE = 2000
+Game of Life : 400 x 400, 2000 time steps
+Naive Loop: consumed time :6596.98ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 600 2000'
+life_serial_loop 600 2000
++ ./life_sl 600 2000
+N_SIZE = 600, T_SIZE = 2000
+Game of Life : 600 x 600, 2000 time steps
+Naive Loop: consumed time :14788.6ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 800 2000'
+life_serial_loop 800 2000
++ ./life_sl 800 2000
+N_SIZE = 800, T_SIZE = 2000
+Game of Life : 800 x 800, 2000 time steps
+Naive Loop: consumed time :26305.2ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 1000 2000'
+life_serial_loop 1000 2000
++ ./life_sl 1000 2000
+N_SIZE = 1000, T_SIZE = 2000
+Game of Life : 1000 x 1000, 2000 time steps
+Naive Loop: consumed time :40993.5ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 1200 2000'
+life_serial_loop 1200 2000
++ ./life_sl 1200 2000
+N_SIZE = 1200, T_SIZE = 2000
+Game of Life : 1200 x 1200, 2000 time steps
+Naive Loop: consumed time :59038.2ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 1400 2000'
+life_serial_loop 1400 2000
++ ./life_sl 1400 2000
+N_SIZE = 1400, T_SIZE = 2000
+Game of Life : 1400 x 1400, 2000 time steps
+Naive Loop: consumed time :80366.7ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 1600 2000'
+life_serial_loop 1600 2000
++ ./life_sl 1600 2000
+N_SIZE = 1600, T_SIZE = 2000
+Game of Life : 1600 x 1600, 2000 time steps
+Naive Loop: consumed time :104871ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 1800 2000'
+life_serial_loop 1800 2000
++ ./life_sl 1800 2000
+N_SIZE = 1800, T_SIZE = 2000
+Game of Life : 1800 x 1800, 2000 time steps
+Naive Loop: consumed time :132806ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 2000 2000'
+life_serial_loop 2000 2000
++ ./life_sl 2000 2000
+N_SIZE = 2000, T_SIZE = 2000
+Game of Life : 2000 x 2000, 2000 time steps
+Naive Loop: consumed time :163900ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 2200 2000'
+life_serial_loop 2200 2000
++ ./life_sl 2200 2000
+N_SIZE = 2200, T_SIZE = 2000
+Game of Life : 2200 x 2200, 2000 time steps
+Naive Loop: consumed time :198379ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 2400 2000'
+life_serial_loop 2400 2000
++ ./life_sl 2400 2000
+N_SIZE = 2400, T_SIZE = 2000
+Game of Life : 2400 x 2400, 2000 time steps
+Naive Loop: consumed time :236092ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 2600 2000'
+life_serial_loop 2600 2000
++ ./life_sl 2600 2000
+N_SIZE = 2600, T_SIZE = 2000
+Game of Life : 2600 x 2600, 2000 time steps
+Naive Loop: consumed time :277122ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 2800 2000'
+life_serial_loop 2800 2000
++ ./life_sl 2800 2000
+N_SIZE = 2800, T_SIZE = 2000
+Game of Life : 2800 x 2800, 2000 time steps
+Naive Loop: consumed time :321676ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 3000 2000'
+life_serial_loop 3000 2000
++ ./life_sl 3000 2000
+N_SIZE = 3000, T_SIZE = 2000
+Game of Life : 3000 x 3000, 2000 time steps
+Naive Loop: consumed time :369173ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 3200 2000'
+life_serial_loop 3200 2000
++ ./life_sl 3200 2000
+N_SIZE = 3200, T_SIZE = 2000
+Game of Life : 3200 x 3200, 2000 time steps
+Naive Loop: consumed time :420042ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ (( step += 200 ))
++ (( step <= 3200 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 200 2200'
+life_serial_loop 200 2200
++ ./life_sl 200 2200
+N_SIZE = 200, T_SIZE = 2200
+Game of Life : 200 x 200, 2200 time steps
+Naive Loop: consumed time :1810.83ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 400 2200'
+life_serial_loop 400 2200
++ ./life_sl 400 2200
+N_SIZE = 400, T_SIZE = 2200
+Game of Life : 400 x 400, 2200 time steps
+Naive Loop: consumed time :7250.75ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 600 2200'
+life_serial_loop 600 2200
++ ./life_sl 600 2200
+N_SIZE = 600, T_SIZE = 2200
+Game of Life : 600 x 600, 2200 time steps
+Naive Loop: consumed time :16254.4ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 800 2200'
+life_serial_loop 800 2200
++ ./life_sl 800 2200
+N_SIZE = 800, T_SIZE = 2200
+Game of Life : 800 x 800, 2200 time steps
+Naive Loop: consumed time :28894.7ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 1000 2200'
+life_serial_loop 1000 2200
++ ./life_sl 1000 2200
+N_SIZE = 1000, T_SIZE = 2200
+Game of Life : 1000 x 1000, 2200 time steps
+Naive Loop: consumed time :45044.8ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 1200 2200'
+life_serial_loop 1200 2200
++ ./life_sl 1200 2200
+N_SIZE = 1200, T_SIZE = 2200
+Game of Life : 1200 x 1200, 2200 time steps
+Naive Loop: consumed time :64885.5ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 1400 2200'
+life_serial_loop 1400 2200
++ ./life_sl 1400 2200
+N_SIZE = 1400, T_SIZE = 2200
+Game of Life : 1400 x 1400, 2200 time steps
+Naive Loop: consumed time :88332.8ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 1600 2200'
+life_serial_loop 1600 2200
++ ./life_sl 1600 2200
+N_SIZE = 1600, T_SIZE = 2200
+Game of Life : 1600 x 1600, 2200 time steps
+Naive Loop: consumed time :115255ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 1800 2200'
+life_serial_loop 1800 2200
++ ./life_sl 1800 2200
+N_SIZE = 1800, T_SIZE = 2200
+Game of Life : 1800 x 1800, 2200 time steps
+Naive Loop: consumed time :145965ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 2000 2200'
+life_serial_loop 2000 2200
++ ./life_sl 2000 2200
+N_SIZE = 2000, T_SIZE = 2200
+Game of Life : 2000 x 2000, 2200 time steps
+Naive Loop: consumed time :180127ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 2200 2200'
+life_serial_loop 2200 2200
++ ./life_sl 2200 2200
+N_SIZE = 2200, T_SIZE = 2200
+Game of Life : 2200 x 2200, 2200 time steps
+Naive Loop: consumed time :218032ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 2400 2200'
+life_serial_loop 2400 2200
++ ./life_sl 2400 2200
+N_SIZE = 2400, T_SIZE = 2200
+Game of Life : 2400 x 2400, 2200 time steps
+Naive Loop: consumed time :259452ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 2600 2200'
+life_serial_loop 2600 2200
++ ./life_sl 2600 2200
+N_SIZE = 2600, T_SIZE = 2200
+Game of Life : 2600 x 2600, 2200 time steps
+Naive Loop: consumed time :304520ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 2800 2200'
+life_serial_loop 2800 2200
++ ./life_sl 2800 2200
+N_SIZE = 2800, T_SIZE = 2200
+Game of Life : 2800 x 2800, 2200 time steps
+Naive Loop: consumed time :353476ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 3000 2200'
+life_serial_loop 3000 2200
++ ./life_sl 3000 2200
+N_SIZE = 3000, T_SIZE = 2200
+Game of Life : 3000 x 3000, 2200 time steps
+Naive Loop: consumed time :405731ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 3200 2200'
+life_serial_loop 3200 2200
++ ./life_sl 3200 2200
+N_SIZE = 3200, T_SIZE = 2200
+Game of Life : 3200 x 3200, 2200 time steps
+Naive Loop: consumed time :461646ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ (( step += 200 ))
++ (( step <= 3200 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 200 2400'
+life_serial_loop 200 2400
++ ./life_sl 200 2400
+N_SIZE = 200, T_SIZE = 2400
+Game of Life : 200 x 200, 2400 time steps
+Naive Loop: consumed time :1973.76ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 400 2400'
+life_serial_loop 400 2400
++ ./life_sl 400 2400
+N_SIZE = 400, T_SIZE = 2400
+Game of Life : 400 x 400, 2400 time steps
+Naive Loop: consumed time :7902.4ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 600 2400'
+life_serial_loop 600 2400
++ ./life_sl 600 2400
+N_SIZE = 600, T_SIZE = 2400
+Game of Life : 600 x 600, 2400 time steps
+Naive Loop: consumed time :17716.1ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 800 2400'
+life_serial_loop 800 2400
++ ./life_sl 800 2400
+N_SIZE = 800, T_SIZE = 2400
+Game of Life : 800 x 800, 2400 time steps
+Naive Loop: consumed time :31492.7ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 1000 2400'
+life_serial_loop 1000 2400
++ ./life_sl 1000 2400
+N_SIZE = 1000, T_SIZE = 2400
+Game of Life : 1000 x 1000, 2400 time steps
+Naive Loop: consumed time :49099.2ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 1200 2400'
+life_serial_loop 1200 2400
++ ./life_sl 1200 2400
+N_SIZE = 1200, T_SIZE = 2400
+Game of Life : 1200 x 1200, 2400 time steps
+Naive Loop: consumed time :70724.8ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 1400 2400'
+life_serial_loop 1400 2400
++ ./life_sl 1400 2400
+N_SIZE = 1400, T_SIZE = 2400
+Game of Life : 1400 x 1400, 2400 time steps
+Naive Loop: consumed time :96288ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 1600 2400'
+life_serial_loop 1600 2400
++ ./life_sl 1600 2400
+N_SIZE = 1600, T_SIZE = 2400
+Game of Life : 1600 x 1600, 2400 time steps
+Naive Loop: consumed time :125625ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 1800 2400'
+life_serial_loop 1800 2400
++ ./life_sl 1800 2400
+N_SIZE = 1800, T_SIZE = 2400
+Game of Life : 1800 x 1800, 2400 time steps
+Naive Loop: consumed time :159093ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 2000 2400'
+life_serial_loop 2000 2400
++ ./life_sl 2000 2400
+N_SIZE = 2000, T_SIZE = 2400
+Game of Life : 2000 x 2000, 2400 time steps
+Naive Loop: consumed time :196330ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 2200 2400'
+life_serial_loop 2200 2400
++ ./life_sl 2200 2400
+N_SIZE = 2200, T_SIZE = 2400
+Game of Life : 2200 x 2200, 2400 time steps
+Naive Loop: consumed time :237632ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 2400 2400'
+life_serial_loop 2400 2400
++ ./life_sl 2400 2400
+N_SIZE = 2400, T_SIZE = 2400
+Game of Life : 2400 x 2400, 2400 time steps
+Naive Loop: consumed time :282799ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 2600 2400'
+life_serial_loop 2600 2400
++ ./life_sl 2600 2400
+N_SIZE = 2600, T_SIZE = 2400
+Game of Life : 2600 x 2600, 2400 time steps
+Naive Loop: consumed time :331954ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 2800 2400'
+life_serial_loop 2800 2400
++ ./life_sl 2800 2400
+N_SIZE = 2800, T_SIZE = 2400
+Game of Life : 2800 x 2800, 2400 time steps
+Naive Loop: consumed time :385290ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 3000 2400'
+life_serial_loop 3000 2400
++ ./life_sl 3000 2400
+N_SIZE = 3000, T_SIZE = 2400
+Game of Life : 3000 x 3000, 2400 time steps
+Naive Loop: consumed time :442252ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 3200 2400'
+life_serial_loop 3200 2400
++ ./life_sl 3200 2400
+N_SIZE = 3200, T_SIZE = 2400
+Game of Life : 3200 x 3200, 2400 time steps
+Naive Loop: consumed time :503122ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ (( step += 200 ))
++ (( step <= 3200 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 200 2600'
+life_serial_loop 200 2600
++ ./life_sl 200 2600
+N_SIZE = 200, T_SIZE = 2600
+Game of Life : 200 x 200, 2600 time steps
+Naive Loop: consumed time :2136.46ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 400 2600'
+life_serial_loop 400 2600
++ ./life_sl 400 2600
+N_SIZE = 400, T_SIZE = 2600
+Game of Life : 400 x 400, 2600 time steps
+Naive Loop: consumed time :8552.75ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 600 2600'
+life_serial_loop 600 2600
++ ./life_sl 600 2600
+N_SIZE = 600, T_SIZE = 2600
+Game of Life : 600 x 600, 2600 time steps
+Naive Loop: consumed time :19177.7ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 800 2600'
+life_serial_loop 800 2600
++ ./life_sl 800 2600
+N_SIZE = 800, T_SIZE = 2600
+Game of Life : 800 x 800, 2600 time steps
+Naive Loop: consumed time :34099.4ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 1000 2600'
+life_serial_loop 1000 2600
++ ./life_sl 1000 2600
+N_SIZE = 1000, T_SIZE = 2600
+Game of Life : 1000 x 1000, 2600 time steps
+Naive Loop: consumed time :53160.3ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 1200 2600'
+life_serial_loop 1200 2600
++ ./life_sl 1200 2600
+N_SIZE = 1200, T_SIZE = 2600
+Game of Life : 1200 x 1200, 2600 time steps
+Naive Loop: consumed time :76560.1ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 1400 2600'
+life_serial_loop 1400 2600
++ ./life_sl 1400 2600
+N_SIZE = 1400, T_SIZE = 2600
+Game of Life : 1400 x 1400, 2600 time steps
+Naive Loop: consumed time :104224ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 1600 2600'
+life_serial_loop 1600 2600
++ ./life_sl 1600 2600
+N_SIZE = 1600, T_SIZE = 2600
+Game of Life : 1600 x 1600, 2600 time steps
+Naive Loop: consumed time :135997ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 1800 2600'
+life_serial_loop 1800 2600
++ ./life_sl 1800 2600
+N_SIZE = 1800, T_SIZE = 2600
+Game of Life : 1800 x 1800, 2600 time steps
+Naive Loop: consumed time :172227ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 2000 2600'
+life_serial_loop 2000 2600
++ ./life_sl 2000 2600
+N_SIZE = 2000, T_SIZE = 2600
+Game of Life : 2000 x 2000, 2600 time steps
+Naive Loop: consumed time :212544ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 2200 2600'
+life_serial_loop 2200 2600
++ ./life_sl 2200 2600
+N_SIZE = 2200, T_SIZE = 2600
+Game of Life : 2200 x 2200, 2600 time steps
+Naive Loop: consumed time :257242ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 2400 2600'
+life_serial_loop 2400 2600
++ ./life_sl 2400 2600
+N_SIZE = 2400, T_SIZE = 2600
+Game of Life : 2400 x 2400, 2600 time steps
+Naive Loop: consumed time :306157ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 2600 2600'
+life_serial_loop 2600 2600
++ ./life_sl 2600 2600
+N_SIZE = 2600, T_SIZE = 2600
+Game of Life : 2600 x 2600, 2600 time steps
+Naive Loop: consumed time :359335ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 2800 2600'
+life_serial_loop 2800 2600
++ ./life_sl 2800 2600
+N_SIZE = 2800, T_SIZE = 2600
+Game of Life : 2800 x 2800, 2600 time steps
+Naive Loop: consumed time :417080ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 3000 2600'
+life_serial_loop 3000 2600
++ ./life_sl 3000 2600
+N_SIZE = 3000, T_SIZE = 2600
+Game of Life : 3000 x 3000, 2600 time steps
+Naive Loop: consumed time :478757ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 3200 2600'
+life_serial_loop 3200 2600
++ ./life_sl 3200 2600
+N_SIZE = 3200, T_SIZE = 2600
+Game of Life : 3200 x 3200, 2600 time steps
+Naive Loop: consumed time :544670ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ (( step += 200 ))
++ (( step <= 3200 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 200 2800'
+life_serial_loop 200 2800
++ ./life_sl 200 2800
+N_SIZE = 200, T_SIZE = 2800
+Game of Life : 200 x 200, 2800 time steps
+Naive Loop: consumed time :2299.2ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 400 2800'
+life_serial_loop 400 2800
++ ./life_sl 400 2800
+N_SIZE = 400, T_SIZE = 2800
+Game of Life : 400 x 400, 2800 time steps
+Naive Loop: consumed time :9202.11ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 600 2800'
+life_serial_loop 600 2800
++ ./life_sl 600 2800
+N_SIZE = 600, T_SIZE = 2800
+Game of Life : 600 x 600, 2800 time steps
+Naive Loop: consumed time :20635.9ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 800 2800'
+life_serial_loop 800 2800
++ ./life_sl 800 2800
+N_SIZE = 800, T_SIZE = 2800
+Game of Life : 800 x 800, 2800 time steps
+Naive Loop: consumed time :36675ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 1000 2800'
+life_serial_loop 1000 2800
++ ./life_sl 1000 2800
+N_SIZE = 1000, T_SIZE = 2800
+Game of Life : 1000 x 1000, 2800 time steps
+Naive Loop: consumed time :57211.6ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 1200 2800'
+life_serial_loop 1200 2800
++ ./life_sl 1200 2800
+N_SIZE = 1200, T_SIZE = 2800
+Game of Life : 1200 x 1200, 2800 time steps
+Naive Loop: consumed time :82407.8ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 1400 2800'
+life_serial_loop 1400 2800
++ ./life_sl 1400 2800
+N_SIZE = 1400, T_SIZE = 2800
+Game of Life : 1400 x 1400, 2800 time steps
+Naive Loop: consumed time :112187ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 1600 2800'
+life_serial_loop 1600 2800
++ ./life_sl 1600 2800
+N_SIZE = 1600, T_SIZE = 2800
+Game of Life : 1600 x 1600, 2800 time steps
+Naive Loop: consumed time :146382ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 1800 2800'
+life_serial_loop 1800 2800
++ ./life_sl 1800 2800
+N_SIZE = 1800, T_SIZE = 2800
+Game of Life : 1800 x 1800, 2800 time steps
+Naive Loop: consumed time :185372ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 2000 2800'
+life_serial_loop 2000 2800
++ ./life_sl 2000 2800
+N_SIZE = 2000, T_SIZE = 2800
+Game of Life : 2000 x 2000, 2800 time steps
+Naive Loop: consumed time :228729ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 2200 2800'
+life_serial_loop 2200 2800
++ ./life_sl 2200 2800
+N_SIZE = 2200, T_SIZE = 2800
+Game of Life : 2200 x 2200, 2800 time steps
+Naive Loop: consumed time :276955ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 2400 2800'
+life_serial_loop 2400 2800
++ ./life_sl 2400 2800
+N_SIZE = 2400, T_SIZE = 2800
+Game of Life : 2400 x 2400, 2800 time steps
+Naive Loop: consumed time :329719ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 2600 2800'
+life_serial_loop 2600 2800
++ ./life_sl 2600 2800
+N_SIZE = 2600, T_SIZE = 2800
+Game of Life : 2600 x 2600, 2800 time steps
+Naive Loop: consumed time :386774ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 2800 2800'
+life_serial_loop 2800 2800
++ ./life_sl 2800 2800
+N_SIZE = 2800, T_SIZE = 2800
+Game of Life : 2800 x 2800, 2800 time steps
+Naive Loop: consumed time :448892ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 3000 2800'
+life_serial_loop 3000 2800
++ ./life_sl 3000 2800
+N_SIZE = 3000, T_SIZE = 2800
+Game of Life : 3000 x 3000, 2800 time steps
+Naive Loop: consumed time :515983ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 3200 2800'
+life_serial_loop 3200 2800
++ ./life_sl 3200 2800
+N_SIZE = 3200, T_SIZE = 2800
+Game of Life : 3200 x 3200, 2800 time steps
+Naive Loop: consumed time :586825ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ (( step += 200 ))
++ (( step <= 3200 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 200 3000'
+life_serial_loop 200 3000
++ ./life_sl 200 3000
+N_SIZE = 200, T_SIZE = 3000
+Game of Life : 200 x 200, 3000 time steps
+Naive Loop: consumed time :2461.89ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 400 3000'
+life_serial_loop 400 3000
++ ./life_sl 400 3000
+N_SIZE = 400, T_SIZE = 3000
+Game of Life : 400 x 400, 3000 time steps
+Naive Loop: consumed time :9849.86ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 600 3000'
+life_serial_loop 600 3000
++ ./life_sl 600 3000
+N_SIZE = 600, T_SIZE = 3000
+Game of Life : 600 x 600, 3000 time steps
+Naive Loop: consumed time :22097.3ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 800 3000'
+life_serial_loop 800 3000
++ ./life_sl 800 3000
+N_SIZE = 800, T_SIZE = 3000
+Game of Life : 800 x 800, 3000 time steps
+Naive Loop: consumed time :39287.4ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 1000 3000'
+life_serial_loop 1000 3000
++ ./life_sl 1000 3000
+N_SIZE = 1000, T_SIZE = 3000
+Game of Life : 1000 x 1000, 3000 time steps
+Naive Loop: consumed time :61267.7ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 1200 3000'
+life_serial_loop 1200 3000
++ ./life_sl 1200 3000
+N_SIZE = 1200, T_SIZE = 3000
+Game of Life : 1200 x 1200, 3000 time steps
+Naive Loop: consumed time :88217ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 1400 3000'
+life_serial_loop 1400 3000
++ ./life_sl 1400 3000
+N_SIZE = 1400, T_SIZE = 3000
+Game of Life : 1400 x 1400, 3000 time steps
+Naive Loop: consumed time :120200ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 1600 3000'
+life_serial_loop 1600 3000
++ ./life_sl 1600 3000
+N_SIZE = 1600, T_SIZE = 3000
+Game of Life : 1600 x 1600, 3000 time steps
+Naive Loop: consumed time :156803ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 1800 3000'
+life_serial_loop 1800 3000
++ ./life_sl 1800 3000
+N_SIZE = 1800, T_SIZE = 3000
+Game of Life : 1800 x 1800, 3000 time steps
+Naive Loop: consumed time :198481ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 2000 3000'
+life_serial_loop 2000 3000
++ ./life_sl 2000 3000
+N_SIZE = 2000, T_SIZE = 3000
+Game of Life : 2000 x 2000, 3000 time steps
+Naive Loop: consumed time :245072ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 2200 3000'
+life_serial_loop 2200 3000
++ ./life_sl 2200 3000
+N_SIZE = 2200, T_SIZE = 3000
+Game of Life : 2200 x 2200, 3000 time steps
+Naive Loop: consumed time :296527ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 2400 3000'
+life_serial_loop 2400 3000
++ ./life_sl 2400 3000
+N_SIZE = 2400, T_SIZE = 3000
+Game of Life : 2400 x 2400, 3000 time steps
+Naive Loop: consumed time :352866ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 2600 3000'
+life_serial_loop 2600 3000
++ ./life_sl 2600 3000
+N_SIZE = 2600, T_SIZE = 3000
+Game of Life : 2600 x 2600, 3000 time steps
+Naive Loop: consumed time :414224ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 2800 3000'
+life_serial_loop 2800 3000
++ ./life_sl 2800 3000
+N_SIZE = 2800, T_SIZE = 3000
+Game of Life : 2800 x 2800, 3000 time steps
+Naive Loop: consumed time :480719ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 3000 3000'
+life_serial_loop 3000 3000
++ ./life_sl 3000 3000
+N_SIZE = 3000, T_SIZE = 3000
+Game of Life : 3000 x 3000, 3000 time steps
+Naive Loop: consumed time :551721ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 3200 3000'
+life_serial_loop 3200 3000
++ ./life_sl 3200 3000
+N_SIZE = 3200, T_SIZE = 3000
+Game of Life : 3200 x 3200, 3000 time steps
+Naive Loop: consumed time :627816ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ (( step += 200 ))
++ (( step <= 3200 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 200 3200'
+life_serial_loop 200 3200
++ ./life_sl 200 3200
+N_SIZE = 200, T_SIZE = 3200
+Game of Life : 200 x 200, 3200 time steps
+Naive Loop: consumed time :2624.88ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 400 3200'
+life_serial_loop 400 3200
++ ./life_sl 400 3200
+N_SIZE = 400, T_SIZE = 3200
+Game of Life : 400 x 400, 3200 time steps
+Naive Loop: consumed time :10499.8ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 600 3200'
+life_serial_loop 600 3200
++ ./life_sl 600 3200
+N_SIZE = 600, T_SIZE = 3200
+Game of Life : 600 x 600, 3200 time steps
+Naive Loop: consumed time :23554.8ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 800 3200'
+life_serial_loop 800 3200
++ ./life_sl 800 3200
+N_SIZE = 800, T_SIZE = 3200
+Game of Life : 800 x 800, 3200 time steps
+Naive Loop: consumed time :41860.8ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 1000 3200'
+life_serial_loop 1000 3200
++ ./life_sl 1000 3200
+N_SIZE = 1000, T_SIZE = 3200
+Game of Life : 1000 x 1000, 3200 time steps
+Naive Loop: consumed time :65329.1ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 1200 3200'
+life_serial_loop 1200 3200
++ ./life_sl 1200 3200
+N_SIZE = 1200, T_SIZE = 3200
+Game of Life : 1200 x 1200, 3200 time steps
+Naive Loop: consumed time :94078.8ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 1400 3200'
+life_serial_loop 1400 3200
++ ./life_sl 1400 3200
+N_SIZE = 1400, T_SIZE = 3200
+Game of Life : 1400 x 1400, 3200 time steps
+Naive Loop: consumed time :128087ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 1600 3200'
+life_serial_loop 1600 3200
++ ./life_sl 1600 3200
+N_SIZE = 1600, T_SIZE = 3200
+Game of Life : 1600 x 1600, 3200 time steps
+Naive Loop: consumed time :167129ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 1800 3200'
+life_serial_loop 1800 3200
++ ./life_sl 1800 3200
+N_SIZE = 1800, T_SIZE = 3200
+Game of Life : 1800 x 1800, 3200 time steps
+Naive Loop: consumed time :211614ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 2000 3200'
+life_serial_loop 2000 3200
++ ./life_sl 2000 3200
+N_SIZE = 2000, T_SIZE = 3200
+Game of Life : 2000 x 2000, 3200 time steps
+Naive Loop: consumed time :261186ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 2200 3200'
+life_serial_loop 2200 3200
++ ./life_sl 2200 3200
+N_SIZE = 2200, T_SIZE = 3200
+Game of Life : 2200 x 2200, 3200 time steps
+Naive Loop: consumed time :316139ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 2400 3200'
+life_serial_loop 2400 3200
++ ./life_sl 2400 3200
+N_SIZE = 2400, T_SIZE = 3200
+Game of Life : 2400 x 2400, 3200 time steps
+Naive Loop: consumed time :376149ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 2600 3200'
+life_serial_loop 2600 3200
++ ./life_sl 2600 3200
+N_SIZE = 2600, T_SIZE = 3200
+Game of Life : 2600 x 2600, 3200 time steps
+Naive Loop: consumed time :441506ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 2800 3200'
+life_serial_loop 2800 3200
++ ./life_sl 2800 3200
+N_SIZE = 2800, T_SIZE = 3200
+Game of Life : 2800 x 2800, 3200 time steps
+Naive Loop: consumed time :512473ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 3000 3200'
+life_serial_loop 3000 3200
++ ./life_sl 3000 3200
+N_SIZE = 3000, T_SIZE = 3200
+Game of Life : 3000 x 3000, 3200 time steps
+Naive Loop: consumed time :588228ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 3200 3200'
+life_serial_loop 3200 3200
++ ./life_sl 3200 3200
+N_SIZE = 3200, T_SIZE = 3200
+Game of Life : 3200 x 3200, 3200 time steps
+Naive Loop: consumed time :669172ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ (( step += 200 ))
++ (( step <= 3200 ))
+

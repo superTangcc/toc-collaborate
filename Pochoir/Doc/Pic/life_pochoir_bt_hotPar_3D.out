@@ -1,0 +1,2117 @@
++ echo '<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<'
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
++ (( step = 200 ))
++ (( step <= 3200 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 200 200'
+life_pochoir_bit_trick 200 200
++ ./life_pochoir_bt 200 200
+N_SIZE = 200, T_SIZE = 200
+Game of Life : 200 x 200, 200 time steps
+Pochoir ET (Bit Trick): consumed time :28.956ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 400 200'
+life_pochoir_bit_trick 400 200
++ ./life_pochoir_bt 400 200
+N_SIZE = 400, T_SIZE = 200
+Game of Life : 400 x 400, 200 time steps
+Pochoir ET (Bit Trick): consumed time :41.9277ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 600 200'
+life_pochoir_bit_trick 600 200
++ ./life_pochoir_bt 600 200
+N_SIZE = 600, T_SIZE = 200
+Game of Life : 600 x 600, 200 time steps
+Pochoir ET (Bit Trick): consumed time :58.8313ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 800 200'
+life_pochoir_bit_trick 800 200
++ ./life_pochoir_bt 800 200
+N_SIZE = 800, T_SIZE = 200
+Game of Life : 800 x 800, 200 time steps
+Pochoir ET (Bit Trick): consumed time :81.8167ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 1000 200'
+life_pochoir_bit_trick 1000 200
++ ./life_pochoir_bt 1000 200
+N_SIZE = 1000, T_SIZE = 200
+Game of Life : 1000 x 1000, 200 time steps
+Pochoir ET (Bit Trick): consumed time :99.2477ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 1200 200'
+life_pochoir_bit_trick 1200 200
++ ./life_pochoir_bt 1200 200
+N_SIZE = 1200, T_SIZE = 200
+Game of Life : 1200 x 1200, 200 time steps
+Pochoir ET (Bit Trick): consumed time :121.312ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 1400 200'
+life_pochoir_bit_trick 1400 200
++ ./life_pochoir_bt 1400 200
+N_SIZE = 1400, T_SIZE = 200
+Game of Life : 1400 x 1400, 200 time steps
+Pochoir ET (Bit Trick): consumed time :153.701ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 1600 200'
+life_pochoir_bit_trick 1600 200
++ ./life_pochoir_bt 1600 200
+N_SIZE = 1600, T_SIZE = 200
+Game of Life : 1600 x 1600, 200 time steps
+Pochoir ET (Bit Trick): consumed time :192.685ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 1800 200'
+life_pochoir_bit_trick 1800 200
++ ./life_pochoir_bt 1800 200
+N_SIZE = 1800, T_SIZE = 200
+Game of Life : 1800 x 1800, 200 time steps
+Pochoir ET (Bit Trick): consumed time :226.935ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 2000 200'
+life_pochoir_bit_trick 2000 200
++ ./life_pochoir_bt 2000 200
+N_SIZE = 2000, T_SIZE = 200
+Game of Life : 2000 x 2000, 200 time steps
+Pochoir ET (Bit Trick): consumed time :274.117ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 2200 200'
+life_pochoir_bit_trick 2200 200
++ ./life_pochoir_bt 2200 200
+N_SIZE = 2200, T_SIZE = 200
+Game of Life : 2200 x 2200, 200 time steps
+Pochoir ET (Bit Trick): consumed time :318.199ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 2400 200'
+life_pochoir_bit_trick 2400 200
++ ./life_pochoir_bt 2400 200
+N_SIZE = 2400, T_SIZE = 200
+Game of Life : 2400 x 2400, 200 time steps
+Pochoir ET (Bit Trick): consumed time :363.868ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 2600 200'
+life_pochoir_bit_trick 2600 200
++ ./life_pochoir_bt 2600 200
+N_SIZE = 2600, T_SIZE = 200
+Game of Life : 2600 x 2600, 200 time steps
+Pochoir ET (Bit Trick): consumed time :422.426ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 2800 200'
+life_pochoir_bit_trick 2800 200
++ ./life_pochoir_bt 2800 200
+N_SIZE = 2800, T_SIZE = 200
+Game of Life : 2800 x 2800, 200 time steps
+Pochoir ET (Bit Trick): consumed time :474.774ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 3000 200'
+life_pochoir_bit_trick 3000 200
++ ./life_pochoir_bt 3000 200
+N_SIZE = 3000, T_SIZE = 200
+Game of Life : 3000 x 3000, 200 time steps
+Pochoir ET (Bit Trick): consumed time :584.743ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 3200 200'
+life_pochoir_bit_trick 3200 200
++ ./life_pochoir_bt 3200 200
+N_SIZE = 3200, T_SIZE = 200
+Game of Life : 3200 x 3200, 200 time steps
+Pochoir ET (Bit Trick): consumed time :615.141ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ (( step += 200 ))
++ (( step <= 3200 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 200 400'
+life_pochoir_bit_trick 200 400
++ ./life_pochoir_bt 200 400
+N_SIZE = 200, T_SIZE = 400
+Game of Life : 200 x 200, 400 time steps
+Pochoir ET (Bit Trick): consumed time :53.249ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 400 400'
+life_pochoir_bit_trick 400 400
++ ./life_pochoir_bt 400 400
+N_SIZE = 400, T_SIZE = 400
+Game of Life : 400 x 400, 400 time steps
+Pochoir ET (Bit Trick): consumed time :90.5053ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 600 400'
+life_pochoir_bit_trick 600 400
++ ./life_pochoir_bt 600 400
+N_SIZE = 600, T_SIZE = 400
+Game of Life : 600 x 600, 400 time steps
+Pochoir ET (Bit Trick): consumed time :114.791ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 800 400'
+life_pochoir_bit_trick 800 400
++ ./life_pochoir_bt 800 400
+N_SIZE = 800, T_SIZE = 400
+Game of Life : 800 x 800, 400 time steps
+Pochoir ET (Bit Trick): consumed time :162.656ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 1000 400'
+life_pochoir_bit_trick 1000 400
++ ./life_pochoir_bt 1000 400
+N_SIZE = 1000, T_SIZE = 400
+Game of Life : 1000 x 1000, 400 time steps
+Pochoir ET (Bit Trick): consumed time :195.339ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 1200 400'
+life_pochoir_bit_trick 1200 400
++ ./life_pochoir_bt 1200 400
+N_SIZE = 1200, T_SIZE = 400
+Game of Life : 1200 x 1200, 400 time steps
+Pochoir ET (Bit Trick): consumed time :250.363ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 1400 400'
+life_pochoir_bit_trick 1400 400
++ ./life_pochoir_bt 1400 400
+N_SIZE = 1400, T_SIZE = 400
+Game of Life : 1400 x 1400, 400 time steps
+Pochoir ET (Bit Trick): consumed time :307.124ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 1600 400'
+life_pochoir_bit_trick 1600 400
++ ./life_pochoir_bt 1600 400
+N_SIZE = 1600, T_SIZE = 400
+Game of Life : 1600 x 1600, 400 time steps
+Pochoir ET (Bit Trick): consumed time :378.093ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 1800 400'
+life_pochoir_bit_trick 1800 400
++ ./life_pochoir_bt 1800 400
+N_SIZE = 1800, T_SIZE = 400
+Game of Life : 1800 x 1800, 400 time steps
+Pochoir ET (Bit Trick): consumed time :440.37ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 2000 400'
+life_pochoir_bit_trick 2000 400
++ ./life_pochoir_bt 2000 400
+N_SIZE = 2000, T_SIZE = 400
+Game of Life : 2000 x 2000, 400 time steps
+Pochoir ET (Bit Trick): consumed time :515.918ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 2200 400'
+life_pochoir_bit_trick 2200 400
++ ./life_pochoir_bt 2200 400
+N_SIZE = 2200, T_SIZE = 400
+Game of Life : 2200 x 2200, 400 time steps
+Pochoir ET (Bit Trick): consumed time :616.862ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 2400 400'
+life_pochoir_bit_trick 2400 400
++ ./life_pochoir_bt 2400 400
+N_SIZE = 2400, T_SIZE = 400
+Game of Life : 2400 x 2400, 400 time steps
+Pochoir ET (Bit Trick): consumed time :706.541ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 2600 400'
+life_pochoir_bit_trick 2600 400
++ ./life_pochoir_bt 2600 400
+N_SIZE = 2600, T_SIZE = 400
+Game of Life : 2600 x 2600, 400 time steps
+Pochoir ET (Bit Trick): consumed time :821.528ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 2800 400'
+life_pochoir_bit_trick 2800 400
++ ./life_pochoir_bt 2800 400
+N_SIZE = 2800, T_SIZE = 400
+Game of Life : 2800 x 2800, 400 time steps
+Pochoir ET (Bit Trick): consumed time :922.547ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 3000 400'
+life_pochoir_bit_trick 3000 400
++ ./life_pochoir_bt 3000 400
+N_SIZE = 3000, T_SIZE = 400
+Game of Life : 3000 x 3000, 400 time steps
+Pochoir ET (Bit Trick): consumed time :1134.02ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 3200 400'
+life_pochoir_bit_trick 3200 400
++ ./life_pochoir_bt 3200 400
+N_SIZE = 3200, T_SIZE = 400
+Game of Life : 3200 x 3200, 400 time steps
+Pochoir ET (Bit Trick): consumed time :1181.16ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ (( step += 200 ))
++ (( step <= 3200 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 200 600'
+life_pochoir_bit_trick 200 600
++ ./life_pochoir_bt 200 600
+N_SIZE = 200, T_SIZE = 600
+Game of Life : 200 x 200, 600 time steps
+Pochoir ET (Bit Trick): consumed time :76.8873ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 400 600'
+life_pochoir_bit_trick 400 600
++ ./life_pochoir_bt 400 600
+N_SIZE = 400, T_SIZE = 600
+Game of Life : 400 x 400, 600 time steps
+Pochoir ET (Bit Trick): consumed time :125.924ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 600 600'
+life_pochoir_bit_trick 600 600
++ ./life_pochoir_bt 600 600
+N_SIZE = 600, T_SIZE = 600
+Game of Life : 600 x 600, 600 time steps
+Pochoir ET (Bit Trick): consumed time :180.93ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 800 600'
+life_pochoir_bit_trick 800 600
++ ./life_pochoir_bt 800 600
+N_SIZE = 800, T_SIZE = 600
+Game of Life : 800 x 800, 600 time steps
+Pochoir ET (Bit Trick): consumed time :239.013ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 1000 600'
+life_pochoir_bit_trick 1000 600
++ ./life_pochoir_bt 1000 600
+N_SIZE = 1000, T_SIZE = 600
+Game of Life : 1000 x 1000, 600 time steps
+Pochoir ET (Bit Trick): consumed time :306.211ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 1200 600'
+life_pochoir_bit_trick 1200 600
++ ./life_pochoir_bt 1200 600
+N_SIZE = 1200, T_SIZE = 600
+Game of Life : 1200 x 1200, 600 time steps
+Pochoir ET (Bit Trick): consumed time :385.731ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 1400 600'
+life_pochoir_bit_trick 1400 600
++ ./life_pochoir_bt 1400 600
+N_SIZE = 1400, T_SIZE = 600
+Game of Life : 1400 x 1400, 600 time steps
+Pochoir ET (Bit Trick): consumed time :462.528ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 1600 600'
+life_pochoir_bit_trick 1600 600
++ ./life_pochoir_bt 1600 600
+N_SIZE = 1600, T_SIZE = 600
+Game of Life : 1600 x 1600, 600 time steps
+Pochoir ET (Bit Trick): consumed time :573.783ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 1800 600'
+life_pochoir_bit_trick 1800 600
++ ./life_pochoir_bt 1800 600
+N_SIZE = 1800, T_SIZE = 600
+Game of Life : 1800 x 1800, 600 time steps
+Pochoir ET (Bit Trick): consumed time :677.997ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 2000 600'
+life_pochoir_bit_trick 2000 600
++ ./life_pochoir_bt 2000 600
+N_SIZE = 2000, T_SIZE = 600
+Game of Life : 2000 x 2000, 600 time steps
+Pochoir ET (Bit Trick): consumed time :806.084ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 2200 600'
+life_pochoir_bit_trick 2200 600
++ ./life_pochoir_bt 2200 600
+N_SIZE = 2200, T_SIZE = 600
+Game of Life : 2200 x 2200, 600 time steps
+Pochoir ET (Bit Trick): consumed time :947.023ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 2400 600'
+life_pochoir_bit_trick 2400 600
++ ./life_pochoir_bt 2400 600
+N_SIZE = 2400, T_SIZE = 600
+Game of Life : 2400 x 2400, 600 time steps
+Pochoir ET (Bit Trick): consumed time :1097.83ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 2600 600'
+life_pochoir_bit_trick 2600 600
++ ./life_pochoir_bt 2600 600
+N_SIZE = 2600, T_SIZE = 600
+Game of Life : 2600 x 2600, 600 time steps
+Pochoir ET (Bit Trick): consumed time :1244.68ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 2800 600'
+life_pochoir_bit_trick 2800 600
++ ./life_pochoir_bt 2800 600
+N_SIZE = 2800, T_SIZE = 600
+Game of Life : 2800 x 2800, 600 time steps
+Pochoir ET (Bit Trick): consumed time :1416.31ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 3000 600'
+life_pochoir_bit_trick 3000 600
++ ./life_pochoir_bt 3000 600
+N_SIZE = 3000, T_SIZE = 600
+Game of Life : 3000 x 3000, 600 time steps
+Pochoir ET (Bit Trick): consumed time :1729.36ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 3200 600'
+life_pochoir_bit_trick 3200 600
++ ./life_pochoir_bt 3200 600
+N_SIZE = 3200, T_SIZE = 600
+Game of Life : 3200 x 3200, 600 time steps
+Pochoir ET (Bit Trick): consumed time :1816.98ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ (( step += 200 ))
++ (( step <= 3200 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 200 800'
+life_pochoir_bit_trick 200 800
++ ./life_pochoir_bt 200 800
+N_SIZE = 200, T_SIZE = 800
+Game of Life : 200 x 200, 800 time steps
+Pochoir ET (Bit Trick): consumed time :108.75ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 400 800'
+life_pochoir_bit_trick 400 800
++ ./life_pochoir_bt 400 800
+N_SIZE = 400, T_SIZE = 800
+Game of Life : 400 x 400, 800 time steps
+Pochoir ET (Bit Trick): consumed time :188.86ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 600 800'
+life_pochoir_bit_trick 600 800
++ ./life_pochoir_bt 600 800
+N_SIZE = 600, T_SIZE = 800
+Game of Life : 600 x 600, 800 time steps
+Pochoir ET (Bit Trick): consumed time :237.532ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 800 800'
+life_pochoir_bit_trick 800 800
++ ./life_pochoir_bt 800 800
+N_SIZE = 800, T_SIZE = 800
+Game of Life : 800 x 800, 800 time steps
+Pochoir ET (Bit Trick): consumed time :313.578ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 1000 800'
+life_pochoir_bit_trick 1000 800
++ ./life_pochoir_bt 1000 800
+N_SIZE = 1000, T_SIZE = 800
+Game of Life : 1000 x 1000, 800 time steps
+Pochoir ET (Bit Trick): consumed time :393.162ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 1200 800'
+life_pochoir_bit_trick 1200 800
++ ./life_pochoir_bt 1200 800
+N_SIZE = 1200, T_SIZE = 800
+Game of Life : 1200 x 1200, 800 time steps
+Pochoir ET (Bit Trick): consumed time :485.506ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 1400 800'
+life_pochoir_bit_trick 1400 800
++ ./life_pochoir_bt 1400 800
+N_SIZE = 1400, T_SIZE = 800
+Game of Life : 1400 x 1400, 800 time steps
+Pochoir ET (Bit Trick): consumed time :617.276ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 1600 800'
+life_pochoir_bit_trick 1600 800
++ ./life_pochoir_bt 1600 800
+N_SIZE = 1600, T_SIZE = 800
+Game of Life : 1600 x 1600, 800 time steps
+Pochoir ET (Bit Trick): consumed time :757.712ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 1800 800'
+life_pochoir_bit_trick 1800 800
++ ./life_pochoir_bt 1800 800
+N_SIZE = 1800, T_SIZE = 800
+Game of Life : 1800 x 1800, 800 time steps
+Pochoir ET (Bit Trick): consumed time :876.813ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 2000 800'
+life_pochoir_bit_trick 2000 800
++ ./life_pochoir_bt 2000 800
+N_SIZE = 2000, T_SIZE = 800
+Game of Life : 2000 x 2000, 800 time steps
+Pochoir ET (Bit Trick): consumed time :1035.92ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 2200 800'
+life_pochoir_bit_trick 2200 800
++ ./life_pochoir_bt 2200 800
+N_SIZE = 2200, T_SIZE = 800
+Game of Life : 2200 x 2200, 800 time steps
+Pochoir ET (Bit Trick): consumed time :1219.93ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 2400 800'
+life_pochoir_bit_trick 2400 800
++ ./life_pochoir_bt 2400 800
+N_SIZE = 2400, T_SIZE = 800
+Game of Life : 2400 x 2400, 800 time steps
+Pochoir ET (Bit Trick): consumed time :1405.18ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 2600 800'
+life_pochoir_bit_trick 2600 800
++ ./life_pochoir_bt 2600 800
+N_SIZE = 2600, T_SIZE = 800
+Game of Life : 2600 x 2600, 800 time steps
+Pochoir ET (Bit Trick): consumed time :1629.76ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 2800 800'
+life_pochoir_bit_trick 2800 800
++ ./life_pochoir_bt 2800 800
+N_SIZE = 2800, T_SIZE = 800
+Game of Life : 2800 x 2800, 800 time steps
+Pochoir ET (Bit Trick): consumed time :1849.21ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 3000 800'
+life_pochoir_bit_trick 3000 800
++ ./life_pochoir_bt 3000 800
+N_SIZE = 3000, T_SIZE = 800
+Game of Life : 3000 x 3000, 800 time steps
+Pochoir ET (Bit Trick): consumed time :2273.84ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 3200 800'
+life_pochoir_bit_trick 3200 800
++ ./life_pochoir_bt 3200 800
+N_SIZE = 3200, T_SIZE = 800
+Game of Life : 3200 x 3200, 800 time steps
+Pochoir ET (Bit Trick): consumed time :2366.31ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ (( step += 200 ))
++ (( step <= 3200 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 200 1000'
+life_pochoir_bit_trick 200 1000
++ ./life_pochoir_bt 200 1000
+N_SIZE = 200, T_SIZE = 1000
+Game of Life : 200 x 200, 1000 time steps
+Pochoir ET (Bit Trick): consumed time :127.488ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 400 1000'
+life_pochoir_bit_trick 400 1000
++ ./life_pochoir_bt 400 1000
+N_SIZE = 400, T_SIZE = 1000
+Game of Life : 400 x 400, 1000 time steps
+Pochoir ET (Bit Trick): consumed time :229.153ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 600 1000'
+life_pochoir_bit_trick 600 1000
++ ./life_pochoir_bt 600 1000
+N_SIZE = 600, T_SIZE = 1000
+Game of Life : 600 x 600, 1000 time steps
+Pochoir ET (Bit Trick): consumed time :303.684ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 800 1000'
+life_pochoir_bit_trick 800 1000
++ ./life_pochoir_bt 800 1000
+N_SIZE = 800, T_SIZE = 1000
+Game of Life : 800 x 800, 1000 time steps
+Pochoir ET (Bit Trick): consumed time :405.766ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 1000 1000'
+life_pochoir_bit_trick 1000 1000
++ ./life_pochoir_bt 1000 1000
+N_SIZE = 1000, T_SIZE = 1000
+Game of Life : 1000 x 1000, 1000 time steps
+Pochoir ET (Bit Trick): consumed time :521.933ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 1200 1000'
+life_pochoir_bit_trick 1200 1000
++ ./life_pochoir_bt 1200 1000
+N_SIZE = 1200, T_SIZE = 1000
+Game of Life : 1200 x 1200, 1000 time steps
+Pochoir ET (Bit Trick): consumed time :626.576ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 1400 1000'
+life_pochoir_bit_trick 1400 1000
++ ./life_pochoir_bt 1400 1000
+N_SIZE = 1400, T_SIZE = 1000
+Game of Life : 1400 x 1400, 1000 time steps
+Pochoir ET (Bit Trick): consumed time :785.978ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 1600 1000'
+life_pochoir_bit_trick 1600 1000
++ ./life_pochoir_bt 1600 1000
+N_SIZE = 1600, T_SIZE = 1000
+Game of Life : 1600 x 1600, 1000 time steps
+Pochoir ET (Bit Trick): consumed time :980.564ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 1800 1000'
+life_pochoir_bit_trick 1800 1000
++ ./life_pochoir_bt 1800 1000
+N_SIZE = 1800, T_SIZE = 1000
+Game of Life : 1800 x 1800, 1000 time steps
+Pochoir ET (Bit Trick): consumed time :1153.69ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 2000 1000'
+life_pochoir_bit_trick 2000 1000
++ ./life_pochoir_bt 2000 1000
+N_SIZE = 2000, T_SIZE = 1000
+Game of Life : 2000 x 2000, 1000 time steps
+Pochoir ET (Bit Trick): consumed time :1376.41ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 2200 1000'
+life_pochoir_bit_trick 2200 1000
++ ./life_pochoir_bt 2200 1000
+N_SIZE = 2200, T_SIZE = 1000
+Game of Life : 2200 x 2200, 1000 time steps
+Pochoir ET (Bit Trick): consumed time :1580.8ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 2400 1000'
+life_pochoir_bit_trick 2400 1000
++ ./life_pochoir_bt 2400 1000
+N_SIZE = 2400, T_SIZE = 1000
+Game of Life : 2400 x 2400, 1000 time steps
+Pochoir ET (Bit Trick): consumed time :1823.65ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 2600 1000'
+life_pochoir_bit_trick 2600 1000
++ ./life_pochoir_bt 2600 1000
+N_SIZE = 2600, T_SIZE = 1000
+Game of Life : 2600 x 2600, 1000 time steps
+Pochoir ET (Bit Trick): consumed time :2088.78ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 2800 1000'
+life_pochoir_bit_trick 2800 1000
++ ./life_pochoir_bt 2800 1000
+N_SIZE = 2800, T_SIZE = 1000
+Game of Life : 2800 x 2800, 1000 time steps
+Pochoir ET (Bit Trick): consumed time :2366.17ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 3000 1000'
+life_pochoir_bit_trick 3000 1000
++ ./life_pochoir_bt 3000 1000
+N_SIZE = 3000, T_SIZE = 1000
+Game of Life : 3000 x 3000, 1000 time steps
+Pochoir ET (Bit Trick): consumed time :2914.26ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 3200 1000'
+life_pochoir_bit_trick 3200 1000
++ ./life_pochoir_bt 3200 1000
+N_SIZE = 3200, T_SIZE = 1000
+Game of Life : 3200 x 3200, 1000 time steps
+Pochoir ET (Bit Trick): consumed time :3054.39ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ (( step += 200 ))
++ (( step <= 3200 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 200 1200'
+life_pochoir_bit_trick 200 1200
++ ./life_pochoir_bt 200 1200
+N_SIZE = 200, T_SIZE = 1200
+Game of Life : 200 x 200, 1200 time steps
+Pochoir ET (Bit Trick): consumed time :153.446ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 400 1200'
+life_pochoir_bit_trick 400 1200
++ ./life_pochoir_bt 400 1200
+N_SIZE = 400, T_SIZE = 1200
+Game of Life : 400 x 400, 1200 time steps
+Pochoir ET (Bit Trick): consumed time :257.111ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 600 1200'
+life_pochoir_bit_trick 600 1200
++ ./life_pochoir_bt 600 1200
+N_SIZE = 600, T_SIZE = 1200
+Game of Life : 600 x 600, 1200 time steps
+Pochoir ET (Bit Trick): consumed time :374.616ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 800 1200'
+life_pochoir_bit_trick 800 1200
++ ./life_pochoir_bt 800 1200
+N_SIZE = 800, T_SIZE = 1200
+Game of Life : 800 x 800, 1200 time steps
+Pochoir ET (Bit Trick): consumed time :470.824ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 1000 1200'
+life_pochoir_bit_trick 1000 1200
++ ./life_pochoir_bt 1000 1200
+N_SIZE = 1000, T_SIZE = 1200
+Game of Life : 1000 x 1000, 1200 time steps
+Pochoir ET (Bit Trick): consumed time :615.16ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 1200 1200'
+life_pochoir_bit_trick 1200 1200
++ ./life_pochoir_bt 1200 1200
+N_SIZE = 1200, T_SIZE = 1200
+Game of Life : 1200 x 1200, 1200 time steps
+Pochoir ET (Bit Trick): consumed time :767.133ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 1400 1200'
+life_pochoir_bit_trick 1400 1200
++ ./life_pochoir_bt 1400 1200
+N_SIZE = 1400, T_SIZE = 1200
+Game of Life : 1400 x 1400, 1200 time steps
+Pochoir ET (Bit Trick): consumed time :933.346ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 1600 1200'
+life_pochoir_bit_trick 1600 1200
++ ./life_pochoir_bt 1600 1200
+N_SIZE = 1600, T_SIZE = 1200
+Game of Life : 1600 x 1600, 1200 time steps
+Pochoir ET (Bit Trick): consumed time :1156.59ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 1800 1200'
+life_pochoir_bit_trick 1800 1200
++ ./life_pochoir_bt 1800 1200
+N_SIZE = 1800, T_SIZE = 1200
+Game of Life : 1800 x 1800, 1200 time steps
+Pochoir ET (Bit Trick): consumed time :1361.39ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 2000 1200'
+life_pochoir_bit_trick 2000 1200
++ ./life_pochoir_bt 2000 1200
+N_SIZE = 2000, T_SIZE = 1200
+Game of Life : 2000 x 2000, 1200 time steps
+Pochoir ET (Bit Trick): consumed time :1611.11ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 2200 1200'
+life_pochoir_bit_trick 2200 1200
++ ./life_pochoir_bt 2200 1200
+N_SIZE = 2200, T_SIZE = 1200
+Game of Life : 2200 x 2200, 1200 time steps
+Pochoir ET (Bit Trick): consumed time :1890.45ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 2400 1200'
+life_pochoir_bit_trick 2400 1200
++ ./life_pochoir_bt 2400 1200
+N_SIZE = 2400, T_SIZE = 1200
+Game of Life : 2400 x 2400, 1200 time steps
+Pochoir ET (Bit Trick): consumed time :2204.62ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 2600 1200'
+life_pochoir_bit_trick 2600 1200
++ ./life_pochoir_bt 2600 1200
+N_SIZE = 2600, T_SIZE = 1200
+Game of Life : 2600 x 2600, 1200 time steps
+Pochoir ET (Bit Trick): consumed time :2486.68ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 2800 1200'
+life_pochoir_bit_trick 2800 1200
++ ./life_pochoir_bt 2800 1200
+N_SIZE = 2800, T_SIZE = 1200
+Game of Life : 2800 x 2800, 1200 time steps
+Pochoir ET (Bit Trick): consumed time :2817.15ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 3000 1200'
+life_pochoir_bit_trick 3000 1200
++ ./life_pochoir_bt 3000 1200
+N_SIZE = 3000, T_SIZE = 1200
+Game of Life : 3000 x 3000, 1200 time steps
+Pochoir ET (Bit Trick): consumed time :3467.45ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 3200 1200'
+life_pochoir_bit_trick 3200 1200
++ ./life_pochoir_bt 3200 1200
+N_SIZE = 3200, T_SIZE = 1200
+Game of Life : 3200 x 3200, 1200 time steps
+Pochoir ET (Bit Trick): consumed time :3631.35ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ (( step += 200 ))
++ (( step <= 3200 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 200 1400'
+life_pochoir_bit_trick 200 1400
++ ./life_pochoir_bt 200 1400
+N_SIZE = 200, T_SIZE = 1400
+Game of Life : 200 x 200, 1400 time steps
+Pochoir ET (Bit Trick): consumed time :165.653ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 400 1400'
+life_pochoir_bit_trick 400 1400
++ ./life_pochoir_bt 400 1400
+N_SIZE = 400, T_SIZE = 1400
+Game of Life : 400 x 400, 1400 time steps
+Pochoir ET (Bit Trick): consumed time :288.051ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 600 1400'
+life_pochoir_bit_trick 600 1400
++ ./life_pochoir_bt 600 1400
+N_SIZE = 600, T_SIZE = 1400
+Game of Life : 600 x 600, 1400 time steps
+Pochoir ET (Bit Trick): consumed time :410.342ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 800 1400'
+life_pochoir_bit_trick 800 1400
++ ./life_pochoir_bt 800 1400
+N_SIZE = 800, T_SIZE = 1400
+Game of Life : 800 x 800, 1400 time steps
+Pochoir ET (Bit Trick): consumed time :533.421ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 1000 1400'
+life_pochoir_bit_trick 1000 1400
++ ./life_pochoir_bt 1000 1400
+N_SIZE = 1000, T_SIZE = 1400
+Game of Life : 1000 x 1000, 1400 time steps
+Pochoir ET (Bit Trick): consumed time :678.989ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 1200 1400'
+life_pochoir_bit_trick 1200 1400
++ ./life_pochoir_bt 1200 1400
+N_SIZE = 1200, T_SIZE = 1400
+Game of Life : 1200 x 1200, 1400 time steps
+Pochoir ET (Bit Trick): consumed time :879.701ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 1400 1400'
+life_pochoir_bit_trick 1400 1400
++ ./life_pochoir_bt 1400 1400
+N_SIZE = 1400, T_SIZE = 1400
+Game of Life : 1400 x 1400, 1400 time steps
+Pochoir ET (Bit Trick): consumed time :1100.31ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 1600 1400'
+life_pochoir_bit_trick 1600 1400
++ ./life_pochoir_bt 1600 1400
+N_SIZE = 1600, T_SIZE = 1400
+Game of Life : 1600 x 1600, 1400 time steps
+Pochoir ET (Bit Trick): consumed time :1320.83ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 1800 1400'
+life_pochoir_bit_trick 1800 1400
++ ./life_pochoir_bt 1800 1400
+N_SIZE = 1800, T_SIZE = 1400
+Game of Life : 1800 x 1800, 1400 time steps
+Pochoir ET (Bit Trick): consumed time :1562.17ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 2000 1400'
+life_pochoir_bit_trick 2000 1400
++ ./life_pochoir_bt 2000 1400
+N_SIZE = 2000, T_SIZE = 1400
+Game of Life : 2000 x 2000, 1400 time steps
+Pochoir ET (Bit Trick): consumed time :1856.35ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 2200 1400'
+life_pochoir_bit_trick 2200 1400
++ ./life_pochoir_bt 2200 1400
+N_SIZE = 2200, T_SIZE = 1400
+Game of Life : 2200 x 2200, 1400 time steps
+Pochoir ET (Bit Trick): consumed time :2162.81ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 2400 1400'
+life_pochoir_bit_trick 2400 1400
++ ./life_pochoir_bt 2400 1400
+N_SIZE = 2400, T_SIZE = 1400
+Game of Life : 2400 x 2400, 1400 time steps
+Pochoir ET (Bit Trick): consumed time :2538.5ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 2600 1400'
+life_pochoir_bit_trick 2600 1400
++ ./life_pochoir_bt 2600 1400
+N_SIZE = 2600, T_SIZE = 1400
+Game of Life : 2600 x 2600, 1400 time steps
+Pochoir ET (Bit Trick): consumed time :2895.09ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 2800 1400'
+life_pochoir_bit_trick 2800 1400
++ ./life_pochoir_bt 2800 1400
+N_SIZE = 2800, T_SIZE = 1400
+Game of Life : 2800 x 2800, 1400 time steps
+Pochoir ET (Bit Trick): consumed time :3268.85ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 3000 1400'
+life_pochoir_bit_trick 3000 1400
++ ./life_pochoir_bt 3000 1400
+N_SIZE = 3000, T_SIZE = 1400
+Game of Life : 3000 x 3000, 1400 time steps
+Pochoir ET (Bit Trick): consumed time :4015.18ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 3200 1400'
+life_pochoir_bit_trick 3200 1400
++ ./life_pochoir_bt 3200 1400
+N_SIZE = 3200, T_SIZE = 1400
+Game of Life : 3200 x 3200, 1400 time steps
+Pochoir ET (Bit Trick): consumed time :4188.53ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ (( step += 200 ))
++ (( step <= 3200 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 200 1600'
+life_pochoir_bit_trick 200 1600
++ ./life_pochoir_bt 200 1600
+N_SIZE = 200, T_SIZE = 1600
+Game of Life : 200 x 200, 1600 time steps
+Pochoir ET (Bit Trick): consumed time :225.695ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 400 1600'
+life_pochoir_bit_trick 400 1600
++ ./life_pochoir_bt 400 1600
+N_SIZE = 400, T_SIZE = 1600
+Game of Life : 400 x 400, 1600 time steps
+Pochoir ET (Bit Trick): consumed time :365.56ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 600 1600'
+life_pochoir_bit_trick 600 1600
++ ./life_pochoir_bt 600 1600
+N_SIZE = 600, T_SIZE = 1600
+Game of Life : 600 x 600, 1600 time steps
+Pochoir ET (Bit Trick): consumed time :475.116ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 800 1600'
+life_pochoir_bit_trick 800 1600
++ ./life_pochoir_bt 800 1600
+N_SIZE = 800, T_SIZE = 1600
+Game of Life : 800 x 800, 1600 time steps
+Pochoir ET (Bit Trick): consumed time :628.126ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 1000 1600'
+life_pochoir_bit_trick 1000 1600
++ ./life_pochoir_bt 1000 1600
+N_SIZE = 1000, T_SIZE = 1600
+Game of Life : 1000 x 1000, 1600 time steps
+Pochoir ET (Bit Trick): consumed time :777.751ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 1200 1600'
+life_pochoir_bit_trick 1200 1600
++ ./life_pochoir_bt 1200 1600
+N_SIZE = 1200, T_SIZE = 1600
+Game of Life : 1200 x 1200, 1600 time steps
+Pochoir ET (Bit Trick): consumed time :978.166ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 1400 1600'
+life_pochoir_bit_trick 1400 1600
++ ./life_pochoir_bt 1400 1600
+N_SIZE = 1400, T_SIZE = 1600
+Game of Life : 1400 x 1400, 1600 time steps
+Pochoir ET (Bit Trick): consumed time :1225.66ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 1600 1600'
+life_pochoir_bit_trick 1600 1600
++ ./life_pochoir_bt 1600 1600
+N_SIZE = 1600, T_SIZE = 1600
+Game of Life : 1600 x 1600, 1600 time steps
+Pochoir ET (Bit Trick): consumed time :1522.84ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 1800 1600'
+life_pochoir_bit_trick 1800 1600
++ ./life_pochoir_bt 1800 1600
+N_SIZE = 1800, T_SIZE = 1600
+Game of Life : 1800 x 1800, 1600 time steps
+Pochoir ET (Bit Trick): consumed time :1753.29ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 2000 1600'
+life_pochoir_bit_trick 2000 1600
++ ./life_pochoir_bt 2000 1600
+N_SIZE = 2000, T_SIZE = 1600
+Game of Life : 2000 x 2000, 1600 time steps
+Pochoir ET (Bit Trick): consumed time :2074.31ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 2200 1600'
+life_pochoir_bit_trick 2200 1600
++ ./life_pochoir_bt 2200 1600
+N_SIZE = 2200, T_SIZE = 1600
+Game of Life : 2200 x 2200, 1600 time steps
+Pochoir ET (Bit Trick): consumed time :2426.27ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 2400 1600'
+life_pochoir_bit_trick 2400 1600
++ ./life_pochoir_bt 2400 1600
+N_SIZE = 2400, T_SIZE = 1600
+Game of Life : 2400 x 2400, 1600 time steps
+Pochoir ET (Bit Trick): consumed time :2803.96ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 2600 1600'
+life_pochoir_bit_trick 2600 1600
++ ./life_pochoir_bt 2600 1600
+N_SIZE = 2600, T_SIZE = 1600
+Game of Life : 2600 x 2600, 1600 time steps
+Pochoir ET (Bit Trick): consumed time :3257.41ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 2800 1600'
+life_pochoir_bit_trick 2800 1600
++ ./life_pochoir_bt 2800 1600
+N_SIZE = 2800, T_SIZE = 1600
+Game of Life : 2800 x 2800, 1600 time steps
+Pochoir ET (Bit Trick): consumed time :3689.92ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 3000 1600'
+life_pochoir_bit_trick 3000 1600
++ ./life_pochoir_bt 3000 1600
+N_SIZE = 3000, T_SIZE = 1600
+Game of Life : 3000 x 3000, 1600 time steps
+Pochoir ET (Bit Trick): consumed time :4551.52ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 3200 1600'
+life_pochoir_bit_trick 3200 1600
++ ./life_pochoir_bt 3200 1600
+N_SIZE = 3200, T_SIZE = 1600
+Game of Life : 3200 x 3200, 1600 time steps
+Pochoir ET (Bit Trick): consumed time :4729.76ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ (( step += 200 ))
++ (( step <= 3200 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 200 1800'
+life_pochoir_bit_trick 200 1800
++ ./life_pochoir_bt 200 1800
+N_SIZE = 200, T_SIZE = 1800
+Game of Life : 200 x 200, 1800 time steps
+Pochoir ET (Bit Trick): consumed time :237.261ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 400 1800'
+life_pochoir_bit_trick 400 1800
++ ./life_pochoir_bt 400 1800
+N_SIZE = 400, T_SIZE = 1800
+Game of Life : 400 x 400, 1800 time steps
+Pochoir ET (Bit Trick): consumed time :375.588ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 600 1800'
+life_pochoir_bit_trick 600 1800
++ ./life_pochoir_bt 600 1800
+N_SIZE = 600, T_SIZE = 1800
+Game of Life : 600 x 600, 1800 time steps
+Pochoir ET (Bit Trick): consumed time :509.501ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 800 1800'
+life_pochoir_bit_trick 800 1800
++ ./life_pochoir_bt 800 1800
+N_SIZE = 800, T_SIZE = 1800
+Game of Life : 800 x 800, 1800 time steps
+Pochoir ET (Bit Trick): consumed time :685.8ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 1000 1800'
+life_pochoir_bit_trick 1000 1800
++ ./life_pochoir_bt 1000 1800
+N_SIZE = 1000, T_SIZE = 1800
+Game of Life : 1000 x 1000, 1800 time steps
+Pochoir ET (Bit Trick): consumed time :869.148ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 1200 1800'
+life_pochoir_bit_trick 1200 1800
++ ./life_pochoir_bt 1200 1800
+N_SIZE = 1200, T_SIZE = 1800
+Game of Life : 1200 x 1200, 1800 time steps
+Pochoir ET (Bit Trick): consumed time :1117.79ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 1400 1800'
+life_pochoir_bit_trick 1400 1800
++ ./life_pochoir_bt 1400 1800
+N_SIZE = 1400, T_SIZE = 1800
+Game of Life : 1400 x 1400, 1800 time steps
+Pochoir ET (Bit Trick): consumed time :1400.35ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 1600 1800'
+life_pochoir_bit_trick 1600 1800
++ ./life_pochoir_bt 1600 1800
+N_SIZE = 1600, T_SIZE = 1800
+Game of Life : 1600 x 1600, 1800 time steps
+Pochoir ET (Bit Trick): consumed time :1724.87ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 1800 1800'
+life_pochoir_bit_trick 1800 1800
++ ./life_pochoir_bt 1800 1800
+N_SIZE = 1800, T_SIZE = 1800
+Game of Life : 1800 x 1800, 1800 time steps
+Pochoir ET (Bit Trick): consumed time :2081.96ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 2000 1800'
+life_pochoir_bit_trick 2000 1800
++ ./life_pochoir_bt 2000 1800
+N_SIZE = 2000, T_SIZE = 1800
+Game of Life : 2000 x 2000, 1800 time steps
+Pochoir ET (Bit Trick): consumed time :2392.34ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 2200 1800'
+life_pochoir_bit_trick 2200 1800
++ ./life_pochoir_bt 2200 1800
+N_SIZE = 2200, T_SIZE = 1800
+Game of Life : 2200 x 2200, 1800 time steps
+Pochoir ET (Bit Trick): consumed time :2794.37ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 2400 1800'
+life_pochoir_bit_trick 2400 1800
++ ./life_pochoir_bt 2400 1800
+N_SIZE = 2400, T_SIZE = 1800
+Game of Life : 2400 x 2400, 1800 time steps
+Pochoir ET (Bit Trick): consumed time :3233.97ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 2600 1800'
+life_pochoir_bit_trick 2600 1800
++ ./life_pochoir_bt 2600 1800
+N_SIZE = 2600, T_SIZE = 1800
+Game of Life : 2600 x 2600, 1800 time steps
+Pochoir ET (Bit Trick): consumed time :3704.21ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 2800 1800'
+life_pochoir_bit_trick 2800 1800
++ ./life_pochoir_bt 2800 1800
+N_SIZE = 2800, T_SIZE = 1800
+Game of Life : 2800 x 2800, 1800 time steps
+Pochoir ET (Bit Trick): consumed time :4280.09ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 3000 1800'
+life_pochoir_bit_trick 3000 1800
++ ./life_pochoir_bt 3000 1800
+N_SIZE = 3000, T_SIZE = 1800
+Game of Life : 3000 x 3000, 1800 time steps
+Pochoir ET (Bit Trick): consumed time :5187.8ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 3200 1800'
+life_pochoir_bit_trick 3200 1800
++ ./life_pochoir_bt 3200 1800
+N_SIZE = 3200, T_SIZE = 1800
+Game of Life : 3200 x 3200, 1800 time steps
+Pochoir ET (Bit Trick): consumed time :5447.51ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ (( step += 200 ))
++ (( step <= 3200 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 200 2000'
+life_pochoir_bit_trick 200 2000
++ ./life_pochoir_bt 200 2000
+N_SIZE = 200, T_SIZE = 2000
+Game of Life : 200 x 200, 2000 time steps
+Pochoir ET (Bit Trick): consumed time :261.802ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 400 2000'
+life_pochoir_bit_trick 400 2000
++ ./life_pochoir_bt 400 2000
+N_SIZE = 400, T_SIZE = 2000
+Game of Life : 400 x 400, 2000 time steps
+Pochoir ET (Bit Trick): consumed time :447.497ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 600 2000'
+life_pochoir_bit_trick 600 2000
++ ./life_pochoir_bt 600 2000
+N_SIZE = 600, T_SIZE = 2000
+Game of Life : 600 x 600, 2000 time steps
+Pochoir ET (Bit Trick): consumed time :615.1ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 800 2000'
+life_pochoir_bit_trick 800 2000
++ ./life_pochoir_bt 800 2000
+N_SIZE = 800, T_SIZE = 2000
+Game of Life : 800 x 800, 2000 time steps
+Pochoir ET (Bit Trick): consumed time :806.515ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 1000 2000'
+life_pochoir_bit_trick 1000 2000
++ ./life_pochoir_bt 1000 2000
+N_SIZE = 1000, T_SIZE = 2000
+Game of Life : 1000 x 1000, 2000 time steps
+Pochoir ET (Bit Trick): consumed time :1042.56ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 1200 2000'
+life_pochoir_bit_trick 1200 2000
++ ./life_pochoir_bt 1200 2000
+N_SIZE = 1200, T_SIZE = 2000
+Game of Life : 1200 x 1200, 2000 time steps
+Pochoir ET (Bit Trick): consumed time :1250.21ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 1400 2000'
+life_pochoir_bit_trick 1400 2000
++ ./life_pochoir_bt 1400 2000
+N_SIZE = 1400, T_SIZE = 2000
+Game of Life : 1400 x 1400, 2000 time steps
+Pochoir ET (Bit Trick): consumed time :1569.78ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 1600 2000'
+life_pochoir_bit_trick 1600 2000
++ ./life_pochoir_bt 1600 2000
+N_SIZE = 1600, T_SIZE = 2000
+Game of Life : 1600 x 1600, 2000 time steps
+Pochoir ET (Bit Trick): consumed time :1956.27ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 1800 2000'
+life_pochoir_bit_trick 1800 2000
++ ./life_pochoir_bt 1800 2000
+N_SIZE = 1800, T_SIZE = 2000
+Game of Life : 1800 x 1800, 2000 time steps
+Pochoir ET (Bit Trick): consumed time :2314.67ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 2000 2000'
+life_pochoir_bit_trick 2000 2000
++ ./life_pochoir_bt 2000 2000
+N_SIZE = 2000, T_SIZE = 2000
+Game of Life : 2000 x 2000, 2000 time steps
+Pochoir ET (Bit Trick): consumed time :2761.08ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 2200 2000'
+life_pochoir_bit_trick 2200 2000
++ ./life_pochoir_bt 2200 2000
+N_SIZE = 2200, T_SIZE = 2000
+Game of Life : 2200 x 2200, 2000 time steps
+Pochoir ET (Bit Trick): consumed time :3142.1ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 2400 2000'
+life_pochoir_bit_trick 2400 2000
++ ./life_pochoir_bt 2400 2000
+N_SIZE = 2400, T_SIZE = 2000
+Game of Life : 2400 x 2400, 2000 time steps
+Pochoir ET (Bit Trick): consumed time :3642.42ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 2600 2000'
+life_pochoir_bit_trick 2600 2000
++ ./life_pochoir_bt 2600 2000
+N_SIZE = 2600, T_SIZE = 2000
+Game of Life : 2600 x 2600, 2000 time steps
+Pochoir ET (Bit Trick): consumed time :4172.78ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 2800 2000'
+life_pochoir_bit_trick 2800 2000
++ ./life_pochoir_bt 2800 2000
+N_SIZE = 2800, T_SIZE = 2000
+Game of Life : 2800 x 2800, 2000 time steps
+Pochoir ET (Bit Trick): consumed time :4734.13ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 3000 2000'
+life_pochoir_bit_trick 3000 2000
++ ./life_pochoir_bt 3000 2000
+N_SIZE = 3000, T_SIZE = 2000
+Game of Life : 3000 x 3000, 2000 time steps
+Pochoir ET (Bit Trick): consumed time :5834.11ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 3200 2000'
+life_pochoir_bit_trick 3200 2000
++ ./life_pochoir_bt 3200 2000
+N_SIZE = 3200, T_SIZE = 2000
+Game of Life : 3200 x 3200, 2000 time steps
+Pochoir ET (Bit Trick): consumed time :6128.97ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ (( step += 200 ))
++ (( step <= 3200 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 200 2200'
+life_pochoir_bit_trick 200 2200
++ ./life_pochoir_bt 200 2200
+N_SIZE = 200, T_SIZE = 2200
+Game of Life : 200 x 200, 2200 time steps
+Pochoir ET (Bit Trick): consumed time :302.245ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 400 2200'
+life_pochoir_bit_trick 400 2200
++ ./life_pochoir_bt 400 2200
+N_SIZE = 400, T_SIZE = 2200
+Game of Life : 400 x 400, 2200 time steps
+Pochoir ET (Bit Trick): consumed time :487.958ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 600 2200'
+life_pochoir_bit_trick 600 2200
++ ./life_pochoir_bt 600 2200
+N_SIZE = 600, T_SIZE = 2200
+Game of Life : 600 x 600, 2200 time steps
+Pochoir ET (Bit Trick): consumed time :673.527ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 800 2200'
+life_pochoir_bit_trick 800 2200
++ ./life_pochoir_bt 800 2200
+N_SIZE = 800, T_SIZE = 2200
+Game of Life : 800 x 800, 2200 time steps
+Pochoir ET (Bit Trick): consumed time :866.447ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 1000 2200'
+life_pochoir_bit_trick 1000 2200
++ ./life_pochoir_bt 1000 2200
+N_SIZE = 1000, T_SIZE = 2200
+Game of Life : 1000 x 1000, 2200 time steps
+Pochoir ET (Bit Trick): consumed time :1109.96ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 1200 2200'
+life_pochoir_bit_trick 1200 2200
++ ./life_pochoir_bt 1200 2200
+N_SIZE = 1200, T_SIZE = 2200
+Game of Life : 1200 x 1200, 2200 time steps
+Pochoir ET (Bit Trick): consumed time :1397.23ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 1400 2200'
+life_pochoir_bit_trick 1400 2200
++ ./life_pochoir_bt 1400 2200
+N_SIZE = 1400, T_SIZE = 2200
+Game of Life : 1400 x 1400, 2200 time steps
+Pochoir ET (Bit Trick): consumed time :1741.19ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 1600 2200'
+life_pochoir_bit_trick 1600 2200
++ ./life_pochoir_bt 1600 2200
+N_SIZE = 1600, T_SIZE = 2200
+Game of Life : 1600 x 1600, 2200 time steps
+Pochoir ET (Bit Trick): consumed time :2127.84ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 1800 2200'
+life_pochoir_bit_trick 1800 2200
++ ./life_pochoir_bt 1800 2200
+N_SIZE = 1800, T_SIZE = 2200
+Game of Life : 1800 x 1800, 2200 time steps
+Pochoir ET (Bit Trick): consumed time :2540.03ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 2000 2200'
+life_pochoir_bit_trick 2000 2200
++ ./life_pochoir_bt 2000 2200
+N_SIZE = 2000, T_SIZE = 2200
+Game of Life : 2000 x 2000, 2200 time steps
+Pochoir ET (Bit Trick): consumed time :3004.53ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 2200 2200'
+life_pochoir_bit_trick 2200 2200
++ ./life_pochoir_bt 2200 2200
+N_SIZE = 2200, T_SIZE = 2200
+Game of Life : 2200 x 2200, 2200 time steps
+Pochoir ET (Bit Trick): consumed time :3569.43ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 2400 2200'
+life_pochoir_bit_trick 2400 2200
++ ./life_pochoir_bt 2400 2200
+N_SIZE = 2400, T_SIZE = 2200
+Game of Life : 2400 x 2400, 2200 time steps
+Pochoir ET (Bit Trick): consumed time :4033.44ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 2600 2200'
+life_pochoir_bit_trick 2600 2200
++ ./life_pochoir_bt 2600 2200
+N_SIZE = 2600, T_SIZE = 2200
+Game of Life : 2600 x 2600, 2200 time steps
+Pochoir ET (Bit Trick): consumed time :4591.59ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 2800 2200'
+life_pochoir_bit_trick 2800 2200
++ ./life_pochoir_bt 2800 2200
+N_SIZE = 2800, T_SIZE = 2200
+Game of Life : 2800 x 2800, 2200 time steps
+Pochoir ET (Bit Trick): consumed time :5258.04ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 3000 2200'
+life_pochoir_bit_trick 3000 2200
++ ./life_pochoir_bt 3000 2200
+N_SIZE = 3000, T_SIZE = 2200
+Game of Life : 3000 x 3000, 2200 time steps
+Pochoir ET (Bit Trick): consumed time :6396.08ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 3200 2200'
+life_pochoir_bit_trick 3200 2200
++ ./life_pochoir_bt 3200 2200
+N_SIZE = 3200, T_SIZE = 2200
+Game of Life : 3200 x 3200, 2200 time steps
+Pochoir ET (Bit Trick): consumed time :6705.39ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ (( step += 200 ))
++ (( step <= 3200 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 200 2400'
+life_pochoir_bit_trick 200 2400
++ ./life_pochoir_bt 200 2400
+N_SIZE = 200, T_SIZE = 2400
+Game of Life : 200 x 200, 2400 time steps
+Pochoir ET (Bit Trick): consumed time :282.893ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 400 2400'
+life_pochoir_bit_trick 400 2400
++ ./life_pochoir_bt 400 2400
+N_SIZE = 400, T_SIZE = 2400
+Game of Life : 400 x 400, 2400 time steps
+Pochoir ET (Bit Trick): consumed time :523.934ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 600 2400'
+life_pochoir_bit_trick 600 2400
++ ./life_pochoir_bt 600 2400
+N_SIZE = 600, T_SIZE = 2400
+Game of Life : 600 x 600, 2400 time steps
+Pochoir ET (Bit Trick): consumed time :740.378ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 800 2400'
+life_pochoir_bit_trick 800 2400
++ ./life_pochoir_bt 800 2400
+N_SIZE = 800, T_SIZE = 2400
+Game of Life : 800 x 800, 2400 time steps
+Pochoir ET (Bit Trick): consumed time :929.066ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 1000 2400'
+life_pochoir_bit_trick 1000 2400
++ ./life_pochoir_bt 1000 2400
+N_SIZE = 1000, T_SIZE = 2400
+Game of Life : 1000 x 1000, 2400 time steps
+Pochoir ET (Bit Trick): consumed time :1214ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 1200 2400'
+life_pochoir_bit_trick 1200 2400
++ ./life_pochoir_bt 1200 2400
+N_SIZE = 1200, T_SIZE = 2400
+Game of Life : 1200 x 1200, 2400 time steps
+Pochoir ET (Bit Trick): consumed time :1545.67ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 1400 2400'
+life_pochoir_bit_trick 1400 2400
++ ./life_pochoir_bt 1400 2400
+N_SIZE = 1400, T_SIZE = 2400
+Game of Life : 1400 x 1400, 2400 time steps
+Pochoir ET (Bit Trick): consumed time :1847.09ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 1600 2400'
+life_pochoir_bit_trick 1600 2400
++ ./life_pochoir_bt 1600 2400
+N_SIZE = 1600, T_SIZE = 2400
+Game of Life : 1600 x 1600, 2400 time steps
+Pochoir ET (Bit Trick): consumed time :2286.96ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 1800 2400'
+life_pochoir_bit_trick 1800 2400
++ ./life_pochoir_bt 1800 2400
+N_SIZE = 1800, T_SIZE = 2400
+Game of Life : 1800 x 1800, 2400 time steps
+Pochoir ET (Bit Trick): consumed time :2722.95ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 2000 2400'
+life_pochoir_bit_trick 2000 2400
++ ./life_pochoir_bt 2000 2400
+N_SIZE = 2000, T_SIZE = 2400
+Game of Life : 2000 x 2000, 2400 time steps
+Pochoir ET (Bit Trick): consumed time :3238.28ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 2200 2400'
+life_pochoir_bit_trick 2200 2400
++ ./life_pochoir_bt 2200 2400
+N_SIZE = 2200, T_SIZE = 2400
+Game of Life : 2200 x 2200, 2400 time steps
+Pochoir ET (Bit Trick): consumed time :3790.08ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 2400 2400'
+life_pochoir_bit_trick 2400 2400
++ ./life_pochoir_bt 2400 2400
+N_SIZE = 2400, T_SIZE = 2400
+Game of Life : 2400 x 2400, 2400 time steps
+Pochoir ET (Bit Trick): consumed time :4423.29ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 2600 2400'
+life_pochoir_bit_trick 2600 2400
++ ./life_pochoir_bt 2600 2400
+N_SIZE = 2600, T_SIZE = 2400
+Game of Life : 2600 x 2600, 2400 time steps
+Pochoir ET (Bit Trick): consumed time :4961.21ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 2800 2400'
+life_pochoir_bit_trick 2800 2400
++ ./life_pochoir_bt 2800 2400
+N_SIZE = 2800, T_SIZE = 2400
+Game of Life : 2800 x 2800, 2400 time steps
+Pochoir ET (Bit Trick): consumed time :5633.78ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 3000 2400'
+life_pochoir_bit_trick 3000 2400
++ ./life_pochoir_bt 3000 2400
+N_SIZE = 3000, T_SIZE = 2400
+Game of Life : 3000 x 3000, 2400 time steps
+Pochoir ET (Bit Trick): consumed time :6924.9ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 3200 2400'
+life_pochoir_bit_trick 3200 2400
++ ./life_pochoir_bt 3200 2400
+N_SIZE = 3200, T_SIZE = 2400
+Game of Life : 3200 x 3200, 2400 time steps
+Pochoir ET (Bit Trick): consumed time :7253.12ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ (( step += 200 ))
++ (( step <= 3200 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 200 2600'
+life_pochoir_bit_trick 200 2600
++ ./life_pochoir_bt 200 2600
+N_SIZE = 200, T_SIZE = 2600
+Game of Life : 200 x 200, 2600 time steps
+Pochoir ET (Bit Trick): consumed time :316.215ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 400 2600'
+life_pochoir_bit_trick 400 2600
++ ./life_pochoir_bt 400 2600
+N_SIZE = 400, T_SIZE = 2600
+Game of Life : 400 x 400, 2600 time steps
+Pochoir ET (Bit Trick): consumed time :543.379ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 600 2600'
+life_pochoir_bit_trick 600 2600
++ ./life_pochoir_bt 600 2600
+N_SIZE = 600, T_SIZE = 2600
+Game of Life : 600 x 600, 2600 time steps
+Pochoir ET (Bit Trick): consumed time :756.221ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 800 2600'
+life_pochoir_bit_trick 800 2600
++ ./life_pochoir_bt 800 2600
+N_SIZE = 800, T_SIZE = 2600
+Game of Life : 800 x 800, 2600 time steps
+Pochoir ET (Bit Trick): consumed time :984.994ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 1000 2600'
+life_pochoir_bit_trick 1000 2600
++ ./life_pochoir_bt 1000 2600
+N_SIZE = 1000, T_SIZE = 2600
+Game of Life : 1000 x 1000, 2600 time steps
+Pochoir ET (Bit Trick): consumed time :1272.3ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 1200 2600'
+life_pochoir_bit_trick 1200 2600
++ ./life_pochoir_bt 1200 2600
+N_SIZE = 1200, T_SIZE = 2600
+Game of Life : 1200 x 1200, 2600 time steps
+Pochoir ET (Bit Trick): consumed time :1618.57ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 1400 2600'
+life_pochoir_bit_trick 1400 2600
++ ./life_pochoir_bt 1400 2600
+N_SIZE = 1400, T_SIZE = 2600
+Game of Life : 1400 x 1400, 2600 time steps
+Pochoir ET (Bit Trick): consumed time :1968.88ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 1600 2600'
+life_pochoir_bit_trick 1600 2600
++ ./life_pochoir_bt 1600 2600
+N_SIZE = 1600, T_SIZE = 2600
+Game of Life : 1600 x 1600, 2600 time steps
+Pochoir ET (Bit Trick): consumed time :2439.81ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 1800 2600'
+life_pochoir_bit_trick 1800 2600
++ ./life_pochoir_bt 1800 2600
+N_SIZE = 1800, T_SIZE = 2600
+Game of Life : 1800 x 1800, 2600 time steps
+Pochoir ET (Bit Trick): consumed time :2912.51ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 2000 2600'
+life_pochoir_bit_trick 2000 2600
++ ./life_pochoir_bt 2000 2600
+N_SIZE = 2000, T_SIZE = 2600
+Game of Life : 2000 x 2000, 2600 time steps
+Pochoir ET (Bit Trick): consumed time :3459.33ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 2200 2600'
+life_pochoir_bit_trick 2200 2600
++ ./life_pochoir_bt 2200 2600
+N_SIZE = 2200, T_SIZE = 2600
+Game of Life : 2200 x 2200, 2600 time steps
+Pochoir ET (Bit Trick): consumed time :4033.99ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 2400 2600'
+life_pochoir_bit_trick 2400 2600
++ ./life_pochoir_bt 2400 2600
+N_SIZE = 2400, T_SIZE = 2600
+Game of Life : 2400 x 2400, 2600 time steps
+Pochoir ET (Bit Trick): consumed time :4711.91ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 2600 2600'
+life_pochoir_bit_trick 2600 2600
++ ./life_pochoir_bt 2600 2600
+N_SIZE = 2600, T_SIZE = 2600
+Game of Life : 2600 x 2600, 2600 time steps
+Pochoir ET (Bit Trick): consumed time :5416.61ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 2800 2600'
+life_pochoir_bit_trick 2800 2600
++ ./life_pochoir_bt 2800 2600
+N_SIZE = 2800, T_SIZE = 2600
+Game of Life : 2800 x 2800, 2600 time steps
+Pochoir ET (Bit Trick): consumed time :6059.84ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 3000 2600'
+life_pochoir_bit_trick 3000 2600
++ ./life_pochoir_bt 3000 2600
+N_SIZE = 3000, T_SIZE = 2600
+Game of Life : 3000 x 3000, 2600 time steps
+Pochoir ET (Bit Trick): consumed time :7445.58ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 3200 2600'
+life_pochoir_bit_trick 3200 2600
++ ./life_pochoir_bt 3200 2600
+N_SIZE = 3200, T_SIZE = 2600
+Game of Life : 3200 x 3200, 2600 time steps
+Pochoir ET (Bit Trick): consumed time :7791.16ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ (( step += 200 ))
++ (( step <= 3200 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 200 2800'
+life_pochoir_bit_trick 200 2800
++ ./life_pochoir_bt 200 2800
+N_SIZE = 200, T_SIZE = 2800
+Game of Life : 200 x 200, 2800 time steps
+Pochoir ET (Bit Trick): consumed time :351.592ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 400 2800'
+life_pochoir_bit_trick 400 2800
++ ./life_pochoir_bt 400 2800
+N_SIZE = 400, T_SIZE = 2800
+Game of Life : 400 x 400, 2800 time steps
+Pochoir ET (Bit Trick): consumed time :573.543ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 600 2800'
+life_pochoir_bit_trick 600 2800
++ ./life_pochoir_bt 600 2800
+N_SIZE = 600, T_SIZE = 2800
+Game of Life : 600 x 600, 2800 time steps
+Pochoir ET (Bit Trick): consumed time :824.879ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 800 2800'
+life_pochoir_bit_trick 800 2800
++ ./life_pochoir_bt 800 2800
+N_SIZE = 800, T_SIZE = 2800
+Game of Life : 800 x 800, 2800 time steps
+Pochoir ET (Bit Trick): consumed time :1060.93ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 1000 2800'
+life_pochoir_bit_trick 1000 2800
++ ./life_pochoir_bt 1000 2800
+N_SIZE = 1000, T_SIZE = 2800
+Game of Life : 1000 x 1000, 2800 time steps
+Pochoir ET (Bit Trick): consumed time :1368.09ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 1200 2800'
+life_pochoir_bit_trick 1200 2800
++ ./life_pochoir_bt 1200 2800
+N_SIZE = 1200, T_SIZE = 2800
+Game of Life : 1200 x 1200, 2800 time steps
+Pochoir ET (Bit Trick): consumed time :1770.05ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 1400 2800'
+life_pochoir_bit_trick 1400 2800
++ ./life_pochoir_bt 1400 2800
+N_SIZE = 1400, T_SIZE = 2800
+Game of Life : 1400 x 1400, 2800 time steps
+Pochoir ET (Bit Trick): consumed time :2174.52ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 1600 2800'
+life_pochoir_bit_trick 1600 2800
++ ./life_pochoir_bt 1600 2800
+N_SIZE = 1600, T_SIZE = 2800
+Game of Life : 1600 x 1600, 2800 time steps
+Pochoir ET (Bit Trick): consumed time :2637.33ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 1800 2800'
+life_pochoir_bit_trick 1800 2800
++ ./life_pochoir_bt 1800 2800
+N_SIZE = 1800, T_SIZE = 2800
+Game of Life : 1800 x 1800, 2800 time steps
+Pochoir ET (Bit Trick): consumed time :3114.29ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 2000 2800'
+life_pochoir_bit_trick 2000 2800
++ ./life_pochoir_bt 2000 2800
+N_SIZE = 2000, T_SIZE = 2800
+Game of Life : 2000 x 2000, 2800 time steps
+Pochoir ET (Bit Trick): consumed time :3709.96ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 2200 2800'
+life_pochoir_bit_trick 2200 2800
++ ./life_pochoir_bt 2200 2800
+N_SIZE = 2200, T_SIZE = 2800
+Game of Life : 2200 x 2200, 2800 time steps
+Pochoir ET (Bit Trick): consumed time :4338.81ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 2400 2800'
+life_pochoir_bit_trick 2400 2800
++ ./life_pochoir_bt 2400 2800
+N_SIZE = 2400, T_SIZE = 2800
+Game of Life : 2400 x 2400, 2800 time steps
+Pochoir ET (Bit Trick): consumed time :5072.66ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 2600 2800'
+life_pochoir_bit_trick 2600 2800
++ ./life_pochoir_bt 2600 2800
+N_SIZE = 2600, T_SIZE = 2800
+Game of Life : 2600 x 2600, 2800 time steps
+Pochoir ET (Bit Trick): consumed time :5793.16ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 2800 2800'
+life_pochoir_bit_trick 2800 2800
++ ./life_pochoir_bt 2800 2800
+N_SIZE = 2800, T_SIZE = 2800
+Game of Life : 2800 x 2800, 2800 time steps
+Pochoir ET (Bit Trick): consumed time :6554ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 3000 2800'
+life_pochoir_bit_trick 3000 2800
++ ./life_pochoir_bt 3000 2800
+N_SIZE = 3000, T_SIZE = 2800
+Game of Life : 3000 x 3000, 2800 time steps
+Pochoir ET (Bit Trick): consumed time :8026.82ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 3200 2800'
+life_pochoir_bit_trick 3200 2800
++ ./life_pochoir_bt 3200 2800
+N_SIZE = 3200, T_SIZE = 2800
+Game of Life : 3200 x 3200, 2800 time steps
+Pochoir ET (Bit Trick): consumed time :8404.69ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ (( step += 200 ))
++ (( step <= 3200 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 200 3000'
+life_pochoir_bit_trick 200 3000
++ ./life_pochoir_bt 200 3000
+N_SIZE = 200, T_SIZE = 3000
+Game of Life : 200 x 200, 3000 time steps
+Pochoir ET (Bit Trick): consumed time :385.274ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 400 3000'
+life_pochoir_bit_trick 400 3000
++ ./life_pochoir_bt 400 3000
+N_SIZE = 400, T_SIZE = 3000
+Game of Life : 400 x 400, 3000 time steps
+Pochoir ET (Bit Trick): consumed time :619.796ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 600 3000'
+life_pochoir_bit_trick 600 3000
++ ./life_pochoir_bt 600 3000
+N_SIZE = 600, T_SIZE = 3000
+Game of Life : 600 x 600, 3000 time steps
+Pochoir ET (Bit Trick): consumed time :923.312ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 800 3000'
+life_pochoir_bit_trick 800 3000
++ ./life_pochoir_bt 800 3000
+N_SIZE = 800, T_SIZE = 3000
+Game of Life : 800 x 800, 3000 time steps
+Pochoir ET (Bit Trick): consumed time :1147.94ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 1000 3000'
+life_pochoir_bit_trick 1000 3000
++ ./life_pochoir_bt 1000 3000
+N_SIZE = 1000, T_SIZE = 3000
+Game of Life : 1000 x 1000, 3000 time steps
+Pochoir ET (Bit Trick): consumed time :1478.95ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 1200 3000'
+life_pochoir_bit_trick 1200 3000
++ ./life_pochoir_bt 1200 3000
+N_SIZE = 1200, T_SIZE = 3000
+Game of Life : 1200 x 1200, 3000 time steps
+Pochoir ET (Bit Trick): consumed time :1900.43ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 1400 3000'
+life_pochoir_bit_trick 1400 3000
++ ./life_pochoir_bt 1400 3000
+N_SIZE = 1400, T_SIZE = 3000
+Game of Life : 1400 x 1400, 3000 time steps
+Pochoir ET (Bit Trick): consumed time :2335.39ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 1600 3000'
+life_pochoir_bit_trick 1600 3000
++ ./life_pochoir_bt 1600 3000
+N_SIZE = 1600, T_SIZE = 3000
+Game of Life : 1600 x 1600, 3000 time steps
+Pochoir ET (Bit Trick): consumed time :2847.95ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 1800 3000'
+life_pochoir_bit_trick 1800 3000
++ ./life_pochoir_bt 1800 3000
+N_SIZE = 1800, T_SIZE = 3000
+Game of Life : 1800 x 1800, 3000 time steps
+Pochoir ET (Bit Trick): consumed time :3349.33ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 2000 3000'
+life_pochoir_bit_trick 2000 3000
++ ./life_pochoir_bt 2000 3000
+N_SIZE = 2000, T_SIZE = 3000
+Game of Life : 2000 x 2000, 3000 time steps
+Pochoir ET (Bit Trick): consumed time :3991.44ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 2200 3000'
+life_pochoir_bit_trick 2200 3000
++ ./life_pochoir_bt 2200 3000
+N_SIZE = 2200, T_SIZE = 3000
+Game of Life : 2200 x 2200, 3000 time steps
+Pochoir ET (Bit Trick): consumed time :4628.67ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 2400 3000'
+life_pochoir_bit_trick 2400 3000
++ ./life_pochoir_bt 2400 3000
+N_SIZE = 2400, T_SIZE = 3000
+Game of Life : 2400 x 2400, 3000 time steps
+Pochoir ET (Bit Trick): consumed time :5443.81ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 2600 3000'
+life_pochoir_bit_trick 2600 3000
++ ./life_pochoir_bt 2600 3000
+N_SIZE = 2600, T_SIZE = 3000
+Game of Life : 2600 x 2600, 3000 time steps
+Pochoir ET (Bit Trick): consumed time :6211.77ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 2800 3000'
+life_pochoir_bit_trick 2800 3000
++ ./life_pochoir_bt 2800 3000
+N_SIZE = 2800, T_SIZE = 3000
+Game of Life : 2800 x 2800, 3000 time steps
+Pochoir ET (Bit Trick): consumed time :7007.31ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 3000 3000'
+life_pochoir_bit_trick 3000 3000
++ ./life_pochoir_bt 3000 3000
+N_SIZE = 3000, T_SIZE = 3000
+Game of Life : 3000 x 3000, 3000 time steps
+Pochoir ET (Bit Trick): consumed time :8635.32ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 3200 3000'
+life_pochoir_bit_trick 3200 3000
++ ./life_pochoir_bt 3200 3000
+N_SIZE = 3200, T_SIZE = 3000
+Game of Life : 3200 x 3200, 3000 time steps
+Pochoir ET (Bit Trick): consumed time :8992.8ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ (( step += 200 ))
++ (( step <= 3200 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 200 3200'
+life_pochoir_bit_trick 200 3200
++ ./life_pochoir_bt 200 3200
+N_SIZE = 200, T_SIZE = 3200
+Game of Life : 200 x 200, 3200 time steps
+Pochoir ET (Bit Trick): consumed time :401.16ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 400 3200'
+life_pochoir_bit_trick 400 3200
++ ./life_pochoir_bt 400 3200
+N_SIZE = 400, T_SIZE = 3200
+Game of Life : 400 x 400, 3200 time steps
+Pochoir ET (Bit Trick): consumed time :660.112ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 600 3200'
+life_pochoir_bit_trick 600 3200
++ ./life_pochoir_bt 600 3200
+N_SIZE = 600, T_SIZE = 3200
+Game of Life : 600 x 600, 3200 time steps
+Pochoir ET (Bit Trick): consumed time :934.41ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 800 3200'
+life_pochoir_bit_trick 800 3200
++ ./life_pochoir_bt 800 3200
+N_SIZE = 800, T_SIZE = 3200
+Game of Life : 800 x 800, 3200 time steps
+Pochoir ET (Bit Trick): consumed time :1251.13ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 1000 3200'
+life_pochoir_bit_trick 1000 3200
++ ./life_pochoir_bt 1000 3200
+N_SIZE = 1000, T_SIZE = 3200
+Game of Life : 1000 x 1000, 3200 time steps
+Pochoir ET (Bit Trick): consumed time :1558.94ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 1200 3200'
+life_pochoir_bit_trick 1200 3200
++ ./life_pochoir_bt 1200 3200
+N_SIZE = 1200, T_SIZE = 3200
+Game of Life : 1200 x 1200, 3200 time steps
+Pochoir ET (Bit Trick): consumed time :1942.85ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 1400 3200'
+life_pochoir_bit_trick 1400 3200
++ ./life_pochoir_bt 1400 3200
+N_SIZE = 1400, T_SIZE = 3200
+Game of Life : 1400 x 1400, 3200 time steps
+Pochoir ET (Bit Trick): consumed time :2441.4ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 1600 3200'
+life_pochoir_bit_trick 1600 3200
++ ./life_pochoir_bt 1600 3200
+N_SIZE = 1600, T_SIZE = 3200
+Game of Life : 1600 x 1600, 3200 time steps
+Pochoir ET (Bit Trick): consumed time :3053.17ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 1800 3200'
+life_pochoir_bit_trick 1800 3200
++ ./life_pochoir_bt 1800 3200
+N_SIZE = 1800, T_SIZE = 3200
+Game of Life : 1800 x 1800, 3200 time steps
+Pochoir ET (Bit Trick): consumed time :3506.64ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 2000 3200'
+life_pochoir_bit_trick 2000 3200
++ ./life_pochoir_bt 2000 3200
+N_SIZE = 2000, T_SIZE = 3200
+Game of Life : 2000 x 2000, 3200 time steps
+Pochoir ET (Bit Trick): consumed time :4138.89ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 2200 3200'
+life_pochoir_bit_trick 2200 3200
++ ./life_pochoir_bt 2200 3200
+N_SIZE = 2200, T_SIZE = 3200
+Game of Life : 2200 x 2200, 3200 time steps
+Pochoir ET (Bit Trick): consumed time :4856.31ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 2400 3200'
+life_pochoir_bit_trick 2400 3200
++ ./life_pochoir_bt 2400 3200
+N_SIZE = 2400, T_SIZE = 3200
+Game of Life : 2400 x 2400, 3200 time steps
+Pochoir ET (Bit Trick): consumed time :5616.46ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 2600 3200'
+life_pochoir_bit_trick 2600 3200
++ ./life_pochoir_bt 2600 3200
+N_SIZE = 2600, T_SIZE = 3200
+Game of Life : 2600 x 2600, 3200 time steps
+Pochoir ET (Bit Trick): consumed time :6512.1ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 2800 3200'
+life_pochoir_bit_trick 2800 3200
++ ./life_pochoir_bt 2800 3200
+N_SIZE = 2800, T_SIZE = 3200
+Game of Life : 2800 x 2800, 3200 time steps
+Pochoir ET (Bit Trick): consumed time :7376.83ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 3000 3200'
+life_pochoir_bit_trick 3000 3200
++ ./life_pochoir_bt 3000 3200
+N_SIZE = 3000, T_SIZE = 3200
+Game of Life : 3000 x 3000, 3200 time steps
+Pochoir ET (Bit Trick): consumed time :9098.28ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 3200 3200'
+life_pochoir_bit_trick 3200 3200
++ ./life_pochoir_bt 3200 3200
+N_SIZE = 3200, T_SIZE = 3200
+Game of Life : 3200 x 3200, 3200 time steps
+Pochoir ET (Bit Trick): consumed time :9475.41ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ (( step += 200 ))
++ (( step <= 3200 ))
+

@@ -1,0 +1,2112 @@
++ (( step = 200 ))
++ (( step <= 3200 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 200 200'
+heat_2D_NP_serial_loop 200 200
++ ./heat_2D_NP_sl 200 200
+N_SIZE = 200, T_SIZE = 200
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :32.785ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 400 200'
+heat_2D_NP_serial_loop 400 200
++ ./heat_2D_NP_sl 400 200
+N_SIZE = 400, T_SIZE = 200
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :131.872ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 600 200'
+heat_2D_NP_serial_loop 600 200
++ ./heat_2D_NP_sl 600 200
+N_SIZE = 600, T_SIZE = 200
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :298.436ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 800 200'
+heat_2D_NP_serial_loop 800 200
++ ./heat_2D_NP_sl 800 200
+N_SIZE = 800, T_SIZE = 200
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :572.832ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 1000 200'
+heat_2D_NP_serial_loop 1000 200
++ ./heat_2D_NP_sl 1000 200
+N_SIZE = 1000, T_SIZE = 200
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :848.428ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 1200 200'
+heat_2D_NP_serial_loop 1200 200
++ ./heat_2D_NP_sl 1200 200
+N_SIZE = 1200, T_SIZE = 200
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :1255.32ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 1400 200'
+heat_2D_NP_serial_loop 1400 200
++ ./heat_2D_NP_sl 1400 200
+N_SIZE = 1400, T_SIZE = 200
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :1710.31ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 1600 200'
+heat_2D_NP_serial_loop 1600 200
++ ./heat_2D_NP_sl 1600 200
+N_SIZE = 1600, T_SIZE = 200
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :2393.65ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 1800 200'
+heat_2D_NP_serial_loop 1800 200
++ ./heat_2D_NP_sl 1800 200
+N_SIZE = 1800, T_SIZE = 200
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :2831.98ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 2000 200'
+heat_2D_NP_serial_loop 2000 200
++ ./heat_2D_NP_sl 2000 200
+N_SIZE = 2000, T_SIZE = 200
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :3500.86ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 2200 200'
+heat_2D_NP_serial_loop 2200 200
++ ./heat_2D_NP_sl 2200 200
+N_SIZE = 2200, T_SIZE = 200
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :4224.97ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 2400 200'
+heat_2D_NP_serial_loop 2400 200
++ ./heat_2D_NP_sl 2400 200
+N_SIZE = 2400, T_SIZE = 200
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :5374.66ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 2600 200'
+heat_2D_NP_serial_loop 2600 200
++ ./heat_2D_NP_sl 2600 200
+N_SIZE = 2600, T_SIZE = 200
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :5911.49ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 2800 200'
+heat_2D_NP_serial_loop 2800 200
++ ./heat_2D_NP_sl 2800 200
+N_SIZE = 2800, T_SIZE = 200
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :6857.37ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 3000 200'
+heat_2D_NP_serial_loop 3000 200
++ ./heat_2D_NP_sl 3000 200
+N_SIZE = 3000, T_SIZE = 200
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :7883.92ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 3200 200'
+heat_2D_NP_serial_loop 3200 200
++ ./heat_2D_NP_sl 3200 200
+N_SIZE = 3200, T_SIZE = 200
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :9599.43ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ (( step += 200 ))
++ (( step <= 3200 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 200 400'
+heat_2D_NP_serial_loop 200 400
++ ./heat_2D_NP_sl 200 400
+N_SIZE = 200, T_SIZE = 400
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :65.536ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 400 400'
+heat_2D_NP_serial_loop 400 400
++ ./heat_2D_NP_sl 400 400
+N_SIZE = 400, T_SIZE = 400
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :263.681ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 600 400'
+heat_2D_NP_serial_loop 600 400
++ ./heat_2D_NP_sl 600 400
+N_SIZE = 600, T_SIZE = 400
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :596.097ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 800 400'
+heat_2D_NP_serial_loop 800 400
++ ./heat_2D_NP_sl 800 400
+N_SIZE = 800, T_SIZE = 400
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :1150.42ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 1000 400'
+heat_2D_NP_serial_loop 1000 400
++ ./heat_2D_NP_sl 1000 400
+N_SIZE = 1000, T_SIZE = 400
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :1694.97ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 1200 400'
+heat_2D_NP_serial_loop 1200 400
++ ./heat_2D_NP_sl 1200 400
+N_SIZE = 1200, T_SIZE = 400
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :2512.96ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 1400 400'
+heat_2D_NP_serial_loop 1400 400
++ ./heat_2D_NP_sl 1400 400
+N_SIZE = 1400, T_SIZE = 400
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :3420.77ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 1600 400'
+heat_2D_NP_serial_loop 1600 400
++ ./heat_2D_NP_sl 1600 400
+N_SIZE = 1600, T_SIZE = 400
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :4775.09ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 1800 400'
+heat_2D_NP_serial_loop 1800 400
++ ./heat_2D_NP_sl 1800 400
+N_SIZE = 1800, T_SIZE = 400
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :5659.64ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 2000 400'
+heat_2D_NP_serial_loop 2000 400
++ ./heat_2D_NP_sl 2000 400
+N_SIZE = 2000, T_SIZE = 400
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :6993.73ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 2200 400'
+heat_2D_NP_serial_loop 2200 400
++ ./heat_2D_NP_sl 2200 400
+N_SIZE = 2200, T_SIZE = 400
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :8451.85ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 2400 400'
+heat_2D_NP_serial_loop 2400 400
++ ./heat_2D_NP_sl 2400 400
+N_SIZE = 2400, T_SIZE = 400
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :10764.9ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 2600 400'
+heat_2D_NP_serial_loop 2600 400
++ ./heat_2D_NP_sl 2600 400
+N_SIZE = 2600, T_SIZE = 400
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :11834.4ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 2800 400'
+heat_2D_NP_serial_loop 2800 400
++ ./heat_2D_NP_sl 2800 400
+N_SIZE = 2800, T_SIZE = 400
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :13706.3ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 3000 400'
+heat_2D_NP_serial_loop 3000 400
++ ./heat_2D_NP_sl 3000 400
+N_SIZE = 3000, T_SIZE = 400
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :15768.8ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 3200 400'
+heat_2D_NP_serial_loop 3200 400
++ ./heat_2D_NP_sl 3200 400
+N_SIZE = 3200, T_SIZE = 400
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :19212.9ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ (( step += 200 ))
++ (( step <= 3200 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 200 600'
+heat_2D_NP_serial_loop 200 600
++ ./heat_2D_NP_sl 200 600
+N_SIZE = 200, T_SIZE = 600
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :98.345ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 400 600'
+heat_2D_NP_serial_loop 400 600
++ ./heat_2D_NP_sl 400 600
+N_SIZE = 400, T_SIZE = 600
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :395.649ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 600 600'
+heat_2D_NP_serial_loop 600 600
++ ./heat_2D_NP_sl 600 600
+N_SIZE = 600, T_SIZE = 600
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :894.366ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 800 600'
+heat_2D_NP_serial_loop 800 600
++ ./heat_2D_NP_sl 800 600
+N_SIZE = 800, T_SIZE = 600
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :1724.94ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 1000 600'
+heat_2D_NP_serial_loop 1000 600
++ ./heat_2D_NP_sl 1000 600
+N_SIZE = 1000, T_SIZE = 600
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :2547.01ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 1200 600'
+heat_2D_NP_serial_loop 1200 600
++ ./heat_2D_NP_sl 1200 600
+N_SIZE = 1200, T_SIZE = 600
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :3762.84ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 1400 600'
+heat_2D_NP_serial_loop 1400 600
++ ./heat_2D_NP_sl 1400 600
+N_SIZE = 1400, T_SIZE = 600
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :5127.64ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 1600 600'
+heat_2D_NP_serial_loop 1600 600
++ ./heat_2D_NP_sl 1600 600
+N_SIZE = 1600, T_SIZE = 600
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :7164.78ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 1800 600'
+heat_2D_NP_serial_loop 1800 600
++ ./heat_2D_NP_sl 1800 600
+N_SIZE = 1800, T_SIZE = 600
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :8482.56ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 2000 600'
+heat_2D_NP_serial_loop 2000 600
++ ./heat_2D_NP_sl 2000 600
+N_SIZE = 2000, T_SIZE = 600
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :10490.4ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 2200 600'
+heat_2D_NP_serial_loop 2200 600
++ ./heat_2D_NP_sl 2200 600
+N_SIZE = 2200, T_SIZE = 600
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :12674.7ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 2400 600'
+heat_2D_NP_serial_loop 2400 600
++ ./heat_2D_NP_sl 2400 600
+N_SIZE = 2400, T_SIZE = 600
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :16123.1ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 2600 600'
+heat_2D_NP_serial_loop 2600 600
++ ./heat_2D_NP_sl 2600 600
+N_SIZE = 2600, T_SIZE = 600
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :17725.5ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 2800 600'
+heat_2D_NP_serial_loop 2800 600
++ ./heat_2D_NP_sl 2800 600
+N_SIZE = 2800, T_SIZE = 600
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :20578.4ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 3000 600'
+heat_2D_NP_serial_loop 3000 600
++ ./heat_2D_NP_sl 3000 600
+N_SIZE = 3000, T_SIZE = 600
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :23664.2ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 3200 600'
+heat_2D_NP_serial_loop 3200 600
++ ./heat_2D_NP_sl 3200 600
+N_SIZE = 3200, T_SIZE = 600
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :28760.9ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ (( step += 200 ))
++ (( step <= 3200 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 200 800'
+heat_2D_NP_serial_loop 200 800
++ ./heat_2D_NP_sl 200 800
+N_SIZE = 200, T_SIZE = 800
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :131.098ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 400 800'
+heat_2D_NP_serial_loop 400 800
++ ./heat_2D_NP_sl 400 800
+N_SIZE = 400, T_SIZE = 800
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :527.405ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 600 800'
+heat_2D_NP_serial_loop 600 800
++ ./heat_2D_NP_sl 600 800
+N_SIZE = 600, T_SIZE = 800
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :1192.01ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 800 800'
+heat_2D_NP_serial_loop 800 800
++ ./heat_2D_NP_sl 800 800
+N_SIZE = 800, T_SIZE = 800
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :2308.9ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 1000 800'
+heat_2D_NP_serial_loop 1000 800
++ ./heat_2D_NP_sl 1000 800
+N_SIZE = 1000, T_SIZE = 800
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :3391.08ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 1200 800'
+heat_2D_NP_serial_loop 1200 800
++ ./heat_2D_NP_sl 1200 800
+N_SIZE = 1200, T_SIZE = 800
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :5016.98ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 1400 800'
+heat_2D_NP_serial_loop 1400 800
++ ./heat_2D_NP_sl 1400 800
+N_SIZE = 1400, T_SIZE = 800
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :6839.21ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 1600 800'
+heat_2D_NP_serial_loop 1600 800
++ ./heat_2D_NP_sl 1600 800
+N_SIZE = 1600, T_SIZE = 800
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :9540.57ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 1800 800'
+heat_2D_NP_serial_loop 1800 800
++ ./heat_2D_NP_sl 1800 800
+N_SIZE = 1800, T_SIZE = 800
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :11309.8ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 2000 800'
+heat_2D_NP_serial_loop 2000 800
++ ./heat_2D_NP_sl 2000 800
+N_SIZE = 2000, T_SIZE = 800
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :13992.1ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 2200 800'
+heat_2D_NP_serial_loop 2200 800
++ ./heat_2D_NP_sl 2200 800
+N_SIZE = 2200, T_SIZE = 800
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :16911.5ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 2400 800'
+heat_2D_NP_serial_loop 2400 800
++ ./heat_2D_NP_sl 2400 800
+N_SIZE = 2400, T_SIZE = 800
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :21470.5ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 2600 800'
+heat_2D_NP_serial_loop 2600 800
++ ./heat_2D_NP_sl 2600 800
+N_SIZE = 2600, T_SIZE = 800
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :23636.1ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 2800 800'
+heat_2D_NP_serial_loop 2800 800
++ ./heat_2D_NP_sl 2800 800
+N_SIZE = 2800, T_SIZE = 800
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :27411.4ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 3000 800'
+heat_2D_NP_serial_loop 3000 800
++ ./heat_2D_NP_sl 3000 800
+N_SIZE = 3000, T_SIZE = 800
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :31527.0ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 3200 800'
+heat_2D_NP_serial_loop 3200 800
++ ./heat_2D_NP_sl 3200 800
+N_SIZE = 3200, T_SIZE = 800
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :38286.4ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ (( step += 200 ))
++ (( step <= 3200 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 200 1000'
+heat_2D_NP_serial_loop 200 1000
++ ./heat_2D_NP_sl 200 1000
+N_SIZE = 200, T_SIZE = 1000
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :163.708ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 400 1000'
+heat_2D_NP_serial_loop 400 1000
++ ./heat_2D_NP_sl 400 1000
+N_SIZE = 400, T_SIZE = 1000
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :659.218ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 600 1000'
+heat_2D_NP_serial_loop 600 1000
++ ./heat_2D_NP_sl 600 1000
+N_SIZE = 600, T_SIZE = 1000
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :1491.13ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 800 1000'
+heat_2D_NP_serial_loop 800 1000
++ ./heat_2D_NP_sl 800 1000
+N_SIZE = 800, T_SIZE = 1000
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :2881.77ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 1000 1000'
+heat_2D_NP_serial_loop 1000 1000
++ ./heat_2D_NP_sl 1000 1000
+N_SIZE = 1000, T_SIZE = 1000
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :4238.58ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 1200 1000'
+heat_2D_NP_serial_loop 1200 1000
++ ./heat_2D_NP_sl 1200 1000
+N_SIZE = 1200, T_SIZE = 1000
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :6274.29ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 1400 1000'
+heat_2D_NP_serial_loop 1400 1000
++ ./heat_2D_NP_sl 1400 1000
+N_SIZE = 1400, T_SIZE = 1000
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :8549.35ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 1600 1000'
+heat_2D_NP_serial_loop 1600 1000
++ ./heat_2D_NP_sl 1600 1000
+N_SIZE = 1600, T_SIZE = 1000
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :11928.1ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 1800 1000'
+heat_2D_NP_serial_loop 1800 1000
++ ./heat_2D_NP_sl 1800 1000
+N_SIZE = 1800, T_SIZE = 1000
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :14150.3ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 2000 1000'
+heat_2D_NP_serial_loop 2000 1000
++ ./heat_2D_NP_sl 2000 1000
+N_SIZE = 2000, T_SIZE = 1000
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :17474ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 2200 1000'
+heat_2D_NP_serial_loop 2200 1000
++ ./heat_2D_NP_sl 2200 1000
+N_SIZE = 2200, T_SIZE = 1000
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :21114.5ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 2400 1000'
+heat_2D_NP_serial_loop 2400 1000
++ ./heat_2D_NP_sl 2400 1000
+N_SIZE = 2400, T_SIZE = 1000
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :26848.4ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 2600 1000'
+heat_2D_NP_serial_loop 2600 1000
++ ./heat_2D_NP_sl 2600 1000
+N_SIZE = 2600, T_SIZE = 1000
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :29585.3ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 2800 1000'
+heat_2D_NP_serial_loop 2800 1000
++ ./heat_2D_NP_sl 2800 1000
+N_SIZE = 2800, T_SIZE = 1000
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :34264.9ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 3000 1000'
+heat_2D_NP_serial_loop 3000 1000
++ ./heat_2D_NP_sl 3000 1000
+N_SIZE = 3000, T_SIZE = 1000
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :39411.3ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 3200 1000'
+heat_2D_NP_serial_loop 3200 1000
++ ./heat_2D_NP_sl 3200 1000
+N_SIZE = 3200, T_SIZE = 1000
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :47972.7ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ (( step += 200 ))
++ (( step <= 3200 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 200 1200'
+heat_2D_NP_serial_loop 200 1200
++ ./heat_2D_NP_sl 200 1200
+N_SIZE = 200, T_SIZE = 1200
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :196.64ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 400 1200'
+heat_2D_NP_serial_loop 400 1200
++ ./heat_2D_NP_sl 400 1200
+N_SIZE = 400, T_SIZE = 1200
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :791.821ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 600 1200'
+heat_2D_NP_serial_loop 600 1200
++ ./heat_2D_NP_sl 600 1200
+N_SIZE = 600, T_SIZE = 1200
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :1789.07ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 800 1200'
+heat_2D_NP_serial_loop 800 1200
++ ./heat_2D_NP_sl 800 1200
+N_SIZE = 800, T_SIZE = 1200
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :3464.68ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 1000 1200'
+heat_2D_NP_serial_loop 1000 1200
++ ./heat_2D_NP_sl 1000 1200
+N_SIZE = 1000, T_SIZE = 1200
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :5089.98ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 1200 1200'
+heat_2D_NP_serial_loop 1200 1200
++ ./heat_2D_NP_sl 1200 1200
+N_SIZE = 1200, T_SIZE = 1200
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :7527.57ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 1400 1200'
+heat_2D_NP_serial_loop 1400 1200
++ ./heat_2D_NP_sl 1400 1200
+N_SIZE = 1400, T_SIZE = 1200
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :10265.8ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 1600 1200'
+heat_2D_NP_serial_loop 1600 1200
++ ./heat_2D_NP_sl 1600 1200
+N_SIZE = 1600, T_SIZE = 1200
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :14304.6ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 1800 1200'
+heat_2D_NP_serial_loop 1800 1200
++ ./heat_2D_NP_sl 1800 1200
+N_SIZE = 1800, T_SIZE = 1200
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :16964.1ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 2000 1200'
+heat_2D_NP_serial_loop 2000 1200
++ ./heat_2D_NP_sl 2000 1200
+N_SIZE = 2000, T_SIZE = 1200
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :20963.3ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 2200 1200'
+heat_2D_NP_serial_loop 2200 1200
++ ./heat_2D_NP_sl 2200 1200
+N_SIZE = 2200, T_SIZE = 1200
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :25342ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 2400 1200'
+heat_2D_NP_serial_loop 2400 1200
++ ./heat_2D_NP_sl 2400 1200
+N_SIZE = 2400, T_SIZE = 1200
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :32265.8ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 2600 1200'
+heat_2D_NP_serial_loop 2600 1200
++ ./heat_2D_NP_sl 2600 1200
+N_SIZE = 2600, T_SIZE = 1200
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :35448.7ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 2800 1200'
+heat_2D_NP_serial_loop 2800 1200
++ ./heat_2D_NP_sl 2800 1200
+N_SIZE = 2800, T_SIZE = 1200
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :41114.1ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 3000 1200'
+heat_2D_NP_serial_loop 3000 1200
++ ./heat_2D_NP_sl 3000 1200
+N_SIZE = 3000, T_SIZE = 1200
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :47289.1ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 3200 1200'
+heat_2D_NP_serial_loop 3200 1200
++ ./heat_2D_NP_sl 3200 1200
+N_SIZE = 3200, T_SIZE = 1200
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :57505.3ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ (( step += 200 ))
++ (( step <= 3200 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 200 1400'
+heat_2D_NP_serial_loop 200 1400
++ ./heat_2D_NP_sl 200 1400
+N_SIZE = 200, T_SIZE = 1400
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :229.143ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 400 1400'
+heat_2D_NP_serial_loop 400 1400
++ ./heat_2D_NP_sl 400 1400
+N_SIZE = 400, T_SIZE = 1400
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :923.852ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 600 1400'
+heat_2D_NP_serial_loop 600 1400
++ ./heat_2D_NP_sl 600 1400
+N_SIZE = 600, T_SIZE = 1400
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :2088.14ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 800 1400'
+heat_2D_NP_serial_loop 800 1400
++ ./heat_2D_NP_sl 800 1400
+N_SIZE = 800, T_SIZE = 1400
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :4010.5ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 1000 1400'
+heat_2D_NP_serial_loop 1000 1400
++ ./heat_2D_NP_sl 1000 1400
+N_SIZE = 1000, T_SIZE = 1400
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :5933.46ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 1200 1400'
+heat_2D_NP_serial_loop 1200 1400
++ ./heat_2D_NP_sl 1200 1400
+N_SIZE = 1200, T_SIZE = 1400
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :8796.25ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 1400 1400'
+heat_2D_NP_serial_loop 1400 1400
++ ./heat_2D_NP_sl 1400 1400
+N_SIZE = 1400, T_SIZE = 1400
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :11965.6ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 1600 1400'
+heat_2D_NP_serial_loop 1600 1400
++ ./heat_2D_NP_sl 1600 1400
+N_SIZE = 1600, T_SIZE = 1400
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :16689.2ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 1800 1400'
+heat_2D_NP_serial_loop 1800 1400
++ ./heat_2D_NP_sl 1800 1400
+N_SIZE = 1800, T_SIZE = 1400
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :19792.8ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 2000 1400'
+heat_2D_NP_serial_loop 2000 1400
++ ./heat_2D_NP_sl 2000 1400
+N_SIZE = 2000, T_SIZE = 1400
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :24457.7ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 2200 1400'
+heat_2D_NP_serial_loop 2200 1400
++ ./heat_2D_NP_sl 2200 1400
+N_SIZE = 2200, T_SIZE = 1400
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :29561.6ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 2400 1400'
+heat_2D_NP_serial_loop 2400 1400
++ ./heat_2D_NP_sl 2400 1400
+N_SIZE = 2400, T_SIZE = 1400
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :37616.8ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 2600 1400'
+heat_2D_NP_serial_loop 2600 1400
++ ./heat_2D_NP_sl 2600 1400
+N_SIZE = 2600, T_SIZE = 1400
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :41364ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 2800 1400'
+heat_2D_NP_serial_loop 2800 1400
++ ./heat_2D_NP_sl 2800 1400
+N_SIZE = 2800, T_SIZE = 1400
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :47999ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 3000 1400'
+heat_2D_NP_serial_loop 3000 1400
++ ./heat_2D_NP_sl 3000 1400
+N_SIZE = 3000, T_SIZE = 1400
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :55199.4ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 3200 1400'
+heat_2D_NP_serial_loop 3200 1400
++ ./heat_2D_NP_sl 3200 1400
+N_SIZE = 3200, T_SIZE = 1400
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :67063.5ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ (( step += 200 ))
++ (( step <= 3200 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 200 1600'
+heat_2D_NP_serial_loop 200 1600
++ ./heat_2D_NP_sl 200 1600
+N_SIZE = 200, T_SIZE = 1600
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :262.278ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 400 1600'
+heat_2D_NP_serial_loop 400 1600
++ ./heat_2D_NP_sl 400 1600
+N_SIZE = 400, T_SIZE = 1600
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :1054.14ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 600 1600'
+heat_2D_NP_serial_loop 600 1600
++ ./heat_2D_NP_sl 600 1600
+N_SIZE = 600, T_SIZE = 1600
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :2386.3ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 800 1600'
+heat_2D_NP_serial_loop 800 1600
++ ./heat_2D_NP_sl 800 1600
+N_SIZE = 800, T_SIZE = 1600
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :4579.54ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 1000 1600'
+heat_2D_NP_serial_loop 1000 1600
++ ./heat_2D_NP_sl 1000 1600
+N_SIZE = 1000, T_SIZE = 1600
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :6788.48ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 1200 1600'
+heat_2D_NP_serial_loop 1200 1600
++ ./heat_2D_NP_sl 1200 1600
+N_SIZE = 1200, T_SIZE = 1600
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :10043.1ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 1400 1600'
+heat_2D_NP_serial_loop 1400 1600
++ ./heat_2D_NP_sl 1400 1600
+N_SIZE = 1400, T_SIZE = 1600
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :13683.2ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 1600 1600'
+heat_2D_NP_serial_loop 1600 1600
++ ./heat_2D_NP_sl 1600 1600
+N_SIZE = 1600, T_SIZE = 1600
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :19110.7ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 1800 1600'
+heat_2D_NP_serial_loop 1800 1600
++ ./heat_2D_NP_sl 1800 1600
+N_SIZE = 1800, T_SIZE = 1600
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :22657ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 2000 1600'
+heat_2D_NP_serial_loop 2000 1600
++ ./heat_2D_NP_sl 2000 1600
+N_SIZE = 2000, T_SIZE = 1600
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :27961.8ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 2200 1600'
+heat_2D_NP_serial_loop 2200 1600
++ ./heat_2D_NP_sl 2200 1600
+N_SIZE = 2200, T_SIZE = 1600
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :33819.3ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 2400 1600'
+heat_2D_NP_serial_loop 2400 1600
++ ./heat_2D_NP_sl 2400 1600
+N_SIZE = 2400, T_SIZE = 1600
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :43091ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 2600 1600'
+heat_2D_NP_serial_loop 2600 1600
++ ./heat_2D_NP_sl 2600 1600
+N_SIZE = 2600, T_SIZE = 1600
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :47300.5ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 2800 1600'
+heat_2D_NP_serial_loop 2800 1600
++ ./heat_2D_NP_sl 2800 1600
+N_SIZE = 2800, T_SIZE = 1600
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :54857.5ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 3000 1600'
+heat_2D_NP_serial_loop 3000 1600
++ ./heat_2D_NP_sl 3000 1600
+N_SIZE = 3000, T_SIZE = 1600
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :63088.4ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 3200 1600'
+heat_2D_NP_serial_loop 3200 1600
++ ./heat_2D_NP_sl 3200 1600
+N_SIZE = 3200, T_SIZE = 1600
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :76683.1ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ (( step += 200 ))
++ (( step <= 3200 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 200 1800'
+heat_2D_NP_serial_loop 200 1800
++ ./heat_2D_NP_sl 200 1800
+N_SIZE = 200, T_SIZE = 1800
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :295.156ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 400 1800'
+heat_2D_NP_serial_loop 400 1800
++ ./heat_2D_NP_sl 400 1800
+N_SIZE = 400, T_SIZE = 1800
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :1186.54ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 600 1800'
+heat_2D_NP_serial_loop 600 1800
++ ./heat_2D_NP_sl 600 1800
+N_SIZE = 600, T_SIZE = 1800
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :2683.2ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 800 1800'
+heat_2D_NP_serial_loop 800 1800
++ ./heat_2D_NP_sl 800 1800
+N_SIZE = 800, T_SIZE = 1800
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :5171.86ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 1000 1800'
+heat_2D_NP_serial_loop 1000 1800
++ ./heat_2D_NP_sl 1000 1800
+N_SIZE = 1000, T_SIZE = 1800
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :7637.24ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 1200 1800'
+heat_2D_NP_serial_loop 1200 1800
++ ./heat_2D_NP_sl 1200 1800
+N_SIZE = 1200, T_SIZE = 1800
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :11299.1ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 1400 1800'
+heat_2D_NP_serial_loop 1400 1800
++ ./heat_2D_NP_sl 1400 1800
+N_SIZE = 1400, T_SIZE = 1800
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :15403.7ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 1600 1800'
+heat_2D_NP_serial_loop 1600 1800
++ ./heat_2D_NP_sl 1600 1800
+N_SIZE = 1600, T_SIZE = 1800
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :21438.3ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 1800 1800'
+heat_2D_NP_serial_loop 1800 1800
++ ./heat_2D_NP_sl 1800 1800
+N_SIZE = 1800, T_SIZE = 1800
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :25458.4ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 2000 1800'
+heat_2D_NP_serial_loop 2000 1800
++ ./heat_2D_NP_sl 2000 1800
+N_SIZE = 2000, T_SIZE = 1800
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :31458.8ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 2200 1800'
+heat_2D_NP_serial_loop 2200 1800
++ ./heat_2D_NP_sl 2200 1800
+N_SIZE = 2200, T_SIZE = 1800
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :38075.6ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 2400 1800'
+heat_2D_NP_serial_loop 2400 1800
++ ./heat_2D_NP_sl 2400 1800
+N_SIZE = 2400, T_SIZE = 1800
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :48450.4ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 2600 1800'
+heat_2D_NP_serial_loop 2600 1800
++ ./heat_2D_NP_sl 2600 1800
+N_SIZE = 2600, T_SIZE = 1800
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :53211.8ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 2800 1800'
+heat_2D_NP_serial_loop 2800 1800
++ ./heat_2D_NP_sl 2800 1800
+N_SIZE = 2800, T_SIZE = 1800
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :61704.3ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 3000 1800'
+heat_2D_NP_serial_loop 3000 1800
++ ./heat_2D_NP_sl 3000 1800
+N_SIZE = 3000, T_SIZE = 1800
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :70972.5ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 3200 1800'
+heat_2D_NP_serial_loop 3200 1800
++ ./heat_2D_NP_sl 3200 1800
+N_SIZE = 3200, T_SIZE = 1800
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :86194ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ (( step += 200 ))
++ (( step <= 3200 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 200 2000'
+heat_2D_NP_serial_loop 200 2000
++ ./heat_2D_NP_sl 200 2000
+N_SIZE = 200, T_SIZE = 2000
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :327.727ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 400 2000'
+heat_2D_NP_serial_loop 400 2000
++ ./heat_2D_NP_sl 400 2000
+N_SIZE = 400, T_SIZE = 2000
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :1318.78ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 600 2000'
+heat_2D_NP_serial_loop 600 2000
++ ./heat_2D_NP_sl 600 2000
+N_SIZE = 600, T_SIZE = 2000
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :2980.23ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 800 2000'
+heat_2D_NP_serial_loop 800 2000
++ ./heat_2D_NP_sl 800 2000
+N_SIZE = 800, T_SIZE = 2000
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :5775.08ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 1000 2000'
+heat_2D_NP_serial_loop 1000 2000
++ ./heat_2D_NP_sl 1000 2000
+N_SIZE = 1000, T_SIZE = 2000
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :8471.96ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 1200 2000'
+heat_2D_NP_serial_loop 1200 2000
++ ./heat_2D_NP_sl 1200 2000
+N_SIZE = 1200, T_SIZE = 2000
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :12566.5ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 1400 2000'
+heat_2D_NP_serial_loop 1400 2000
++ ./heat_2D_NP_sl 1400 2000
+N_SIZE = 1400, T_SIZE = 2000
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :17120.5ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 1600 2000'
+heat_2D_NP_serial_loop 1600 2000
++ ./heat_2D_NP_sl 1600 2000
+N_SIZE = 1600, T_SIZE = 2000
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :23878.2ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 1800 2000'
+heat_2D_NP_serial_loop 1800 2000
++ ./heat_2D_NP_sl 1800 2000
+N_SIZE = 1800, T_SIZE = 2000
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :28315.5ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 2000 2000'
+heat_2D_NP_serial_loop 2000 2000
++ ./heat_2D_NP_sl 2000 2000
+N_SIZE = 2000, T_SIZE = 2000
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :35444.3ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 2200 2000'
+heat_2D_NP_serial_loop 2200 2000
++ ./heat_2D_NP_sl 2200 2000
+N_SIZE = 2200, T_SIZE = 2000
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :42258.8ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 2400 2000'
+heat_2D_NP_serial_loop 2400 2000
++ ./heat_2D_NP_sl 2400 2000
+N_SIZE = 2400, T_SIZE = 2000
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :53817.7ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 2600 2000'
+heat_2D_NP_serial_loop 2600 2000
++ ./heat_2D_NP_sl 2600 2000
+N_SIZE = 2600, T_SIZE = 2000
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :59116ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 2800 2000'
+heat_2D_NP_serial_loop 2800 2000
++ ./heat_2D_NP_sl 2800 2000
+N_SIZE = 2800, T_SIZE = 2000
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :68530.6ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 3000 2000'
+heat_2D_NP_serial_loop 3000 2000
++ ./heat_2D_NP_sl 3000 2000
+N_SIZE = 3000, T_SIZE = 2000
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :78904.3ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 3200 2000'
+heat_2D_NP_serial_loop 3200 2000
++ ./heat_2D_NP_sl 3200 2000
+N_SIZE = 3200, T_SIZE = 2000
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :95790.5ms
++ Bookmark
++ (( size += 200 ))
++ (( size <= 3200 ))
++ (( step += 200 ))
++ (( step <= 3200 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 200 2200'
+heat_2D_NP_serial_loop 200 2200
++ ./heat_2D_NP_sl 200 2200
+N_SIZE = 200, T_SIZE = 2200
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :360.568ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 400 2200'
+heat_2D_NP_serial_loop 400 2200
++ ./heat_2D_NP_sl 400 2200
+N_SIZE = 400, T_SIZE = 2200
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :1450.92ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 600 2200'
+heat_2D_NP_serial_loop 600 2200
++ ./heat_2D_NP_sl 600 2200
+N_SIZE = 600, T_SIZE = 2200
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :3278.19ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 800 2200'
+heat_2D_NP_serial_loop 800 2200
++ ./heat_2D_NP_sl 800 2200
+N_SIZE = 800, T_SIZE = 2200
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :6346.92ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 1000 2200'
+heat_2D_NP_serial_loop 1000 2200
++ ./heat_2D_NP_sl 1000 2200
+N_SIZE = 1000, T_SIZE = 2200
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :9328.64ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 1200 2200'
+heat_2D_NP_serial_loop 1200 2200
++ ./heat_2D_NP_sl 1200 2200
+N_SIZE = 1200, T_SIZE = 2200
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :13844.6ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 1400 2200'
+heat_2D_NP_serial_loop 1400 2200
++ ./heat_2D_NP_sl 1400 2200
+N_SIZE = 1400, T_SIZE = 2200
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :18851ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 1600 2200'
+heat_2D_NP_serial_loop 1600 2200
++ ./heat_2D_NP_sl 1600 2200
+N_SIZE = 1600, T_SIZE = 2200
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :26269.6ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 1800 2200'
+heat_2D_NP_serial_loop 1800 2200
++ ./heat_2D_NP_sl 1800 2200
+N_SIZE = 1800, T_SIZE = 2200
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :31163.9ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 2000 2200'
+heat_2D_NP_serial_loop 2000 2200
++ ./heat_2D_NP_sl 2000 2200
+N_SIZE = 2000, T_SIZE = 2200
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :38477.8ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 2200 2200'
+heat_2D_NP_serial_loop 2200 2200
++ ./heat_2D_NP_sl 2200 2200
+N_SIZE = 2200, T_SIZE = 2200
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :46547.6ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 2400 2200'
+heat_2D_NP_serial_loop 2400 2200
++ ./heat_2D_NP_sl 2400 2200
+N_SIZE = 2400, T_SIZE = 2200
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :59305.4ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 2600 2200'
+heat_2D_NP_serial_loop 2600 2200
++ ./heat_2D_NP_sl 2600 2200
+N_SIZE = 2600, T_SIZE = 2200
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :65127.5ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 2800 2200'
+heat_2D_NP_serial_loop 2800 2200
++ ./heat_2D_NP_sl 2800 2200
+N_SIZE = 2800, T_SIZE = 2200
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :75479.4ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 3000 2200'
+heat_2D_NP_serial_loop 3000 2200
++ ./heat_2D_NP_sl 3000 2200
+N_SIZE = 3000, T_SIZE = 2200
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :86905.4ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 3200 2200'
+heat_2D_NP_serial_loop 3200 2200
++ ./heat_2D_NP_sl 3200 2200
+N_SIZE = 3200, T_SIZE = 2200
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :105640ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ (( step += 200 ))
++ (( step <= 3200 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 200 2400'
+heat_2D_NP_serial_loop 200 2400
++ ./heat_2D_NP_sl 200 2400
+N_SIZE = 200, T_SIZE = 2400
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :393.226ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 400 2400'
+heat_2D_NP_serial_loop 400 2400
++ ./heat_2D_NP_sl 400 2400
+N_SIZE = 400, T_SIZE = 2400
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :1582.89ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 600 2400'
+heat_2D_NP_serial_loop 600 2400
++ ./heat_2D_NP_sl 600 2400
+N_SIZE = 600, T_SIZE = 2400
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :3578ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 800 2400'
+heat_2D_NP_serial_loop 800 2400
++ ./heat_2D_NP_sl 800 2400
+N_SIZE = 800, T_SIZE = 2400
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :6907.13ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 1000 2400'
+heat_2D_NP_serial_loop 1000 2400
++ ./heat_2D_NP_sl 1000 2400
+N_SIZE = 1000, T_SIZE = 2400
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :10184.7ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 1200 2400'
+heat_2D_NP_serial_loop 1200 2400
++ ./heat_2D_NP_sl 1200 2400
+N_SIZE = 1200, T_SIZE = 2400
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :15061.4ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 1400 2400'
+heat_2D_NP_serial_loop 1400 2400
++ ./heat_2D_NP_sl 1400 2400
+N_SIZE = 1400, T_SIZE = 2400
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :20522.5ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 1600 2400'
+heat_2D_NP_serial_loop 1600 2400
++ ./heat_2D_NP_sl 1600 2400
+N_SIZE = 1600, T_SIZE = 2400
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :28663.1ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 1800 2400'
+heat_2D_NP_serial_loop 1800 2400
++ ./heat_2D_NP_sl 1800 2400
+N_SIZE = 1800, T_SIZE = 2400
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :33975.5ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 2000 2400'
+heat_2D_NP_serial_loop 2000 2400
++ ./heat_2D_NP_sl 2000 2400
+N_SIZE = 2000, T_SIZE = 2400
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :42015.7ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 2200 2400'
+heat_2D_NP_serial_loop 2200 2400
++ ./heat_2D_NP_sl 2200 2400
+N_SIZE = 2200, T_SIZE = 2400
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :50733.4ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 2400 2400'
+heat_2D_NP_serial_loop 2400 2400
++ ./heat_2D_NP_sl 2400 2400
+N_SIZE = 2400, T_SIZE = 2400
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :64502ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 2600 2400'
+heat_2D_NP_serial_loop 2600 2400
++ ./heat_2D_NP_sl 2600 2400
+N_SIZE = 2600, T_SIZE = 2400
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :70917.9ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 2800 2400'
+heat_2D_NP_serial_loop 2800 2400
++ ./heat_2D_NP_sl 2800 2400
+N_SIZE = 2800, T_SIZE = 2400
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :82319ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 3000 2400'
+heat_2D_NP_serial_loop 3000 2400
++ ./heat_2D_NP_sl 3000 2400
+N_SIZE = 3000, T_SIZE = 2400
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :94603.8ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 3200 2400'
+heat_2D_NP_serial_loop 3200 2400
++ ./heat_2D_NP_sl 3200 2400
+N_SIZE = 3200, T_SIZE = 2400
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :114751ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ (( step += 200 ))
++ (( step <= 3200 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 200 2600'
+heat_2D_NP_serial_loop 200 2600
++ ./heat_2D_NP_sl 200 2600
+N_SIZE = 200, T_SIZE = 2600
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :426.162ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 400 2600'
+heat_2D_NP_serial_loop 400 2600
++ ./heat_2D_NP_sl 400 2600
+N_SIZE = 400, T_SIZE = 2600
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :1714.51ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 600 2600'
+heat_2D_NP_serial_loop 600 2600
++ ./heat_2D_NP_sl 600 2600
+N_SIZE = 600, T_SIZE = 2600
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :3876.71ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 800 2600'
+heat_2D_NP_serial_loop 800 2600
++ ./heat_2D_NP_sl 800 2600
+N_SIZE = 800, T_SIZE = 2600
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :7465.9ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 1000 2600'
+heat_2D_NP_serial_loop 1000 2600
++ ./heat_2D_NP_sl 1000 2600
+N_SIZE = 1000, T_SIZE = 2600
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :11016.5ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 1200 2600'
+heat_2D_NP_serial_loop 1200 2600
++ ./heat_2D_NP_sl 1200 2600
+N_SIZE = 1200, T_SIZE = 2600
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :16314.4ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 1400 2600'
+heat_2D_NP_serial_loop 1400 2600
++ ./heat_2D_NP_sl 1400 2600
+N_SIZE = 1400, T_SIZE = 2600
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :22249.9ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 1600 2600'
+heat_2D_NP_serial_loop 1600 2600
++ ./heat_2D_NP_sl 1600 2600
+N_SIZE = 1600, T_SIZE = 2600
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :30971.6ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 1800 2600'
+heat_2D_NP_serial_loop 1800 2600
++ ./heat_2D_NP_sl 1800 2600
+N_SIZE = 1800, T_SIZE = 2600
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :36758.6ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 2000 2600'
+heat_2D_NP_serial_loop 2000 2600
++ ./heat_2D_NP_sl 2000 2600
+N_SIZE = 2000, T_SIZE = 2600
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :45436.8ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 2200 2600'
+heat_2D_NP_serial_loop 2200 2600
++ ./heat_2D_NP_sl 2200 2600
+N_SIZE = 2200, T_SIZE = 2600
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :54909ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 2400 2600'
+heat_2D_NP_serial_loop 2400 2600
++ ./heat_2D_NP_sl 2400 2600
+N_SIZE = 2400, T_SIZE = 2600
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :69800.5ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 2600 2600'
+heat_2D_NP_serial_loop 2600 2600
++ ./heat_2D_NP_sl 2600 2600
+N_SIZE = 2600, T_SIZE = 2600
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :76904ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 2800 2600'
+heat_2D_NP_serial_loop 2800 2600
++ ./heat_2D_NP_sl 2800 2600
+N_SIZE = 2800, T_SIZE = 2600
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :89090.1ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 3000 2600'
+heat_2D_NP_serial_loop 3000 2600
++ ./heat_2D_NP_sl 3000 2600
+N_SIZE = 3000, T_SIZE = 2600
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :102569ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 3200 2600'
+heat_2D_NP_serial_loop 3200 2600
++ ./heat_2D_NP_sl 3200 2600
+N_SIZE = 3200, T_SIZE = 2600
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :124575ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ (( step += 200 ))
++ (( step <= 3200 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 200 2800'
+heat_2D_NP_serial_loop 200 2800
++ ./heat_2D_NP_sl 200 2800
+N_SIZE = 200, T_SIZE = 2800
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :458.959ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 400 2800'
+heat_2D_NP_serial_loop 400 2800
++ ./heat_2D_NP_sl 400 2800
+N_SIZE = 400, T_SIZE = 2800
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :1845.35ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 600 2800'
+heat_2D_NP_serial_loop 600 2800
++ ./heat_2D_NP_sl 600 2800
+N_SIZE = 600, T_SIZE = 2800
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :4176.9ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 800 2800'
+heat_2D_NP_serial_loop 800 2800
++ ./heat_2D_NP_sl 800 2800
+N_SIZE = 800, T_SIZE = 2800
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :8099.94ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 1000 2800'
+heat_2D_NP_serial_loop 1000 2800
++ ./heat_2D_NP_sl 1000 2800
+N_SIZE = 1000, T_SIZE = 2800
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :11872.9ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 1200 2800'
+heat_2D_NP_serial_loop 1200 2800
++ ./heat_2D_NP_sl 1200 2800
+N_SIZE = 1200, T_SIZE = 2800
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :17578.6ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 1400 2800'
+heat_2D_NP_serial_loop 1400 2800
++ ./heat_2D_NP_sl 1400 2800
+N_SIZE = 1400, T_SIZE = 2800
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :23945.2ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 1600 2800'
+heat_2D_NP_serial_loop 1600 2800
++ ./heat_2D_NP_sl 1600 2800
+N_SIZE = 1600, T_SIZE = 2800
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :33506ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 1800 2800'
+heat_2D_NP_serial_loop 1800 2800
++ ./heat_2D_NP_sl 1800 2800
+N_SIZE = 1800, T_SIZE = 2800
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :39624.2ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 2000 2800'
+heat_2D_NP_serial_loop 2000 2800
++ ./heat_2D_NP_sl 2000 2800
+N_SIZE = 2000, T_SIZE = 2800
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :48981.4ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 2200 2800'
+heat_2D_NP_serial_loop 2200 2800
++ ./heat_2D_NP_sl 2200 2800
+N_SIZE = 2200, T_SIZE = 2800
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :59170.6ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 2400 2800'
+heat_2D_NP_serial_loop 2400 2800
++ ./heat_2D_NP_sl 2400 2800
+N_SIZE = 2400, T_SIZE = 2800
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :75266.2ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 2600 2800'
+heat_2D_NP_serial_loop 2600 2800
++ ./heat_2D_NP_sl 2600 2800
+N_SIZE = 2600, T_SIZE = 2800
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :82813.8ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 2800 2800'
+heat_2D_NP_serial_loop 2800 2800
++ ./heat_2D_NP_sl 2800 2800
+N_SIZE = 2800, T_SIZE = 2800
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :95958.7ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 3000 2800'
+heat_2D_NP_serial_loop 3000 2800
++ ./heat_2D_NP_sl 3000 2800
+N_SIZE = 3000, T_SIZE = 2800
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :110514ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 3200 2800'
+heat_2D_NP_serial_loop 3200 2800
++ ./heat_2D_NP_sl 3200 2800
+N_SIZE = 3200, T_SIZE = 2800
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :134339ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ (( step += 200 ))
++ (( step <= 3200 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 200 3000'
+heat_2D_NP_serial_loop 200 3000
++ ./heat_2D_NP_sl 200 3000
+N_SIZE = 200, T_SIZE = 3000
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :491.798ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 400 3000'
+heat_2D_NP_serial_loop 400 3000
++ ./heat_2D_NP_sl 400 3000
+N_SIZE = 400, T_SIZE = 3000
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :1977.55ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 600 3000'
+heat_2D_NP_serial_loop 600 3000
++ ./heat_2D_NP_sl 600 3000
+N_SIZE = 600, T_SIZE = 3000
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :4473.89ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 800 3000'
+heat_2D_NP_serial_loop 800 3000
++ ./heat_2D_NP_sl 800 3000
+N_SIZE = 800, T_SIZE = 3000
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :8586.58ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 1000 3000'
+heat_2D_NP_serial_loop 1000 3000
++ ./heat_2D_NP_sl 1000 3000
+N_SIZE = 1000, T_SIZE = 3000
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :12728.3ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 1200 3000'
+heat_2D_NP_serial_loop 1200 3000
++ ./heat_2D_NP_sl 1200 3000
+N_SIZE = 1200, T_SIZE = 3000
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :18836.4ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 1400 3000'
+heat_2D_NP_serial_loop 1400 3000
++ ./heat_2D_NP_sl 1400 3000
+N_SIZE = 1400, T_SIZE = 3000
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :25690.5ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 1600 3000'
+heat_2D_NP_serial_loop 1600 3000
++ ./heat_2D_NP_sl 1600 3000
+N_SIZE = 1600, T_SIZE = 3000
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :35874.7ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 1800 3000'
+heat_2D_NP_serial_loop 1800 3000
++ ./heat_2D_NP_sl 1800 3000
+N_SIZE = 1800, T_SIZE = 3000
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :42468.4ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 2000 3000'
+heat_2D_NP_serial_loop 2000 3000
++ ./heat_2D_NP_sl 2000 3000
+N_SIZE = 2000, T_SIZE = 3000
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :52529.2ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 2200 3000'
+heat_2D_NP_serial_loop 2200 3000
++ ./heat_2D_NP_sl 2200 3000
+N_SIZE = 2200, T_SIZE = 3000
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :63387.4ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 2400 3000'
+heat_2D_NP_serial_loop 2400 3000
++ ./heat_2D_NP_sl 2400 3000
+N_SIZE = 2400, T_SIZE = 3000
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :80719.6ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 2600 3000'
+heat_2D_NP_serial_loop 2600 3000
++ ./heat_2D_NP_sl 2600 3000
+N_SIZE = 2600, T_SIZE = 3000
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :88678.2ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 2800 3000'
+heat_2D_NP_serial_loop 2800 3000
++ ./heat_2D_NP_sl 2800 3000
+N_SIZE = 2800, T_SIZE = 3000
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :102859ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 3000 3000'
+heat_2D_NP_serial_loop 3000 3000
++ ./heat_2D_NP_sl 3000 3000
+N_SIZE = 3000, T_SIZE = 3000
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :118282ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 3200 3000'
+heat_2D_NP_serial_loop 3200 3000
++ ./heat_2D_NP_sl 3200 3000
+N_SIZE = 3200, T_SIZE = 3000
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :143720ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ (( step += 200 ))
++ (( step <= 3200 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 200 3200'
+heat_2D_NP_serial_loop 200 3200
++ ./heat_2D_NP_sl 200 3200
+N_SIZE = 200, T_SIZE = 3200
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :524.468ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 400 3200'
+heat_2D_NP_serial_loop 400 3200
++ ./heat_2D_NP_sl 400 3200
+N_SIZE = 400, T_SIZE = 3200
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :2109.34ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 600 3200'
+heat_2D_NP_serial_loop 600 3200
++ ./heat_2D_NP_sl 600 3200
+N_SIZE = 600, T_SIZE = 3200
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :4771.51ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 800 3200'
+heat_2D_NP_serial_loop 800 3200
++ ./heat_2D_NP_sl 800 3200
+N_SIZE = 800, T_SIZE = 3200
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :9190.08ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 1000 3200'
+heat_2D_NP_serial_loop 1000 3200
++ ./heat_2D_NP_sl 1000 3200
+N_SIZE = 1000, T_SIZE = 3200
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :13589.8ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 1200 3200'
+heat_2D_NP_serial_loop 1200 3200
++ ./heat_2D_NP_sl 1200 3200
+N_SIZE = 1200, T_SIZE = 3200
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :20085.4ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 1400 3200'
+heat_2D_NP_serial_loop 1400 3200
++ ./heat_2D_NP_sl 1400 3200
+N_SIZE = 1400, T_SIZE = 3200
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :27371.1ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 1600 3200'
+heat_2D_NP_serial_loop 1600 3200
++ ./heat_2D_NP_sl 1600 3200
+N_SIZE = 1600, T_SIZE = 3200
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :38144.1ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 1800 3200'
+heat_2D_NP_serial_loop 1800 3200
++ ./heat_2D_NP_sl 1800 3200
+N_SIZE = 1800, T_SIZE = 3200
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :45269.2ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 2000 3200'
+heat_2D_NP_serial_loop 2000 3200
++ ./heat_2D_NP_sl 2000 3200
+N_SIZE = 2000, T_SIZE = 3200
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :55927.1ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 2200 3200'
+heat_2D_NP_serial_loop 2200 3200
++ ./heat_2D_NP_sl 2200 3200
+N_SIZE = 2200, T_SIZE = 3200
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :67703.6ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 2400 3200'
+heat_2D_NP_serial_loop 2400 3200
++ ./heat_2D_NP_sl 2400 3200
+N_SIZE = 2400, T_SIZE = 3200
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :86048.9ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 2600 3200'
+heat_2D_NP_serial_loop 2600 3200
++ ./heat_2D_NP_sl 2600 3200
+N_SIZE = 2600, T_SIZE = 3200
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :94595.4ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 2800 3200'
+heat_2D_NP_serial_loop 2800 3200
++ ./heat_2D_NP_sl 2800 3200
+N_SIZE = 2800, T_SIZE = 3200
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :109708ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 3000 3200'
+heat_2D_NP_serial_loop 3000 3200
++ ./heat_2D_NP_sl 3000 3200
+N_SIZE = 3000, T_SIZE = 3200
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :126169ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 3200 3200'
+heat_2D_NP_serial_loop 3200 3200
++ ./heat_2D_NP_sl 3200 3200
+N_SIZE = 3200, T_SIZE = 3200
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :153435ms
+

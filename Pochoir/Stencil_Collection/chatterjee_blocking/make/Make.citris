@@ -1,0 +1,18 @@
+#
+# Platform-specific build information
+# Intel Itanium running Linux
+# Uses the Intel v8.1 C/C++ compiler
+#
+
+MAKE = gmake
+
+# C compiler flags
+CC = icc
+C_OPT_FLAGS = -O3 -fno-alias -fno-fnalias
+OPT_INNER_LOOP_FLAGS =
+
+# PAPI library
+PAPI_ROOT = /usr/mill/pkg/papi
+PAPI_INC_FLAGS = -I$(PAPI_ROOT)/include/papi-2.3.4
+PAPI_LINK_FLAGS = -L$(PAPI_ROOT)/lib -lpapi
+PAPI_UTIL_FLAG = $(PAPI_DIR)/papi_util.o

@@ -1,0 +1,1430 @@
++ (( step = 500 ))
++ (( step <= 500 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 200 500'
+heat_2D_NP_serial_loop 200 500
++ ./heat_2D_NP_sl 200 500
+N_SIZE = 200, T_SIZE = 500
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :81.921ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 400 500'
+heat_2D_NP_serial_loop 400 500
++ ./heat_2D_NP_sl 400 500
+N_SIZE = 400, T_SIZE = 500
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :329.781ms
++ (( size += 400 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 800 500'
+heat_2D_NP_serial_loop 800 500
++ ./heat_2D_NP_sl 800 500
+N_SIZE = 800, T_SIZE = 500
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :1440.87ms
++ (( size += 800 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 1600 500'
+heat_2D_NP_serial_loop 1600 500
++ ./heat_2D_NP_sl 1600 500
+N_SIZE = 1600, T_SIZE = 500
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :5985.76ms
++ (( size += 1600 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_serial_loop 3200 500'
+heat_2D_NP_serial_loop 3200 500
++ ./heat_2D_NP_sl 3200 500
+N_SIZE = 3200, T_SIZE = 500
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :23936.2ms
++ (( size += 3200 ))
++ (( size <= 3200 ))
++ (( step += 500 ))
++ (( step <= 500 ))
++ echo '<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<'
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
++ (( step = 500 ))
++ (( step <= 500 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_parallel_loop 200 500'
+heat_2D_NP_parallel_loop 200 500
++ ./heat_2D_NP_pl 200 500
+N_SIZE = 200, T_SIZE = 500
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :51.731ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_parallel_loop 400 500'
+heat_2D_NP_parallel_loop 400 500
++ ./heat_2D_NP_pl 400 500
+N_SIZE = 400, T_SIZE = 500
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :122.274ms
++ (( size += 400 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_parallel_loop 800 500'
+heat_2D_NP_parallel_loop 800 500
++ ./heat_2D_NP_pl 800 500
+N_SIZE = 800, T_SIZE = 500
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :488.657ms
++ (( size += 800 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_parallel_loop 1600 500'
+heat_2D_NP_parallel_loop 1600 500
++ ./heat_2D_NP_pl 1600 500
+N_SIZE = 1600, T_SIZE = 500
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :1759.28ms
++ (( size += 1600 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_parallel_loop 3200 500'
+heat_2D_NP_parallel_loop 3200 500
++ ./heat_2D_NP_pl 3200 500
+N_SIZE = 3200, T_SIZE = 500
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :6370.97ms
++ (( size += 3200 ))
++ (( size <= 3200 ))
++ (( step += 500 ))
++ (( step <= 500 ))
++ echo '<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<'
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
++ (( step = 500 ))
++ (( step <= 500 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 200 500'
+heat_2D_NP_pochoir 200 500
++ ./heat_2D_NP_pochoir 200 500
+N_SIZE = 200, T_SIZE = 500
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :52.356ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 400 500'
+heat_2D_NP_pochoir 400 500
++ ./heat_2D_NP_pochoir 400 500
+N_SIZE = 400, T_SIZE = 500
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :86.885ms
++ (( size += 400 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 800 500'
+heat_2D_NP_pochoir 800 500
++ ./heat_2D_NP_pochoir 800 500
+N_SIZE = 800, T_SIZE = 500
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :168.827ms
++ (( size += 800 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 1600 500'
+heat_2D_NP_pochoir 1600 500
++ ./heat_2D_NP_pochoir 1600 500
+N_SIZE = 1600, T_SIZE = 500
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :399.802ms
++ (( size += 1600 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_NP_pochoir 3200 500'
+heat_2D_NP_pochoir 3200 500
++ ./heat_2D_NP_pochoir 3200 500
+N_SIZE = 3200, T_SIZE = 500
+Pochoir: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :1248.56ms
++ (( size += 3200 ))
++ (( size <= 3200 ))
++ (( step += 500 ))
++ (( step <= 500 ))
++ echo '<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<'
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
++ (( step = 500 ))
++ (( step <= 500 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_P_serial_loop 200 500'
+heat_2D_P_serial_loop 200 500
++ ./heat_2D_P_sl 200 500
+N_SIZE = 200, T_SIZE = 500
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :192.842ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_P_serial_loop 400 500'
+heat_2D_P_serial_loop 400 500
++ ./heat_2D_P_sl 400 500
+N_SIZE = 400, T_SIZE = 500
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :770.308ms
++ (( size += 400 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_P_serial_loop 800 500'
+heat_2D_P_serial_loop 800 500
++ ./heat_2D_P_sl 800 500
+N_SIZE = 800, T_SIZE = 500
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :4088.69ms
++ (( size += 800 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_P_serial_loop 1600 500'
+heat_2D_P_serial_loop 1600 500
++ ./heat_2D_P_sl 1600 500
+N_SIZE = 1600, T_SIZE = 500
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :16456.8ms
++ (( size += 1600 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_P_serial_loop 3200 500'
+heat_2D_P_serial_loop 3200 500
++ ./heat_2D_P_sl 3200 500
+N_SIZE = 3200, T_SIZE = 500
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :65856.2ms
++ (( size += 3200 ))
++ (( size <= 3200 ))
++ (( step += 500 ))
++ (( step <= 500 ))
++ echo '<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<'
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
++ (( step = 500 ))
++ (( step <= 500 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_P_parallel_loop 200 500'
+heat_2D_P_parallel_loop 200 500
++ ./heat_2D_P_pl 200 500
+N_SIZE = 200, T_SIZE = 500
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :77.9413ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_P_parallel_loop 400 500'
+heat_2D_P_parallel_loop 400 500
++ ./heat_2D_P_pl 400 500
+N_SIZE = 400, T_SIZE = 500
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :262.039ms
++ (( size += 400 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_P_parallel_loop 800 500'
+heat_2D_P_parallel_loop 800 500
++ ./heat_2D_P_pl 800 500
+N_SIZE = 800, T_SIZE = 500
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :751.245ms
++ (( size += 800 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_P_parallel_loop 1600 500'
+heat_2D_P_parallel_loop 1600 500
++ ./heat_2D_P_pl 1600 500
+N_SIZE = 1600, T_SIZE = 500
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :2917.63ms
++ (( size += 1600 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_P_parallel_loop 3200 500'
+heat_2D_P_parallel_loop 3200 500
++ ./heat_2D_P_pl 3200 500
+N_SIZE = 3200, T_SIZE = 500
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Naive Loop: consumed time :10599ms
++ (( size += 3200 ))
++ (( size <= 3200 ))
++ (( step += 500 ))
++ (( step <= 500 ))
++ echo '<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<'
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
++ (( step = 500 ))
++ (( step <= 500 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_P_pochoir 200 500'
+heat_2D_P_pochoir 200 500
++ ./heat_2D_P_pochoir 200 500
+N_SIZE = 200, T_SIZE = 500
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :66.433ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_P_pochoir 400 500'
+heat_2D_P_pochoir 400 500
++ ./heat_2D_P_pochoir 400 500
+N_SIZE = 400, T_SIZE = 500
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :112.11ms
++ (( size += 400 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_P_pochoir 800 500'
+heat_2D_P_pochoir 800 500
++ ./heat_2D_P_pochoir 800 500
+N_SIZE = 800, T_SIZE = 500
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :177.878ms
++ (( size += 800 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_P_pochoir 1600 500'
+heat_2D_P_pochoir 1600 500
++ ./heat_2D_P_pochoir 1600 500
+N_SIZE = 1600, T_SIZE = 500
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :408.427ms
++ (( size += 1600 ))
++ (( size <= 3200 ))
++ echo 'heat_2D_P_pochoir 3200 500'
+heat_2D_P_pochoir 3200 500
++ ./heat_2D_P_pochoir 3200 500
+N_SIZE = 3200, T_SIZE = 500
+Serial Loops: a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :1249.11ms
++ (( size += 3200 ))
++ (( size <= 3200 ))
++ (( step += 500 ))
++ (( step <= 500 ))
++ echo '<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<'
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
++ (( step = 500 ))
++ (( step <= 500 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 200 500'
+life_serial_loop 200 500
++ ./life_sl 200 500
+N_SIZE = 200, T_SIZE = 500
+Game of Life : 200 x 200, 500 time steps
+Naive Loop: consumed time :423.285ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 400 500'
+life_serial_loop 400 500
++ ./life_sl 400 500
+N_SIZE = 400, T_SIZE = 500
+Game of Life : 400 x 400, 500 time steps
+Naive Loop: consumed time :1678.14ms
++ (( size += 400 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 800 500'
+life_serial_loop 800 500
++ ./life_sl 800 500
+N_SIZE = 800, T_SIZE = 500
+Game of Life : 800 x 800, 500 time steps
+Naive Loop: consumed time :6718.11ms
++ (( size += 800 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 1600 500'
+life_serial_loop 1600 500
++ ./life_sl 1600 500
+N_SIZE = 1600, T_SIZE = 500
+Game of Life : 1600 x 1600, 500 time steps
+Naive Loop: consumed time :26794.6ms
++ (( size += 1600 ))
++ (( size <= 3200 ))
++ echo 'life_serial_loop 3200 500'
+life_serial_loop 3200 500
++ ./life_sl 3200 500
+N_SIZE = 3200, T_SIZE = 500
+Game of Life : 3200 x 3200, 500 time steps
+Naive Loop: consumed time :107315ms
++ (( size += 3200 ))
++ (( size <= 3200 ))
++ (( step += 500 ))
++ (( step <= 500 ))
++ echo '<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<'
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
++ (( step = 500 ))
++ (( step <= 500 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 200 500'
+life_parallel_loop 200 500
++ ./life_pl 200 500
+N_SIZE = 200, T_SIZE = 500
+Game of Life : 200 x 200, 500 time steps
+Naive Loop: consumed time :125.605ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 400 500'
+life_parallel_loop 400 500
++ ./life_pl 400 500
+N_SIZE = 400, T_SIZE = 500
+Game of Life : 400 x 400, 500 time steps
+Naive Loop: consumed time :400.009ms
++ (( size += 400 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 800 500'
+life_parallel_loop 800 500
++ ./life_pl 800 500
+N_SIZE = 800, T_SIZE = 500
+Game of Life : 800 x 800, 500 time steps
+Naive Loop: consumed time :1336.63ms
++ (( size += 800 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 1600 500'
+life_parallel_loop 1600 500
++ ./life_pl 1600 500
+N_SIZE = 1600, T_SIZE = 500
+Game of Life : 1600 x 1600, 500 time steps
+Naive Loop: consumed time :4643.38ms
++ (( size += 1600 ))
++ (( size <= 3200 ))
++ echo 'life_parallel_loop 3200 500'
+life_parallel_loop 3200 500
++ ./life_pl 3200 500
+N_SIZE = 3200, T_SIZE = 500
+Game of Life : 3200 x 3200, 500 time steps
+Naive Loop: consumed time :16878.3ms
++ (( size += 3200 ))
++ (( size <= 3200 ))
++ (( step += 500 ))
++ (( step <= 500 ))
++ echo '<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<'
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
++ (( step = 500 ))
++ (( step <= 500 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 200 500'
+life_pochoir 200 500
++ ./life_pochoir 200 500
+N_SIZE = 200, T_SIZE = 500
+Game of Life : 200 x 200, 500 time steps
+Pochoir ET: consumed time :77.0547ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 400 500'
+life_pochoir 400 500
++ ./life_pochoir 400 500
+N_SIZE = 400, T_SIZE = 500
+Game of Life : 400 x 400, 500 time steps
+Pochoir ET: consumed time :138.419ms
++ (( size += 400 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 800 500'
+life_pochoir 800 500
++ ./life_pochoir 800 500
+N_SIZE = 800, T_SIZE = 500
+Game of Life : 800 x 800, 500 time steps
+Pochoir ET: consumed time :297.742ms
++ (( size += 800 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 1600 500'
+life_pochoir 1600 500
++ ./life_pochoir 1600 500
+N_SIZE = 1600, T_SIZE = 500
+Game of Life : 1600 x 1600, 500 time steps
+Pochoir ET: consumed time :868.176ms
++ (( size += 1600 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 3200 500'
+life_pochoir 3200 500
++ ./life_pochoir 3200 500
+N_SIZE = 3200, T_SIZE = 500
+Game of Life : 3200 x 3200, 500 time steps
+Pochoir ET: consumed time :3045.31ms
++ (( size += 3200 ))
++ (( size <= 3200 ))
++ (( step += 500 ))
++ (( step <= 500 ))
++ echo '<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<'
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
++ (( step = 500 ))
++ (( step <= 500 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 200 500'
+life_pochoir_bit_trick 200 500
++ ./life_pochoir_bt 200 500
+N_SIZE = 200, T_SIZE = 500
+Game of Life : 200 x 200, 500 time steps
+Pochoir ET (Bit Trick): consumed time :72.1787ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 400 500'
+life_pochoir_bit_trick 400 500
++ ./life_pochoir_bt 400 500
+N_SIZE = 400, T_SIZE = 500
+Game of Life : 400 x 400, 500 time steps
+Pochoir ET (Bit Trick): consumed time :112.518ms
++ (( size += 400 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 800 500'
+life_pochoir_bit_trick 800 500
++ ./life_pochoir_bt 800 500
+N_SIZE = 800, T_SIZE = 500
+Game of Life : 800 x 800, 500 time steps
+Pochoir ET (Bit Trick): consumed time :206.805ms
++ (( size += 800 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 1600 500'
+life_pochoir_bit_trick 1600 500
++ ./life_pochoir_bt 1600 500
+N_SIZE = 1600, T_SIZE = 500
+Game of Life : 1600 x 1600, 500 time steps
+Pochoir ET (Bit Trick): consumed time :492.437ms
++ (( size += 1600 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir_bit_trick 3200 500'
+life_pochoir_bit_trick 3200 500
++ ./life_pochoir_bt 3200 500
+N_SIZE = 3200, T_SIZE = 500
+Game of Life : 3200 x 3200, 500 time steps
+Pochoir ET (Bit Trick): consumed time :1534.24ms
++ (( size += 3200 ))
++ (( size <= 3200 ))
++ (( step += 500 ))
++ (( step <= 500 ))
++ echo '<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<'
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
++ (( size = 200 ))
++ (( size <= 100000 ))
++ echo 'lcs 200 1000'
+lcs 200 1000
++ ./lcs_pochoir -r 200 200 -i -d
+
+Stencil-based DP for the length of the longest common subsequence ( run with option -h for help ).
+
+Sequence lengths = < 200, 200 >
+
+Running pochoir-based DP...
+
+Pochoir:
+	 LCS length = 60
+	 running time = 0.001 sec
+
+Running iterative stencil...
+
+Parallel Loops: Iterative Stencil:
+	 LCS length = 60
+	 running time = 0.015 sec ( 10.299 x Pochoir )
+
+Running standard DP...
+
+Serial Loops: Standard DP:
+	 LCS length = 60
+	 running time = 0.000 sec ( 0.099 x Pochoir )
+
++ (( size += 200 ))
++ (( size <= 100000 ))
++ echo 'lcs 400 1000'
+lcs 400 1000
++ ./lcs_pochoir -r 400 400 -i -d
+
+Stencil-based DP for the length of the longest common subsequence ( run with option -h for help ).
+
+Sequence lengths = < 400, 400 >
+
+Running pochoir-based DP...
+
+Pochoir:
+	 LCS length = 133
+	 running time = 0.002 sec
+
+Running iterative stencil...
+
+Parallel Loops: Iterative Stencil:
+	 LCS length = 133
+	 running time = 0.037 sec ( 16.984 x Pochoir )
+
+Running standard DP...
+
+Serial Loops: Standard DP:
+	 LCS length = 133
+	 running time = 0.001 sec ( 0.256 x Pochoir )
+
++ (( size += 400 ))
++ (( size <= 100000 ))
++ echo 'lcs 800 1000'
+lcs 800 1000
++ ./lcs_pochoir -r 800 800 -i -d
+
+Stencil-based DP for the length of the longest common subsequence ( run with option -h for help ).
+
+Sequence lengths = < 800, 800 >
+
+Running pochoir-based DP...
+
+Pochoir:
+	 LCS length = 251
+	 running time = 0.014 sec
+
+Running iterative stencil...
+
+Parallel Loops: Iterative Stencil:
+	 LCS length = 251
+	 running time = 0.060 sec ( 4.137 x Pochoir )
+
+Running standard DP...
+
+Serial Loops: Standard DP:
+	 LCS length = 251
+	 running time = 0.002 sec ( 0.152 x Pochoir )
+
++ (( size += 800 ))
++ (( size <= 100000 ))
++ echo 'lcs 1600 1000'
+lcs 1600 1000
++ ./lcs_pochoir -r 1600 1600 -i -d
+
+Stencil-based DP for the length of the longest common subsequence ( run with option -h for help ).
+
+Sequence lengths = < 1600, 1600 >
+
+Running pochoir-based DP...
+
+Pochoir:
+	 LCS length = 512
+	 running time = 0.008 sec
+
+Running iterative stencil...
+
+Parallel Loops: Iterative Stencil:
+	 LCS length = 512
+	 running time = 0.113 sec ( 13.470 x Pochoir )
+
+Running standard DP...
+
+Serial Loops: Standard DP:
+	 LCS length = 512
+	 running time = 0.009 sec ( 1.029 x Pochoir )
+
++ (( size += 1600 ))
++ (( size <= 100000 ))
++ echo 'lcs 3200 1000'
+lcs 3200 1000
++ ./lcs_pochoir -r 3200 3200 -i -d
+
+Stencil-based DP for the length of the longest common subsequence ( run with option -h for help ).
+
+Sequence lengths = < 3200, 3200 >
+
+Running pochoir-based DP...
+
+Pochoir:
+	 LCS length = 1034
+	 running time = 0.039 sec
+
+Running iterative stencil...
+
+Parallel Loops: Iterative Stencil:
+	 LCS length = 1034
+	 running time = 0.266 sec ( 6.831 x Pochoir )
+
+Running standard DP...
+
+Serial Loops: Standard DP:
+	 LCS length = 1034
+	 running time = 0.035 sec ( 0.893 x Pochoir )
+
++ (( size += 3200 ))
++ (( size <= 100000 ))
++ echo 'lcs 6400 1000'
+lcs 6400 1000
++ ./lcs_pochoir -r 6400 6400 -i -d
+
+Stencil-based DP for the length of the longest common subsequence ( run with option -h for help ).
+
+Sequence lengths = < 6400, 6400 >
+
+Running pochoir-based DP...
+
+Pochoir:
+	 LCS length = 2077
+	 running time = 0.070 sec
+
+Running iterative stencil...
+
+Parallel Loops: Iterative Stencil:
+	 LCS length = 2077
+	 running time = 0.589 sec ( 8.441 x Pochoir )
+
+Running standard DP...
+
+Serial Loops: Standard DP:
+	 LCS length = 2077
+	 running time = 0.139 sec ( 1.999 x Pochoir )
+
++ (( size += 6400 ))
++ (( size <= 100000 ))
++ echo 'lcs 12800 1000'
+lcs 12800 1000
++ ./lcs_pochoir -r 12800 12800 -i -d
+
+Stencil-based DP for the length of the longest common subsequence ( run with option -h for help ).
+
+Sequence lengths = < 12800, 12800 >
+
+Running pochoir-based DP...
+
+Pochoir:
+	 LCS length = 4141
+	 running time = 0.279 sec
+
+Running iterative stencil...
+
+Parallel Loops: Iterative Stencil:
+	 LCS length = 4141
+	 running time = 1.849 sec ( 6.640 x Pochoir )
+
+Running standard DP...
+
+Serial Loops: Standard DP:
+	 LCS length = 4141
+	 running time = 0.557 sec ( 2.000 x Pochoir )
+
++ (( size += 12800 ))
++ (( size <= 100000 ))
++ echo 'lcs 25600 1000'
+lcs 25600 1000
++ ./lcs_pochoir -r 25600 25600 -i -d
+
+Stencil-based DP for the length of the longest common subsequence ( run with option -h for help ).
+
+Sequence lengths = < 25600, 25600 >
+
+Running pochoir-based DP...
+
+Pochoir:
+	 LCS length = 8342
+	 running time = 0.854 sec
+
+Running iterative stencil...
+
+Parallel Loops: Iterative Stencil:
+	 LCS length = 8342
+	 running time = 4.197 sec ( 4.914 x Pochoir )
+
+Running standard DP...
+
+Serial Loops: Standard DP:
+	 LCS length = 8342
+	 running time = 2.273 sec ( 2.661 x Pochoir )
+
++ (( size += 25600 ))
++ (( size <= 100000 ))
++ echo 'lcs 51200 1000'
+lcs 51200 1000
++ ./lcs_pochoir -r 51200 51200 -i -d
+
+Stencil-based DP for the length of the longest common subsequence ( run with option -h for help ).
+
+Sequence lengths = < 51200, 51200 >
+
+Running pochoir-based DP...
+
+Pochoir:
+	 LCS length = 16638
+	 running time = 2.598 sec
+
+Running iterative stencil...
+
+Parallel Loops: Iterative Stencil:
+	 LCS length = 16638
+	 running time = 9.682 sec ( 3.727 x Pochoir )
+
+Running standard DP...
+
+Serial Loops: Standard DP:
+	 LCS length = 16638
+	 running time = 9.101 sec ( 3.503 x Pochoir )
+
++ (( size += 51200 ))
++ (( size <= 100000 ))
++ echo '<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<'
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'rna serial loop and pochoir 200 1000'
+rna serial loop and pochoir 200 1000
++ ./rna_pochoir_serial -r 200 -i
+
+Stencil-based DP for RNA secondary structure prediction with simple pseudoknots ( run with option -h for help ).
+
+Sequence length = 200
+
+Running pochoir-based DP ( with struct )...
+
+Pochoir ( with struct ):
+	 maximum number of base pairs = 103
+	 running time = 5.157 sec
+
+Running pochoir-based DP ( without struct )...
+
+Pochoir ( without struct ):
+	 maximum number of base pairs = 103
+	 running time = 7.219 sec ( 1.400 x Pochoir-Struct )
+
+Running iterative stencil ( with struct )...
+
+Iterative Stencil ( with struct ):
+	 maximum number of base pairs = 103
+	 running time = 9.658 sec ( 1.873 x Pochoir-Struct )
+
+Running iterative stencil ( without struct )...
+
+Iterative Stencil ( without struct ):
+	 maximum number of base pairs = 103
+	 running time = 10.257 sec ( 1.989 x Pochoir-Struct )
+
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'rna serial loop and pochoir 400 1000'
+rna serial loop and pochoir 400 1000
++ ./rna_pochoir_serial -r 400 -i
+
+Stencil-based DP for RNA secondary structure prediction with simple pseudoknots ( run with option -h for help ).
+
+Sequence length = 400
+
+Running pochoir-based DP ( with struct )...
+
+Pochoir ( with struct ):
+	 maximum number of base pairs = 201
+	 running time = 54.301 sec
+
+Running pochoir-based DP ( without struct )...
+
+Pochoir ( without struct ):
+	 maximum number of base pairs = 201
+	 running time = 76.635 sec ( 1.411 x Pochoir-Struct )
+
+Running iterative stencil ( with struct )...
+
+Iterative Stencil ( with struct ):
+	 maximum number of base pairs = 201
+	 running time = 146.917 sec ( 2.706 x Pochoir-Struct )
+
+Running iterative stencil ( without struct )...
+
+Iterative Stencil ( without struct ):
+	 maximum number of base pairs = 201
+	 running time = 157.141 sec ( 2.894 x Pochoir-Struct )
+
++ (( size += 400 ))
++ (( size <= 3200 ))
++ echo 'rna serial loop and pochoir 800 1000'
+rna serial loop and pochoir 800 1000
++ ./rna_pochoir_serial -r 800 -i
+
+Stencil-based DP for RNA secondary structure prediction with simple pseudoknots ( run with option -h for help ).
+
+Sequence length = 800
+
+Running pochoir-based DP ( with struct )...
+
+Pochoir ( with struct ):
+	 maximum number of base pairs = 418
+	 running time = 545.436 sec
+
+Running pochoir-based DP ( without struct )...
+
+Pochoir ( without struct ):
+	 maximum number of base pairs = 418
+	 running time = 794.610 sec ( 1.457 x Pochoir-Struct )
+
+Running iterative stencil ( with struct )...
+
+Iterative Stencil ( with struct ):
+	 maximum number of base pairs = 418
+	 running time = 2296.106 sec ( 4.210 x Pochoir-Struct )
+
+Running iterative stencil ( without struct )...
+
+Iterative Stencil ( without struct ):
+	 maximum number of base pairs = 418
+	 running time = 2458.639 sec ( 4.508 x Pochoir-Struct )
+
++ (( size += 800 ))
++ (( size <= 3200 ))
++ echo 'rna serial loop and pochoir 1600 1000'
+rna serial loop and pochoir 1600 1000
++ ./rna_pochoir_serial -r 1600 -i
+
+Stencil-based DP for RNA secondary structure prediction with simple pseudoknots ( run with option -h for help ).
+
+Sequence length = 1600
+
+Running pochoir-based DP ( with struct )..../run_hotPar.sh: line 132:  7869 Segmentation fault      ./rna_pochoir_serial -r $size -i
++ (( size += 1600 ))
++ (( size <= 3200 ))
++ echo 'rna serial loop and pochoir 3200 1000'
+rna serial loop and pochoir 3200 1000
++ ./rna_pochoir_serial -r 3200 -i
+
+Stencil-based DP for RNA secondary structure prediction with simple pseudoknots ( run with option -h for help ).
+
+Sequence length = 3200
+
+Running pochoir-based DP ( with struct )..../run_hotPar.sh: line 132:  7870 Segmentation fault      ./rna_pochoir_serial -r $size -i
++ (( size += 3200 ))
++ (( size <= 3200 ))
++ echo '<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<'
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'rna parallel loop and pochoir 200 1000'
+rna parallel loop and pochoir 200 1000
++ ./rna_pochoir_parallel -r 200 -i
+
+Stencil-based DP for RNA secondary structure prediction with simple pseudoknots ( run with option -h for help ).
+
+Sequence length = 200
+
+Running pochoir-based DP ( with struct )...
+
+Pochoir ( with struct ):
+	 maximum number of base pairs = 105
+	 running time = 4.988 sec
+
+Running pochoir-based DP ( without struct )...
+
+Pochoir ( without struct ):
+	 maximum number of base pairs = 105
+	 running time = 7.380 sec ( 1.480 x Pochoir-Struct )
+
+Running iterative stencil ( with struct )...
+
+Iterative Stencil ( with struct ):
+	 maximum number of base pairs = 105
+	 running time = 8.057 sec ( 1.615 x Pochoir-Struct )
+
+Running iterative stencil ( without struct )...
+
+Iterative Stencil ( without struct ):
+	 maximum number of base pairs = 105
+	 running time = 9.381 sec ( 1.881 x Pochoir-Struct )
+
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'rna parallel loop and pochoir 400 1000'
+rna parallel loop and pochoir 400 1000
++ ./rna_pochoir_parallel -r 400 -i
+
+Stencil-based DP for RNA secondary structure prediction with simple pseudoknots ( run with option -h for help ).
+
+Sequence length = 400
+
+Running pochoir-based DP ( with struct )...
+
+Pochoir ( with struct ):
+	 maximum number of base pairs = 205
+	 running time = 53.737 sec
+
+Running pochoir-based DP ( without struct )...
+
+Pochoir ( without struct ):
+	 maximum number of base pairs = 205
+	 running time = 76.927 sec ( 1.432 x Pochoir-Struct )
+
+Running iterative stencil ( with struct )...
+
+Iterative Stencil ( with struct ):
+	 maximum number of base pairs = 205
+	 running time = 53.232 sec ( 0.991 x Pochoir-Struct )
+
+Running iterative stencil ( without struct )...
+
+Iterative Stencil ( without struct ):
+	 maximum number of base pairs = 205
+	 running time = 54.919 sec ( 1.022 x Pochoir-Struct )
+
++ (( size += 400 ))
++ (( size <= 3200 ))
++ echo 'rna parallel loop and pochoir 800 1000'
+rna parallel loop and pochoir 800 1000
++ ./rna_pochoir_parallel -r 800 -i
+
+Stencil-based DP for RNA secondary structure prediction with simple pseudoknots ( run with option -h for help ).
+
+Sequence length = 800
+
+Running pochoir-based DP ( with struct )...
+
+Pochoir ( with struct ):
+	 maximum number of base pairs = 421
+	 running time = 538.726 sec
+
+Running pochoir-based DP ( without struct )...
+
+Pochoir ( without struct ):
+	 maximum number of base pairs = 421
+	 running time = 788.375 sec ( 1.463 x Pochoir-Struct )
+
+Running iterative stencil ( with struct )...
+
+Iterative Stencil ( with struct ):
+	 maximum number of base pairs = 421
+	 running time = 507.553 sec ( 0.942 x Pochoir-Struct )
+
+Running iterative stencil ( without struct )...
+
+Iterative Stencil ( without struct ):
+	 maximum number of base pairs = 421
+	 running time = 535.786 sec ( 0.995 x Pochoir-Struct )
+
++ (( size += 800 ))
++ (( size <= 3200 ))
++ echo 'rna parallel loop and pochoir 1600 1000'
+rna parallel loop and pochoir 1600 1000
++ ./rna_pochoir_parallel -r 1600 -i
+
+Stencil-based DP for RNA secondary structure prediction with simple pseudoknots ( run with option -h for help ).
+
+Sequence length = 1600
+
+Running pochoir-based DP ( with struct )..../run_hotPar.sh: line 139:  8018 Segmentation fault      ./rna_pochoir_parallel -r $size -i
++ (( size += 1600 ))
++ (( size <= 3200 ))
++ echo 'rna parallel loop and pochoir 3200 1000'
+rna parallel loop and pochoir 3200 1000
++ ./rna_pochoir_parallel -r 3200 -i
+
+Stencil-based DP for RNA secondary structure prediction with simple pseudoknots ( run with option -h for help ).
+
+Sequence length = 3200
+
+Running pochoir-based DP ( with struct )..../run_hotPar.sh: line 139:  8020 Segmentation fault      ./rna_pochoir_parallel -r $size -i
++ (( size += 3200 ))
++ (( size <= 3200 ))
++ echo '<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<'
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
++ (( step = 100 ))
++ (( step <= 1000 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 200 200 200 100'
+tb_3dfd_pochoir 200 200 200 100
++ ./tb_3dfd_pochoir 200 200 200 100
+Order-4 3D-Stencil (25 points) with space 200x200x200 and time 100
+N_CORES = 12
+++++++++++++++++++++ Serial Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 3.895900
+Perf: 181.675299 Mcells/sec (4723.557778 M-FAdd/s, 1271.727094 M-FMul/s)
+Perf per worker: 181.675299 Mcells/sec (4723.557778 M-FAdd/s, 1271.727094 M-FMul/s)
+
+N_CORES = 12
+++++++++++++++++++++ Parallel Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 0.940586
+Perf: 752.497817 Mcells/sec (19564.943240 M-FAdd/s, 5267.484718 M-FMul/s)
+Perf per worker: 752.497817 Mcells/sec (19564.943240 M-FAdd/s, 5267.484718 M-FMul/s)
+
+++++++++++++++++++++ Pochoir ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 0.536114
+Perf: 1320.220168 Mcells/sec (34325.724362 M-FAdd/s, 9241.541174 M-FMul/s)
+Perf per worker: 1320.220168 Mcells/sec (34325.724362 M-FAdd/s, 9241.541174 M-FMul/s)
+
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 400 400 400 100'
+tb_3dfd_pochoir 400 400 400 100
++ ./tb_3dfd_pochoir 400 400 400 100
+Order-4 3D-Stencil (25 points) with space 400x400x400 and time 100
+N_CORES = 12
+++++++++++++++++++++ Serial Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 31.203379
+Perf: 193.044118 Mcells/sec (5019.147062 M-FAdd/s, 1351.308824 M-FMul/s)
+Perf per worker: 193.044118 Mcells/sec (5019.147062 M-FAdd/s, 1351.308824 M-FMul/s)
+
+N_CORES = 12
+++++++++++++++++++++ Parallel Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 14.026052
+Perf: 429.460036 Mcells/sec (11165.960943 M-FAdd/s, 3006.220254 M-FMul/s)
+Perf per worker: 429.460036 Mcells/sec (11165.960943 M-FAdd/s, 3006.220254 M-FMul/s)
+
+++++++++++++++++++++ Pochoir ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 5.034385
+Perf: 1196.497455 Mcells/sec (31108.933834 M-FAdd/s, 8375.482186 M-FMul/s)
+Perf per worker: 1196.497455 Mcells/sec (31108.933834 M-FAdd/s, 8375.482186 M-FMul/s)
+
++ (( size += 400 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 800 800 800 100'
+tb_3dfd_pochoir 800 800 800 100
++ ./tb_3dfd_pochoir 800 800 800 100
+Order-4 3D-Stencil (25 points) with space 800x800x800 and time 100
+N_CORES = 12
+++++++++++++++++++++ Serial Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 307.761109
+Perf: 161.421659 Mcells/sec (4196.963137 M-FAdd/s, 1129.951614 M-FMul/s)
+Perf per worker: 161.421659 Mcells/sec (4196.963137 M-FAdd/s, 1129.951614 M-FMul/s)
+
+N_CORES = 12
+++++++++++++++++++++ Parallel Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 118.042105
+Perf: 420.860919 Mcells/sec (10942.383900 M-FAdd/s, 2946.026435 M-FMul/s)
+Perf per worker: 420.860919 Mcells/sec (10942.383900 M-FAdd/s, 2946.026435 M-FMul/s)
+
+++++++++++++++++++++ Pochoir ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 48.412154
+Perf: 1026.174312 Mcells/sec (26680.532122 M-FAdd/s, 7183.220187 M-FMul/s)
+Perf per worker: 1026.174312 Mcells/sec (26680.532122 M-FAdd/s, 7183.220187 M-FMul/s)
+
++ (( size += 800 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 1600 1600 1600 100'
+tb_3dfd_pochoir 1600 1600 1600 100
++ ./tb_3dfd_pochoir 1600 1600 1600 100
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 1600x1600x1600 and time 100
+./run_hotPar.sh: line 148:  8869 Aborted                 ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 1600 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 3200 3200 3200 100'
+tb_3dfd_pochoir 3200 3200 3200 100
++ ./tb_3dfd_pochoir 3200 3200 3200 100
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 3200x3200x3200 and time 100
+./run_hotPar.sh: line 148:  8870 Aborted                 ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 3200 ))
++ (( size <= 3200 ))
++ (( step += 100 ))
++ (( step <= 1000 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 200 200 200 200'
+tb_3dfd_pochoir 200 200 200 200
++ ./tb_3dfd_pochoir 200 200 200 200
+Order-4 3D-Stencil (25 points) with space 200x200x200 and time 200
+N_CORES = 12
+++++++++++++++++++++ Serial Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 7.782430
+Perf: 181.894037 Mcells/sec (4729.244968 M-FAdd/s, 1273.258261 M-FMul/s)
+Perf per worker: 181.894037 Mcells/sec (4729.244968 M-FAdd/s, 1273.258261 M-FMul/s)
+
+N_CORES = 12
+++++++++++++++++++++ Parallel Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 1.909093
+Perf: 741.492161 Mcells/sec (19278.796198 M-FAdd/s, 5190.445130 M-FMul/s)
+Perf per worker: 741.492161 Mcells/sec (19278.796198 M-FAdd/s, 5190.445130 M-FMul/s)
+
+++++++++++++++++++++ Pochoir ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 1.050693
+Perf: 1347.279893 Mcells/sec (35029.277219 M-FAdd/s, 9430.959251 M-FMul/s)
+Perf per worker: 1347.279893 Mcells/sec (35029.277219 M-FAdd/s, 9430.959251 M-FMul/s)
+
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 400 400 400 200'
+tb_3dfd_pochoir 400 400 400 200
++ ./tb_3dfd_pochoir 400 400 400 200
+Order-4 3D-Stencil (25 points) with space 400x400x400 and time 200
+N_CORES = 12
+++++++++++++++++++++ Serial Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 62.454258
+Perf: 192.897298 Mcells/sec (5015.329744 M-FAdd/s, 1350.281085 M-FMul/s)
+Perf per worker: 192.897298 Mcells/sec (5015.329744 M-FAdd/s, 1350.281085 M-FMul/s)
+
+N_CORES = 12
+++++++++++++++++++++ Parallel Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 28.020314
+Perf: 429.947274 Mcells/sec (11178.629113 M-FAdd/s, 3009.630915 M-FMul/s)
+Perf per worker: 429.947274 Mcells/sec (11178.629113 M-FAdd/s, 3009.630915 M-FMul/s)
+
+++++++++++++++++++++ Pochoir ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 10.090039
+Perf: 1193.975352 Mcells/sec (31043.359153 M-FAdd/s, 8357.827464 M-FMul/s)
+Perf per worker: 1193.975352 Mcells/sec (31043.359153 M-FAdd/s, 8357.827464 M-FMul/s)
+
++ (( size += 400 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 800 800 800 200'
+tb_3dfd_pochoir 800 800 800 200
++ ./tb_3dfd_pochoir 800 800 800 200
+Order-4 3D-Stencil (25 points) with space 800x800x800 and time 200
+N_CORES = 12
+++++++++++++++++++++ Serial Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 614.983798
+Perf: 161.562984 Mcells/sec (4200.637589 M-FAdd/s, 1130.940889 M-FMul/s)
+Perf per worker: 161.562984 Mcells/sec (4200.637589 M-FAdd/s, 1130.940889 M-FMul/s)
+
+N_CORES = 12
+++++++++++++++++++++ Parallel Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 236.001503
+Perf: 421.008410 Mcells/sec (10946.218668 M-FAdd/s, 2947.058872 M-FMul/s)
+Perf per worker: 421.008410 Mcells/sec (10946.218668 M-FAdd/s, 2947.058872 M-FMul/s)
+
+++++++++++++++++++++ Pochoir ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 96.819163
+Perf: 1026.228844 Mcells/sec (26681.949954 M-FAdd/s, 7183.601911 M-FMul/s)
+Perf per worker: 1026.228844 Mcells/sec (26681.949954 M-FAdd/s, 7183.601911 M-FMul/s)
+
++ (( size += 800 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 1600 1600 1600 200'
+tb_3dfd_pochoir 1600 1600 1600 200
++ ./tb_3dfd_pochoir 1600 1600 1600 200
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 1600x1600x1600 and time 200
+./run_hotPar.sh: line 148:  8952 Aborted                 ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 1600 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 3200 3200 3200 200'
+tb_3dfd_pochoir 3200 3200 3200 200
++ ./tb_3dfd_pochoir 3200 3200 3200 200
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 3200x3200x3200 and time 200
+./run_hotPar.sh: line 148:  8953 Aborted                 ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 3200 ))
++ (( size <= 3200 ))
++ (( step += 200 ))
++ (( step <= 1000 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 200 200 200 400'
+tb_3dfd_pochoir 200 200 200 400
++ ./tb_3dfd_pochoir 200 200 200 400
+Order-4 3D-Stencil (25 points) with space 200x200x200 and time 400
+N_CORES = 12
+++++++++++++++++++++ Serial Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 15.574322
+Perf: 181.783528 Mcells/sec (4726.371734 M-FAdd/s, 1272.484697 M-FMul/s)
+Perf per worker: 181.783528 Mcells/sec (4726.371734 M-FAdd/s, 1272.484697 M-FMul/s)
+
+N_CORES = 12
+++++++++++++++++++++ Parallel Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 3.920502
+Perf: 722.140957 Mcells/sec (18775.664879 M-FAdd/s, 5054.986698 M-FMul/s)
+Perf per worker: 722.140957 Mcells/sec (18775.664879 M-FAdd/s, 5054.986698 M-FMul/s)
+
+++++++++++++++++++++ Pochoir ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 2.157532
+Perf: 1312.219346 Mcells/sec (34117.703003 M-FAdd/s, 9185.535424 M-FMul/s)
+Perf per worker: 1312.219346 Mcells/sec (34117.703003 M-FAdd/s, 9185.535424 M-FMul/s)
+
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 400 400 400 400'
+tb_3dfd_pochoir 400 400 400 400
++ ./tb_3dfd_pochoir 400 400 400 400
+Order-4 3D-Stencil (25 points) with space 400x400x400 and time 400
+N_CORES = 12
+++++++++++++++++++++ Serial Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 124.919777
+Perf: 192.879909 Mcells/sec (5014.877633 M-FAdd/s, 1350.159363 M-FMul/s)
+Perf per worker: 192.879909 Mcells/sec (5014.877633 M-FAdd/s, 1350.159363 M-FMul/s)
+
+N_CORES = 12
+++++++++++++++++++++ Parallel Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 56.172147
+Perf: 428.940615 Mcells/sec (11152.455993 M-FAdd/s, 3002.584306 M-FMul/s)
+Perf per worker: 428.940615 Mcells/sec (11152.455993 M-FAdd/s, 3002.584306 M-FMul/s)
+
+++++++++++++++++++++ Pochoir ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 20.178882
+Perf: 1194.046085 Mcells/sec (31045.198213 M-FAdd/s, 8358.322596 M-FMul/s)
+Perf per worker: 1194.046085 Mcells/sec (31045.198213 M-FAdd/s, 8358.322596 M-FMul/s)
+
++ (( size += 400 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 800 800 800 400'
+tb_3dfd_pochoir 800 800 800 400
++ ./tb_3dfd_pochoir 800 800 800 400
+Order-4 3D-Stencil (25 points) with space 800x800x800 and time 400
+N_CORES = 12
+++++++++++++++++++++ Serial Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 1233.307427
+Perf: 161.125467 Mcells/sec (4189.262144 M-FAdd/s, 1127.878269 M-FMul/s)
+Perf per worker: 161.125467 Mcells/sec (4189.262144 M-FAdd/s, 1127.878269 M-FMul/s)
+
+N_CORES = 12
+++++++++++++++++++++ Parallel Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 470.572669
+Perf: 422.288093 Mcells/sec (10979.490428 M-FAdd/s, 2956.016654 M-FMul/s)
+Perf per worker: 422.288093 Mcells/sec (10979.490428 M-FAdd/s, 2956.016654 M-FMul/s)
+
+++++++++++++++++++++ Pochoir ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 193.531685
+Perf: 1026.794321 Mcells/sec (26696.652345 M-FAdd/s, 7187.560247 M-FMul/s)
+Perf per worker: 1026.794321 Mcells/sec (26696.652345 M-FAdd/s, 7187.560247 M-FMul/s)
+
++ (( size += 800 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 1600 1600 1600 400'
+tb_3dfd_pochoir 1600 1600 1600 400
++ ./tb_3dfd_pochoir 1600 1600 1600 400
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 1600x1600x1600 and time 400
+./run_hotPar.sh: line 148:  9076 Aborted                 ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 1600 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 3200 3200 3200 400'
+tb_3dfd_pochoir 3200 3200 3200 400
++ ./tb_3dfd_pochoir 3200 3200 3200 400
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 3200x3200x3200 and time 400
+./run_hotPar.sh: line 148:  9077 Aborted                 ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 3200 ))
++ (( size <= 3200 ))
++ (( step += 400 ))
++ (( step <= 1000 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 200 200 200 800'
+tb_3dfd_pochoir 200 200 200 800
++ ./tb_3dfd_pochoir 200 200 200 800
+Order-4 3D-Stencil (25 points) with space 200x200x200 and time 800
+N_CORES = 12
+++++++++++++++++++++ Serial Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 31.155608
+Perf: 181.742894 Mcells/sec (4725.315249 M-FAdd/s, 1272.200259 M-FMul/s)
+Perf per worker: 181.742894 Mcells/sec (4725.315249 M-FAdd/s, 1272.200259 M-FMul/s)
+
+N_CORES = 12
+++++++++++++++++++++ Parallel Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 7.664245
+Perf: 738.795600 Mcells/sec (19208.685592 M-FAdd/s, 5171.569198 M-FMul/s)
+Perf per worker: 738.795600 Mcells/sec (19208.685592 M-FAdd/s, 5171.569198 M-FMul/s)
+
+++++++++++++++++++++ Pochoir ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 4.283952
+Perf: 1321.749264 Mcells/sec (34365.480864 M-FAdd/s, 9252.244848 M-FMul/s)
+Perf per worker: 1321.749264 Mcells/sec (34365.480864 M-FAdd/s, 9252.244848 M-FMul/s)
+
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 400 400 400 800'
+tb_3dfd_pochoir 400 400 400 800
++ ./tb_3dfd_pochoir 400 400 400 800
+Order-4 3D-Stencil (25 points) with space 400x400x400 and time 800
+N_CORES = 12
+++++++++++++++++++++ Serial Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 249.539939
+Perf: 193.111494 Mcells/sec (5020.898842 M-FAdd/s, 1351.780457 M-FMul/s)
+Perf per worker: 193.111494 Mcells/sec (5020.898842 M-FAdd/s, 1351.780457 M-FMul/s)
+
+N_CORES = 12
+++++++++++++++++++++ Parallel Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 112.243126
+Perf: 429.327231 Mcells/sec (11162.507995 M-FAdd/s, 3005.290614 M-FMul/s)
+Perf per worker: 429.327231 Mcells/sec (11162.507995 M-FAdd/s, 3005.290614 M-FMul/s)
+
+++++++++++++++++++++ Pochoir ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 40.278380
+Perf: 1196.399414 Mcells/sec (31106.384754 M-FAdd/s, 8374.795895 M-FMul/s)
+Perf per worker: 1196.399414 Mcells/sec (31106.384754 M-FAdd/s, 8374.795895 M-FMul/s)
+
++ (( size += 400 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 800 800 800 800'
+tb_3dfd_pochoir 800 800 800 800
++ ./tb_3dfd_pochoir 800 800 800 800
+Order-4 3D-Stencil (25 points) with space 800x800x800 and time 800
+N_CORES = 12
+++++++++++++++++++++ Serial Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 2461.862832
+Perf: 161.436480 Mcells/sec (4197.348486 M-FAdd/s, 1130.055362 M-FMul/s)
+Perf per worker: 161.436480 Mcells/sec (4197.348486 M-FAdd/s, 1130.055362 M-FMul/s)
+
+N_CORES = 12
+++++++++++++++++++++ Parallel Loops ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 942.366962
+Perf: 421.740666 Mcells/sec (10965.257320 M-FAdd/s, 2952.184663 M-FMul/s)
+Perf per worker: 421.740666 Mcells/sec (10965.257320 M-FAdd/s, 2952.184663 M-FMul/s)
+
+++++++++++++++++++++ Pochoir ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 387.130520
+Perf: 1026.616219 Mcells/sec (26692.021683 M-FAdd/s, 7186.313530 M-FMul/s)
+Perf per worker: 1026.616219 Mcells/sec (26692.021683 M-FAdd/s, 7186.313530 M-FMul/s)
+
++ (( size += 800 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 1600 1600 1600 800'
+tb_3dfd_pochoir 1600 1600 1600 800
++ ./tb_3dfd_pochoir 1600 1600 1600 800
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 1600x1600x1600 and time 800
+./run_hotPar.sh: line 148: 10919 Aborted                 ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 1600 ))
++ (( size <= 3200 ))
++ echo 'tb_3dfd_pochoir 3200 3200 3200 800'
+tb_3dfd_pochoir 3200 3200 3200 800
++ ./tb_3dfd_pochoir 3200 3200 3200 800
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 3200x3200x3200 and time 800
+./run_hotPar.sh: line 148: 10920 Aborted                 ./tb_3dfd_pochoir $size $size $size $step
++ (( size += 3200 ))
++ (( size <= 3200 ))
++ (( step += 800 ))
++ (( step <= 1000 ))

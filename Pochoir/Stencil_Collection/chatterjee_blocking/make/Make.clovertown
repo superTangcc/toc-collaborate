@@ -1,0 +1,44 @@
+#
+# Platform-specific build information
+# Intel Itanium running Linux
+# Uses either the icc or gcc compilers
+#
+
+PLATFORM = clovertown
+MAKE = make
+MAX_THREADS = 8
+PAPI_DESIRED = false
+# TIMER can be CLOCK_GETTIME, GETTIMEOFDAY, and CYCLE_TIME
+TIMER = CLOCK_GETTIME
+
+# $C_COMPILER default on this machine is icc
+C_COMPILER = icc
+
+# C compiler flags
+ifeq ($(C_COMPILER), gcc)
+	CC_NAME = gcc
+	CC = /usr/bin/gcc
+	C_FLAGS = -O4 -Wall -static -march=nocona -mtune=nocona -msse3 -m64 -funroll-loops
+endif
+ifeq ($(C_COMPILER), icc)
+	CC_NAME = icc
+	CC = /usr/mill/bin/icc
+	C_FLAGS = -O3 -Wall -fno-alias -fno-fnalias -xT -static
+	OPEN_MP_FLAGS = -openmp # -opt-streaming-stores never
+endif
+
+PTHREAD_FLAGS = -DAFFINITY_ENABLED -D_GNU_SOURCE -DMAX_THREADS=$(MAX_THREADS) -lpthread
+
+ifeq ($(TIMER), CLOCK_GETTIME)
+	TIMER_FLAGS = -D$(TIMER) -lrt
+else
+	TIMER_FLAGS = -D$(TIMER)
+endif
+
+# PAPI library
+ifeq ($(PAPI_DESIRED), true)
+	PAPI_ROOT = /usr/mill/pkg/papi-3.6.1
+	PAPI_ENABLED_FLAG = -DPAPI_ENABLED
+	PAPI_INC_FLAGS = -I$(PAPI_ROOT)/include
+	PAPI_LINK_FLAGS = -L$(PAPI_ROOT)/lib -lpapi -lperfctr
+endif

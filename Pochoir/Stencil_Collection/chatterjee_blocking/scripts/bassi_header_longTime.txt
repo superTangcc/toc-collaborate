@@ -1,0 +1,9 @@
+#!/bin/bash
+#@ job_type = serial
+#@ class = regular
+#@ wall_clock_limit = 08:59:00
+#@ environment = COPY_ALL
+#@ node_usage = not_shared
+#
+#@ queue
+

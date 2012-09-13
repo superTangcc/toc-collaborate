@@ -1,0 +1,60 @@
+1. The main file contains a set of test cases used to test the code.
+To run the test cases, do:
+
+make
+./bag_test
+
+Note:
+a. The assert is enabled as things stand.  To disable it, uncomment the 
+#undef NDEBUG
+and insert
+#define NDEBUG
+
+b. The test cases are designed so that if any bug is detected, the code will
+fail some sort of assert.  (This is easier to verify than staring at the
+output of the walk; although the walk code still prints out element
+traversed, I just didn't use it much in the test cases.)
+ 
+c. MAX_NUM_PENNANTS defines the size of the array used in the Bag structure
+to store PENNANTS. By default it is set to 64, which should be sufficient.
+
+d. The test_insert_full and test_merge_full should only be used for testing
+if the MAX_NUM_PENNANTS is defined to be small (less than 15).  Otherwise it
+takes a long time to run.
+
+2. Test cases are in the main.c file.  See Notes above.
+
+3. The Bag structure keeps tracks of the "next slot available" (named
+next_avail_slot) for inserting Pennants into its Pennant array.  
+Let n <= 2^0 + 2^1 + ... + 2^k, then next_avail_slot must be <= k+1.
+
+For insert, the pennants array in the Bag structure behaves like a counter.
+The value represented by this "bit array" (if interpreted as a binary value 
+where the bit is set if a pennant pointer is found in the array slot) is
+precisely the total number of elements stored in this bag.
+
+Each insert flips some bit in this "bit array" as the number of elements in 
+the bag is increased by 1 after the insert. After n inserts, the i^th bit of
+this "bit array" is flipped by n/(2^i) times for every i = 0 ... k.  Since
+each flip takes constant time (either removing the pennant pointer, or
+combining two pennants, which costs constant time), the total cost after n
+insert is (n + n/2 + n/4 + ... + n/2^k) * cost(removing the pennant pointer
+of combining two pennants), which costs O(n).  Thus, the amortized cost per 
+insert is constant.
+
+The merge operation follows similar argument.
+
+For walk, it takes linear time because walking a pennant of size 2^i takes 
+O(2^i) time, and walking the entire bag takes 2^0 + 2^1 + ... + 2^k = O(n)
+time. 
+
+4. As an optimization, instead of storing a single element in the pennant
+node, we can store an array of elements.  Thus, for every insert, we will
+first insert into a fixed-size array.  Once the array is filled, we then
+insert the array into a pennant, and insert the pennant into the bag as 
+before.   
+
+
+
+
+

@@ -1,0 +1,2117 @@
++ echo '<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<'
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
++ (( step = 200 ))
++ (( step <= 3200 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 200 200'
+life_pochoir 200 200
++ ./life_pochoir 200 200
+N_SIZE = 200, T_SIZE = 200
+Game of Life : 200 x 200, 200 time steps
+Pochoir ET: consumed time :35.032ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 400 200'
+life_pochoir 400 200
++ ./life_pochoir 400 200
+N_SIZE = 400, T_SIZE = 200
+Game of Life : 400 x 400, 200 time steps
+Pochoir ET: consumed time :59.964ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 600 200'
+life_pochoir 600 200
++ ./life_pochoir 600 200
+N_SIZE = 600, T_SIZE = 200
+Game of Life : 600 x 600, 200 time steps
+Pochoir ET: consumed time :87.8683ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 800 200'
+life_pochoir 800 200
++ ./life_pochoir 800 200
+N_SIZE = 800, T_SIZE = 200
+Game of Life : 800 x 800, 200 time steps
+Pochoir ET: consumed time :124.748ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 1000 200'
+life_pochoir 1000 200
++ ./life_pochoir 1000 200
+N_SIZE = 1000, T_SIZE = 200
+Game of Life : 1000 x 1000, 200 time steps
+Pochoir ET: consumed time :167.793ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 1200 200'
+life_pochoir 1200 200
++ ./life_pochoir 1200 200
+N_SIZE = 1200, T_SIZE = 200
+Game of Life : 1200 x 1200, 200 time steps
+Pochoir ET: consumed time :222.77ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 1400 200'
+life_pochoir 1400 200
++ ./life_pochoir 1400 200
+N_SIZE = 1400, T_SIZE = 200
+Game of Life : 1400 x 1400, 200 time steps
+Pochoir ET: consumed time :288.924ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 1600 200'
+life_pochoir 1600 200
++ ./life_pochoir 1600 200
+N_SIZE = 1600, T_SIZE = 200
+Game of Life : 1600 x 1600, 200 time steps
+Pochoir ET: consumed time :371.494ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 1800 200'
+life_pochoir 1800 200
++ ./life_pochoir 1800 200
+N_SIZE = 1800, T_SIZE = 200
+Game of Life : 1800 x 1800, 200 time steps
+Pochoir ET: consumed time :457.166ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 2000 200'
+life_pochoir 2000 200
++ ./life_pochoir 2000 200
+N_SIZE = 2000, T_SIZE = 200
+Game of Life : 2000 x 2000, 200 time steps
+Pochoir ET: consumed time :552.517ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 2200 200'
+life_pochoir 2200 200
++ ./life_pochoir 2200 200
+N_SIZE = 2200, T_SIZE = 200
+Game of Life : 2200 x 2200, 200 time steps
+Pochoir ET: consumed time :653.354ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 2400 200'
+life_pochoir 2400 200
++ ./life_pochoir 2400 200
+N_SIZE = 2400, T_SIZE = 200
+Game of Life : 2400 x 2400, 200 time steps
+Pochoir ET: consumed time :772.103ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 2600 200'
+life_pochoir 2600 200
++ ./life_pochoir 2600 200
+N_SIZE = 2600, T_SIZE = 200
+Game of Life : 2600 x 2600, 200 time steps
+Pochoir ET: consumed time :888.784ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 2800 200'
+life_pochoir 2800 200
++ ./life_pochoir 2800 200
+N_SIZE = 2800, T_SIZE = 200
+Game of Life : 2800 x 2800, 200 time steps
+Pochoir ET: consumed time :1018.27ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 3000 200'
+life_pochoir 3000 200
++ ./life_pochoir 3000 200
+N_SIZE = 3000, T_SIZE = 200
+Game of Life : 3000 x 3000, 200 time steps
+Pochoir ET: consumed time :1159.13ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 3200 200'
+life_pochoir 3200 200
++ ./life_pochoir 3200 200
+N_SIZE = 3200, T_SIZE = 200
+Game of Life : 3200 x 3200, 200 time steps
+Pochoir ET: consumed time :1328.83ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ (( step += 200 ))
++ (( step <= 3200 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 200 400'
+life_pochoir 200 400
++ ./life_pochoir 200 400
+N_SIZE = 200, T_SIZE = 400
+Game of Life : 200 x 200, 400 time steps
+Pochoir ET: consumed time :61.1747ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 400 400'
+life_pochoir 400 400
++ ./life_pochoir 400 400
+N_SIZE = 400, T_SIZE = 400
+Game of Life : 400 x 400, 400 time steps
+Pochoir ET: consumed time :108.657ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 600 400'
+life_pochoir 600 400
++ ./life_pochoir 600 400
+N_SIZE = 600, T_SIZE = 400
+Game of Life : 600 x 600, 400 time steps
+Pochoir ET: consumed time :171.726ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 800 400'
+life_pochoir 800 400
++ ./life_pochoir 800 400
+N_SIZE = 800, T_SIZE = 400
+Game of Life : 800 x 800, 400 time steps
+Pochoir ET: consumed time :238.442ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 1000 400'
+life_pochoir 1000 400
++ ./life_pochoir 1000 400
+N_SIZE = 1000, T_SIZE = 400
+Game of Life : 1000 x 1000, 400 time steps
+Pochoir ET: consumed time :317.378ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 1200 400'
+life_pochoir 1200 400
++ ./life_pochoir 1200 400
+N_SIZE = 1200, T_SIZE = 400
+Game of Life : 1200 x 1200, 400 time steps
+Pochoir ET: consumed time :422.521ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 1400 400'
+life_pochoir 1400 400
++ ./life_pochoir 1400 400
+N_SIZE = 1400, T_SIZE = 400
+Game of Life : 1400 x 1400, 400 time steps
+Pochoir ET: consumed time :543.862ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 1600 400'
+life_pochoir 1600 400
++ ./life_pochoir 1600 400
+N_SIZE = 1600, T_SIZE = 400
+Game of Life : 1600 x 1600, 400 time steps
+Pochoir ET: consumed time :703.388ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 1800 400'
+life_pochoir 1800 400
++ ./life_pochoir 1800 400
+N_SIZE = 1800, T_SIZE = 400
+Game of Life : 1800 x 1800, 400 time steps
+Pochoir ET: consumed time :848.173ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 2000 400'
+life_pochoir 2000 400
++ ./life_pochoir 2000 400
+N_SIZE = 2000, T_SIZE = 400
+Game of Life : 2000 x 2000, 400 time steps
+Pochoir ET: consumed time :1027.09ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 2200 400'
+life_pochoir 2200 400
++ ./life_pochoir 2200 400
+N_SIZE = 2200, T_SIZE = 400
+Game of Life : 2200 x 2200, 400 time steps
+Pochoir ET: consumed time :1205.08ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 2400 400'
+life_pochoir 2400 400
++ ./life_pochoir 2400 400
+N_SIZE = 2400, T_SIZE = 400
+Game of Life : 2400 x 2400, 400 time steps
+Pochoir ET: consumed time :1423.61ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 2600 400'
+life_pochoir 2600 400
++ ./life_pochoir 2600 400
+N_SIZE = 2600, T_SIZE = 400
+Game of Life : 2600 x 2600, 400 time steps
+Pochoir ET: consumed time :1649.76ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 2800 400'
+life_pochoir 2800 400
++ ./life_pochoir 2800 400
+N_SIZE = 2800, T_SIZE = 400
+Game of Life : 2800 x 2800, 400 time steps
+Pochoir ET: consumed time :1891.93ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 3000 400'
+life_pochoir 3000 400
++ ./life_pochoir 3000 400
+N_SIZE = 3000, T_SIZE = 400
+Game of Life : 3000 x 3000, 400 time steps
+Pochoir ET: consumed time :2156.92ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 3200 400'
+life_pochoir 3200 400
++ ./life_pochoir 3200 400
+N_SIZE = 3200, T_SIZE = 400
+Game of Life : 3200 x 3200, 400 time steps
+Pochoir ET: consumed time :2471.4ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ (( step += 200 ))
++ (( step <= 3200 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 200 600'
+life_pochoir 200 600
++ ./life_pochoir 200 600
+N_SIZE = 200, T_SIZE = 600
+Game of Life : 200 x 200, 600 time steps
+Pochoir ET: consumed time :95.6297ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 400 600'
+life_pochoir 400 600
++ ./life_pochoir 400 600
+N_SIZE = 400, T_SIZE = 600
+Game of Life : 400 x 400, 600 time steps
+Pochoir ET: consumed time :162.397ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 600 600'
+life_pochoir 600 600
++ ./life_pochoir 600 600
+N_SIZE = 600, T_SIZE = 600
+Game of Life : 600 x 600, 600 time steps
+Pochoir ET: consumed time :252.965ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 800 600'
+life_pochoir 800 600
++ ./life_pochoir 800 600
+N_SIZE = 800, T_SIZE = 600
+Game of Life : 800 x 800, 600 time steps
+Pochoir ET: consumed time :344.75ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 1000 600'
+life_pochoir 1000 600
++ ./life_pochoir 1000 600
+N_SIZE = 1000, T_SIZE = 600
+Game of Life : 1000 x 1000, 600 time steps
+Pochoir ET: consumed time :468.976ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 1200 600'
+life_pochoir 1200 600
++ ./life_pochoir 1200 600
+N_SIZE = 1200, T_SIZE = 600
+Game of Life : 1200 x 1200, 600 time steps
+Pochoir ET: consumed time :631.358ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 1400 600'
+life_pochoir 1400 600
++ ./life_pochoir 1400 600
+N_SIZE = 1400, T_SIZE = 600
+Game of Life : 1400 x 1400, 600 time steps
+Pochoir ET: consumed time :797.064ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 1600 600'
+life_pochoir 1600 600
++ ./life_pochoir 1600 600
+N_SIZE = 1600, T_SIZE = 600
+Game of Life : 1600 x 1600, 600 time steps
+Pochoir ET: consumed time :1023.78ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 1800 600'
+life_pochoir 1800 600
++ ./life_pochoir 1800 600
+N_SIZE = 1800, T_SIZE = 600
+Game of Life : 1800 x 1800, 600 time steps
+Pochoir ET: consumed time :1241.25ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 2000 600'
+life_pochoir 2000 600
++ ./life_pochoir 2000 600
+N_SIZE = 2000, T_SIZE = 600
+Game of Life : 2000 x 2000, 600 time steps
+Pochoir ET: consumed time :1491.14ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 2200 600'
+life_pochoir 2200 600
++ ./life_pochoir 2200 600
+N_SIZE = 2200, T_SIZE = 600
+Game of Life : 2200 x 2200, 600 time steps
+Pochoir ET: consumed time :1778.34ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 2400 600'
+life_pochoir 2400 600
++ ./life_pochoir 2400 600
+N_SIZE = 2400, T_SIZE = 600
+Game of Life : 2400 x 2400, 600 time steps
+Pochoir ET: consumed time :2092.3ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 2600 600'
+life_pochoir 2600 600
++ ./life_pochoir 2600 600
+N_SIZE = 2600, T_SIZE = 600
+Game of Life : 2600 x 2600, 600 time steps
+Pochoir ET: consumed time :2410.23ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 2800 600'
+life_pochoir 2800 600
++ ./life_pochoir 2800 600
+N_SIZE = 2800, T_SIZE = 600
+Game of Life : 2800 x 2800, 600 time steps
+Pochoir ET: consumed time :2769.78ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 3000 600'
+life_pochoir 3000 600
++ ./life_pochoir 3000 600
+N_SIZE = 3000, T_SIZE = 600
+Game of Life : 3000 x 3000, 600 time steps
+Pochoir ET: consumed time :3135.23ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 3200 600'
+life_pochoir 3200 600
++ ./life_pochoir 3200 600
+N_SIZE = 3200, T_SIZE = 600
+Game of Life : 3200 x 3200, 600 time steps
+Pochoir ET: consumed time :3608.68ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ (( step += 200 ))
++ (( step <= 3200 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 200 800'
+life_pochoir 200 800
++ ./life_pochoir 200 800
+N_SIZE = 200, T_SIZE = 800
+Game of Life : 200 x 200, 800 time steps
+Pochoir ET: consumed time :123.228ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 400 800'
+life_pochoir 400 800
++ ./life_pochoir 400 800
+N_SIZE = 400, T_SIZE = 800
+Game of Life : 400 x 400, 800 time steps
+Pochoir ET: consumed time :230.516ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 600 800'
+life_pochoir 600 800
++ ./life_pochoir 600 800
+N_SIZE = 600, T_SIZE = 800
+Game of Life : 600 x 600, 800 time steps
+Pochoir ET: consumed time :317.836ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 800 800'
+life_pochoir 800 800
++ ./life_pochoir 800 800
+N_SIZE = 800, T_SIZE = 800
+Game of Life : 800 x 800, 800 time steps
+Pochoir ET: consumed time :463.299ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 1000 800'
+life_pochoir 1000 800
++ ./life_pochoir 1000 800
+N_SIZE = 1000, T_SIZE = 800
+Game of Life : 1000 x 1000, 800 time steps
+Pochoir ET: consumed time :614.652ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 1200 800'
+life_pochoir 1200 800
++ ./life_pochoir 1200 800
+N_SIZE = 1200, T_SIZE = 800
+Game of Life : 1200 x 1200, 800 time steps
+Pochoir ET: consumed time :817.042ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 1400 800'
+life_pochoir 1400 800
++ ./life_pochoir 1400 800
+N_SIZE = 1400, T_SIZE = 800
+Game of Life : 1400 x 1400, 800 time steps
+Pochoir ET: consumed time :1056.08ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 1600 800'
+life_pochoir 1600 800
++ ./life_pochoir 1600 800
+N_SIZE = 1600, T_SIZE = 800
+Game of Life : 1600 x 1600, 800 time steps
+Pochoir ET: consumed time :1358.24ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 1800 800'
+life_pochoir 1800 800
++ ./life_pochoir 1800 800
+N_SIZE = 1800, T_SIZE = 800
+Game of Life : 1800 x 1800, 800 time steps
+Pochoir ET: consumed time :1630.04ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 2000 800'
+life_pochoir 2000 800
++ ./life_pochoir 2000 800
+N_SIZE = 2000, T_SIZE = 800
+Game of Life : 2000 x 2000, 800 time steps
+Pochoir ET: consumed time :1960.12ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 2200 800'
+life_pochoir 2200 800
++ ./life_pochoir 2200 800
+N_SIZE = 2200, T_SIZE = 800
+Game of Life : 2200 x 2200, 800 time steps
+Pochoir ET: consumed time :2327.86ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 2400 800'
+life_pochoir 2400 800
++ ./life_pochoir 2400 800
+N_SIZE = 2400, T_SIZE = 800
+Game of Life : 2400 x 2400, 800 time steps
+Pochoir ET: consumed time :2728.58ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 2600 800'
+life_pochoir 2600 800
++ ./life_pochoir 2600 800
+N_SIZE = 2600, T_SIZE = 800
+Game of Life : 2600 x 2600, 800 time steps
+Pochoir ET: consumed time :3173.12ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 2800 800'
+life_pochoir 2800 800
++ ./life_pochoir 2800 800
+N_SIZE = 2800, T_SIZE = 800
+Game of Life : 2800 x 2800, 800 time steps
+Pochoir ET: consumed time :3639.3ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 3000 800'
+life_pochoir 3000 800
++ ./life_pochoir 3000 800
+N_SIZE = 3000, T_SIZE = 800
+Game of Life : 3000 x 3000, 800 time steps
+Pochoir ET: consumed time :4125.09ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 3200 800'
+life_pochoir 3200 800
++ ./life_pochoir 3200 800
+N_SIZE = 3200, T_SIZE = 800
+Game of Life : 3200 x 3200, 800 time steps
+Pochoir ET: consumed time :4742.67ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ (( step += 200 ))
++ (( step <= 3200 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 200 1000'
+life_pochoir 200 1000
++ ./life_pochoir 200 1000
+N_SIZE = 200, T_SIZE = 1000
+Game of Life : 200 x 200, 1000 time steps
+Pochoir ET: consumed time :153.634ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 400 1000'
+life_pochoir 400 1000
++ ./life_pochoir 400 1000
+N_SIZE = 400, T_SIZE = 1000
+Game of Life : 400 x 400, 1000 time steps
+Pochoir ET: consumed time :286.89ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 600 1000'
+life_pochoir 600 1000
++ ./life_pochoir 600 1000
+N_SIZE = 600, T_SIZE = 1000
+Game of Life : 600 x 600, 1000 time steps
+Pochoir ET: consumed time :400.318ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 800 1000'
+life_pochoir 800 1000
++ ./life_pochoir 800 1000
+N_SIZE = 800, T_SIZE = 1000
+Game of Life : 800 x 800, 1000 time steps
+Pochoir ET: consumed time :583.97ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 1000 1000'
+life_pochoir 1000 1000
++ ./life_pochoir 1000 1000
+N_SIZE = 1000, T_SIZE = 1000
+Game of Life : 1000 x 1000, 1000 time steps
+Pochoir ET: consumed time :807.949ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 1200 1000'
+life_pochoir 1200 1000
++ ./life_pochoir 1200 1000
+N_SIZE = 1200, T_SIZE = 1000
+Game of Life : 1200 x 1200, 1000 time steps
+Pochoir ET: consumed time :1014.57ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 1400 1000'
+life_pochoir 1400 1000
++ ./life_pochoir 1400 1000
+N_SIZE = 1400, T_SIZE = 1000
+Game of Life : 1400 x 1400, 1000 time steps
+Pochoir ET: consumed time :1319.35ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 1600 1000'
+life_pochoir 1600 1000
++ ./life_pochoir 1600 1000
+N_SIZE = 1600, T_SIZE = 1000
+Game of Life : 1600 x 1600, 1000 time steps
+Pochoir ET: consumed time :1676.11ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 1800 1000'
+life_pochoir 1800 1000
++ ./life_pochoir 1800 1000
+N_SIZE = 1800, T_SIZE = 1000
+Game of Life : 1800 x 1800, 1000 time steps
+Pochoir ET: consumed time :2030.59ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 2000 1000'
+life_pochoir 2000 1000
++ ./life_pochoir 2000 1000
+N_SIZE = 2000, T_SIZE = 1000
+Game of Life : 2000 x 2000, 1000 time steps
+Pochoir ET: consumed time :2440.85ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 2200 1000'
+life_pochoir 2200 1000
++ ./life_pochoir 2200 1000
+N_SIZE = 2200, T_SIZE = 1000
+Game of Life : 2200 x 2200, 1000 time steps
+Pochoir ET: consumed time :2896.29ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 2400 1000'
+life_pochoir 2400 1000
++ ./life_pochoir 2400 1000
+N_SIZE = 2400, T_SIZE = 1000
+Game of Life : 2400 x 2400, 1000 time steps
+Pochoir ET: consumed time :3372.37ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 2600 1000'
+life_pochoir 2600 1000
++ ./life_pochoir 2600 1000
+N_SIZE = 2600, T_SIZE = 1000
+Game of Life : 2600 x 2600, 1000 time steps
+Pochoir ET: consumed time :3920.52ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 2800 1000'
+life_pochoir 2800 1000
++ ./life_pochoir 2800 1000
+N_SIZE = 2800, T_SIZE = 1000
+Game of Life : 2800 x 2800, 1000 time steps
+Pochoir ET: consumed time :4497.12ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 3000 1000'
+life_pochoir 3000 1000
++ ./life_pochoir 3000 1000
+N_SIZE = 3000, T_SIZE = 1000
+Game of Life : 3000 x 3000, 1000 time steps
+Pochoir ET: consumed time :5097.62ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 3200 1000'
+life_pochoir 3200 1000
++ ./life_pochoir 3200 1000
+N_SIZE = 3200, T_SIZE = 1000
+Game of Life : 3200 x 3200, 1000 time steps
+Pochoir ET: consumed time :5852.14ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ (( step += 200 ))
++ (( step <= 3200 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 200 1200'
+life_pochoir 200 1200
++ ./life_pochoir 200 1200
+N_SIZE = 200, T_SIZE = 1200
+Game of Life : 200 x 200, 1200 time steps
+Pochoir ET: consumed time :176.101ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 400 1200'
+life_pochoir 400 1200
++ ./life_pochoir 400 1200
+N_SIZE = 400, T_SIZE = 1200
+Game of Life : 400 x 400, 1200 time steps
+Pochoir ET: consumed time :331.15ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 600 1200'
+life_pochoir 600 1200
++ ./life_pochoir 600 1200
+N_SIZE = 600, T_SIZE = 1200
+Game of Life : 600 x 600, 1200 time steps
+Pochoir ET: consumed time :493.692ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 800 1200'
+life_pochoir 800 1200
++ ./life_pochoir 800 1200
+N_SIZE = 800, T_SIZE = 1200
+Game of Life : 800 x 800, 1200 time steps
+Pochoir ET: consumed time :673.151ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 1000 1200'
+life_pochoir 1000 1200
++ ./life_pochoir 1000 1200
+N_SIZE = 1000, T_SIZE = 1200
+Game of Life : 1000 x 1000, 1200 time steps
+Pochoir ET: consumed time :916.072ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 1200 1200'
+life_pochoir 1200 1200
++ ./life_pochoir 1200 1200
+N_SIZE = 1200, T_SIZE = 1200
+Game of Life : 1200 x 1200, 1200 time steps
+Pochoir ET: consumed time :1228.68ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 1400 1200'
+life_pochoir 1400 1200
++ ./life_pochoir 1400 1200
+N_SIZE = 1400, T_SIZE = 1200
+Game of Life : 1400 x 1400, 1200 time steps
+Pochoir ET: consumed time :1548.86ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 1600 1200'
+life_pochoir 1600 1200
++ ./life_pochoir 1600 1200
+N_SIZE = 1600, T_SIZE = 1200
+Game of Life : 1600 x 1600, 1200 time steps
+Pochoir ET: consumed time :1975.04ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 1800 1200'
+life_pochoir 1800 1200
++ ./life_pochoir 1800 1200
+N_SIZE = 1800, T_SIZE = 1200
+Game of Life : 1800 x 1800, 1200 time steps
+Pochoir ET: consumed time :2386.52ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 2000 1200'
+life_pochoir 2000 1200
++ ./life_pochoir 2000 1200
+N_SIZE = 2000, T_SIZE = 1200
+Game of Life : 2000 x 2000, 1200 time steps
+Pochoir ET: consumed time :2888.02ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 2200 1200'
+life_pochoir 2200 1200
++ ./life_pochoir 2200 1200
+N_SIZE = 2200, T_SIZE = 1200
+Game of Life : 2200 x 2200, 1200 time steps
+Pochoir ET: consumed time :3438.09ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 2400 1200'
+life_pochoir 2400 1200
++ ./life_pochoir 2400 1200
+N_SIZE = 2400, T_SIZE = 1200
+Game of Life : 2400 x 2400, 1200 time steps
+Pochoir ET: consumed time :4017.11ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 2600 1200'
+life_pochoir 2600 1200
++ ./life_pochoir 2600 1200
+N_SIZE = 2600, T_SIZE = 1200
+Game of Life : 2600 x 2600, 1200 time steps
+Pochoir ET: consumed time :4634.64ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 2800 1200'
+life_pochoir 2800 1200
++ ./life_pochoir 2800 1200
+N_SIZE = 2800, T_SIZE = 1200
+Game of Life : 2800 x 2800, 1200 time steps
+Pochoir ET: consumed time :5338.41ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 3000 1200'
+life_pochoir 3000 1200
++ ./life_pochoir 3000 1200
+N_SIZE = 3000, T_SIZE = 1200
+Game of Life : 3000 x 3000, 1200 time steps
+Pochoir ET: consumed time :6060.25ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 3200 1200'
+life_pochoir 3200 1200
++ ./life_pochoir 3200 1200
+N_SIZE = 3200, T_SIZE = 1200
+Game of Life : 3200 x 3200, 1200 time steps
+Pochoir ET: consumed time :6958.61ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ (( step += 200 ))
++ (( step <= 3200 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 200 1400'
+life_pochoir 200 1400
++ ./life_pochoir 200 1400
+N_SIZE = 200, T_SIZE = 1400
+Game of Life : 200 x 200, 1400 time steps
+Pochoir ET: consumed time :202.808ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 400 1400'
+life_pochoir 400 1400
++ ./life_pochoir 400 1400
+N_SIZE = 400, T_SIZE = 1400
+Game of Life : 400 x 400, 1400 time steps
+Pochoir ET: consumed time :368.182ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 600 1400'
+life_pochoir 600 1400
++ ./life_pochoir 600 1400
+N_SIZE = 600, T_SIZE = 1400
+Game of Life : 600 x 600, 1400 time steps
+Pochoir ET: consumed time :551.252ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 800 1400'
+life_pochoir 800 1400
++ ./life_pochoir 800 1400
+N_SIZE = 800, T_SIZE = 1400
+Game of Life : 800 x 800, 1400 time steps
+Pochoir ET: consumed time :782.432ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 1000 1400'
+life_pochoir 1000 1400
++ ./life_pochoir 1000 1400
+N_SIZE = 1000, T_SIZE = 1400
+Game of Life : 1000 x 1000, 1400 time steps
+Pochoir ET: consumed time :1051.26ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 1200 1400'
+life_pochoir 1200 1400
++ ./life_pochoir 1200 1400
+N_SIZE = 1200, T_SIZE = 1400
+Game of Life : 1200 x 1200, 1400 time steps
+Pochoir ET: consumed time :1416.09ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 1400 1400'
+life_pochoir 1400 1400
++ ./life_pochoir 1400 1400
+N_SIZE = 1400, T_SIZE = 1400
+Game of Life : 1400 x 1400, 1400 time steps
+Pochoir ET: consumed time :1843.76ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 1600 1400'
+life_pochoir 1600 1400
++ ./life_pochoir 1600 1400
+N_SIZE = 1600, T_SIZE = 1400
+Game of Life : 1600 x 1600, 1400 time steps
+Pochoir ET: consumed time :2297.91ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 1800 1400'
+life_pochoir 1800 1400
++ ./life_pochoir 1800 1400
+N_SIZE = 1800, T_SIZE = 1400
+Game of Life : 1800 x 1800, 1400 time steps
+Pochoir ET: consumed time :2805.24ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 2000 1400'
+life_pochoir 2000 1400
++ ./life_pochoir 2000 1400
+N_SIZE = 2000, T_SIZE = 1400
+Game of Life : 2000 x 2000, 1400 time steps
+Pochoir ET: consumed time :3352.12ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 2200 1400'
+life_pochoir 2200 1400
++ ./life_pochoir 2200 1400
+N_SIZE = 2200, T_SIZE = 1400
+Game of Life : 2200 x 2200, 1400 time steps
+Pochoir ET: consumed time :3990.86ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 2400 1400'
+life_pochoir 2400 1400
++ ./life_pochoir 2400 1400
+N_SIZE = 2400, T_SIZE = 1400
+Game of Life : 2400 x 2400, 1400 time steps
+Pochoir ET: consumed time :4655.74ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 2600 1400'
+life_pochoir 2600 1400
++ ./life_pochoir 2600 1400
+N_SIZE = 2600, T_SIZE = 1400
+Game of Life : 2600 x 2600, 1400 time steps
+Pochoir ET: consumed time :5399.51ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 2800 1400'
+life_pochoir 2800 1400
++ ./life_pochoir 2800 1400
+N_SIZE = 2800, T_SIZE = 1400
+Game of Life : 2800 x 2800, 1400 time steps
+Pochoir ET: consumed time :6206.98ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 3000 1400'
+life_pochoir 3000 1400
++ ./life_pochoir 3000 1400
+N_SIZE = 3000, T_SIZE = 1400
+Game of Life : 3000 x 3000, 1400 time steps
+Pochoir ET: consumed time :7040.74ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 3200 1400'
+life_pochoir 3200 1400
++ ./life_pochoir 3200 1400
+N_SIZE = 3200, T_SIZE = 1400
+Game of Life : 3200 x 3200, 1400 time steps
+Pochoir ET: consumed time :8071.5ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ (( step += 200 ))
++ (( step <= 3200 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 200 1600'
+life_pochoir 200 1600
++ ./life_pochoir 200 1600
+N_SIZE = 200, T_SIZE = 1600
+Game of Life : 200 x 200, 1600 time steps
+Pochoir ET: consumed time :243.093ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 400 1600'
+life_pochoir 400 1600
++ ./life_pochoir 400 1600
+N_SIZE = 400, T_SIZE = 1600
+Game of Life : 400 x 400, 1600 time steps
+Pochoir ET: consumed time :438.228ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 600 1600'
+life_pochoir 600 1600
++ ./life_pochoir 600 1600
+N_SIZE = 600, T_SIZE = 1600
+Game of Life : 600 x 600, 1600 time steps
+Pochoir ET: consumed time :635.587ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 800 1600'
+life_pochoir 800 1600
++ ./life_pochoir 800 1600
+N_SIZE = 800, T_SIZE = 1600
+Game of Life : 800 x 800, 1600 time steps
+Pochoir ET: consumed time :914.902ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 1000 1600'
+life_pochoir 1000 1600
++ ./life_pochoir 1000 1600
+N_SIZE = 1000, T_SIZE = 1600
+Game of Life : 1000 x 1000, 1600 time steps
+Pochoir ET: consumed time :1202.89ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 1200 1600'
+life_pochoir 1200 1600
++ ./life_pochoir 1200 1600
+N_SIZE = 1200, T_SIZE = 1600
+Game of Life : 1200 x 1200, 1600 time steps
+Pochoir ET: consumed time :1589.22ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 1400 1600'
+life_pochoir 1400 1600
++ ./life_pochoir 1400 1600
+N_SIZE = 1400, T_SIZE = 1600
+Game of Life : 1400 x 1400, 1600 time steps
+Pochoir ET: consumed time :2060.75ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 1600 1600'
+life_pochoir 1600 1600
++ ./life_pochoir 1600 1600
+N_SIZE = 1600, T_SIZE = 1600
+Game of Life : 1600 x 1600, 1600 time steps
+Pochoir ET: consumed time :2626.46ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 1800 1600'
+life_pochoir 1800 1600
++ ./life_pochoir 1800 1600
+N_SIZE = 1800, T_SIZE = 1600
+Game of Life : 1800 x 1800, 1600 time steps
+Pochoir ET: consumed time :3156.66ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 2000 1600'
+life_pochoir 2000 1600
++ ./life_pochoir 2000 1600
+N_SIZE = 2000, T_SIZE = 1600
+Game of Life : 2000 x 2000, 1600 time steps
+Pochoir ET: consumed time :3795.53ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 2200 1600'
+life_pochoir 2200 1600
++ ./life_pochoir 2200 1600
+N_SIZE = 2200, T_SIZE = 1600
+Game of Life : 2200 x 2200, 1600 time steps
+Pochoir ET: consumed time :4514.96ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 2400 1600'
+life_pochoir 2400 1600
++ ./life_pochoir 2400 1600
+N_SIZE = 2400, T_SIZE = 1600
+Game of Life : 2400 x 2400, 1600 time steps
+Pochoir ET: consumed time :5301.89ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 2600 1600'
+life_pochoir 2600 1600
++ ./life_pochoir 2600 1600
+N_SIZE = 2600, T_SIZE = 1600
+Game of Life : 2600 x 2600, 1600 time steps
+Pochoir ET: consumed time :6131.92ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 2800 1600'
+life_pochoir 2800 1600
++ ./life_pochoir 2800 1600
+N_SIZE = 2800, T_SIZE = 1600
+Game of Life : 2800 x 2800, 1600 time steps
+Pochoir ET: consumed time :7057.82ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 3000 1600'
+life_pochoir 3000 1600
++ ./life_pochoir 3000 1600
+N_SIZE = 3000, T_SIZE = 1600
+Game of Life : 3000 x 3000, 1600 time steps
+Pochoir ET: consumed time :8001.63ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 3200 1600'
+life_pochoir 3200 1600
++ ./life_pochoir 3200 1600
+N_SIZE = 3200, T_SIZE = 1600
+Game of Life : 3200 x 3200, 1600 time steps
+Pochoir ET: consumed time :9154.5ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ (( step += 200 ))
++ (( step <= 3200 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 200 1800'
+life_pochoir 200 1800
++ ./life_pochoir 200 1800
+N_SIZE = 200, T_SIZE = 1800
+Game of Life : 200 x 200, 1800 time steps
+Pochoir ET: consumed time :265.51ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 400 1800'
+life_pochoir 400 1800
++ ./life_pochoir 400 1800
+N_SIZE = 400, T_SIZE = 1800
+Game of Life : 400 x 400, 1800 time steps
+Pochoir ET: consumed time :471.807ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 600 1800'
+life_pochoir 600 1800
++ ./life_pochoir 600 1800
+N_SIZE = 600, T_SIZE = 1800
+Game of Life : 600 x 600, 1800 time steps
+Pochoir ET: consumed time :687.409ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 800 1800'
+life_pochoir 800 1800
++ ./life_pochoir 800 1800
+N_SIZE = 800, T_SIZE = 1800
+Game of Life : 800 x 800, 1800 time steps
+Pochoir ET: consumed time :989.318ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 1000 1800'
+life_pochoir 1000 1800
++ ./life_pochoir 1000 1800
+N_SIZE = 1000, T_SIZE = 1800
+Game of Life : 1000 x 1000, 1800 time steps
+Pochoir ET: consumed time :1338.48ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 1200 1800'
+life_pochoir 1200 1800
++ ./life_pochoir 1200 1800
+N_SIZE = 1200, T_SIZE = 1800
+Game of Life : 1200 x 1200, 1800 time steps
+Pochoir ET: consumed time :1781.48ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 1400 1800'
+life_pochoir 1400 1800
++ ./life_pochoir 1400 1800
+N_SIZE = 1400, T_SIZE = 1800
+Game of Life : 1400 x 1400, 1800 time steps
+Pochoir ET: consumed time :2301.13ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 1600 1800'
+life_pochoir 1600 1800
++ ./life_pochoir 1600 1800
+N_SIZE = 1600, T_SIZE = 1800
+Game of Life : 1600 x 1600, 1800 time steps
+Pochoir ET: consumed time :2928.46ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 1800 1800'
+life_pochoir 1800 1800
++ ./life_pochoir 1800 1800
+N_SIZE = 1800, T_SIZE = 1800
+Game of Life : 1800 x 1800, 1800 time steps
+Pochoir ET: consumed time :3561.67ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 2000 1800'
+life_pochoir 2000 1800
++ ./life_pochoir 2000 1800
+N_SIZE = 2000, T_SIZE = 1800
+Game of Life : 2000 x 2000, 1800 time steps
+Pochoir ET: consumed time :4259.12ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 2200 1800'
+life_pochoir 2200 1800
++ ./life_pochoir 2200 1800
+N_SIZE = 2200, T_SIZE = 1800
+Game of Life : 2200 x 2200, 1800 time steps
+Pochoir ET: consumed time :5066.34ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 2400 1800'
+life_pochoir 2400 1800
++ ./life_pochoir 2400 1800
+N_SIZE = 2400, T_SIZE = 1800
+Game of Life : 2400 x 2400, 1800 time steps
+Pochoir ET: consumed time :5924.76ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 2600 1800'
+life_pochoir 2600 1800
++ ./life_pochoir 2600 1800
+N_SIZE = 2600, T_SIZE = 1800
+Game of Life : 2600 x 2600, 1800 time steps
+Pochoir ET: consumed time :6840.84ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 2800 1800'
+life_pochoir 2800 1800
++ ./life_pochoir 2800 1800
+N_SIZE = 2800, T_SIZE = 1800
+Game of Life : 2800 x 2800, 1800 time steps
+Pochoir ET: consumed time :7866.71ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 3000 1800'
+life_pochoir 3000 1800
++ ./life_pochoir 3000 1800
+N_SIZE = 3000, T_SIZE = 1800
+Game of Life : 3000 x 3000, 1800 time steps
+Pochoir ET: consumed time :8936.37ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 3200 1800'
+life_pochoir 3200 1800
++ ./life_pochoir 3200 1800
+N_SIZE = 3200, T_SIZE = 1800
+Game of Life : 3200 x 3200, 1800 time steps
+Pochoir ET: consumed time :10257.7ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ (( step += 200 ))
++ (( step <= 3200 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 200 2000'
+life_pochoir 200 2000
++ ./life_pochoir 200 2000
+N_SIZE = 200, T_SIZE = 2000
+Game of Life : 200 x 200, 2000 time steps
+Pochoir ET: consumed time :303.92ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 400 2000'
+life_pochoir 400 2000
++ ./life_pochoir 400 2000
+N_SIZE = 400, T_SIZE = 2000
+Game of Life : 400 x 400, 2000 time steps
+Pochoir ET: consumed time :539.756ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 600 2000'
+life_pochoir 600 2000
++ ./life_pochoir 600 2000
+N_SIZE = 600, T_SIZE = 2000
+Game of Life : 600 x 600, 2000 time steps
+Pochoir ET: consumed time :803.507ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 800 2000'
+life_pochoir 800 2000
++ ./life_pochoir 800 2000
+N_SIZE = 800, T_SIZE = 2000
+Game of Life : 800 x 800, 2000 time steps
+Pochoir ET: consumed time :1154.19ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 1000 2000'
+life_pochoir 1000 2000
++ ./life_pochoir 1000 2000
+N_SIZE = 1000, T_SIZE = 2000
+Game of Life : 1000 x 1000, 2000 time steps
+Pochoir ET: consumed time :1561.66ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 1200 2000'
+life_pochoir 1200 2000
++ ./life_pochoir 1200 2000
+N_SIZE = 1200, T_SIZE = 2000
+Game of Life : 1200 x 1200, 2000 time steps
+Pochoir ET: consumed time :1989.33ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 1400 2000'
+life_pochoir 1400 2000
++ ./life_pochoir 1400 2000
+N_SIZE = 1400, T_SIZE = 2000
+Game of Life : 1400 x 1400, 2000 time steps
+Pochoir ET: consumed time :2575.52ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 1600 2000'
+life_pochoir 1600 2000
++ ./life_pochoir 1600 2000
+N_SIZE = 1600, T_SIZE = 2000
+Game of Life : 1600 x 1600, 2000 time steps
+Pochoir ET: consumed time :3261.87ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 1800 2000'
+life_pochoir 1800 2000
++ ./life_pochoir 1800 2000
+N_SIZE = 1800, T_SIZE = 2000
+Game of Life : 1800 x 1800, 2000 time steps
+Pochoir ET: consumed time :3975.76ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 2000 2000'
+life_pochoir 2000 2000
++ ./life_pochoir 2000 2000
+N_SIZE = 2000, T_SIZE = 2000
+Game of Life : 2000 x 2000, 2000 time steps
+Pochoir ET: consumed time :4761.44ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 2200 2000'
+life_pochoir 2200 2000
++ ./life_pochoir 2200 2000
+N_SIZE = 2200, T_SIZE = 2000
+Game of Life : 2200 x 2200, 2000 time steps
+Pochoir ET: consumed time :5613.31ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 2400 2000'
+life_pochoir 2400 2000
++ ./life_pochoir 2400 2000
+N_SIZE = 2400, T_SIZE = 2000
+Game of Life : 2400 x 2400, 2000 time steps
+Pochoir ET: consumed time :6579.46ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 2600 2000'
+life_pochoir 2600 2000
++ ./life_pochoir 2600 2000
+N_SIZE = 2600, T_SIZE = 2000
+Game of Life : 2600 x 2600, 2000 time steps
+Pochoir ET: consumed time :7639.8ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 2800 2000'
+life_pochoir 2800 2000
++ ./life_pochoir 2800 2000
+N_SIZE = 2800, T_SIZE = 2000
+Game of Life : 2800 x 2800, 2000 time steps
+Pochoir ET: consumed time :8757.35ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 3000 2000'
+life_pochoir 3000 2000
++ ./life_pochoir 3000 2000
+N_SIZE = 3000, T_SIZE = 2000
+Game of Life : 3000 x 3000, 2000 time steps
+Pochoir ET: consumed time :9935.28ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 3200 2000'
+life_pochoir 3200 2000
++ ./life_pochoir 3200 2000
+N_SIZE = 3200, T_SIZE = 2000
+Game of Life : 3200 x 3200, 2000 time steps
+Pochoir ET: consumed time :11372.5ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ (( step += 200 ))
++ (( step <= 3200 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 200 2200'
+life_pochoir 200 2200
++ ./life_pochoir 200 2200
+N_SIZE = 200, T_SIZE = 2200
+Game of Life : 200 x 200, 2200 time steps
+Pochoir ET: consumed time :328.21ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 400 2200'
+life_pochoir 400 2200
++ ./life_pochoir 400 2200
+N_SIZE = 400, T_SIZE = 2200
+Game of Life : 400 x 400, 2200 time steps
+Pochoir ET: consumed time :610.885ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 600 2200'
+life_pochoir 600 2200
++ ./life_pochoir 600 2200
+N_SIZE = 600, T_SIZE = 2200
+Game of Life : 600 x 600, 2200 time steps
+Pochoir ET: consumed time :878.247ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 800 2200'
+life_pochoir 800 2200
++ ./life_pochoir 800 2200
+N_SIZE = 800, T_SIZE = 2200
+Game of Life : 800 x 800, 2200 time steps
+Pochoir ET: consumed time :1227.32ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 1000 2200'
+life_pochoir 1000 2200
++ ./life_pochoir 1000 2200
+N_SIZE = 1000, T_SIZE = 2200
+Game of Life : 1000 x 1000, 2200 time steps
+Pochoir ET: consumed time :1662.66ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 1200 2200'
+life_pochoir 1200 2200
++ ./life_pochoir 1200 2200
+N_SIZE = 1200, T_SIZE = 2200
+Game of Life : 1200 x 1200, 2200 time steps
+Pochoir ET: consumed time :2197.97ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 1400 2200'
+life_pochoir 1400 2200
++ ./life_pochoir 1400 2200
+N_SIZE = 1400, T_SIZE = 2200
+Game of Life : 1400 x 1400, 2200 time steps
+Pochoir ET: consumed time :2822.03ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 1600 2200'
+life_pochoir 1600 2200
++ ./life_pochoir 1600 2200
+N_SIZE = 1600, T_SIZE = 2200
+Game of Life : 1600 x 1600, 2200 time steps
+Pochoir ET: consumed time :3566.19ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 1800 2200'
+life_pochoir 1800 2200
++ ./life_pochoir 1800 2200
+N_SIZE = 1800, T_SIZE = 2200
+Game of Life : 1800 x 1800, 2200 time steps
+Pochoir ET: consumed time :4347.81ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 2000 2200'
+life_pochoir 2000 2200
++ ./life_pochoir 2000 2200
+N_SIZE = 2000, T_SIZE = 2200
+Game of Life : 2000 x 2000, 2200 time steps
+Pochoir ET: consumed time :5222.73ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 2200 2200'
+life_pochoir 2200 2200
++ ./life_pochoir 2200 2200
+N_SIZE = 2200, T_SIZE = 2200
+Game of Life : 2200 x 2200, 2200 time steps
+Pochoir ET: consumed time :6194.64ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 2400 2200'
+life_pochoir 2400 2200
++ ./life_pochoir 2400 2200
+N_SIZE = 2400, T_SIZE = 2200
+Game of Life : 2400 x 2400, 2200 time steps
+Pochoir ET: consumed time :7228.64ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 2600 2200'
+life_pochoir 2600 2200
++ ./life_pochoir 2600 2200
+N_SIZE = 2600, T_SIZE = 2200
+Game of Life : 2600 x 2600, 2200 time steps
+Pochoir ET: consumed time :8362.1ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 2800 2200'
+life_pochoir 2800 2200
++ ./life_pochoir 2800 2200
+N_SIZE = 2800, T_SIZE = 2200
+Game of Life : 2800 x 2800, 2200 time steps
+Pochoir ET: consumed time :9616.94ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 3000 2200'
+life_pochoir 3000 2200
++ ./life_pochoir 3000 2200
+N_SIZE = 3000, T_SIZE = 2200
+Game of Life : 3000 x 3000, 2200 time steps
+Pochoir ET: consumed time :10911.1ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 3200 2200'
+life_pochoir 3200 2200
++ ./life_pochoir 3200 2200
+N_SIZE = 3200, T_SIZE = 2200
+Game of Life : 3200 x 3200, 2200 time steps
+Pochoir ET: consumed time :12490.9ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ (( step += 200 ))
++ (( step <= 3200 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 200 2400'
+life_pochoir 200 2400
++ ./life_pochoir 200 2400
+N_SIZE = 200, T_SIZE = 2400
+Game of Life : 200 x 200, 2400 time steps
+Pochoir ET: consumed time :356.013ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 400 2400'
+life_pochoir 400 2400
++ ./life_pochoir 400 2400
+N_SIZE = 400, T_SIZE = 2400
+Game of Life : 400 x 400, 2400 time steps
+Pochoir ET: consumed time :639.008ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 600 2400'
+life_pochoir 600 2400
++ ./life_pochoir 600 2400
+N_SIZE = 600, T_SIZE = 2400
+Game of Life : 600 x 600, 2400 time steps
+Pochoir ET: consumed time :945.416ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 800 2400'
+life_pochoir 800 2400
++ ./life_pochoir 800 2400
+N_SIZE = 800, T_SIZE = 2400
+Game of Life : 800 x 800, 2400 time steps
+Pochoir ET: consumed time :1319.5ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 1000 2400'
+life_pochoir 1000 2400
++ ./life_pochoir 1000 2400
+N_SIZE = 1000, T_SIZE = 2400
+Game of Life : 1000 x 1000, 2400 time steps
+Pochoir ET: consumed time :1811.94ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 1200 2400'
+life_pochoir 1200 2400
++ ./life_pochoir 1200 2400
+N_SIZE = 1200, T_SIZE = 2400
+Game of Life : 1200 x 1200, 2400 time steps
+Pochoir ET: consumed time :2408.93ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 1400 2400'
+life_pochoir 1400 2400
++ ./life_pochoir 1400 2400
+N_SIZE = 1400, T_SIZE = 2400
+Game of Life : 1400 x 1400, 2400 time steps
+Pochoir ET: consumed time :3058.03ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 1600 2400'
+life_pochoir 1600 2400
++ ./life_pochoir 1600 2400
+N_SIZE = 1600, T_SIZE = 2400
+Game of Life : 1600 x 1600, 2400 time steps
+Pochoir ET: consumed time :3854.4ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 1800 2400'
+life_pochoir 1800 2400
++ ./life_pochoir 1800 2400
+N_SIZE = 1800, T_SIZE = 2400
+Game of Life : 1800 x 1800, 2400 time steps
+Pochoir ET: consumed time :4657.2ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 2000 2400'
+life_pochoir 2000 2400
++ ./life_pochoir 2000 2400
+N_SIZE = 2000, T_SIZE = 2400
+Game of Life : 2000 x 2000, 2400 time steps
+Pochoir ET: consumed time :5656.44ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 2200 2400'
+life_pochoir 2200 2400
++ ./life_pochoir 2200 2400
+N_SIZE = 2200, T_SIZE = 2400
+Game of Life : 2200 x 2200, 2400 time steps
+Pochoir ET: consumed time :6704.05ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 2400 2400'
+life_pochoir 2400 2400
++ ./life_pochoir 2400 2400
+N_SIZE = 2400, T_SIZE = 2400
+Game of Life : 2400 x 2400, 2400 time steps
+Pochoir ET: consumed time :7867.89ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 2600 2400'
+life_pochoir 2600 2400
++ ./life_pochoir 2600 2400
+N_SIZE = 2600, T_SIZE = 2400
+Game of Life : 2600 x 2600, 2400 time steps
+Pochoir ET: consumed time :9088.12ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 2800 2400'
+life_pochoir 2800 2400
++ ./life_pochoir 2800 2400
+N_SIZE = 2800, T_SIZE = 2400
+Game of Life : 2800 x 2800, 2400 time steps
+Pochoir ET: consumed time :10416ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 3000 2400'
+life_pochoir 3000 2400
++ ./life_pochoir 3000 2400
+N_SIZE = 3000, T_SIZE = 2400
+Game of Life : 3000 x 3000, 2400 time steps
+Pochoir ET: consumed time :11808.9ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 3200 2400'
+life_pochoir 3200 2400
++ ./life_pochoir 3200 2400
+N_SIZE = 3200, T_SIZE = 2400
+Game of Life : 3200 x 3200, 2400 time steps
+Pochoir ET: consumed time :13520.6ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ (( step += 200 ))
++ (( step <= 3200 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 200 2600'
+life_pochoir 200 2600
++ ./life_pochoir 200 2600
+N_SIZE = 200, T_SIZE = 2600
+Game of Life : 200 x 200, 2600 time steps
+Pochoir ET: consumed time :361.23ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 400 2600'
+life_pochoir 400 2600
++ ./life_pochoir 400 2600
+N_SIZE = 400, T_SIZE = 2600
+Game of Life : 400 x 400, 2600 time steps
+Pochoir ET: consumed time :664.507ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 600 2600'
+life_pochoir 600 2600
++ ./life_pochoir 600 2600
+N_SIZE = 600, T_SIZE = 2600
+Game of Life : 600 x 600, 2600 time steps
+Pochoir ET: consumed time :1011.08ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 800 2600'
+life_pochoir 800 2600
++ ./life_pochoir 800 2600
+N_SIZE = 800, T_SIZE = 2600
+Game of Life : 800 x 800, 2600 time steps
+Pochoir ET: consumed time :1394.01ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 1000 2600'
+life_pochoir 1000 2600
++ ./life_pochoir 1000 2600
+N_SIZE = 1000, T_SIZE = 2600
+Game of Life : 1000 x 1000, 2600 time steps
+Pochoir ET: consumed time :1939.73ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 1200 2600'
+life_pochoir 1200 2600
++ ./life_pochoir 1200 2600
+N_SIZE = 1200, T_SIZE = 2600
+Game of Life : 1200 x 1200, 2600 time steps
+Pochoir ET: consumed time :2571.4ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 1400 2600'
+life_pochoir 1400 2600
++ ./life_pochoir 1400 2600
+N_SIZE = 1400, T_SIZE = 2600
+Game of Life : 1400 x 1400, 2600 time steps
+Pochoir ET: consumed time :3284.83ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 1600 2600'
+life_pochoir 1600 2600
++ ./life_pochoir 1600 2600
+N_SIZE = 1600, T_SIZE = 2600
+Game of Life : 1600 x 1600, 2600 time steps
+Pochoir ET: consumed time :4138.74ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 1800 2600'
+life_pochoir 1800 2600
++ ./life_pochoir 1800 2600
+N_SIZE = 1800, T_SIZE = 2600
+Game of Life : 1800 x 1800, 2600 time steps
+Pochoir ET: consumed time :5041.77ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 2000 2600'
+life_pochoir 2000 2600
++ ./life_pochoir 2000 2600
+N_SIZE = 2000, T_SIZE = 2600
+Game of Life : 2000 x 2000, 2600 time steps
+Pochoir ET: consumed time :6072.92ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 2200 2600'
+life_pochoir 2200 2600
++ ./life_pochoir 2200 2600
+N_SIZE = 2200, T_SIZE = 2600
+Game of Life : 2200 x 2200, 2600 time steps
+Pochoir ET: consumed time :7221.72ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 2400 2600'
+life_pochoir 2400 2600
++ ./life_pochoir 2400 2600
+N_SIZE = 2400, T_SIZE = 2600
+Game of Life : 2400 x 2400, 2600 time steps
+Pochoir ET: consumed time :8443.05ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 2600 2600'
+life_pochoir 2600 2600
++ ./life_pochoir 2600 2600
+N_SIZE = 2600, T_SIZE = 2600
+Game of Life : 2600 x 2600, 2600 time steps
+Pochoir ET: consumed time :9805.03ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 2800 2600'
+life_pochoir 2800 2600
++ ./life_pochoir 2800 2600
+N_SIZE = 2800, T_SIZE = 2600
+Game of Life : 2800 x 2800, 2600 time steps
+Pochoir ET: consumed time :11232.9ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 3000 2600'
+life_pochoir 3000 2600
++ ./life_pochoir 3000 2600
+N_SIZE = 3000, T_SIZE = 2600
+Game of Life : 3000 x 3000, 2600 time steps
+Pochoir ET: consumed time :12764.1ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 3200 2600'
+life_pochoir 3200 2600
++ ./life_pochoir 3200 2600
+N_SIZE = 3200, T_SIZE = 2600
+Game of Life : 3200 x 3200, 2600 time steps
+Pochoir ET: consumed time :14583ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ (( step += 200 ))
++ (( step <= 3200 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 200 2800'
+life_pochoir 200 2800
++ ./life_pochoir 200 2800
+N_SIZE = 200, T_SIZE = 2800
+Game of Life : 200 x 200, 2800 time steps
+Pochoir ET: consumed time :417.367ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 400 2800'
+life_pochoir 400 2800
++ ./life_pochoir 400 2800
+N_SIZE = 400, T_SIZE = 2800
+Game of Life : 400 x 400, 2800 time steps
+Pochoir ET: consumed time :726.257ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 600 2800'
+life_pochoir 600 2800
++ ./life_pochoir 600 2800
+N_SIZE = 600, T_SIZE = 2800
+Game of Life : 600 x 600, 2800 time steps
+Pochoir ET: consumed time :1087.27ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 800 2800'
+life_pochoir 800 2800
++ ./life_pochoir 800 2800
+N_SIZE = 800, T_SIZE = 2800
+Game of Life : 800 x 800, 2800 time steps
+Pochoir ET: consumed time :1534.34ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 1000 2800'
+life_pochoir 1000 2800
++ ./life_pochoir 1000 2800
+N_SIZE = 1000, T_SIZE = 2800
+Game of Life : 1000 x 1000, 2800 time steps
+Pochoir ET: consumed time :2071.58ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 1200 2800'
+life_pochoir 1200 2800
++ ./life_pochoir 1200 2800
+N_SIZE = 1200, T_SIZE = 2800
+Game of Life : 1200 x 1200, 2800 time steps
+Pochoir ET: consumed time :2775.26ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 1400 2800'
+life_pochoir 1400 2800
++ ./life_pochoir 1400 2800
+N_SIZE = 1400, T_SIZE = 2800
+Game of Life : 1400 x 1400, 2800 time steps
+Pochoir ET: consumed time :3598.19ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 1600 2800'
+life_pochoir 1600 2800
++ ./life_pochoir 1600 2800
+N_SIZE = 1600, T_SIZE = 2800
+Game of Life : 1600 x 1600, 2800 time steps
+Pochoir ET: consumed time :4499.38ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 1800 2800'
+life_pochoir 1800 2800
++ ./life_pochoir 1800 2800
+N_SIZE = 1800, T_SIZE = 2800
+Game of Life : 1800 x 1800, 2800 time steps
+Pochoir ET: consumed time :5487.61ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 2000 2800'
+life_pochoir 2000 2800
++ ./life_pochoir 2000 2800
+N_SIZE = 2000, T_SIZE = 2800
+Game of Life : 2000 x 2000, 2800 time steps
+Pochoir ET: consumed time :6561.98ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 2200 2800'
+life_pochoir 2200 2800
++ ./life_pochoir 2200 2800
+N_SIZE = 2200, T_SIZE = 2800
+Game of Life : 2200 x 2200, 2800 time steps
+Pochoir ET: consumed time :7873.27ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 2400 2800'
+life_pochoir 2400 2800
++ ./life_pochoir 2400 2800
+N_SIZE = 2400, T_SIZE = 2800
+Game of Life : 2400 x 2400, 2800 time steps
+Pochoir ET: consumed time :9123.76ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 2600 2800'
+life_pochoir 2600 2800
++ ./life_pochoir 2600 2800
+N_SIZE = 2600, T_SIZE = 2800
+Game of Life : 2600 x 2600, 2800 time steps
+Pochoir ET: consumed time :10543.4ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 2800 2800'
+life_pochoir 2800 2800
++ ./life_pochoir 2800 2800
+N_SIZE = 2800, T_SIZE = 2800
+Game of Life : 2800 x 2800, 2800 time steps
+Pochoir ET: consumed time :12134.5ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 3000 2800'
+life_pochoir 3000 2800
++ ./life_pochoir 3000 2800
+N_SIZE = 3000, T_SIZE = 2800
+Game of Life : 3000 x 3000, 2800 time steps
+Pochoir ET: consumed time :13746.7ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 3200 2800'
+life_pochoir 3200 2800
++ ./life_pochoir 3200 2800
+N_SIZE = 3200, T_SIZE = 2800
+Game of Life : 3200 x 3200, 2800 time steps
+Pochoir ET: consumed time :15702.4ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ (( step += 200 ))
++ (( step <= 3200 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 200 3000'
+life_pochoir 200 3000
++ ./life_pochoir 200 3000
+N_SIZE = 200, T_SIZE = 3000
+Game of Life : 200 x 200, 3000 time steps
+Pochoir ET: consumed time :444.611ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 400 3000'
+life_pochoir 400 3000
++ ./life_pochoir 400 3000
+N_SIZE = 400, T_SIZE = 3000
+Game of Life : 400 x 400, 3000 time steps
+Pochoir ET: consumed time :785.65ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 600 3000'
+life_pochoir 600 3000
++ ./life_pochoir 600 3000
+N_SIZE = 600, T_SIZE = 3000
+Game of Life : 600 x 600, 3000 time steps
+Pochoir ET: consumed time :1195.79ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 800 3000'
+life_pochoir 800 3000
++ ./life_pochoir 800 3000
+N_SIZE = 800, T_SIZE = 3000
+Game of Life : 800 x 800, 3000 time steps
+Pochoir ET: consumed time :1641.5ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 1000 3000'
+life_pochoir 1000 3000
++ ./life_pochoir 1000 3000
+N_SIZE = 1000, T_SIZE = 3000
+Game of Life : 1000 x 1000, 3000 time steps
+Pochoir ET: consumed time :2216.85ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 1200 3000'
+life_pochoir 1200 3000
++ ./life_pochoir 1200 3000
+N_SIZE = 1200, T_SIZE = 3000
+Game of Life : 1200 x 1200, 3000 time steps
+Pochoir ET: consumed time :2997.33ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 1400 3000'
+life_pochoir 1400 3000
++ ./life_pochoir 1400 3000
+N_SIZE = 1400, T_SIZE = 3000
+Game of Life : 1400 x 1400, 3000 time steps
+Pochoir ET: consumed time :3840.19ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 1600 3000'
+life_pochoir 1600 3000
++ ./life_pochoir 1600 3000
+N_SIZE = 1600, T_SIZE = 3000
+Game of Life : 1600 x 1600, 3000 time steps
+Pochoir ET: consumed time :4844.33ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 1800 3000'
+life_pochoir 1800 3000
++ ./life_pochoir 1800 3000
+N_SIZE = 1800, T_SIZE = 3000
+Game of Life : 1800 x 1800, 3000 time steps
+Pochoir ET: consumed time :5855.29ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 2000 3000'
+life_pochoir 2000 3000
++ ./life_pochoir 2000 3000
+N_SIZE = 2000, T_SIZE = 3000
+Game of Life : 2000 x 2000, 3000 time steps
+Pochoir ET: consumed time :7051.62ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 2200 3000'
+life_pochoir 2200 3000
++ ./life_pochoir 2200 3000
+N_SIZE = 2200, T_SIZE = 3000
+Game of Life : 2200 x 2200, 3000 time steps
+Pochoir ET: consumed time :8353.6ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 2400 3000'
+life_pochoir 2400 3000
++ ./life_pochoir 2400 3000
+N_SIZE = 2400, T_SIZE = 3000
+Game of Life : 2400 x 2400, 3000 time steps
+Pochoir ET: consumed time :9781.56ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 2600 3000'
+life_pochoir 2600 3000
++ ./life_pochoir 2600 3000
+N_SIZE = 2600, T_SIZE = 3000
+Game of Life : 2600 x 2600, 3000 time steps
+Pochoir ET: consumed time :11303.8ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 2800 3000'
+life_pochoir 2800 3000
++ ./life_pochoir 2800 3000
+N_SIZE = 2800, T_SIZE = 3000
+Game of Life : 2800 x 2800, 3000 time steps
+Pochoir ET: consumed time :12991.8ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 3000 3000'
+life_pochoir 3000 3000
++ ./life_pochoir 3000 3000
+N_SIZE = 3000, T_SIZE = 3000
+Game of Life : 3000 x 3000, 3000 time steps
+Pochoir ET: consumed time :14788.7ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 3200 3000'
+life_pochoir 3200 3000
++ ./life_pochoir 3200 3000
+N_SIZE = 3200, T_SIZE = 3000
+Game of Life : 3200 x 3200, 3000 time steps
+Pochoir ET: consumed time :16907ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ (( step += 200 ))
++ (( step <= 3200 ))
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 200 3200'
+life_pochoir 200 3200
++ ./life_pochoir 200 3200
+N_SIZE = 200, T_SIZE = 3200
+Game of Life : 200 x 200, 3200 time steps
+Pochoir ET: consumed time :483.473ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 400 3200'
+life_pochoir 400 3200
++ ./life_pochoir 400 3200
+N_SIZE = 400, T_SIZE = 3200
+Game of Life : 400 x 400, 3200 time steps
+Pochoir ET: consumed time :848.323ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 600 3200'
+life_pochoir 600 3200
++ ./life_pochoir 600 3200
+N_SIZE = 600, T_SIZE = 3200
+Game of Life : 600 x 600, 3200 time steps
+Pochoir ET: consumed time :1260.61ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 800 3200'
+life_pochoir 800 3200
++ ./life_pochoir 800 3200
+N_SIZE = 800, T_SIZE = 3200
+Game of Life : 800 x 800, 3200 time steps
+Pochoir ET: consumed time :1800.6ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 1000 3200'
+life_pochoir 1000 3200
++ ./life_pochoir 1000 3200
+N_SIZE = 1000, T_SIZE = 3200
+Game of Life : 1000 x 1000, 3200 time steps
+Pochoir ET: consumed time :2342.24ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 1200 3200'
+life_pochoir 1200 3200
++ ./life_pochoir 1200 3200
+N_SIZE = 1200, T_SIZE = 3200
+Game of Life : 1200 x 1200, 3200 time steps
+Pochoir ET: consumed time :3133.14ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 1400 3200'
+life_pochoir 1400 3200
++ ./life_pochoir 1400 3200
+N_SIZE = 1400, T_SIZE = 3200
+Game of Life : 1400 x 1400, 3200 time steps
+Pochoir ET: consumed time :4076.43ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 1600 3200'
+life_pochoir 1600 3200
++ ./life_pochoir 1600 3200
+N_SIZE = 1600, T_SIZE = 3200
+Game of Life : 1600 x 1600, 3200 time steps
+Pochoir ET: consumed time :5145.07ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 1800 3200'
+life_pochoir 1800 3200
++ ./life_pochoir 1800 3200
+N_SIZE = 1800, T_SIZE = 3200
+Game of Life : 1800 x 1800, 3200 time steps
+Pochoir ET: consumed time :6186.05ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 2000 3200'
+life_pochoir 2000 3200
++ ./life_pochoir 2000 3200
+N_SIZE = 2000, T_SIZE = 3200
+Game of Life : 2000 x 2000, 3200 time steps
+Pochoir ET: consumed time :7454.8ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 2200 3200'
+life_pochoir 2200 3200
++ ./life_pochoir 2200 3200
+N_SIZE = 2200, T_SIZE = 3200
+Game of Life : 2200 x 2200, 3200 time steps
+Pochoir ET: consumed time :8859.42ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 2400 3200'
+life_pochoir 2400 3200
++ ./life_pochoir 2400 3200
+N_SIZE = 2400, T_SIZE = 3200
+Game of Life : 2400 x 2400, 3200 time steps
+Pochoir ET: consumed time :10409.4ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 2600 3200'
+life_pochoir 2600 3200
++ ./life_pochoir 2600 3200
+N_SIZE = 2600, T_SIZE = 3200
+Game of Life : 2600 x 2600, 3200 time steps
+Pochoir ET: consumed time :12034ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 2800 3200'
+life_pochoir 2800 3200
++ ./life_pochoir 2800 3200
+N_SIZE = 2800, T_SIZE = 3200
+Game of Life : 2800 x 2800, 3200 time steps
+Pochoir ET: consumed time :13806.3ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 3000 3200'
+life_pochoir 3000 3200
++ ./life_pochoir 3000 3200
+N_SIZE = 3000, T_SIZE = 3200
+Game of Life : 3000 x 3000, 3200 time steps
+Pochoir ET: consumed time :15707.5ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'life_pochoir 3200 3200'
+life_pochoir 3200 3200
++ ./life_pochoir 3200 3200
+N_SIZE = 3200, T_SIZE = 3200
+Game of Life : 3200 x 3200, 3200 time steps
+Pochoir ET: consumed time :17926.2ms
++ (( size += 200 ))
++ (( size <= 3200 ))
++ (( step += 200 ))
++ (( step <= 3200 ))
+

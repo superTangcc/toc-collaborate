@@ -1,0 +1,36 @@
+#
+# Platform-specific build information
+# PowerPC processor
+# Uses the xlc compiler
+#
+
+PLATFORM = ppc
+MAKE = make
+MAX_THREADS = 4
+PAPI_DESIRED = false
+# TIMER can be CLOCK_GETTIME, GETTIMEOFDAY, and CYCLE_TIME
+TIMER = CYCLE_TIME
+
+# $C_COMPILER default on this machine is xlc
+C_COMPILER = mpixlc
+
+# C compiler flags
+ifeq ($(C_COMPILER), mpixlc)
+     CC_NAME = mpixlc
+     CC = /bgsys/drivers/ppcfloor/comm/bin/mpixlc
+     C_FLAGS = -O3 -qarch=450d -qtune=450 -D__blrts__
+endif
+ifeq ($(C_COMPILER), bgxlc_r)
+    CC_NAME = bgxlc_r
+    CC = bgxlc_r
+    C_FLAGS = -O3 -qarch=450d -qtune=450 -D__blrts__
+    OPEN_MP_FLAGS = -qsmp=omp -qthreaded
+endif
+
+PTHREAD_FLAGS = -DMAX_THREADS=$(MAX_THREADS) -lpthread
+
+ifeq ($(TIMER), CLOCK_GETTIME)
+	TIMER_FLAGS = -D$(TIMER) -lrt
+else
+	TIMER_FLAGS = -D$(TIMER)
+endif

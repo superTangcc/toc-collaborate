@@ -1,0 +1,38 @@
+To run the tests on Linux do
+
+$ make
+$ ./testbag
+{7, 1, 1, 5, 6, 4, 2, 3, 1}
+
+It prints something just to make sure the print code works.
+
+This runs with gcov turned on, so you can do
+ gcov -c bag.c
+to see how good the test coverage is.
+
+The code is documented using the abstraction specification methodology
+of Liskov (see Program Development in Java, for example, by Liskov and
+Guttag).
+
+This code has the following preperty. Starting fron $n$ separate
+items, inserting and mergint take constant amortized time, and walking
+runs in linear time.
+ - Walking runs in linear time, because performs O(1) work between each item printed.
+ - Insertion and merging run in O(1) amortized time using an accounting argument:
+     Every time we perform an insert or a merge, we pay $2 to our bank.
+     When we create a pennant, we pay $1 to create the pennant, and put $1 on the pennant to cover
+      the cost of merging it in the future.
+
+     When we merge two pennants, we take the $1 from each pennant, pay
+     $1 to do the merge (which is O(1)) time, and put the other tollar
+     on the new pennant.
+
+     When we merge two bags, we end up merging two sets of pennants.
+     Whenever we merge two pennants to one (or three penants to two)
+     we take the money from the penants ($2 or $3, depending), spend
+     $1 on the merge, and put the remaining money $1 on each pennant.
+
+     So we've always paid in advance enough money to cover all the merges and inserts.
+
+ 
+     

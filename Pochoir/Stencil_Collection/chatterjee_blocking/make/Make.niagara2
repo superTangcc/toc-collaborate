@@ -1,0 +1,31 @@
+#
+# Platform-specific build information
+# Sun Niagara2
+# Uses either the icc or gcc compilers
+#
+
+PLATFORM = niagara2
+MAKE = make
+MAX_THREADS=128
+PAPI_DESIRED = false
+# TIMER can be CLOCK_GETTIME, GETTIMEOFDAY, and CYCLE_TIME
+TIMER = CLOCK_GETTIME
+
+# $C_COMPILER default on this machine is gcc
+C_COMPILER = gcc
+
+# C compiler flags
+ifeq ($(C_COMPILER), gcc)
+	CC_NAME = gcc
+	CC = /opt/gcc/bin/gcc
+	C_FLAGS = -Wall -fast -m64 -xarch=sparc -xcache=8/16/4:4096/64/16 -xprefetch=auto,explicit -lcpc
+	OPEN_MP_FLAGS = -xopenmp=parallel
+endif
+
+PTHREAD_FLAGS = -DAFFINITY_ENABLED -DMAX_THREADS=128 -pthreads
+
+ifeq ($(TIMER), CLOCK_GETTIME)
+	TIMER_FLAGS = -D$(TIMER) -lrt
+else
+	TIMER_FLAGS = -D$(TIMER)
+endif

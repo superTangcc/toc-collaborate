@@ -1,0 +1,44 @@
+#
+# Platform-specific build information
+# Intel Itanium running Linux
+# Uses the Intel v9.0 C/C++ compiler
+#
+
+PLATFORM = davinci
+ARCH = __ia64__
+MAKE = gmake
+LOG2_CACHE_LINE_SIZE_IN_DOUBLES = 4
+PAPI_DESIRED = false
+
+# $C_COMPILER must be gcc or icc
+C_COMPILER = gcc
+
+ifeq ($(C_COMPILER), gcc)
+	CC = /usr/bin/gcc
+	COMP = __GNUC__
+	CC_NAME = gcc
+	# FIX THE FOLLOWING!!!
+	C_OPT_FLAGS = -O3
+endif
+ifeq ($(C_COMPILER), icc)
+	CC = /usr/common/intel/cc/9.1.046/bin/icc
+	COMP = __ICC
+	CC_NAME = icc
+	C_OPT_FLAGS = -O3 -tpp2 -fno-alias -fno-fnalias
+endif
+
+# Fortran compiler flags
+FC90 = /usr/common/intel/fc/9.1.041/bin/ifort
+F_OPT_FLAGS = -fast -fno-alias -fno-fnalias -free
+
+# PThread flags
+PTHREAD_LINK_FLAGS = -lpthread
+
+# PAPI library
+ifeq ($(PAPI_DESIRED), true)
+	PAPI_FLAG = -DPAPI_ENABLED
+	PAPI_ROOT = /usr/common/usg/papi/3.1.0
+	PAPI_INC_FLAGS = -I$(PAPI_ROOT)/include
+	PAPI_LINK_FLAGS = -L$(PAPI_ROOT)/lib -lpapi
+	PAPI_UTIL_FLAG = $(PAPI_DIR)/papi_util.o
+endif

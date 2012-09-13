@@ -1,0 +1,40 @@
+#
+# Platform-specific build information
+# IBM Power5
+# Uses either the xlc or gcc compilers
+#
+
+PLATFORM = bassi
+MAKE = gmake
+LOG2_CACHE_LINE_SIZE_IN_DOUBLES = 5
+PAPI_DESIRED = true
+
+# $C_COMPILER must be gcc or xlc
+C_COMPILER = xlc
+
+ifeq ($(C_COMPILER), gcc)
+	CC_NAME = gcc
+	CC = /usr/common/usg/gcc/4.1.1/bin/gcc
+	C_FLAGS = -D__powerpc__ -O3 -maix64 -mcpu=power5 -mtune=power5
+endif
+ifeq ($(C_COMPILER), xlc)
+	CC_NAME = xlc
+	CC = /usr/common/compilers/c_800/usr/vac/bin/xlc
+	C_FLAGS = -O5
+endif
+
+# Fortran compiler flags
+FC77 = xlf
+FC90 = xlf90
+F_OPT_FLAGS = -O3 -qhot -qarch=auto -qtune=auto
+
+# PThread flags
+PTHREAD_FLAGS = -lpthread
+
+# PAPI library
+ifeq ($(PAPI_DESIRED), true)
+	PAPI_ROOT = /usr/common/usg/papi/3.5.0
+	PAPI_ENABLED_FLAG = -DPAPI_ENABLED
+	PAPI_INC_FLAGS = -I$(PAPI_ROOT)/include
+	PAPI_LINK_FLAGS = -L$(PAPI_ROOT)/lib -lpapi64 -lpmapi
+endif

@@ -1,0 +1,176 @@
+\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{url}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{cor}[theorem]{Corollary}
+
+\begin{document}
+\title{Cache complexity analysis of parallel cache oblivious stencil computation algorithm}
+\maketitle
+
+\section*{Ideal distributed cache model}
+We define the ideal distributed cache model we will use in this paper on the analysis of parallel cache oblivious stencil computation algorithm as following:
+\begin{itemize}
+	\item $2$-level memory hierarchy
+	\item $P$ processors, each equipped with a private ideal cache, which is connected to an arbitrary large shared main memory
+	\item An ideal cache is fully associative and implements the cache replacement strategy as a \emph{FIFO}
+	\item each private cache contains $Z$ words (the cache size) and it's partitioned into cache lines consisting of $L$ (assuming = 1) consecutive words.
+	\item a process can only access its private local cache, if the data is not available in the cache, it's a \emph{miss}
+	\item when completing a segment (process), we assume that a processor completely invalidates and flushes its own cache (but not other caches), and we do NOT count the cache misses incurred by these actions as part of the parallel cache complexity for now. In this document, we currently only count the read miss.
+\end{itemize}
+
+\section{Cache complexity}
+We define the cache complexity $Q_{miss}$ of a computation as the number of cache misses incurred by the computation on an ideal cache, starting and ending with an empty cache. $Q_{\infty}$ as the cache misses on the critical path.
+
+We define $Q_{total}$ as the total number of memory access in the computation, $Q_{reuse}$ as the number of reused memory elements
+
+\begin{equation}
+Q_{reuse} = Q_{total} - Q_{miss}
+\end{equation}
+
+\begin{equation}
+ratio_{reuse} = 1 - \frac{Q_{miss}}{Q_{total}}
+\end{equation}
+
+\section*{Lemmas about individual sub-regions}
+\begin{lemma} \label{lemma:UpTrapezoid}
+For a trapezoid
+
+1) if $(w_{\bot} + 2 \sigma h + w_{\bot} + 2 \sigma (h+1) \le Z)$ then 
+
+\begin{equation}
+Q_{\bot} = w_{\bot} + 2 \sigma h
+\end{equation}
+
+2) if $(w_{\bot} + 2 \sigma h + w_{\bot} + 2 \sigma (h+1) > Z$ and $w_{\bot} + w_{\bot} + 2 \sigma \le Z)$, then  from Lemma~\ref{lemma:UpTrapezoid} condition 1) we have $Q_1$. And the read miss in $Q_2$ will equal the area of $Q_2$, the height of which is $h - (h' + 1)$.
+
+\begin{equation}
+\left\lbrace
+\begin{array}{l}
+Q_1 = w_{\bot} + 2 \sigma h' = \frac{1}{2} Z - \sigma \\
+Q_2 = (h - (h' + 1)) \times (w_{\bot} + \sigma + \sigma h + \sigma h') \\
+Q_{\bot} = Q_1 + Q_2 \\
+w_{\bot} + 2 \sigma h' + w_{\bot} + 2 \sigma (h'+1) = Z
+\end{array}
+\right.
+\end{equation}
+
+3) if $(w_{\bot} + w_{\bot} + 2 \sigma > Z)$ then 
+
+\begin{equation}
+Q_{\bot} = \frac{1}{2} (w_{\bot} + w_{\bot} + 2 \sigma h) h = (w_{\bot} + \sigma h) h
+\end{equation}
+So, $Q_{\bot}$ equals the entire area of sub-trapezoid.
+\end{lemma}
+
+\begin{lemma} \label{lemma:DownTrapezoid}
+For an upside down trapezoid,
+
+1) if $(w_{\top} + w_{\top} - 2 \sigma \le Z)$
+
+\begin{equation}
+Q_{\top} = 2 \sigma h + w_{\top} - 2 \sigma h + 2 \sigma = w_{\top} + 2 \sigma
+\end{equation}
+
+2) if $(w_{\top} + w_{\top} - 2 \sigma > Z$ and $w_{\top} - 2 \sigma h + w_{\top} - 2 \sigma h + 2 \sigma \le Z)$, then the analysis should be very similar to that of Lemma~\ref{lemma:UpTrapezoid} condition 2).
+
+3) if $(w_{\top} - 2 \sigma h + w_{\top} - 2 \sigma h + 2 \sigma > Z)$, then the analysis should be very similar to that of Lemma~\ref{lemma:UpTrapezoid} condition 3)
+\end{lemma}
+
+\begin{lemma} \label{lemma:Square}
+For a square region,
+
+if $(w + w + 2 \sigma \le Z)$, we have
+\begin{equation}
+Q = w + 2 \sigma h
+\end{equation}
+\end{lemma}
+
+\begin{lemma} \label{lemma:ComputeBalance}
+In order to achieve computation complexity balance between sub-trapezoid and upside-down sub-trapezoid, we have to make $w_{\top} = w_{\bot} + 2 \sigma h$
+\end{lemma}
+
+\section*{Theorem for loop-based algorithm}
+
+\begin{lemma} \label{lemma:LoopConstraints}
+In order to minimize the cache miss, we have to put the largest sub-trapezoid and upside-down sub-trapezoid into distributed cache, respectively. So, we have
+\begin{equation}
+\left\lbrace
+\begin{array}{l}
+w_{\bot} + 2 \sigma h + w_{\bot} + 2 \sigma (h+1) \le Z \\
+w_{\top} + w_{\top} - 2 \sigma \le Z \\
+w_{\bot} + w_{\top} = N/r \\
+w_{\top} = w_{\bot} + 2 \sigma h
+\end{array}
+\right.
+\end{equation}
+
+So, we have
+
+\begin{equation}
+\left\lbrace
+\begin{array}{l}
+h_{stop} \le \frac{Z}{4 \sigma} - \frac{N}{4 \sigma r} \\
+w_{\bot} \le \frac{1}{2} Z - \sigma - 2 \sigma h_{stop} \\
+w_{\top} = w_{\bot} + 2 \sigma h_{stop}
+\end{array}
+\right.
+\end{equation}
+\end{lemma}
+
+\begin{theorem}
+For blocked loop-based algorithm, the entire cache miss $Q$ will be:
+
+\begin{eqnarray}
+Q & = & \frac{T}{h_{stop}} \times (r \times (Q_{\bot} + Q_{\top})) \\
+  & = & \frac{T}{h_{stop}} \times (r \times (w_{\bot} + 2 \sigma h_{stop} + w_{\top} + 2 \sigma)) \\
+  & = & \frac{T}{h_{stop}} \times (\frac{N}{2} + \frac{Z r}{2} + 2 \sigma r) \\
+  & = & \frac{2 \sigma r T \times (N + Z r + 4 \sigma r)}{Z r - N}
+\end{eqnarray}
+
+Let $\frac{\mathrm{d} Q}{\mathrm{d} r} = 0$, we can get $r$, $Q$, $h_{stop}$, $w_{\bot}$, $w_{\top}$ respectively.
+\end{theorem}
+
+\section*{Theorem for Recursive-based algorithm}
+\begin{lemma}
+Suppose that for the largest sub-trapezoid, satisfy 
+
+\begin{equation}
+\left\lbrace
+\begin{array}{l}
+2 w_{\bot} + 2 \sigma h + 2 \sigma (h+1) \le Z \\
+2 w_{\top} - 2 \sigma \le Z \\
+w_{\top} = w_{\bot} + 2 \sigma h
+w = w_{\top}
+\end{array}
+\right.
+\end{equation}
+
+We can get
+
+\begin{eqnarray*}
+2 \times Q_{largest_sub_trapezoids} & = & (Q_{\bot} + Q_{\top} \\
+								   & = & (w_{\bot} + 2 \sigma h + w_{\top} + 2 \sigma) \\
+								   & = & (2 w + 4 \sigma)
+\end{eqnarray*}
+
+\begin{eqnarray*}
+Q_{last-space-cut} & = & r \times Q_{largest_sub_trapezoids} \\
+ Q_{last-time-cut} & = & (2 w + 4 \sigma) + 2 \times (2 w + 4 \sigma) + \ldots + r \times (2 w + 4 \sigma) \\
+ 				   & = & \frac{(1+r) r}{2} (2 w + 4 \sigma)
+\end{eqnarray*}
+
+So, recursively, we get
+
+\begin{eqnarray*}
+Q_{total} & = & (\frac{(1+r r}{2})^{\frac{T}{r h_{stop}}} (2 w + 4 \sigma) \\
+        w & \le & \frac{1}{2} Z + \sigma \\
+        h & \le & \frac{Z}{4 \sigma} + \frac{1}{2}
+\end{eqnarray*}
+\end{lemma}
+\end{document}

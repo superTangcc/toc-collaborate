@@ -1,0 +1,40 @@
+#
+# Platform-specific build information
+# AMD Opteron
+#
+
+PLATFORM = jacquard
+MAKE = gmake
+LOG2_CACHE_LINE_SIZE_IN_DOUBLES = 3
+PAPI_DESIRED = false
+
+# $C_COMPILER must be gcc or pathcc
+C_COMPILER = gcc
+
+GCC_ROOT = /usr/common/usg/gcc/4.0.2
+PATHCC_ROOT = /usr/common/usg/pathscale/3.0
+
+ifeq ($(C_COMPILER), gcc)
+	CC_NAME = gcc
+	CC = $(GCC_ROOT)/bin/gcc
+	C_FLAGS = -O3 -march=opteron -mtune=opteron -m64
+	PTHREAD_FLAGS = -lpthread
+endif
+ifeq ($(C_COMPILER), pathcc)
+	CC_NAME = pathcc
+	CC = $(PATHCC_ROOT)/bin/pathcc
+	C_FLAGS = -Ofast -march=opteron -mcpu=opteron -m64
+	PTHREAD_FLAGS = -pthread
+endif
+
+# Fortran compiler flags
+FC90 = pathf90
+F_OPT_FLAGS = -O3 -march=opteron -mcpu=opteron -freeform
+
+# PAPI library
+ifeq ($(PAPI_DESIRED), true)
+	PAPI_ROOT = /usr/common/usg/papi/3.1.0
+	PAPI_ENABLED_FLAG = -DPAPI_ENABLED
+	PAPI_INC_FLAGS = -I$(PAPI_ROOT)/include
+	PAPI_LINK_FLAGS = -L$(PAPI_ROOT)/lib -lpapi -L$(PATHCC_ROOT)/lib/3.0 -linstr
+endif

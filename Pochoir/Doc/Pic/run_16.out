@@ -1,0 +1,1446 @@
+./tb_heat_2D_NP_pointer 200 200
+N_SIZE = 200, T_SIZE = 200
+a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :97.0843ms
+Naive Loop: consumed time :100.781ms
+./tb_heat_2D_NP_zero_pointer 200 200
+N_SIZE = 200, T_SIZE = 200
+a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :68.306ms
+Naive Loop: consumed time :199.497ms
+./heat_2D_NP_iter 200 200
+N_SIZE = 200, T_SIZE = 200
+a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :25.62ms
+Naive Loop: consumed time :124.798ms
+./heat_2D_NP_macro 200 200
+N_SIZE = 200, T_SIZE = 200
+a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :50.981ms
+Naive Loop: consumed time :287.502ms
+./heat_2D_NP_type 200 200
+N_SIZE = 200, T_SIZE = 200
+a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :108.775ms
+Naive Loop: consumed time :107.105ms
+./tb_heat_2D_NP_pointer 400 400
+N_SIZE = 400, T_SIZE = 400
+a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :291.809ms
+Naive Loop: consumed time :332.268ms
+./tb_heat_2D_NP_zero_pointer 400 400
+N_SIZE = 400, T_SIZE = 400
+a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :347.087ms
+Naive Loop: consumed time :335.013ms
+./heat_2D_NP_iter 400 400
+N_SIZE = 400, T_SIZE = 400
+a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :329.271ms
+Naive Loop: consumed time :327.396ms
+./heat_2D_NP_macro 400 400
+N_SIZE = 400, T_SIZE = 400
+a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :339.791ms
+Naive Loop: consumed time :345.152ms
+./heat_2D_NP_type 400 400
+N_SIZE = 400, T_SIZE = 400
+a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :469.752ms
+Naive Loop: consumed time :324.423ms
+./tb_heat_2D_NP_pointer 800 800
+N_SIZE = 800, T_SIZE = 800
+a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :809.93ms
+Naive Loop: consumed time :1799.16ms
+./tb_heat_2D_NP_zero_pointer 800 800
+N_SIZE = 800, T_SIZE = 800
+a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :879.138ms
+Naive Loop: consumed time :1903.72ms
+./heat_2D_NP_iter 800 800
+N_SIZE = 800, T_SIZE = 800
+a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :1191.97ms
+Naive Loop: consumed time :1983.62ms
+./heat_2D_NP_macro 800 800
+N_SIZE = 800, T_SIZE = 800
+a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :1040.35ms
+Naive Loop: consumed time :1705.49ms
+./heat_2D_NP_type 800 800
+N_SIZE = 800, T_SIZE = 800
+a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :1157.17ms
+Naive Loop: consumed time :1930.21ms
+./tb_heat_2D_NP_pointer 1600 1600
+N_SIZE = 1600, T_SIZE = 1600
+a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :3415.79ms
+Naive Loop: consumed time :12319.5ms
+./tb_heat_2D_NP_zero_pointer 1600 1600
+N_SIZE = 1600, T_SIZE = 1600
+a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :3730.03ms
+Naive Loop: consumed time :14085.3ms
+./heat_2D_NP_iter 1600 1600
+N_SIZE = 1600, T_SIZE = 1600
+a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :5165.93ms
+Naive Loop: consumed time :13602ms
+./heat_2D_NP_macro 1600 1600
+N_SIZE = 1600, T_SIZE = 1600
+a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :5073ms
+Naive Loop: consumed time :12249.6ms
+./heat_2D_NP_type 1600 1600
+N_SIZE = 1600, T_SIZE = 1600
+a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :5585.55ms
+Naive Loop: consumed time :11971.3ms
+./tb_heat_2D_NP_pointer 3200 3200
+N_SIZE = 3200, T_SIZE = 3200
+a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :17710.8ms
+Naive Loop: consumed time :84194.8ms
+./tb_heat_2D_NP_zero_pointer 3200 3200
+N_SIZE = 3200, T_SIZE = 3200
+a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :16402.3ms
+Naive Loop: consumed time :85691.2ms
+./heat_2D_NP_iter 3200 3200
+N_SIZE = 3200, T_SIZE = 3200
+a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :31362.8ms
+Naive Loop: consumed time :85126.5ms
+./heat_2D_NP_macro 3200 3200
+N_SIZE = 3200, T_SIZE = 3200
+a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :30789.8ms
+Naive Loop: consumed time :83707ms
+./heat_2D_NP_type 3200 3200
+N_SIZE = 3200, T_SIZE = 3200
+a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :34051ms
+Naive Loop: consumed time :84108.3ms
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+./heat_2D_P_pointer 200 200
+N_SIZE = 200, T_SIZE = 200
+a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :79.6417ms
+Naive Loop: consumed time :126.624ms
+./heat_2D_P_iter 200 200
+N_SIZE = 200, T_SIZE = 200
+a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :111.558ms
+Naive Loop: consumed time :144.311ms
+./heat_2D_P_macro 200 200
+N_SIZE = 200, T_SIZE = 200
+a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :112.758ms
+Naive Loop: consumed time :132.458ms
+./heat_2D_P_type 200 200
+N_SIZE = 200, T_SIZE = 200
+a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :76.5043ms
+Naive Loop: consumed time :106.334ms
+./heat_2D_P_pointer 400 400
+N_SIZE = 400, T_SIZE = 400
+a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :197.432ms
+Naive Loop: consumed time :477.726ms
+./heat_2D_P_iter 400 400
+N_SIZE = 400, T_SIZE = 400
+a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :256.938ms
+Naive Loop: consumed time :489.037ms
+./heat_2D_P_macro 400 400
+N_SIZE = 400, T_SIZE = 400
+a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :223.613ms
+Naive Loop: consumed time :502.994ms
+./heat_2D_P_type 400 400
+N_SIZE = 400, T_SIZE = 400
+a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :230.364ms
+Naive Loop: consumed time :460.646ms
+./heat_2D_P_pointer 800 800
+N_SIZE = 800, T_SIZE = 800
+a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :732.271ms
+Naive Loop: consumed time :2795.05ms
+./heat_2D_P_iter 800 800
+N_SIZE = 800, T_SIZE = 800
+a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :932.234ms
+Naive Loop: consumed time :2846.25ms
+./heat_2D_P_macro 800 800
+N_SIZE = 800, T_SIZE = 800
+a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :920.016ms
+Naive Loop: consumed time :2818.99ms
+./heat_2D_P_type 800 800
+N_SIZE = 800, T_SIZE = 800
+a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :1018.97ms
+Naive Loop: consumed time :2731.37ms
+./heat_2D_P_pointer 1600 1600
+N_SIZE = 1600, T_SIZE = 1600
+a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :3271.23ms
+Naive Loop: consumed time :17148.8ms
+./heat_2D_P_iter 1600 1600
+N_SIZE = 1600, T_SIZE = 1600
+a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :4998.19ms
+Naive Loop: consumed time :16797.3ms
+./heat_2D_P_macro 1600 1600
+N_SIZE = 1600, T_SIZE = 1600
+a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :4805.43ms
+Naive Loop: consumed time :16772.4ms
+./heat_2D_P_type 1600 1600
+N_SIZE = 1600, T_SIZE = 1600
+a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :5448.68ms
+Naive Loop: consumed time :16772.6ms
+./heat_2D_P_pointer 3200 3200
+N_SIZE = 3200, T_SIZE = 3200
+a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :17932.9ms
+Naive Loop: consumed time :108562ms
+./heat_2D_P_iter 3200 3200
+N_SIZE = 3200, T_SIZE = 3200
+a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :32885.6ms
+Naive Loop: consumed time :109140ms
+./heat_2D_P_macro 3200 3200
+N_SIZE = 3200, T_SIZE = 3200
+a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :30611.2ms
+Naive Loop: consumed time :108838ms
+./heat_2D_P_type 3200 3200
+N_SIZE = 3200, T_SIZE = 3200
+a(T+1, J, I) = 0.125 * (a(T, J+1, I) - 2.0 * a(T, J, I) + a(T, J-1, I)) + 0.125 * (a(T, J, I+1) - 2.0 * a(T, J, I) + a(T, J, I-1)) + a(T, J, I)
+Pochoir ET: consumed time :33780.8ms
+Naive Loop: consumed time :108731ms
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+./tb_life_pointer 200 200
+N_SIZE = 200, T_SIZE = 200
+Game of Life : 200 x 200, 200 time steps
+Pochoir ET: consumed time :82.0297ms
+Naive Loop: consumed time :126.111ms
+./tb_life_iter 200 200
+N_SIZE = 200, T_SIZE = 200
+Game of Life : 200 x 200, 200 time steps
+Pochoir ET: consumed time :80.2043ms
+Naive Loop: consumed time :91.1237ms
+./tb_life_macro 200 200
+N_SIZE = 200, T_SIZE = 200
+Game of Life : 200 x 200, 200 time steps
+Pochoir ET: consumed time :104.837ms
+Naive Loop: consumed time :114.344ms
+./tb_life_type 200 200
+N_SIZE = 200, T_SIZE = 200
+Game of Life : 200 x 200, 200 time steps
+Pochoir ET: consumed time :74.135ms
+Naive Loop: consumed time :115.679ms
+./tb_life_pointer 400 400
+N_SIZE = 400, T_SIZE = 400
+Game of Life : 400 x 400, 400 time steps
+Pochoir ET: consumed time :279.907ms
+Naive Loop: consumed time :392.93ms
+./tb_life_iter 400 400
+N_SIZE = 400, T_SIZE = 400
+Game of Life : 400 x 400, 400 time steps
+Pochoir ET: consumed time :239.633ms
+Naive Loop: consumed time :435.289ms
+./tb_life_macro 400 400
+N_SIZE = 400, T_SIZE = 400
+Game of Life : 400 x 400, 400 time steps
+Pochoir ET: consumed time :253.431ms
+Naive Loop: consumed time :439.264ms
+./tb_life_type 400 400
+N_SIZE = 400, T_SIZE = 400
+Game of Life : 400 x 400, 400 time steps
+Pochoir ET: consumed time :285.177ms
+Naive Loop: consumed time :384.126ms
+./tb_life_pointer 800 800
+N_SIZE = 800, T_SIZE = 800
+Game of Life : 800 x 800, 800 time steps
+Pochoir ET: consumed time :712.796ms
+Naive Loop: consumed time :2304.58ms
+./tb_life_iter 800 800
+N_SIZE = 800, T_SIZE = 800
+Game of Life : 800 x 800, 800 time steps
+Pochoir ET: consumed time :699.431ms
+Naive Loop: consumed time :2275.36ms
+./tb_life_macro 800 800
+N_SIZE = 800, T_SIZE = 800
+Game of Life : 800 x 800, 800 time steps
+Pochoir ET: consumed time :996.06ms
+Naive Loop: consumed time :2290.38ms
+./tb_life_type 800 800
+N_SIZE = 800, T_SIZE = 800
+Game of Life : 800 x 800, 800 time steps
+Pochoir ET: consumed time :1033.47ms
+Naive Loop: consumed time :2319.22ms
+./tb_life_pointer 1600 1600
+N_SIZE = 1600, T_SIZE = 1600
+Game of Life : 1600 x 1600, 1600 time steps
+Pochoir ET: consumed time :3299.36ms
+Naive Loop: consumed time :14897.8ms
+./tb_life_iter 1600 1600
+N_SIZE = 1600, T_SIZE = 1600
+Game of Life : 1600 x 1600, 1600 time steps
+Pochoir ET: consumed time :3230.4ms
+Naive Loop: consumed time :15016.2ms
+./tb_life_macro 1600 1600
+N_SIZE = 1600, T_SIZE = 1600
+Game of Life : 1600 x 1600, 1600 time steps
+Pochoir ET: consumed time :5755.5ms
+Naive Loop: consumed time :14970.7ms
+./tb_life_type 1600 1600
+N_SIZE = 1600, T_SIZE = 1600
+Game of Life : 1600 x 1600, 1600 time steps
+Pochoir ET: consumed time :6184.18ms
+Naive Loop: consumed time :15035.9ms
+./tb_life_pointer 3200 3200
+N_SIZE = 3200, T_SIZE = 3200
+Game of Life : 3200 x 3200, 3200 time steps
+Pochoir ET: consumed time :20755.9ms
+Naive Loop: consumed time :101422ms
+./tb_life_iter 3200 3200
+N_SIZE = 3200, T_SIZE = 3200
+Game of Life : 3200 x 3200, 3200 time steps
+Pochoir ET: consumed time :20177.7ms
+Naive Loop: consumed time :102073ms
+./tb_life_macro 3200 3200
+N_SIZE = 3200, T_SIZE = 3200
+Game of Life : 3200 x 3200, 3200 time steps
+Pochoir ET: consumed time :40377.4ms
+Naive Loop: consumed time :101722ms
+./tb_life_type 3200 3200
+N_SIZE = 3200, T_SIZE = 3200
+Game of Life : 3200 x 3200, 3200 time steps
+Pochoir ET: consumed time :43548.3ms
+Naive Loop: consumed time :101264ms
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+./tb_3dfd_pointer 200 200 200 200
+Order-4 3D-Stencil (25 points) with space 200x200x200 and time 200
+N_CORES = 16
+++++++++++++++++++++ COStencilTask ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 3.042012
+Perf: 465.342510 Mcells/sec (12098.905265 M-FAdd/s, 3257.397571 M-FMul/s)
+Perf per worker: 465.342510 Mcells/sec (12098.905265 M-FAdd/s, 3257.397571 M-FMul/s)
+
+++++++++++++++++++++ Pochoir ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 14.919905
+Perf: 94.878460 Mcells/sec (2466.839952 M-FAdd/s, 664.149218 M-FMul/s)
+Perf per worker: 94.878460 Mcells/sec (2466.839952 M-FAdd/s, 664.149218 M-FMul/s)
+
+./tb_3dfd_zero_pointer 200 200 200 200
+Order-4 3D-Stencil (25 points) with space 200x200x200 and time 200
+N_CORES = 16
+++++++++++++++++++++ COStencilTask ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 3.047458
+Perf: 464.510957 Mcells/sec (12077.284873 M-FAdd/s, 3251.576697 M-FMul/s)
+Perf per worker: 464.510957 Mcells/sec (12077.284873 M-FAdd/s, 3251.576697 M-FMul/s)
+
+++++++++++++++++++++ Pochoir ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 2.843393
+Perf: 497.848013 Mcells/sec (12944.048350 M-FAdd/s, 3484.936094 M-FMul/s)
+Perf per worker: 497.848013 Mcells/sec (12944.048350 M-FAdd/s, 3484.936094 M-FMul/s)
+
+./tb_3dfd_iter 200 200 200 200
+Order-4 3D-Stencil (25 points) with space 200x200x200 and time 200
+N_CORES = 16
+++++++++++++++++++++ COStencilTask ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 3.048302
+Perf: 464.382345 Mcells/sec (12073.940962 M-FAdd/s, 3250.676413 M-FMul/s)
+Perf per worker: 464.382345 Mcells/sec (12073.940962 M-FAdd/s, 3250.676413 M-FMul/s)
+
+++++++++++++++++++++ Pochoir ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 16.194082
+Perf: 87.413266 Mcells/sec (2272.744917 M-FAdd/s, 611.892862 M-FMul/s)
+Perf per worker: 87.413266 Mcells/sec (2272.744917 M-FAdd/s, 611.892862 M-FMul/s)
+
+./tb_3dfd_macro 200 200 200 200
+Order-4 3D-Stencil (25 points) with space 200x200x200 and time 200
+N_CORES = 16
+++++++++++++++++++++ COStencilTask ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 3.023667
+Perf: 468.165825 Mcells/sec (12172.311441 M-FAdd/s, 3277.160773 M-FMul/s)
+Perf per worker: 468.165825 Mcells/sec (12172.311441 M-FAdd/s, 3277.160773 M-FMul/s)
+
+++++++++++++++++++++ Pochoir ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 16.788756
+Perf: 84.317004 Mcells/sec (2192.242107 M-FAdd/s, 590.219029 M-FMul/s)
+Perf per worker: 84.317004 Mcells/sec (2192.242107 M-FAdd/s, 590.219029 M-FMul/s)
+
+./tb_3dfd_type 200 200 200 200
+Order-4 3D-Stencil (25 points) with space 200x200x200 and time 200
+N_CORES = 16
+++++++++++++++++++++ COStencilTask ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 3.100344
+Perf: 456.587277 Mcells/sec (11871.269214 M-FAdd/s, 3196.110942 M-FMul/s)
+Perf per worker: 456.587277 Mcells/sec (11871.269214 M-FAdd/s, 3196.110942 M-FMul/s)
+
+++++++++++++++++++++ Pochoir ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 17.048403
+Perf: 83.032856 Mcells/sec (2158.854266 M-FAdd/s, 581.229995 M-FMul/s)
+Perf per worker: 83.032856 Mcells/sec (2158.854266 M-FAdd/s, 581.229995 M-FMul/s)
+
+./tb_3dfd_pointer 400 400 400 400
+Order-4 3D-Stencil (25 points) with space 400x400x400 and time 400
+N_CORES = 16
+++++++++++++++++++++ COStencilTask ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 45.319365
+Perf: 531.660476 Mcells/sec (13823.172387 M-FAdd/s, 3721.623335 M-FMul/s)
+Perf per worker: 531.660476 Mcells/sec (13823.172387 M-FAdd/s, 3721.623335 M-FMul/s)
+
+++++++++++++++++++++ Pochoir ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 130.588576
+Perf: 184.507067 Mcells/sec (4797.183751 M-FAdd/s, 1291.549471 M-FMul/s)
+Perf per worker: 184.507067 Mcells/sec (4797.183751 M-FAdd/s, 1291.549471 M-FMul/s)
+
+./tb_3dfd_zero_pointer 400 400 400 400
+Order-4 3D-Stencil (25 points) with space 400x400x400 and time 400
+N_CORES = 16
+++++++++++++++++++++ COStencilTask ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 45.558830
+Perf: 528.865978 Mcells/sec (13750.515430 M-FAdd/s, 3702.061847 M-FMul/s)
+Perf per worker: 528.865978 Mcells/sec (13750.515430 M-FAdd/s, 3702.061847 M-FMul/s)
+
+++++++++++++++++++++ Pochoir ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 44.272988
+Perf: 544.226090 Mcells/sec (14149.878342 M-FAdd/s, 3809.582631 M-FMul/s)
+Perf per worker: 544.226090 Mcells/sec (14149.878342 M-FAdd/s, 3809.582631 M-FMul/s)
+
+./tb_3dfd_iter 400 400 400 400
+Order-4 3D-Stencil (25 points) with space 400x400x400 and time 400
+N_CORES = 16
+++++++++++++++++++++ COStencilTask ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 45.790055
+Perf: 526.195375 Mcells/sec (13681.079761 M-FAdd/s, 3683.367628 M-FMul/s)
+Perf per worker: 526.195375 Mcells/sec (13681.079761 M-FAdd/s, 3683.367628 M-FMul/s)
+
+++++++++++++++++++++ Pochoir ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 151.086922
+Perf: 159.474526 Mcells/sec (4146.337666 M-FAdd/s, 1116.321679 M-FMul/s)
+Perf per worker: 159.474526 Mcells/sec (4146.337666 M-FAdd/s, 1116.321679 M-FMul/s)
+
+./tb_3dfd_macro 400 400 400 400
+Order-4 3D-Stencil (25 points) with space 400x400x400 and time 400
+N_CORES = 16
+++++++++++++++++++++ COStencilTask ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 45.396776
+Perf: 530.753882 Mcells/sec (13799.600933 M-FAdd/s, 3715.277174 M-FMul/s)
+Perf per worker: 530.753882 Mcells/sec (13799.600933 M-FAdd/s, 3715.277174 M-FMul/s)
+
+++++++++++++++++++++ Pochoir ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 164.960913
+Perf: 146.061966 Mcells/sec (3797.611107 M-FAdd/s, 1022.433760 M-FMul/s)
+Perf per worker: 146.061966 Mcells/sec (3797.611107 M-FAdd/s, 1022.433760 M-FMul/s)
+
+./tb_3dfd_type 400 400 400 400
+Order-4 3D-Stencil (25 points) with space 400x400x400 and time 400
+N_CORES = 16
+++++++++++++++++++++ COStencilTask ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 45.494776
+Perf: 529.610591 Mcells/sec (13769.875360 M-FAdd/s, 3707.274135 M-FMul/s)
+Perf per worker: 529.610591 Mcells/sec (13769.875360 M-FAdd/s, 3707.274135 M-FMul/s)
+
+++++++++++++++++++++ Pochoir ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 165.638960
+Perf: 145.464057 Mcells/sec (3782.065492 M-FAdd/s, 1018.248402 M-FMul/s)
+Perf per worker: 145.464057 Mcells/sec (3782.065492 M-FAdd/s, 1018.248402 M-FMul/s)
+
+./tb_3dfd_pointer 800 800 800 800
+Order-4 3D-Stencil (25 points) with space 800x800x800 and time 800
+N_CORES = 16
+++++++++++++++++++++ COStencilTask ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 853.958787
+Perf: 465.402402 Mcells/sec (12100.462444 M-FAdd/s, 3257.816812 M-FMul/s)
+Perf per worker: 465.402402 Mcells/sec (12100.462444 M-FAdd/s, 3257.816812 M-FMul/s)
+
+++++++++++++++++++++ Pochoir ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 1359.801347
+Perf: 292.273920 Mcells/sec (7599.121925 M-FAdd/s, 2045.917441 M-FMul/s)
+Perf per worker: 292.273920 Mcells/sec (7599.121925 M-FAdd/s, 2045.917441 M-FMul/s)
+
+./tb_3dfd_zero_pointer 800 800 800 800
+Order-4 3D-Stencil (25 points) with space 800x800x800 and time 800
+N_CORES = 16
+++++++++++++++++++++ COStencilTask ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 855.177179
+Perf: 464.739331 Mcells/sec (12083.222615 M-FAdd/s, 3253.175319 M-FMul/s)
+Perf per worker: 464.739331 Mcells/sec (12083.222615 M-FAdd/s, 3253.175319 M-FMul/s)
+
+++++++++++++++++++++ Pochoir ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 839.371978
+Perf: 473.490277 Mcells/sec (12310.747202 M-FAdd/s, 3314.431939 M-FMul/s)
+Perf per worker: 473.490277 Mcells/sec (12310.747202 M-FAdd/s, 3314.431939 M-FMul/s)
+
+./tb_3dfd_iter 800 800 800 800
+Order-4 3D-Stencil (25 points) with space 800x800x800 and time 800
+N_CORES = 16
+++++++++++++++++++++ COStencilTask ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 853.664502
+Perf: 465.562841 Mcells/sec (12104.633855 M-FAdd/s, 3258.939884 M-FMul/s)
+Perf per worker: 465.562841 Mcells/sec (12104.633855 M-FAdd/s, 3258.939884 M-FMul/s)
+
+++++++++++++++++++++ Pochoir ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 1752.113604
+Perf: 226.831451 Mcells/sec (5897.617715 M-FAdd/s, 1587.820154 M-FMul/s)
+Perf per worker: 226.831451 Mcells/sec (5897.617715 M-FAdd/s, 1587.820154 M-FMul/s)
+
+./tb_3dfd_macro 800 800 800 800
+Order-4 3D-Stencil (25 points) with space 800x800x800 and time 800
+N_CORES = 16
+++++++++++++++++++++ COStencilTask ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 854.189004
+Perf: 465.276969 Mcells/sec (12097.201185 M-FAdd/s, 3256.938780 M-FMul/s)
+Perf per worker: 465.276969 Mcells/sec (12097.201185 M-FAdd/s, 3256.938780 M-FMul/s)
+
+++++++++++++++++++++ Pochoir ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 1980.280032
+Perf: 200.696095 Mcells/sec (5218.098483 M-FAdd/s, 1404.872668 M-FMul/s)
+Perf per worker: 200.696095 Mcells/sec (5218.098483 M-FAdd/s, 1404.872668 M-FMul/s)
+
+./tb_3dfd_type 800 800 800 800
+Order-4 3D-Stencil (25 points) with space 800x800x800 and time 800
+N_CORES = 16
+++++++++++++++++++++ COStencilTask ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 854.214886
+Perf: 465.262871 Mcells/sec (12096.834646 M-FAdd/s, 3256.840097 M-FMul/s)
+Perf per worker: 465.262871 Mcells/sec (12096.834646 M-FAdd/s, 3256.840097 M-FMul/s)
+
+++++++++++++++++++++ Pochoir ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 2001.052087
+Perf: 198.612756 Mcells/sec (5163.931662 M-FAdd/s, 1390.289294 M-FMul/s)
+Perf per worker: 198.612756 Mcells/sec (5163.931662 M-FAdd/s, 1390.289294 M-FMul/s)
+
+./tb_3dfd_pointer 1600 1600 1600 1600
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 1600x1600x1600 and time 1600
+./run.sh: line 61: 20336 Aborted                 LD_LIBRARY_PATH=. ./tb_3dfd_pointer $size $size $size $size
+./tb_3dfd_zero_pointer 1600 1600 1600 1600
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 1600x1600x1600 and time 1600
+./run.sh: line 61: 20337 Aborted                 LD_LIBRARY_PATH=. ./tb_3dfd_zero_pointer $size $size $size $size
+./tb_3dfd_iter 1600 1600 1600 1600
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 1600x1600x1600 and time 1600
+./run.sh: line 61: 20338 Aborted                 LD_LIBRARY_PATH=. ./tb_3dfd_iter $size $size $size $size
+./tb_3dfd_macro 1600 1600 1600 1600
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 1600x1600x1600 and time 1600
+./run.sh: line 61: 20340 Aborted                 LD_LIBRARY_PATH=. ./tb_3dfd_macro $size $size $size $size
+./tb_3dfd_type 1600 1600 1600 1600
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 1600x1600x1600 and time 1600
+./run.sh: line 61: 20345 Aborted                 LD_LIBRARY_PATH=. ./tb_3dfd_type $size $size $size $size
+./tb_3dfd_pointer 3200 3200 3200 3200
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 3200x3200x3200 and time 3200
+./run.sh: line 61: 20350 Aborted                 LD_LIBRARY_PATH=. ./tb_3dfd_pointer $size $size $size $size
+./tb_3dfd_zero_pointer 3200 3200 3200 3200
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 3200x3200x3200 and time 3200
+./run.sh: line 61: 20925 Aborted                 LD_LIBRARY_PATH=. ./tb_3dfd_zero_pointer $size $size $size $size
+./tb_3dfd_iter 3200 3200 3200 3200
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 3200x3200x3200 and time 3200
+./run.sh: line 61: 21133 Aborted                 LD_LIBRARY_PATH=. ./tb_3dfd_iter $size $size $size $size
+./tb_3dfd_macro 3200 3200 3200 3200
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 3200x3200x3200 and time 3200
+./run.sh: line 61: 21507 Aborted                 LD_LIBRARY_PATH=. ./tb_3dfd_macro $size $size $size $size
+./tb_3dfd_type 3200 3200 3200 3200
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 3200x3200x3200 and time 3200
+./run.sh: line 61: 21768 Aborted                 LD_LIBRARY_PATH=. ./tb_3dfd_type $size $size $size $size
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+./psa_pointer -r 200 200 -i
+
+Stencil-based DP for optimal pairwise sequence alignment cost with affine gap costs ( run with option -h for help ).
+
+Paremeters:
+
+	gap open cost = 2
+	gap extention cost = 1
+	mismatch cost = 1
+
+Sequence lengths = < 200, 200 >
+
+Running pochoir-based DP...
+
+Pochoir:
+	 alignment cost = 131
+	 running time = 0.002 sec
+
+Running iterative stencil...
+
+Iterative Stencil:
+	 alignment cost = 131
+	 running time = 0.169 sec ( 73.606 x Pochoir )
+
+./psa_zero_pointer -r 200 200 -i
+
+Stencil-based DP for optimal pairwise sequence alignment cost with affine gap costs ( run with option -h for help ).
+
+Paremeters:
+
+	gap open cost = 2
+	gap extention cost = 1
+	mismatch cost = 1
+
+Sequence lengths = < 200, 200 >
+
+Running pochoir-based DP...
+
+Pochoir:
+	 alignment cost = 131
+	 running time = 0.002 sec
+
+Running iterative stencil...
+
+Iterative Stencil:
+	 alignment cost = 131
+	 running time = 0.177 sec ( 74.627 x Pochoir )
+
+./psa_iter -r 200 200 -i
+
+Stencil-based DP for optimal pairwise sequence alignment cost with affine gap costs ( run with option -h for help ).
+
+Paremeters:
+
+	gap open cost = 2
+	gap extention cost = 1
+	mismatch cost = 1
+
+Sequence lengths = < 200, 200 >
+
+Running pochoir-based DP...
+
+Pochoir:
+	 alignment cost = 131
+	 running time = 0.002 sec
+
+Running iterative stencil...
+
+Iterative Stencil:
+	 alignment cost = 131
+	 running time = 0.098 sec ( 40.621 x Pochoir )
+
+./psa_macro -r 200 200 -i
+
+Stencil-based DP for optimal pairwise sequence alignment cost with affine gap costs ( run with option -h for help ).
+
+Paremeters:
+
+	gap open cost = 2
+	gap extention cost = 1
+	mismatch cost = 1
+
+Sequence lengths = < 200, 200 >
+
+Running pochoir-based DP...
+
+Pochoir:
+	 alignment cost = 131
+	 running time = 0.005 sec
+
+Running iterative stencil...
+
+Iterative Stencil:
+	 alignment cost = 131
+	 running time = 0.176 sec ( 38.233 x Pochoir )
+
+./psa_type -r 200 200 -i
+
+Stencil-based DP for optimal pairwise sequence alignment cost with affine gap costs ( run with option -h for help ).
+
+Paremeters:
+
+	gap open cost = 2
+	gap extention cost = 1
+	mismatch cost = 1
+
+Sequence lengths = < 200, 200 >
+
+Running pochoir-based DP...
+
+Pochoir:
+	 alignment cost = 131
+	 running time = 0.005 sec
+
+Running iterative stencil...
+
+Iterative Stencil:
+	 alignment cost = 131
+	 running time = 0.147 sec ( 30.807 x Pochoir )
+
+./psa_pointer -r 400 400 -i
+
+Stencil-based DP for optimal pairwise sequence alignment cost with affine gap costs ( run with option -h for help ).
+
+Paremeters:
+
+	gap open cost = 2
+	gap extention cost = 1
+	mismatch cost = 1
+
+Sequence lengths = < 400, 400 >
+
+Running pochoir-based DP...
+
+Pochoir:
+	 alignment cost = 271
+	 running time = 0.004 sec
+
+Running iterative stencil...
+
+Iterative Stencil:
+	 alignment cost = 271
+	 running time = 0.233 sec ( 55.194 x Pochoir )
+
+./psa_zero_pointer -r 400 400 -i
+
+Stencil-based DP for optimal pairwise sequence alignment cost with affine gap costs ( run with option -h for help ).
+
+Paremeters:
+
+	gap open cost = 2
+	gap extention cost = 1
+	mismatch cost = 1
+
+Sequence lengths = < 400, 400 >
+
+Running pochoir-based DP...
+
+Pochoir:
+	 alignment cost = 265
+	 running time = 0.004 sec
+
+Running iterative stencil...
+
+Iterative Stencil:
+	 alignment cost = 265
+	 running time = 0.227 sec ( 52.130 x Pochoir )
+
+./psa_iter -r 400 400 -i
+
+Stencil-based DP for optimal pairwise sequence alignment cost with affine gap costs ( run with option -h for help ).
+
+Paremeters:
+
+	gap open cost = 2
+	gap extention cost = 1
+	mismatch cost = 1
+
+Sequence lengths = < 400, 400 >
+
+Running pochoir-based DP...
+
+Pochoir:
+	 alignment cost = 265
+	 running time = 0.005 sec
+
+Running iterative stencil...
+
+Iterative Stencil:
+	 alignment cost = 265
+	 running time = 0.333 sec ( 70.925 x Pochoir )
+
+./psa_macro -r 400 400 -i
+
+Stencil-based DP for optimal pairwise sequence alignment cost with affine gap costs ( run with option -h for help ).
+
+Paremeters:
+
+	gap open cost = 2
+	gap extention cost = 1
+	mismatch cost = 1
+
+Sequence lengths = < 400, 400 >
+
+Running pochoir-based DP...
+
+Pochoir:
+	 alignment cost = 265
+	 running time = 0.008 sec
+
+Running iterative stencil...
+
+Iterative Stencil:
+	 alignment cost = 265
+	 running time = 0.300 sec ( 36.621 x Pochoir )
+
+./psa_type -r 400 400 -i
+
+Stencil-based DP for optimal pairwise sequence alignment cost with affine gap costs ( run with option -h for help ).
+
+Paremeters:
+
+	gap open cost = 2
+	gap extention cost = 1
+	mismatch cost = 1
+
+Sequence lengths = < 400, 400 >
+
+Running pochoir-based DP...
+
+Pochoir:
+	 alignment cost = 272
+	 running time = 0.047 sec
+
+Running iterative stencil...
+
+Iterative Stencil:
+	 alignment cost = 272
+	 running time = 0.204 sec ( 4.320 x Pochoir )
+
+./psa_pointer -r 800 800 -i
+
+Stencil-based DP for optimal pairwise sequence alignment cost with affine gap costs ( run with option -h for help ).
+
+Paremeters:
+
+	gap open cost = 2
+	gap extention cost = 1
+	mismatch cost = 1
+
+Sequence lengths = < 800, 800 >
+
+Running pochoir-based DP...
+
+Pochoir:
+	 alignment cost = 522
+	 running time = 0.012 sec
+
+Running iterative stencil...
+
+Iterative Stencil:
+	 alignment cost = 522
+	 running time = 0.338 sec ( 27.750 x Pochoir )
+
+./psa_zero_pointer -r 800 800 -i
+
+Stencil-based DP for optimal pairwise sequence alignment cost with affine gap costs ( run with option -h for help ).
+
+Paremeters:
+
+	gap open cost = 2
+	gap extention cost = 1
+	mismatch cost = 1
+
+Sequence lengths = < 800, 800 >
+
+Running pochoir-based DP...
+
+Pochoir:
+	 alignment cost = 522
+	 running time = 0.012 sec
+
+Running iterative stencil...
+
+Iterative Stencil:
+	 alignment cost = 522
+	 running time = 0.508 sec ( 41.576 x Pochoir )
+
+./psa_iter -r 800 800 -i
+
+Stencil-based DP for optimal pairwise sequence alignment cost with affine gap costs ( run with option -h for help ).
+
+Paremeters:
+
+	gap open cost = 2
+	gap extention cost = 1
+	mismatch cost = 1
+
+Sequence lengths = < 800, 800 >
+
+Running pochoir-based DP...
+
+Pochoir:
+	 alignment cost = 529
+	 running time = 0.014 sec
+
+Running iterative stencil...
+
+Iterative Stencil:
+	 alignment cost = 529
+	 running time = 0.443 sec ( 32.453 x Pochoir )
+
+./psa_macro -r 800 800 -i
+
+Stencil-based DP for optimal pairwise sequence alignment cost with affine gap costs ( run with option -h for help ).
+
+Paremeters:
+
+	gap open cost = 2
+	gap extention cost = 1
+	mismatch cost = 1
+
+Sequence lengths = < 800, 800 >
+
+Running pochoir-based DP...
+
+Pochoir:
+	 alignment cost = 529
+	 running time = 0.291 sec
+
+Running iterative stencil...
+
+Iterative Stencil:
+	 alignment cost = 529
+	 running time = 0.524 sec ( 1.800 x Pochoir )
+
+./psa_type -r 800 800 -i
+
+Stencil-based DP for optimal pairwise sequence alignment cost with affine gap costs ( run with option -h for help ).
+
+Paremeters:
+
+	gap open cost = 2
+	gap extention cost = 1
+	mismatch cost = 1
+
+Sequence lengths = < 800, 800 >
+
+Running pochoir-based DP...
+
+Pochoir:
+	 alignment cost = 527
+	 running time = 0.067 sec
+
+Running iterative stencil...
+
+Iterative Stencil:
+	 alignment cost = 527
+	 running time = 0.345 sec ( 5.174 x Pochoir )
+
+./psa_pointer -r 1600 1600 -i
+
+Stencil-based DP for optimal pairwise sequence alignment cost with affine gap costs ( run with option -h for help ).
+
+Paremeters:
+
+	gap open cost = 2
+	gap extention cost = 1
+	mismatch cost = 1
+
+Sequence lengths = < 1600, 1600 >
+
+Running pochoir-based DP...
+
+Pochoir:
+	 alignment cost = 1047
+	 running time = 0.029 sec
+
+Running iterative stencil...
+
+Iterative Stencil:
+	 alignment cost = 1047
+	 running time = 0.733 sec ( 24.906 x Pochoir )
+
+./psa_zero_pointer -r 1600 1600 -i
+
+Stencil-based DP for optimal pairwise sequence alignment cost with affine gap costs ( run with option -h for help ).
+
+Paremeters:
+
+	gap open cost = 2
+	gap extention cost = 1
+	mismatch cost = 1
+
+Sequence lengths = < 1600, 1600 >
+
+Running pochoir-based DP...
+
+Pochoir:
+	 alignment cost = 1054
+	 running time = 0.029 sec
+
+Running iterative stencil...
+
+Iterative Stencil:
+	 alignment cost = 1054
+	 running time = 0.730 sec ( 24.839 x Pochoir )
+
+./psa_iter -r 1600 1600 -i
+
+Stencil-based DP for optimal pairwise sequence alignment cost with affine gap costs ( run with option -h for help ).
+
+Paremeters:
+
+	gap open cost = 2
+	gap extention cost = 1
+	mismatch cost = 1
+
+Sequence lengths = < 1600, 1600 >
+
+Running pochoir-based DP...
+
+Pochoir:
+	 alignment cost = 1042
+	 running time = 0.087 sec
+
+Running iterative stencil...
+
+Iterative Stencil:
+	 alignment cost = 1042
+	 running time = 0.966 sec ( 11.094 x Pochoir )
+
+./psa_macro -r 1600 1600 -i
+
+Stencil-based DP for optimal pairwise sequence alignment cost with affine gap costs ( run with option -h for help ).
+
+Paremeters:
+
+	gap open cost = 2
+	gap extention cost = 1
+	mismatch cost = 1
+
+Sequence lengths = < 1600, 1600 >
+
+Running pochoir-based DP...
+
+Pochoir:
+	 alignment cost = 1040
+	 running time = 0.067 sec
+
+Running iterative stencil...
+
+Iterative Stencil:
+	 alignment cost = 1040
+	 running time = 1.044 sec ( 15.614 x Pochoir )
+
+./psa_type -r 1600 1600 -i
+
+Stencil-based DP for optimal pairwise sequence alignment cost with affine gap costs ( run with option -h for help ).
+
+Paremeters:
+
+	gap open cost = 2
+	gap extention cost = 1
+	mismatch cost = 1
+
+Sequence lengths = < 1600, 1600 >
+
+Running pochoir-based DP...
+
+Pochoir:
+	 alignment cost = 1051
+	 running time = 0.153 sec
+
+Running iterative stencil...
+
+Iterative Stencil:
+	 alignment cost = 1051
+	 running time = 1.101 sec ( 7.178 x Pochoir )
+
+./psa_pointer -r 3200 3200 -i
+
+Stencil-based DP for optimal pairwise sequence alignment cost with affine gap costs ( run with option -h for help ).
+
+Paremeters:
+
+	gap open cost = 2
+	gap extention cost = 1
+	mismatch cost = 1
+
+Sequence lengths = < 3200, 3200 >
+
+Running pochoir-based DP...
+
+Pochoir:
+	 alignment cost = 2076
+	 running time = 0.119 sec
+
+Running iterative stencil...
+
+Iterative Stencil:
+	 alignment cost = 2076
+	 running time = 1.654 sec ( 13.937 x Pochoir )
+
+./psa_zero_pointer -r 3200 3200 -i
+
+Stencil-based DP for optimal pairwise sequence alignment cost with affine gap costs ( run with option -h for help ).
+
+Paremeters:
+
+	gap open cost = 2
+	gap extention cost = 1
+	mismatch cost = 1
+
+Sequence lengths = < 3200, 3200 >
+
+Running pochoir-based DP...
+
+Pochoir:
+	 alignment cost = 2066
+	 running time = 0.154 sec
+
+Running iterative stencil...
+
+Iterative Stencil:
+	 alignment cost = 2066
+	 running time = 1.908 sec ( 12.392 x Pochoir )
+
+./psa_iter -r 3200 3200 -i
+
+Stencil-based DP for optimal pairwise sequence alignment cost with affine gap costs ( run with option -h for help ).
+
+Paremeters:
+
+	gap open cost = 2
+	gap extention cost = 1
+	mismatch cost = 1
+
+Sequence lengths = < 3200, 3200 >
+
+Running pochoir-based DP...
+
+Pochoir:
+	 alignment cost = 2080
+	 running time = 0.178 sec
+
+Running iterative stencil...
+
+Iterative Stencil:
+	 alignment cost = 2080
+	 running time = 1.710 sec ( 9.600 x Pochoir )
+
+./psa_macro -r 3200 3200 -i
+
+Stencil-based DP for optimal pairwise sequence alignment cost with affine gap costs ( run with option -h for help ).
+
+Paremeters:
+
+	gap open cost = 2
+	gap extention cost = 1
+	mismatch cost = 1
+
+Sequence lengths = < 3200, 3200 >
+
+Running pochoir-based DP...
+
+Pochoir:
+	 alignment cost = 2083
+	 running time = 0.392 sec
+
+Running iterative stencil...
+
+Iterative Stencil:
+	 alignment cost = 2083
+	 running time = 2.470 sec ( 6.295 x Pochoir )
+
+./psa_type -r 3200 3200 -i
+
+Stencil-based DP for optimal pairwise sequence alignment cost with affine gap costs ( run with option -h for help ).
+
+Paremeters:
+
+	gap open cost = 2
+	gap extention cost = 1
+	mismatch cost = 1
+
+Sequence lengths = < 3200, 3200 >
+
+Running pochoir-based DP...
+
+Pochoir:
+	 alignment cost = 2089
+	 running time = 0.331 sec
+
+Running iterative stencil...
+
+Iterative Stencil:
+	 alignment cost = 2089
+	 running time = 2.143 sec ( 6.469 x Pochoir )
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+./rna_pointer -r 200 -i
+
+Stencil-based DP for RNA secondary structure prediction with simple pseudoknots ( run with option -h for help ).
+
+Sequence length = 200
+
+Running pochoir-based DP...
+
+Pochoir:
+	 maximum number of base pairs = 98
+	 running time = 12.510 sec
+
+Running iterative stencil...
+
+Iterative Stencil:
+	 maximum number of base pairs = 98
+	 running time = 35.877 sec ( 2.868 x Pochoir )
+
+./rna_zero_pointer -r 200 -i
+
+Stencil-based DP for RNA secondary structure prediction with simple pseudoknots ( run with option -h for help ).
+
+Sequence length = 200
+
+Running pochoir-based DP...
+
+Pochoir:
+	 maximum number of base pairs = 101
+	 running time = 12.578 sec
+
+Running iterative stencil...
+
+Iterative Stencil:
+	 maximum number of base pairs = 101
+	 running time = 38.947 sec ( 3.096 x Pochoir )
+
+./rna_iter -r 200 -i
+
+Stencil-based DP for RNA secondary structure prediction with simple pseudoknots ( run with option -h for help ).
+
+Sequence length = 200
+
+Running pochoir-based DP...
+
+Pochoir:
+	 maximum number of base pairs = 99
+	 running time = 14.840 sec
+
+Running iterative stencil...
+
+Iterative Stencil:
+	 maximum number of base pairs = 99
+	 running time = 39.435 sec ( 2.657 x Pochoir )
+
+./rna_macro -r 200 -i
+
+Stencil-based DP for RNA secondary structure prediction with simple pseudoknots ( run with option -h for help ).
+
+Sequence length = 200
+
+Running pochoir-based DP...
+
+Pochoir:
+	 maximum number of base pairs = 102
+	 running time = 28.928 sec
+
+Running iterative stencil...
+
+Iterative Stencil:
+	 maximum number of base pairs = 102
+	 running time = 39.148 sec ( 1.353 x Pochoir )
+
+./rna_type -r 200 -i
+
+Stencil-based DP for RNA secondary structure prediction with simple pseudoknots ( run with option -h for help ).
+
+Sequence length = 200
+
+Running pochoir-based DP...
+
+Pochoir:
+	 maximum number of base pairs = 101
+	 running time = 29.074 sec
+
+Running iterative stencil...
+
+Iterative Stencil:
+	 maximum number of base pairs = 101
+	 running time = 36.638 sec ( 1.260 x Pochoir )
+
+./rna_pointer -r 400 -i
+
+Stencil-based DP for RNA secondary structure prediction with simple pseudoknots ( run with option -h for help ).
+
+Sequence length = 400
+
+Running pochoir-based DP...
+
+Pochoir:
+	 maximum number of base pairs = 206
+	 running time = 101.229 sec
+
+Running iterative stencil...
+
+Iterative Stencil:
+	 maximum number of base pairs = 206
+	 running time = 206.521 sec ( 2.040 x Pochoir )
+
+./rna_zero_pointer -r 400 -i
+
+Stencil-based DP for RNA secondary structure prediction with simple pseudoknots ( run with option -h for help ).
+
+Sequence length = 400
+
+Running pochoir-based DP...
+
+Pochoir:
+	 maximum number of base pairs = 208
+	 running time = 102.040 sec
+
+Running iterative stencil...
+
+Iterative Stencil:
+	 maximum number of base pairs = 208
+	 running time = 208.250 sec ( 2.041 x Pochoir )
+
+./rna_iter -r 400 -i
+
+Stencil-based DP for RNA secondary structure prediction with simple pseudoknots ( run with option -h for help ).
+
+Sequence length = 400
+
+Running pochoir-based DP...
+
+Pochoir:
+	 maximum number of base pairs = 200
+	 running time = 115.133 sec
+
+Running iterative stencil...
+
+Iterative Stencil:
+	 maximum number of base pairs = 200
+	 running time = 200.253 sec ( 1.739 x Pochoir )
+
+./rna_macro -r 400 -i
+
+Stencil-based DP for RNA secondary structure prediction with simple pseudoknots ( run with option -h for help ).
+
+Sequence length = 400
+
+Running pochoir-based DP...
+
+Pochoir:
+	 maximum number of base pairs = 202
+	 running time = 179.794 sec
+
+Running iterative stencil...
+
+Iterative Stencil:
+	 maximum number of base pairs = 202
+	 running time = 206.276 sec ( 1.147 x Pochoir )
+
+./rna_type -r 400 -i
+
+Stencil-based DP for RNA secondary structure prediction with simple pseudoknots ( run with option -h for help ).
+
+Sequence length = 400
+
+Running pochoir-based DP...
+
+Pochoir:
+	 maximum number of base pairs = 212
+	 running time = 182.529 sec
+
+Running iterative stencil...
+
+Iterative Stencil:
+	 maximum number of base pairs = 212
+	 running time = 208.453 sec ( 1.142 x Pochoir )
+
+./rna_pointer -r 800 -i
+
+Stencil-based DP for RNA secondary structure prediction with simple pseudoknots ( run with option -h for help ).
+
+Sequence length = 800
+
+Running pochoir-based DP...
+
+Pochoir:
+	 maximum number of base pairs = 413
+	 running time = 943.693 sec
+
+Running iterative stencil...
+
+Iterative Stencil:
+	 maximum number of base pairs = 413
+	 running time = 1489.186 sec ( 1.578 x Pochoir )
+
+./rna_zero_pointer -r 800 -i
+
+Stencil-based DP for RNA secondary structure prediction with simple pseudoknots ( run with option -h for help ).
+
+Sequence length = 800
+
+Running pochoir-based DP...
+
+Pochoir:
+	 maximum number of base pairs = 413
+	 running time = 945.251 sec
+
+Running iterative stencil...

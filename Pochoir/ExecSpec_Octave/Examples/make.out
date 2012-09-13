@@ -1,0 +1,5 @@
+./pochoir -o tile_2D -DCHECK_SHAPE -rdynamic -ldl -O2 -DNDEBUG -Wall -Werror -unroll-aggressive -funroll-loops -xHOST -fno-alias -fno-fnalias -fp-model precise -std=c++0x  -unroll-t-tile-pointer-overlap tb_tile_2D.cpp
+pochoir called with mode =-unroll-t-tile-pointer-overlap
+icpc -P -C -DNCHECK_SHAPE -DNDEBUG -std=c++0x -Wall -Werror -I/home/yuantang/Git/Pochoir/ExecSpec_Octave/ tb_tile_2D.cpp
+pochoir -unroll-t-tile-pointer-overlap tb_tile_2D.i
+icpc -o tile_2D -DCHECK_SHAPE -rdynamic -ldl -O2 -DNDEBUG -Wall -Werror -unroll-aggressive -funroll-loops -xHOST -fno-alias -fno-fnalias -fp-model precise -std=c++0x tb_tile_2D_pochoir.cpp

@@ -1,0 +1,177 @@
+Puzzle Formulation:
+
+we have a set of possible code clone C = {clone}, where clone = {0, 1,
+x}^g; |C| = 3^g. Each clone is a composition of user registered kernels
+(could be tile of kernels, i.e. microscopic inhomogeneity). g is the
+number of registered kernels. each bit in clone represents how to
+compose the corresponding kernel. i.e. 
+
+0: corresponding kernel is not included in the clone; 
+1: corresponding kernel is included in the clone, without a guard function 
+(condition);
+x: corresponding kernel is included in the clone, but guarded with a guard 
+function (condition)
+
+we also have a set of cells S = {cell}, where cell = {0, 1}^g; |S| = N
+>= 2^g. each bit in cell represents the applicability of a corresponding
+kernel on this cell. i.e.
+
+0: The corresponding kernel should NOT be applied to the cell
+1: The corresponding kernel should be applied to the cell
+
+First, we have a cost function describing the cost of different
+combination of clone bit with cell bit, i.e.
+
+cost(clone_i[l], cell_j[l]) = {0, 1, \inf}, based on a truth table.
+cost(clone_i[l], cell_j[l]) reads, we compare the 'l'th bit of clone_i
+with 'l'th bit of cell_j, and evaluate the cost via a truth table:
+_________________________________
+| clone_i[l] | cell_j[l] | cost |
+| 0          | 0         | 0    |
+| 1          | 0         | \inf |
+| x          | 0         | 1    |
+| 0          | 1         | \inf |
+| 1          | 1         | 0    |
+| x          | 1         | 1    |
+---------------------------------
+
+So, cost(clone_i, cell_j) = \Sigma_{l=0}^{g-1} cost(clone_i[l],
+cell_j[l])
+
+Puzzle: given a fixed number k, how to efficiently select k out of 3^g
+possible code clones to minimize following objective function:
+
+min \Sigma_{i=0}^{N-1} cost(clone_j, cell_i)  , where j \in [0, 2^k -
+1], 2^k <= 3^g.
+
+Algorithm:
+
+Observation 0: The cell having the same homogeneity will have the same
+contribution to the objective function.
+
+Step 0: so contract N cells to m cells that have distinct homogeneity.
+
+Observation 0: If the clone bit matches with the cell bit, it will have
+0 cost. 
+
+Step 0: So, for the input of m cells, each of g bits long, we just
+simply duplicate the bit-matrix Sell to get the same bit-matrix for
+Clone. The duplicated bit matrix Clone indicates that at most m
+different clones is needed to get the definitely minimum cost of 0. If m
+<= k, we are done. Otherwise, we go to the next step.
+
+Observation 1: If the clone bit mismatches with the cell bit by a 0/1
+combination, it will yield cost \inf, which can be safely excluded from
+consideration. So, the only possible mismatch in the clone bit and cell
+bit can be either x/1, or x/0, which upper-bounds the cost function by 1
+for each mismatch.
+
+step 1: we can merge the g x m bit-matrix of Clone column by column just
+by replacing some entries in the matrix by x. 
+
+Observation 2: Since all columns in the matrix differ by at least one
+bit, so if we merge two columns in the matrix by the minimum cost if
+merge, each round we can merge at most two columns, which means each
+time we can eliminate only one column. The rule to calculate the minimum
+cost if we merge two columns is by calculating how many bits in these
+two columns are different, and how many cost they will yield with
+formula: merge(x, 1) or merge(x, 0) yields cost 1, merge(0, 1) yields
+cost 2, merge(x, x) yields cost 0. This merge cost should also count 
+the effect of weight (how many original cells the super-cell represents)
+and the number of columns the column has merged. If we assume g <= w (w is
+the size of machine word size), this calculation of minimum cost yielded
+by merge between two columns can be done by bit-tricks in O(1) time.
+
+Observation 3: a naive algorithm to find similarity (or minimum cost
+yielded if merge) between cells are just scan through all remaining
+cells, so it's upper bounded by \Sigma_{i=0}^{m-k-1} (m-i)^2 = O(m^3).
+(i indicates the round of column elimination) Since the complexity of
+the puzzle can be upper bounded by a polynomial algorithm, can we
+conclude that the problem is NOT NP-hard?
+
+Example: g = 5 (each cell has 5 bits), m = 7 (7 cells), k = 4 (limit the
+number of code clone to be less than or equal to 4). The input g x m
+bit-matrix Sell is:
+
+0 1 2 3 4 5 6
+-------------
+0 0 1 0 0 1 0
+0 1 0 1 1 1 1
+0 1 1 0 1 0 1
+0 0 0 0 0 0 1
+1 0 1 0 1 1 0
+
+1) by naive scan through (O(m^2)), we can find the cells that have the
+best match (similarity) is column 1 & 4, which only differs by 1 bit. So
+we replace the difference in this one bit by x, and merge these two
+columns, get:
+
+0 1 2 3 4 5
+-------------
+0 0 1 0 1 0
+0 1 0 1 1 1
+0 1 1 0 0 1
+0 0 0 0 0 1
+1 x 1 0 1 0
+
+cost = 2. (because replace two bits 0/1 by two x)
+
+2) Since 7-1 = 6 > 4, we continue the step 1. By naive scan through all
+remaining columns, we find the columns that yields the least cost to
+objective function by merge are column 1 & 5, which differs by 2 bits.
+But also recall that column 1 has merged one previous column, so every
+bit in column 1 has weight 2. We replace all different bits by x and get:
+
+0 1 2 3 4 
+-------------
+0 0 1 0 1 
+0 1 0 1 1 
+0 1 1 0 0 
+0 x 0 0 0 
+1 x 1 0 1 
+
+cost = 2 + 4 = 6 
+
+3) Since 5 > 4, we continue the step 1. We find the columns that will
+yield the minimum cost by merge are column 3 & 4. The overhead of
+scanning at this step is O((m-2)^2), we gets:
+
+0 1 2 3 
+-------------
+0 0 1 x 
+0 1 0 1 
+0 1 1 0 
+0 x 0 0 
+1 x 1 x 
+
+cost = 6 + 4 = 10.
+
+4) Since now we are left with only 4 columns, the algorithm terminates,
+with the selected clones and minimum objective function cost = 10.
+
+Problem: can we accelerate the process of finding two columns which
+yields the minimum cost if merge? possible ideas: priority queue?
+sorting?
+
+Well, looks like we can upper bound the complexity by O(m^2) as follows:
+
+1) naive scan through all m cells, get the similarity (minimum cost if
+merge) between any two cells, the complexity is O(m^2).
+
+2) use a hash function to map all these m^2 pairs to a m^2 array.
+Collided items are chained by a linked list. O(m^2)
+
+3) each merge will only eliminate one column, and change one column, so
+we only need to modify the similarity (minimum cost if merge) between
+the changed column and all its peers, (at most m pairs), and possibly
+change their position in the hash table. The change complexity is O(m)
+
+4) above step 2 can be repeated at most m-k-1 times, so it's upper
+bounded by O(m * (m-k-1)) = O(m^2).
+
+5) for merge, we just scan through the hash table. for the pair that has
+the same minimum cost if merge, we select any one of them to merge.
+
+6) combine above steps, the complexity is upper-bounded by at most
+O(m^2).
+

@@ -1,0 +1,17 @@
+#if (defined(__ppc__) || defined(__powerpc__) || defined(__PPC__) || defined(__PPC))
+  #define PREFETCH_FOR_REUSE(address)    
+  #define PREFETCH_FOR_ONE_READ(address)  __dcbt((address))
+  #define PREFETCH_FOR_ONE_WRITE(address)
+#elif defined(__x86_64__)
+  #define PREFETCH_FOR_REUSE(address)     _mm_prefetch((const char *)((address)), _MM_HINT_T0 )
+  #define PREFETCH_FOR_ONE_READ(address)  _mm_prefetch((const char *)((address)), _MM_HINT_NTA)
+  #define PREFETCH_FOR_ONE_WRITE(address) /* N/A, use stream_pd */
+#elif defined(__ia64__)
+  #define PREFETCH_FOR_REUSE(address)     __lfetch(lfetch.nt1,(address))
+  #define PREFETCH_FOR_ONE_READ(address)  __lfetch(lfetch.nta,(address))
+  #define PREFETCH_FOR_ONE_WRITE(address) __lfetch(lfetch.nta,(address))
+#elif (defined(__sparc) || defined(__sparcv9))
+  #define PREFETCH_FOR_REUSE(address)     __sparc_prefetch_read_many_intrinsic((address))
+  #define PREFETCH_FOR_ONE_READ(address)  __sparc_prefetch_read_once_intrinsic((address))
+  #define PREFETCH_FOR_ONE_WRITE(address) __sparc_prefetch_write_once_intrinsic((address))
+#endif

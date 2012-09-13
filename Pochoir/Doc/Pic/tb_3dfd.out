@@ -1,0 +1,340 @@
+tb_3dfd_zero_pointer 200 200 200 200
+Order-4 3D-Stencil (25 points) with space 200x200x200 and time 200
+N_CORES = 6
+++++++++++++++++++++ base ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 2.131792
+Perf: 664.031742 Mcells/sec (17264.825282 M-FAdd/s, 4648.222191 M-FMul/s)
+Perf per worker: 664.031742 Mcells/sec (17264.825282 M-FAdd/s, 4648.222191 M-FMul/s)
+
+N_CORES = 6
+++++++++++++++++++++ COStencilTask ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 1.485320
+Perf: 953.045480 Mcells/sec (24779.182492 M-FAdd/s, 6671.318363 M-FMul/s)
+Perf per worker: 953.045480 Mcells/sec (24779.182492 M-FAdd/s, 6671.318363 M-FMul/s)
+
+++++++++++++++++++++ Pochoir ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 1.332199
+Perf: 1062.587119 Mcells/sec (27627.265093 M-FAdd/s, 7438.109833 M-FMul/s)
+Perf per worker: 1062.587119 Mcells/sec (27627.265093 M-FAdd/s, 7438.109833 M-FMul/s)
+
+tb_3dfd_iter 200 200 200 200
+Order-4 3D-Stencil (25 points) with space 200x200x200 and time 200
+N_CORES = 6
+++++++++++++++++++++ base ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 2.107814
+Perf: 671.585686 Mcells/sec (17461.227831 M-FAdd/s, 4701.099801 M-FMul/s)
+Perf per worker: 671.585686 Mcells/sec (17461.227831 M-FAdd/s, 4701.099801 M-FMul/s)
+
+N_CORES = 6
+++++++++++++++++++++ COStencilTask ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 1.428849
+Perf: 990.711837 Mcells/sec (25758.507769 M-FAdd/s, 6934.982861 M-FMul/s)
+Perf per worker: 990.711837 Mcells/sec (25758.507769 M-FAdd/s, 6934.982861 M-FMul/s)
+
+++++++++++++++++++++ Pochoir ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 4.771064
+Perf: 296.700608 Mcells/sec (7714.215795 M-FAdd/s, 2076.904253 M-FMul/s)
+Perf per worker: 296.700608 Mcells/sec (7714.215795 M-FAdd/s, 2076.904253 M-FMul/s)
+
+tb_3dfd_macro 200 200 200 200
+Order-4 3D-Stencil (25 points) with space 200x200x200 and time 200
+N_CORES = 6
+++++++++++++++++++++ base ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 2.068404
+Perf: 684.381595 Mcells/sec (17793.921461 M-FAdd/s, 4790.671162 M-FMul/s)
+Perf per worker: 684.381595 Mcells/sec (17793.921461 M-FAdd/s, 4790.671162 M-FMul/s)
+
+N_CORES = 6
+++++++++++++++++++++ COStencilTask ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 1.462748
+Perf: 967.752170 Mcells/sec (25161.556416 M-FAdd/s, 6774.265189 M-FMul/s)
+Perf per worker: 967.752170 Mcells/sec (25161.556416 M-FAdd/s, 6774.265189 M-FMul/s)
+
+++++++++++++++++++++ Pochoir ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 24.034710
+Perf: 58.897220 Mcells/sec (1531.327722 M-FAdd/s, 412.280540 M-FMul/s)
+Perf per worker: 58.897220 Mcells/sec (1531.327722 M-FAdd/s, 412.280540 M-FMul/s)
+
+tb_3dfd_type 200 200 200 200
+Order-4 3D-Stencil (25 points) with space 200x200x200 and time 200
+N_CORES = 6
+++++++++++++++++++++ base ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 2.023460
+Perf: 699.582726 Mcells/sec (18189.150867 M-FAdd/s, 4897.079079 M-FMul/s)
+Perf per worker: 699.582726 Mcells/sec (18189.150867 M-FAdd/s, 4897.079079 M-FMul/s)
+
+N_CORES = 6
+++++++++++++++++++++ COStencilTask ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 1.468869
+Perf: 963.719452 Mcells/sec (25056.705758 M-FAdd/s, 6746.036166 M-FMul/s)
+Perf per worker: 963.719452 Mcells/sec (25056.705758 M-FAdd/s, 6746.036166 M-FMul/s)
+
+++++++++++++++++++++ Pochoir ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 24.141142
+Perf: 58.637557 Mcells/sec (1524.576484 M-FAdd/s, 410.462900 M-FMul/s)
+Perf per worker: 58.637557 Mcells/sec (1524.576484 M-FAdd/s, 410.462900 M-FMul/s)
+
+tb_3dfd_zero_pointer 400 400 400 400
+Order-4 3D-Stencil (25 points) with space 400x400x400 and time 400
+N_CORES = 6
+++++++++++++++++++++ base ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 63.141722
+Perf: 381.594204 Mcells/sec (9921.449295 M-FAdd/s, 2671.159425 M-FMul/s)
+Perf per worker: 381.594204 Mcells/sec (9921.449295 M-FAdd/s, 2671.159425 M-FMul/s)
+
+N_CORES = 6
+++++++++++++++++++++ COStencilTask ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 25.713333
+Perf: 937.043646 Mcells/sec (24363.134793 M-FAdd/s, 6559.305521 M-FMul/s)
+Perf per worker: 937.043646 Mcells/sec (24363.134793 M-FAdd/s, 6559.305521 M-FMul/s)
+
+++++++++++++++++++++ Pochoir ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 25.904766
+Perf: 930.119011 Mcells/sec (24183.094299 M-FAdd/s, 6510.833080 M-FMul/s)
+Perf per worker: 930.119011 Mcells/sec (24183.094299 M-FAdd/s, 6510.833080 M-FMul/s)
+
+tb_3dfd_iter 400 400 400 400
+Order-4 3D-Stencil (25 points) with space 400x400x400 and time 400
+N_CORES = 6
+++++++++++++++++++++ base ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 63.869314
+Perf: 377.247127 Mcells/sec (9808.425305 M-FAdd/s, 2640.729890 M-FMul/s)
+Perf per worker: 377.247127 Mcells/sec (9808.425305 M-FAdd/s, 2640.729890 M-FMul/s)
+
+N_CORES = 6
+++++++++++++++++++++ COStencilTask ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 25.759863
+Perf: 935.351065 Mcells/sec (24319.127692 M-FAdd/s, 6547.457456 M-FMul/s)
+Perf per worker: 935.351065 Mcells/sec (24319.127692 M-FAdd/s, 6547.457456 M-FMul/s)
+
+++++++++++++++++++++ Pochoir ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 73.489146
+Perf: 327.864950 Mcells/sec (8524.488708 M-FAdd/s, 2295.054652 M-FMul/s)
+Perf per worker: 327.864950 Mcells/sec (8524.488708 M-FAdd/s, 2295.054652 M-FMul/s)
+
+tb_3dfd_macro 400 400 400 400
+Order-4 3D-Stencil (25 points) with space 400x400x400 and time 400
+N_CORES = 6
+++++++++++++++++++++ base ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 63.294601
+Perf: 380.672518 Mcells/sec (9897.485462 M-FAdd/s, 2664.707624 M-FMul/s)
+Perf per worker: 380.672518 Mcells/sec (9897.485462 M-FAdd/s, 2664.707624 M-FMul/s)
+
+N_CORES = 6
+++++++++++++++++++++ COStencilTask ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 25.699443
+Perf: 937.550099 Mcells/sec (24376.302573 M-FAdd/s, 6562.850693 M-FMul/s)
+Perf per worker: 937.550099 Mcells/sec (24376.302573 M-FAdd/s, 6562.850693 M-FMul/s)
+
+++++++++++++++++++++ Pochoir ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 281.235756
+Perf: 85.673726 Mcells/sec (2227.516886 M-FAdd/s, 599.716085 M-FMul/s)
+Perf per worker: 85.673726 Mcells/sec (2227.516886 M-FAdd/s, 599.716085 M-FMul/s)
+
+tb_3dfd_type 400 400 400 400
+Order-4 3D-Stencil (25 points) with space 400x400x400 and time 400
+N_CORES = 6
+++++++++++++++++++++ base ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 63.371337
+Perf: 380.211564 Mcells/sec (9885.500656 M-FAdd/s, 2661.480946 M-FMul/s)
+Perf per worker: 380.211564 Mcells/sec (9885.500656 M-FAdd/s, 2661.480946 M-FMul/s)
+
+N_CORES = 6
+++++++++++++++++++++ COStencilTask ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 25.662617
+Perf: 938.895485 Mcells/sec (24411.282605 M-FAdd/s, 6572.268394 M-FMul/s)
+Perf per worker: 938.895485 Mcells/sec (24411.282605 M-FAdd/s, 6572.268394 M-FMul/s)
+
+++++++++++++++++++++ Pochoir ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 282.371589
+Perf: 85.329106 Mcells/sec (2218.556752 M-FAdd/s, 597.303741 M-FMul/s)
+Perf per worker: 85.329106 Mcells/sec (2218.556752 M-FAdd/s, 597.303741 M-FMul/s)
+
+tb_3dfd_zero_pointer 800 800 800 800
+Order-4 3D-Stencil (25 points) with space 800x800x800 and time 800
+N_CORES = 6
+++++++++++++++++++++ base ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 1045.038563
+Perf: 380.306033 Mcells/sec (9887.956862 M-FAdd/s, 2662.142232 M-FMul/s)
+Perf per worker: 380.306033 Mcells/sec (9887.956862 M-FAdd/s, 2662.142232 M-FMul/s)
+
+N_CORES = 6
+++++++++++++++++++++ COStencilTask ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 486.447493
+Perf: 817.014120 Mcells/sec (21242.367116 M-FAdd/s, 5719.098839 M-FMul/s)
+Perf per worker: 817.014120 Mcells/sec (21242.367116 M-FAdd/s, 5719.098839 M-FMul/s)
+
+++++++++++++++++++++ Pochoir ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 509.683442
+Perf: 779.767279 Mcells/sec (20273.949243 M-FAdd/s, 5458.370950 M-FMul/s)
+Perf per worker: 779.767279 Mcells/sec (20273.949243 M-FAdd/s, 5458.370950 M-FMul/s)
+
+tb_3dfd_iter 800 800 800 800
+Order-4 3D-Stencil (25 points) with space 800x800x800 and time 800
+N_CORES = 6
+++++++++++++++++++++ base ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 1075.148792
+Perf: 369.655320 Mcells/sec (9611.038311 M-FAdd/s, 2587.587238 M-FMul/s)
+Perf per worker: 369.655320 Mcells/sec (9611.038311 M-FAdd/s, 2587.587238 M-FMul/s)
+
+N_CORES = 6
+++++++++++++++++++++ COStencilTask ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 490.454281
+Perf: 810.339487 Mcells/sec (21068.826665 M-FAdd/s, 5672.376410 M-FMul/s)
+Perf per worker: 810.339487 Mcells/sec (21068.826665 M-FAdd/s, 5672.376410 M-FMul/s)
+
+++++++++++++++++++++ Pochoir ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 1394.826320
+Perf: 284.934737 Mcells/sec (7408.303158 M-FAdd/s, 1994.543158 M-FMul/s)
+Perf per worker: 284.934737 Mcells/sec (7408.303158 M-FAdd/s, 1994.543158 M-FMul/s)
+
+tb_3dfd_macro 800 800 800 800
+Order-4 3D-Stencil (25 points) with space 800x800x800 and time 800
+N_CORES = 6
+++++++++++++++++++++ base ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 1045.587179
+Perf: 380.106488 Mcells/sec (9882.768686 M-FAdd/s, 2660.745415 M-FMul/s)
+Perf per worker: 380.106488 Mcells/sec (9882.768686 M-FAdd/s, 2660.745415 M-FMul/s)
+
+N_CORES = 6
+++++++++++++++++++++ COStencilTask ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 486.190892
+Perf: 817.445322 Mcells/sec (21253.578380 M-FAdd/s, 5722.117256 M-FMul/s)
+Perf per worker: 817.445322 Mcells/sec (21253.578380 M-FAdd/s, 5722.117256 M-FMul/s)
+
+++++++++++++++++++++ Pochoir ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 3591.688781
+Perf: 110.653928 Mcells/sec (2877.002118 M-FAdd/s, 774.577493 M-FMul/s)
+Perf per worker: 110.653928 Mcells/sec (2877.002118 M-FAdd/s, 774.577493 M-FMul/s)
+
+tb_3dfd_type 800 800 800 800
+Order-4 3D-Stencil (25 points) with space 800x800x800 and time 800
+N_CORES = 6
+++++++++++++++++++++ base ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 1075.562601
+Perf: 369.513099 Mcells/sec (9607.340586 M-FAdd/s, 2586.591696 M-FMul/s)
+Perf per worker: 369.513099 Mcells/sec (9607.340586 M-FAdd/s, 2586.591696 M-FMul/s)
+
+N_CORES = 6
+++++++++++++++++++++ COStencilTask ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 490.740871
+Perf: 809.866253 Mcells/sec (21056.522570 M-FAdd/s, 5669.063769 M-FMul/s)
+Perf per worker: 809.866253 Mcells/sec (21056.522570 M-FAdd/s, 5669.063769 M-FMul/s)
+
+++++++++++++++++++++ Pochoir ++++++++++++++++++++++
+first non-zero numbers
+0: 1.000000
+time: 3643.900520
+Perf: 109.068419 Mcells/sec (2835.778906 M-FAdd/s, 763.478936 M-FMul/s)
+Perf per worker: 109.068419 Mcells/sec (2835.778906 M-FAdd/s, 763.478936 M-FMul/s)
+
+tb_3dfd_zero_pointer 1600 1600 1600 1600
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 1600x1600x1600 and time 1600
+./run1.sh: line 21:  6922 Aborted                 ./$app"_zero_pointer" $size $size $size $size
+tb_3dfd_iter 1600 1600 1600 1600
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 1600x1600x1600 and time 1600
+./run1.sh: line 21:  6923 Aborted                 ./$app"_iter" $size $size $size $size
+tb_3dfd_macro 1600 1600 1600 1600
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 1600x1600x1600 and time 1600
+./run1.sh: line 21:  6924 Aborted                 ./$app"_macro" $size $size $size $size
+tb_3dfd_type 1600 1600 1600 1600
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 1600x1600x1600 and time 1600
+./run1.sh: line 21:  6925 Aborted                 ./$app"_type" $size $size $size $size
+tb_3dfd_zero_pointer 3200 3200 3200 3200
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 3200x3200x3200 and time 3200
+./run1.sh: line 21:  6926 Aborted                 ./$app"_zero_pointer" $size $size $size $size
+tb_3dfd_iter 3200 3200 3200 3200
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 3200x3200x3200 and time 3200
+./run1.sh: line 21:  6927 Aborted                 ./$app"_iter" $size $size $size $size
+tb_3dfd_macro 3200 3200 3200 3200
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 3200x3200x3200 and time 3200
+./run1.sh: line 21:  6928 Aborted                 ./$app"_macro" $size $size $size $size
+tb_3dfd_type 3200 3200 3200 3200
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Order-4 3D-Stencil (25 points) with space 3200x3200x3200 and time 3200
+./run1.sh: line 21:  6929 Aborted                 ./$app"_type" $size $size $size $size

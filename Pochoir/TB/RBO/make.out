@@ -1,0 +1,8 @@
+icpc -o meta_3D -O0 -g3 -Wall -Werror -DDEBUG -std=c++0x -I/opt/intel/composerxe/include/cilk -include cilk_stub.h tb_meta_3D.cpp
+tb_meta_3D.cpp(61): error: identifier "op_" is undefined
+                  res = op_(res, _input_array[l_addr]);
+                        ^
+          detected during instantiation of "T naive_scan(F, T *, size_t={unsigned long} (&)[3], size_t={unsigned long} (&)[3], size_t={unsigned long} (&)[3]) [with F=std::function<T_Data={unsigned long} (T_Data={unsigned long}, T_Data={unsigned long})>, T=T_Data={unsigned long}]" at line 150
+
+compilation aborted for tb_meta_3D.cpp (code 2)
+make: *** [meta_3D] Error 2

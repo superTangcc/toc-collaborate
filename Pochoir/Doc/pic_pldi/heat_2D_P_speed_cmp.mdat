@@ -1,0 +1,16 @@
+%raw: one code clone 
+%macro: result of -split-macro-shadow
+%c-pointer: result of -split-c-pointer
+%opt-pointer: result of -split-opt-pointer
+%pt: result of -split-pointer
+%default: which is automatically chosen by Pochoir compiler
+%size   raw     macro   c-pointer   opt-pointer     pt      default
+%Gridsize = size^2 * 1000
+100     0.094   0.083   0.059       0.066           0.054   0.060
+200     0.353   0.176   0.084       0.078           0.087   0.072
+400     0.979   0.366   0.188       0.150           0.130   0.117
+800     2.447   0.854   0.376       0.202           0.205   0.212
+1600    7.958   2.569   1.173       0.612           0.557   0.594
+3200    30.636  9.323   4.367       2.087           1.929   2.103
+6400    121.664 36.633  17.135      8.301           7.721   8.281
+12800   488.102 146.308 69.101      38.751          38.253  38.765

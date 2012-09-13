@@ -1,0 +1,29 @@
+#
+# Platform-specific build information
+# Intel platform running OS X
+# Uses the GCC 4.0.0 compiler
+#
+
+PLATFORM = mithai
+MAKE = make
+MAX_THREADS = 2
+# TIMER can be CLOCK_GETTIME, GETTIMEOFDAY, and CYCLE_TIME
+TIMER = CYCLE_TIME
+
+# $C_COMPILER default on this machine is gcc
+C_COMPILER = gcc
+
+# C compiler flags
+ifeq ($(C_COMPILER), gcc)
+     CC_NAME = gcc
+     CC = /usr/bin/gcc
+     C_FLAGS = -O4 -Wall -msse3 -m64 -funroll-loops
+endif
+
+PTHREAD_FLAGS = -DMAX_THREADS=$(MAX_THREADS) -lpthread
+
+ifeq ($(TIMER), CLOCK_GETTIME)
+	TIMER_FLAGS = -D$(TIMER) -lrt
+else
+	TIMER_FLAGS = -D$(TIMER)
+endif

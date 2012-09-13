@@ -1,0 +1,2 @@
+void stencil_per_thread_co_ar_fi_re_noFMA_no_0_1x1x1RB(int32_t rank);
+void stencil_per_thread_co_ar_fi_re_noFMA_no_0_1x1x2RB(int32_t rank);

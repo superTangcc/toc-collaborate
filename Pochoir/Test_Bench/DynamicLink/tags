@@ -1,0 +1,65 @@
+CC	Makefile	/^CC := g++$/
+DynamicLoader	caller1.cpp	26
+DynamicLoader	closure_caller.cpp	25
+DynamicLoader::DynamicLoader	caller1.cpp	/^    DynamicLoader(const char * filename)$/
+DynamicLoader::DynamicLoader	closure_caller.cpp	/^    DynamicLoader(const char * filename)$/
+DynamicLoader::close	closure_caller.cpp	/^    void close(void) { dlclose(m_handle); }$/
+DynamicLoader::error	caller1.cpp	50
+DynamicLoader::error	closure_caller.cpp	64
+DynamicLoader::load	caller1.cpp	/^    std::function<T> load(const char * functionNam/
+DynamicLoader::load	closure_caller.cpp	/^    std::function<T> load(const char * functionNam/
+DynamicLoader::m_handle	caller1.cpp	49
+DynamicLoader::m_handle	closure_caller.cpp	63
+Mcaller.cpp	caller.cpp	/^int main (int argc, char * argv[]) {$/
+Mcaller1.cpp	caller1.cpp	/^int main(int argc, char * argv[])$/
+Mclosure_caller.cpp	closure_caller.cpp	/^int main(int argc, char * argv[]) {$/
+Mlambda.cpp	lambda.cpp	/^int main(int argc, char * argv[]) {$/
+Mtb_ref.cpp	tb_ref.cpp	/^int main(void) {$/
+T_func	lambda.cpp	39
+T_func	tb_ref.cpp	45
+T_lam	caller.cpp	33
+_callee	closure_callee3.cpp	35
+_z1_	refer.cpp	23
+bar	callee.cpp	/^extern "C" int bar(int z, int y) { $/
+bôË¹	closure_caller	3
+callee	closure_callee0.cpp	/^int callee(int x, int y) {$/
+callee	closure_callee1.cpp	/^int callee(int x, int y) {$/
+callee	closure_callee2.cpp	/^int callee(std::function<int (int, int)> f, int x,/
+callee	closure_callee3.cpp	22
+callee::callee	closure_callee3.cpp	/^        callee(int _z1, int & _z2, int * _z3) : z1/
+callee::operator()	closure_callee3.cpp	/^        int operator()(int x, int y) {$/
+callee::z1	closure_callee3.cpp	32
+callee::z2	closure_callee3.cpp	32
+callee::z3	closure_callee3.cpp	32
+callee_init	closure_callee0.cpp	/^int callee_init(int _z1) {$/
+callee_init	closure_callee1.cpp	/^int callee_init(int _z1, int & _z2, int * _z3) {$/
+closure	Makefile	/^closure: closure_caller.cpp closure_callee0.cpp cl/
+create_callee	closure_callee3.cpp	/^int create_callee(int z1, int & z2, int * z3) {$/
+destroy_callee	closure_callee3.cpp	/^int destroy_callee(void) {$/
+dlink	Makefile	/^dlink: caller.cpp callee.cpp$/
+dlink1	Makefile	/^dlink1: caller1.cpp callee.cpp$/
+dloader	caller1.cpp	/^std::function<T> dloader(void * handle, const char/
+double	caller1.cpp	69
+foo	callee.cpp	/^extern "C" int foo(int y) {$/
+fp_calc	lambda.cpp	/^int fp_calc(F f, int a, int b) {$/
+fp_lam	lambda_callee.cpp	/^int fp_lam(T_lam f, int a, int b) {$/
+func_ptr	caller.cpp	29
+int	caller1.cpp	68
+int	caller.cpp	32
+int	closure_caller.cpp	90
+int	lambda_callee.cpp	23
+int	lambda.cpp	25
+jŠq	closure_caller	3
+lam	closure_callee3.cpp	/^int lam(int x, int y) {$/
+lambda	Makefile	/^lambda: lambda.cpp$/
+ref	Makefile	/^ref: tb_ref.cpp$/
+ref	refer.cpp	/^int ref(int _z0, int & _z1) {$/
+ref	tb_ref.cpp	/^int ref(int _z0, int & _z1) {$/
+stub	closure_callee1.cpp	23
+stub	refer.cpp	22
+x	caller1.cpp	64
+x	caller.cpp	25
+z1	closure_callee0.cpp	23
+z1	closure_callee1.cpp	24
+z2	closure_callee1.cpp	24
+~	closure_caller	98

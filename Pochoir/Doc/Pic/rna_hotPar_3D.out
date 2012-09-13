@@ -1,0 +1,333 @@
+
++ echo '<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<'
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'rna serial loop and pochoir 200 3400'
+rna serial loop and pochoir 200 3400
++ ./rna_pochoir_serial -r 200 -i
+
+Stencil-based DP for RNA secondary structure prediction with simple pseudoknots ( run with option -h for help ).
+
+Sequence length = 200
+
+Running pochoir-based DP ( with struct )...
+
+Pochoir ( with struct ):
+	 maximum number of base pairs = 106
+	 running time = 5.376 sec
+
+Running pochoir-based DP ( without struct )...
+
+Pochoir ( without struct ):
+	 maximum number of base pairs = 106
+	 running time = 7.691 sec ( 1.431 x Pochoir-Struct )
+
+Running iterative stencil ( with struct )...
+
+Iterative Stencil ( with struct ):
+	 maximum number of base pairs = 106
+	 running time = 9.643 sec ( 1.794 x Pochoir-Struct )
+
+Running iterative stencil ( without struct )...
+
+Iterative Stencil ( without struct ):
+	 maximum number of base pairs = 106
+	 running time = 10.241 sec ( 1.905 x Pochoir-Struct )
+
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'rna serial loop and pochoir 400 3400'
+rna serial loop and pochoir 400 3400
++ ./rna_pochoir_serial -r 400 -i
+
+Stencil-based DP for RNA secondary structure prediction with simple pseudoknots ( run with option -h for help ).
+
+Sequence length = 400
+
+Running pochoir-based DP ( with struct )...
+
+Pochoir ( with struct ):
+	 maximum number of base pairs = 206
+	 running time = 54.078 sec
+
+Running pochoir-based DP ( without struct )...
+
+Pochoir ( without struct ):
+	 maximum number of base pairs = 206
+	 running time = 76.524 sec ( 1.415 x Pochoir-Struct )
+
+Running iterative stencil ( with struct )...
+
+Iterative Stencil ( with struct ):
+	 maximum number of base pairs = 206
+	 running time = 147.000 sec ( 2.718 x Pochoir-Struct )
+
+Running iterative stencil ( without struct )...
+
+Iterative Stencil ( without struct ):
+	 maximum number of base pairs = 206
+	 running time = 157.392 sec ( 2.910 x Pochoir-Struct )
+
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'rna serial loop and pochoir 600 3400'
+rna serial loop and pochoir 600 3400
++ ./rna_pochoir_serial -r 600 -i
+
+Stencil-based DP for RNA secondary structure prediction with simple pseudoknots ( run with option -h for help ).
+
+Sequence length = 600
+
+Running pochoir-based DP ( with struct )...
+
+Pochoir ( with struct ):
+	 maximum number of base pairs = 310
+	 running time = 191.550 sec
+
+Running pochoir-based DP ( without struct )...
+
+Pochoir ( without struct ):
+	 maximum number of base pairs = 310
+	 running time = 276.995 sec ( 1.446 x Pochoir-Struct )
+
+Running iterative stencil ( with struct )...
+
+Iterative Stencil ( with struct ):
+	 maximum number of base pairs = 310
+	 running time = 730.640 sec ( 3.814 x Pochoir-Struct )
+
+Running iterative stencil ( without struct )...
+
+Iterative Stencil ( without struct ):
+	 maximum number of base pairs = 310
+	 running time = 781.568 sec ( 4.080 x Pochoir-Struct )
+
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'rna serial loop and pochoir 800 3400'
+rna serial loop and pochoir 800 3400
++ ./rna_pochoir_serial -r 800 -i
+
+Stencil-based DP for RNA secondary structure prediction with simple pseudoknots ( run with option -h for help ).
+
+Sequence length = 800
+
+Running pochoir-based DP ( with struct )...
+
+Pochoir ( with struct ):
+	 maximum number of base pairs = 421
+	 running time = 544.888 sec
+
+Running pochoir-based DP ( without struct )...
+
+Pochoir ( without struct ):
+	 maximum number of base pairs = 421
+	 running time = 793.876 sec ( 1.457 x Pochoir-Struct )
+
+Running iterative stencil ( with struct )...
+
+Iterative Stencil ( with struct ):
+	 maximum number of base pairs = 421
+	 running time = 2294.964 sec ( 4.212 x Pochoir-Struct )
+
+Running iterative stencil ( without struct )...
+
+Iterative Stencil ( without struct ):
+	 maximum number of base pairs = 421
+	 running time = 2456.525 sec ( 4.508 x Pochoir-Struct )
+
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'rna serial loop and pochoir 1000 3400'
+rna serial loop and pochoir 1000 3400
++ ./rna_pochoir_serial -r 1000 -i
+
+Stencil-based DP for RNA secondary structure prediction with simple pseudoknots ( run with option -h for help ).
+
+Sequence length = 1000
+
+Running pochoir-based DP ( with struct )...
+
+Pochoir ( with struct ):
+	 maximum number of base pairs = 517
+	 running time = 1222.886 sec
+
+Running pochoir-based DP ( without struct )...
+
+Pochoir ( without struct ):
+	 maximum number of base pairs = 517
+	 running time = 1800.528 sec ( 1.472 x Pochoir-Struct )
+
+Running iterative stencil ( with struct )...
+
+Iterative Stencil ( with struct ):
+	 maximum number of base pairs = 517
+	 running time = 5585.530 sec ( 4.567 x Pochoir-Struct )
+
+Running iterative stencil ( without struct )...
+
+Iterative Stencil ( without struct ):
+	 maximum number of base pairs = 517
+	 running time = 5980.296 sec ( 4.890 x Pochoir-Struct )
+
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'rna serial loop and pochoir 1200 3400'
+rna serial loop and pochoir 1200 3400
++ ./rna_pochoir_serial -r 1200 -i
+
+Stencil-based DP for RNA secondary structure prediction with simple pseudoknots ( run with option -h for help ).
+
+Sequence length = 1200
+
+Running pochoir-based DP ( with struct )...
+
+Pochoir ( with struct ):
+	 maximum number of base pairs = 629
+	 running time = 2328.013 sec
+
+Running pochoir-based DP ( without struct )...
+
+Pochoir ( without struct ):
+	 maximum number of base pairs = 629
+	 running time = 3487.306 sec ( 1.498 x Pochoir-Struct )
+
+Running iterative stencil ( with struct )..../run_hotPar.sh: line 132:  6644 Killed                  ./rna_pochoir_serial -r $size -i
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'rna serial loop and pochoir 1400 3400'
+rna serial loop and pochoir 1400 3400
++ ./rna_pochoir_serial -r 1400 -i
+
+Stencil-based DP for RNA secondary structure prediction with simple pseudoknots ( run with option -h for help ).
+
+Sequence length = 1400
+
+Running pochoir-based DP ( with struct )..../run_hotPar.sh: line 132: 10306 Killed                  ./rna_pochoir_serial -r $size -i
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'rna serial loop and pochoir 1600 3400'
+rna serial loop and pochoir 1600 3400
++ ./rna_pochoir_serial -r 1600 -i
+
+Stencil-based DP for RNA secondary structure prediction with simple pseudoknots ( run with option -h for help ).
+
+Sequence length = 1600
+
+Running pochoir-based DP ( with struct )..../run_hotPar.sh: line 132: 10321 Segmentation fault      ./rna_pochoir_serial -r $size -i
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'rna serial loop and pochoir 1800 3400'
+rna serial loop and pochoir 1800 3400
++ ./rna_pochoir_serial -r 1800 -i
+
+Stencil-based DP for RNA secondary structure prediction with simple pseudoknots ( run with option -h for help ).
+
+Sequence length = 1800
+
+Running pochoir-based DP ( with struct )..../run_hotPar.sh: line 132: 10322 Segmentation fault      ./rna_pochoir_serial -r $size -i
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'rna serial loop and pochoir 2000 3400'
+rna serial loop and pochoir 2000 3400
++ ./rna_pochoir_serial -r 2000 -i
+
+Stencil-based DP for RNA secondary structure prediction with simple pseudoknots ( run with option -h for help ).
+
+Sequence length = 2000
+
+Running pochoir-based DP ( with struct )..../run_hotPar.sh: line 132: 10324 Segmentation fault      ./rna_pochoir_serial -r $size -i
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'rna serial loop and pochoir 2200 3400'
+rna serial loop and pochoir 2200 3400
++ ./rna_pochoir_serial -r 2200 -i
+
+Stencil-based DP for RNA secondary structure prediction with simple pseudoknots ( run with option -h for help ).
+
+Sequence length = 2200
+
+Running pochoir-based DP ( with struct )..../run_hotPar.sh: line 132: 10325 Segmentation fault      ./rna_pochoir_serial -r $size -i
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'rna serial loop and pochoir 2400 3400'
+rna serial loop and pochoir 2400 3400
++ ./rna_pochoir_serial -r 2400 -i
+
+Stencil-based DP for RNA secondary structure prediction with simple pseudoknots ( run with option -h for help ).
+
+Sequence length = 2400
+
+Running pochoir-based DP ( with struct )..../run_hotPar.sh: line 132: 10326 Segmentation fault      ./rna_pochoir_serial -r $size -i
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'rna serial loop and pochoir 2600 3400'
+rna serial loop and pochoir 2600 3400
++ ./rna_pochoir_serial -r 2600 -i
+
+Stencil-based DP for RNA secondary structure prediction with simple pseudoknots ( run with option -h for help ).
+
+Sequence length = 2600
+
+Running pochoir-based DP ( with struct )..../run_hotPar.sh: line 132: 10327 Segmentation fault      ./rna_pochoir_serial -r $size -i
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'rna serial loop and pochoir 2800 3400'
+rna serial loop and pochoir 2800 3400
++ ./rna_pochoir_serial -r 2800 -i
+
+Stencil-based DP for RNA secondary structure prediction with simple pseudoknots ( run with option -h for help ).
+
+Sequence length = 2800
+
+Running pochoir-based DP ( with struct )..../run_hotPar.sh: line 132: 10328 Segmentation fault      ./rna_pochoir_serial -r $size -i
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'rna serial loop and pochoir 3000 3400'
+rna serial loop and pochoir 3000 3400
++ ./rna_pochoir_serial -r 3000 -i
+
+Stencil-based DP for RNA secondary structure prediction with simple pseudoknots ( run with option -h for help ).
+
+Sequence length = 3000
+
+Running pochoir-based DP ( with struct )..../run_hotPar.sh: line 132: 10329 Segmentation fault      ./rna_pochoir_serial -r $size -i
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo 'rna serial loop and pochoir 3200 3400'
+rna serial loop and pochoir 3200 3400
++ ./rna_pochoir_serial -r 3200 -i
+
+Stencil-based DP for RNA secondary structure prediction with simple pseudoknots ( run with option -h for help ).
+
+Sequence length = 3200
+
+Running pochoir-based DP ( with struct )..../run_hotPar.sh: line 132: 10330 Segmentation fault      ./rna_pochoir_serial -r $size -i
++ (( size += 200 ))
++ (( size <= 3200 ))
++ echo '<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<'
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
++ (( size = 200 ))
++ (( size <= 3200 ))
++ echo 'rna parallel loop and pochoir 200 3400'
+rna parallel loop and pochoir 200 3400
++ ./rna_pochoir_parallel -r 200 -i
+
+Stencil-based DP for RNA secondary structure prediction with simple pseudoknots ( run with option -h for help ).
+
+Sequence length = 200
+
+Running pochoir-based DP ( with struct )...
+
+Pochoir ( with struct ):
+	 maximum number of base pairs = 99
+	 running time = 5.005 sec
+
+Running pochoir-based DP ( without struct )...
+
+Pochoir ( without struct ):
+	 maximum number of base pairs = 99
+	 running time = 7.625 sec ( 1.524 x Pochoir-Struct )
+
+
