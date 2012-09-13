@@ -1,0 +1,242 @@
+\secput{intro}{Introduction}
+
+\newcommand{\subtxy}[3]{_{x,y}(t)}
+
+Pochoir (pronounced ``PO-shwar'') is a compiler and run-time system
+for implementing stencil computations on multicore processors.  A
+\defn{stencil} defines the value of a grid point in a $d$-dimensional
+spatial grid at time $t$ as a function of neighboring grid points at
+recent times before~$t$.  A \defn{stencil computation}
+\cite{FrigoSt05, FrigoSt06, ??Berkeley, ???}\celnote{Long list of
+  citations.}  computes the stencil for each grid point over many time
+steps.
+
+Stencil computations are conceptually simple to implement using nested
+loops, but looping implementations suffer from poor cache performance.
+Cache-oblivious divide-and-conquer stencil codes \cite{FrigoSt05,
+  FrigoSt06} are much more efficient, but they are difficult to write,
+and when parallelism is factored into the mix, most application
+programmers do not have the programming skills or patience to produce
+efficient multithreaded codes.
+
+As an example, consider how the 2D
+\defn{heat equation} \cite{???}
+\begin{equation}
+  \frac{\partial u_t(x,y)}{\partial t} 
+    = \alpha \paren{\frac{\partial^2 u_t(x,y)}{ \partial x^2} 
+      + \frac{\partial^2 u_t(x,y)}{ \partial y^2}}
+      \label{eq:heat2d}
+\end{equation}
+on a $d_0\times d_1$ grid, where $u_t(x,y)$ is the heat at a point
+$(x,y)$ at time $t$ and $\alpha$ is the thermal diffusivity, might be
+solved using a stencil computation.  By discretizing space and time,
+this partial differential equation can be solved approximately using
+the following update equation:
+\begin{eqnarray}
+  u_{t+1}(x,y)  & = & u_t(x,y) \nonumber\\
+  & & +  \frac{\alpha \Delta t}{\Delta x^2}
+  \paren{ u_t(x-1,y) + u_t(x+1,y) - 2 u_t(x,y)}\nonumber \\
+  & &  + \frac{\alpha \Delta t}{\Delta y^2} 
+  \paren{u_t(x,y-1) + u_t(x,y+1) - 2u_t(x,y)}\ .
+  \label{eq:heat2d-update}
+\end{eqnarray}
+  
+\begin{figure}[t]
+\begin{center-code}
+\begin{pochoir-code}
+for (int t=0; t<T; t++)
+  for (int x=1; x<d0; x++)
+    for (int y=1; y<d1; y++)
+      u((t+1)%2,x,y) = u(t%2,x,y)
+        + CX*(u(t%2,(x-1)%d0,y) + u(t%2,(x+1)%d0,y) -2*u(t%2,x,y))
+        + CY*(u(t%2,x,(y-1)%d1) + u(t%2,x,(y+1)%d1) -2*u(t%2,x,y));
+\end{pochoir-code}
+\end{center-code}                   
+\caption{A looping implementation of a stencil computation for the 2D
+  heat equation with periodic boundary conditions.}
+\label{fig:heat-loops}
+\end{figure}
+
+One simple way to implement the stencil of \eqref{heat2d-update} is
+with a triply nested loop, as shown in \figref{heat-loops} As a
+practical matter, there is generally no need to store the entire
+space-time grid, and so the code uses two copies of the space grid,
+swapping their roles on alternate time steps.  This code assumes that
+the boundary conditions are \defn{periodic}, meaning that the space
+grid wraps around to form a torus; hence, the index calculations for
+\code{x} and \code{y} are performed modulo \code{d0} and \code{d1},
+respectively.  
+
+This loop nest is simple and fairly easy to understand, but its
+performance suffers from poor cache locality.  Let the total number of
+grid points in the space-time grid be $N=Td_0d_1$, let $\cal M$ be the
+number of grid points that fit in cache, and let $\cal B$ be the
+number of grid points that fit on a line.  If the space grid does not
+fit in cache, then this simple computation incurs $\Theta(N/\cal B)$
+cache misses in the ideal-cache model~\cite{FrigoLePr99}.
+Parallelizing this code is straightforward as well, since the two
+\code{for} loops running over \code{x} and \code{y} can both be
+parallelized, but poor cache performance hinders its efficiency.
+
+\begin{figure}[t]
+\begin{codebox}
+\Procname {\proc{heat\_kernel}$(t_0, t_1, x_0, x_1, dx_0, dx_1, y_0, y_1, dy_0, dy_1)$}
+\li $begin_x = x_0, end_x = x_1, begin_y = y_0, end_y = y_1$
+\li \For $t \gets t_0$ \To $t_1$
+\li \>  \For $x \gets begin_x$ \To $end_x$
+\li \> \>    \For $y \gets begin_y$ \To $end_y$
+\li \> \> \>      u((t+1)\%2,x,y) = u(t\%2,x,y)
+\li \> \> \>        + CX*(u(t\%2,(x-1)\%d0,y) + u(t\%2,(x+1)\%d0,y) 
+\li \> \> \> \> \>    -2*u(t\%2,x,y))
+\li \> \> \>        + CY*(u(t\%2,x,(y-1)\%d1) + u(t\%2,x,(y+1)\%d1) 
+\li \> \> \> \> \>    -2*u(t\%2,x,y));
+\li \> \Comment end for (x, y)
+\li \> \Comment Adjust trapezoid 
+\li \> $begin_x += dx_0, end_x += dx_1, begin_y += dy_0, end_y += dy_1$
+\li \Comment end for (t)
+\end{codebox}
+\caption{\func{heat\_kernel} function, which is called by \func{sim\_walk\_d}}
+\end{figure}
+
+\begin{figure}[t]
+\begin{codebox}
+\Procname {\proc{sim\_walk\_d}$(t_0, t_1, x_0, x_1, dx_0, dx_1, y_0, y_1, dy_0, dy_1)$}
+\li $\Delta t \gets t_1 - t_0$
+\li \id{can\_cut} $= (x_1 - x_0 \geq r \times (2 \times \sigma_x \times \Delta t)$
+\li \> \> \> $\&\& (y_1 - y_0 \geq r \times (2 \times \sigma_y \times \Delta t)$
+\li \If (\id{can\_cut}) \Comment simultaneous space cut \label{li:canCut}
+\li \> \For $i \gets 0$ \To $3$ \label{li:allDep}
+\li \> \> \Comment Spawn sub-trapezoids from dependency number 
+\li \> \> \Comment $0$ to $3$
+\li \> \> \func{Parallel} \For \label{li:parallelSpawnBegin}
+\li \> \> \> \Comment Simultaneous spawn all sub-trapezoids of
+\li \> \> \> \Comment dependency number $i$
+\li \> \> \> \func{sim\_walk\_d}$(t_0, t_1, x_0^i, x_1^i, dx_0^i, dx_1^i, y_0^i, y_1^i, dy_0^i, dy_1^i)$ \label{li:parallelSpawnEnd}
+%\li \> \func{sim\_space\_cut}$(t_0, t_1, grid)$
+\li \ElseIf $(\Delta t > 1)$ \Comment time cut
+\li \> \> $\delta t \gets \Delta t / 2 $
+\li \> \> \Comment Spawn the bottom trapezoid
+\li \> \> \func{sim\_walk\_d}($t_0, t_0 + \delta t, x_0, x_1, dx_0, dx_1,$
+\li \> \> \> \> \> $y_0, y_1, dy_0, dy_1$)
+\li \> \> \Comment Spawn the upper trapezoid
+\li \> \> \func{sim\_walk\_d}($t_0 + \delta t, t_1, $
+\li \> \> \> \> $x_0 + dx_0 \times \delta t, x_1 + dx_1 \times \delta t, dx_0, dx_1,$
+\li \> \> \> \> $y_0 + dy_0 \times \delta t, y_1 + dy_1 \times \delta t, dy_0, dy_1$)
+\li \Else \Comment base case
+\li \> \> \func{heat\_kernel}$(t_0, t_1, x_0, x_1, dx_0, dx_1, y_0, y_1, dy_0, dy_1)$
+\end{codebox}
+\caption{A simultaneous space cut extension of cache-oblivious arbitrary $d$-dimensional parallel stencil algorithm from \cite{FrigoStru06}. \liref{canCut} judge whether all spatial dimension can conduct a space cut. If so, \lirefs{allDep}{parallelSpawnEnd} will do the real job of simultaneous space cut. Because for $d$-dimensional spatial grid, it will have at most $d+1$ real data dependence among all sub-trapezoids, \liref{allDep} just go through all these sub-trapezoids which have different dependence number. \Lirefs{parallelSpawnBegin}{parallelSpawnEnd} use the parallel for to spawn all sub-trapezoids having the same dependence number $i$ ($x_0^i, x_1^i, dx_0^i, dx_1^i, y_0^i, y_1^i, dy_0^i, dy_1^i$)}
+\label{fig:pochoir-heat}
+\end{figure}
+
+\figref{pochoir-heat} shows the pseudocode for a more efficient
+algorithm for this stencil computation --- in fact, the one that the
+Pochoir compiler generates --- which achieves $\Theta(N/\cal
+B\sqrt{\cal M})$.  \celnote{Fill in numbers!}The Pochoir-generated
+code easily outperforms the looping code on large data sets.  For
+example, using the Intel C++ version $12.0.0$ compiler on a 12-core Intel
+Core i7 (Nehalem) machine with a private $64$ KB  L1-cache, a private $256$ KB
+L2-cache, and a shared $12$ MB L3-cache, a $5000 \times 5000$ space grid
+iterated for $5000$ time steps runs in $249.885$  seconds using parallel
+loops, but the Pochoir-generated code requires only $29.8865$ seconds, a
+$8.36$-fold performance advantage.
+
+The Pochoir-generated code is based on the notion of \defn{trapezoidal
+  decompositions} introduced by Frigo and Strumpen~\cite{FrigoSt05,
+  FrigoSt06}.  As can be seen from \figref{pochoir-heat}, however,
+this code is far more complex than the looping code.  Average
+application programmers cannot be expected to write such complex
+high-performing code for each stencil computation they wish to
+perform.  The Pochoir stencil compiler allows programmers to write
+simple code which it automatically converts into a highly optimized,
+cache-efficient, parallel implementation.
+
+
+
+Our contributions are as follows:
+\begin{itemize}
+\item Pochoir provides an \defn{executable specification}.  A program written for the Pochoir compiler can be run using an ordinary C++ compiler compiled against a library.  The library employs a simple nested-loop stencil implementation, making it easy to debug.    After the code has been debugged, then the pochoir compiler can be used to transform the code into a pipelined, vectorized, cache-oblivious implementation with an optimized base case.
+\item Pochoir supports general $d$-dimensional stencils. (is this really a contribution?)
+\item Pochoir employs a general way of handling boundary conditions, so that stencil computations with periodic boundary conditions can be handled similarly to nonperiodic boundary conditions.  In fact, the system can handle much more complex boundary conditions, so that one can program, for example, Conway's game of Life  on a Klein bottle.
+\item Pochoir offers an analysis of the parallelism in a stencil.
+\item We have studied \ref{numberofapplications} different applications including ....  The speedup and parallelism of these applications is illustrated in \figref{introchart}.
+\end{itemize}
+
+
+Leftovers from the proposed organization:
+\begin{enumerate}
+%%\item Introduction
+%%  \begin{enumerate}
+%%  \item stencil computation
+%%  \item trapezoidal decomposition (high level)
+%%  \item cache efficiency
+%%  \item matteo's code (complex)
+%%  \item multidimensional even more complicated
+%%  \item our contributions
+%%   \begin{enumerate}
+%%   \item Executable specification
+%%   \item general d-dimensional parallel cache-oblivious algorithm (is this really a contribution?)
+%%   \item general way of handling  boundary conditions (e.g., Life on klein bottle) (P=NP)
+%%   \item analysis of parallelism
+%%   \item empirical result (at least 6 different applications)
+%%   \item intro chart (small version of chart bigger chart in \secref{empirical}.)
+%%   \end{enumerate}
+%%  \end{enumerate}
+%% \item Specification/how to operate the system
+%% \item Examples
+%% \item Empirical results
+%% \item Algorithm (How it works) (multiple sections?)
+\item Additional items that might get in if it's ready.
+ \begin{enumerate}
+ \item general boundary
+ \item theoretical analysis of parallelism vs. cachding
+ \item autotuning 
+ \item Divide based on cache line size instead of number of items (is a square submatrix better than a wide submatrix?  Or vice-versa?)
+ \end{enumerate}
+\end{enumerate}
+
+\begin{figure*}
+\center
+\begin{tabular}{|l|c|c|c|}
+\hline
+Benchmark & $12$ core & $1$ core & scalability\\
+\hline
+heat\_2D\_NP (zero-padded) & $30.748$ sec & $368.608$ sec & $11.99$ \\
+$16000^2$ spatial grid, $500$ time steps & & & \\
+\hline
+heat\_2D\_NP (non-zero-padded) & $32.789$ sec & $361.029$ sec & $11.01$ \\
+$16000^2$ spatial grid, $500$ time steps & & & \\
+\hline
+heat\_2D\_P & $31.158$ sec & $362.319$ sec & $11.62$ \\
+$16000^2$ spatial grid, $500$ time steps & & & \\
+\hline
+Game\_of\_life (with bit-trick) & $37.559$ sec & $448.420$ sec & $11.94$\\
+$16000^2$ spatial grid, $500$ time steps & & & \\
+\hline
+3dfd & $47.27$ sec & $306.04$ sec & $6.47$ \\
+$1000^3$ spatial grid, $60$ time steps & & & \\
+\hline
+RNA & $25.879$ sec & $185.35$ sec & $7.16$ \\
+Sequence length = $300$ & & & \\
+\hline
+PSA & $18.630$ sec & $149.692$ sec & $8.03$ \\
+Sequence lengths = $\ang{100000, 100000}$ & & & \\
+\hline
+heat\_4D\_NP (zero-padded) & $48.588$ sec & $207.190$ sec & $4.26$  \\
+$150^4$ spatial grid, $100$ time steps & & & \\
+\hline
+Game\_of\_life (klein bottle) & $42.031$ sec & $500.407$ sec & $11.9$ \\
+$8000^2$ spatial grid, $1000$ time steps & & & \\
+\hline
+LCS	& $9.528$ sec & $69.744$ sec & $7.32$ \\
+sequence lengths = $\ang{100000, 100000}$ & & & \\
+\hline
+\end{tabular}
+\caption{Scalability of typical stencil code in Pochoir}
+\label{fig:PochoirScalability}
+\end{figure*}
+
+\celnote{The unification of period and nonperiodic boundary conditions simplifies the API.  It offers little or no performance advantage. -Bradley}
+
+% LocalWords:  Pochoir multicore spacetime parallelizing multithreaded Frigo
+% LocalWords:  discretizing pseudocode parallelized Strumpen

@@ -1,0 +1,69 @@
+In the literature, lots of work have been done for orthogonal range
+queries on $1$D and multi-dimensional grids. A. Yao \cite{Yao82, Yao85}
+studied the algorithm and complexity for $1$D orthogonal queries. Yao's
+algorithm lays out the foundation for all later works for general
+partial sum in semi-group. Chazelle and Rosenberg \cite{ChazelleRo89}
+extended Yao's $1$D algorithm to multi-dimensional grid via the
+method of dimension reduction. The key idea of dimension reduction
+method for $d$-dimensional orthogonal partial sum query states that:
+in preprocessing, for any $d$-dimensinal grid, pick one dimension $i$,
+where $i \in [1, d]$, apply Yao's $1$D algorithm on it, while all the
+$\oplus$ operation is defined as an operation on a $d-1$-dimensional
+grid, and the operation is defined component-wise. After this step, all
+elements in the resulting data structure is actually a $d-1$-dimensional
+grid. Then, for all the elements in the resulting data structure,
+recursively applying the above procedure until it reaches $1$D grid
+for each element. In the query stage, any query range is decomposed
+into a small number of slices, some fat, some thing, by considering
+the problem as a $1$D grid of $d-1$-dimensional grid. The $1$D scheme
+gives a list of $d-1$-dimensional subproblems, each of which is solved
+recursively. The construction for the $1$D case is given by a two path
+recursion -- one pathsolving ``small'' queries (intra-block queries),
+the other path solving ``large'' queries (inter-block queries).
+$d-2$-dimensional operation. 
+
+% probably more partial sum / rmq related literature ?
+All of previous work assumes the range to query is rectangle. However,
+in developing Pochoir stencil compiler \cite{TangChKu11, TangChLu11},
+we are facing the problem of query octagonal ranges in $2$D grid.
+More generally, we are asking the question on how to efficiently answer
+irregular range queries over a semi-group. By efficient, we
+mean, at the same complexity bound as in orthogonal range query problem.
+
+
+In this paper, we consider static $d$-dimensional ($d \geq 1$) irregular
+range query problem over a general semi-group. By static, we mean, the
+input problem won't change over time, no dynamic insertion / deletion
+are allowed. Preprocessing is used to prepare a data structure for
+later online queries.  By general semi-group, we mean, the semi-group we
+consider only assumes associativity and commutativity, no idempotence
+(ie $ a \oplus a = a $) or any order (full order or partial order) among
+elements are required. More formally, we study the problem :
+
+\begin{equation} 
+\sum_{(k_1,\ldots,k_d) \in \mathcal{R}} A[k_1,\ldots,k_d] 
+\label{eq:defIrregularRangeQuery}
+\end{equation}
+
+In \eqref{defIrregularRangeQuery}, $(j_1, j_2, \ldots j_d)$ stands for
+the coordinate of a point in $d$-dimensional grid, $\mathcal{R} = 
+[(i^1_1, i^1_2, \ldots i^1_d), (i^2_1, i^2_2, \ldots i^2_d), 
+\ldots (i^l_1, i^l_2, \ldots i^l_d)]$ stands for the irregular range
+scoped by a list of $d$-dimensional points $[(i^j_1, i^j_2, \ldots, i^j_d)]$,
+where superscript stands for the order of the point in the list, subscript
+stands for the dimensionality. The irregular range queries are defined
+over a commutative semigroup $\{S, \oplus\}$. We assumes that inverse
+operation (subtraction) is not available in this semi-group, otherwise,
+there will be a trivial $O(N)$ time and space preprocessing algorithm
+\cite{Yao82}. 
+
+For static range query model, preprocessing is allowed to prepare a
+data structure for later online query. In this paper, we use the same
+complexity model, ie, the arithmetic model used by A. Yao \cite{Yao82,
+Yao85} and Chazelle and Rosenberg \cite{ChazelleRo89, ChazelleRo91}. The
+space bound of the preprocessing algorithm will be counted in units of
+semi-group elements. The time bound of preprocessing algorithm counts only
+the number of arithmetic operations performed and query algorithm counts
+only the number of arithmetic operations needed to answer a query, while
+ignoring the time needed to find the proper memory cells \cite{Yao82}.
+

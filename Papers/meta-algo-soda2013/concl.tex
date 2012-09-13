@@ -1,0 +1,32 @@
+% -*- Mode: LaTeX -*-
+\secput{future}{Future Work}
+
+Some possible future work may be:
+
+\begin{itemize}
+    \item How to relax the current constraints on polygonal range queries
+    in $2$-D grids, such as arbitrary triangular queries.
+    \item How to extend the polygonal range query in $2$-D to polytopal 
+    range query in $3$-D grids.
+\end{itemize}
+
+\punt{In this paper, we developed a data reduction method, developed a
+meta-algorithm $M$ for the partial sum query problem over $d$-dimensional
+array ($d \geq 1$) of size $N$. Provided the partial sum operation is
+valid over a semi-group and is associative and commutative, by taking
+a user's input preprocessing algorithm $P$ of complexity $\Theta(N
+\log^p N)$ in both space and time, where $0 \leq p \leq d$, and query
+algorithm $Q$ of complexity $q(N, d)$, the meta-algorithm will output
+a preprocessing algortihm $M(P)$ of complexity $\Theta(N \log^{p-1}
+N)$,  a query algorithm $M(Q)$ with complexity $\Theta(2^{2d \cdot
+\log^{*} N} \cdot q(N, d))$. Moreover, since the meta-algorithm treats
+the input algorithm as a black box, if we view the meta-algorithm as a
+higher-order function, by applying $M$ to $P$ at most $p$ times, i.e.
+$\underbrace{M(M(\ldots M}_{p}(P)))$, we can reduce the preprocessing
+complexity to optimal ($\Theta(N)$), with near-constant factor penalty on
+query time (which can possibly be improved either by employing a similar
+trick in \cite{AmirFiLe07} or by exploiting the internal structure of
+the input query algorithm).  In addition, the result algorithm produces
+good memory locality with an asymptotically smaller cache-oblivious
+data structrure.}
+

@@ -1,0 +1,118 @@
+% -*- Mode: LaTeX -*-
+
+%\documentclass{sig-alternate-draft} 
+%\documentclass{sig-alternate} %\newcommand{\note}[2]{}
+\documentclass[11pt, draftcls, peerreview, letterpaper, onecolumn]{IEEEtran}
+
+\newif\ifsigalt\sigaltfalse
+
+\usepackage{supertech-sig}
+\usepackage{subfigure}
+\usepackage{footnote}
+% \usepackage{amssymb, amsmath}
+
+\usepackage{fullpage}
+%\renewcommand{\topfraction}{0.01}% Uncomment this line to force all floats to the end if we are in submission mode
+\usepackage{morefloats}% Don't complain about ``too many unprocessed floats''
+
+%\setlength{\marginparwidth}{0.6in}
+%\setstretch{1} %set to single space between lines
+\setlength{\marginparwidth}{1in}
+\newcommand{\note}[2]{% lines that do not end with control sequences should end with macros to avoid introducing spurious space -Bradley
+    \marginpar{\color{#1}\small\raggedright#2}}%
+
+\newcommand{\celnote}[1]{\note{blue}{CEL: #1}}
+\newcommand{\yuannote}[1]{\note{green}{Yuan: #1}}
+\newcommand{\racnote}[1]{\note{magenta}{RAC: #1}}
+
+
+%\newcommand{\m}[1]{\mathcal{#1}}
+%\newcommand{\zoid}[1]{\mathcal{#1}}
+%\newcommand{\prj}[2]{\zoid{#1}_{\,#2}}
+%\newcommand{\Oh}[1]{{\mathcal O}\paren{#1}}
+%\newcommand{\Th}[1]{{\Theta}\left({#1}\right)}
+\newcommand{\brac}[1]{\left[ #1 \right]}
+\newcommand{\comb}[2]{\paren{ \begin{array}{@{}c@{}} #1 \\ #2 \end{array} }}
+
+\def\phead#1{{\bf{#1.}}}
+\newcommand{\embox}{\mbox{\hspace*{1em}}}
+
+% \numberwithin{section}{equation}
+
+\begin{document}
+
+\title{Code Clone Selection Puzzle and Solutions}
+\punt{
+\author{
+    \IEEEauthorblockN{Yuan Tang \IEEEauthorrefmark{1} \IEEEauthorrefmark{4},
+    Rezaul A. Chowdhury \IEEEauthorrefmark{2}, 
+	Pramod Ganapathi \IEEEauthorrefmark{2}, 
+    % Steven G. Johnson \IEEEauthorrefmark{3}, \\ 
+    % Bradley C. Kuszmaul \IEEEauthorrefmark{4}, 
+    % Ekanathan P. Natarajan \IEEEauthorrefmark{4}} \\ 
+    I-Ting Angelina Lee \IEEEauthorrefmark{4},
+    Charles E. Leiserson \IEEEauthorrefmark{4}} \\
+    \IEEEauthorblockA{
+    \IEEEauthorrefmark{1} School of Computer Science \\
+        Fudan University, Shanghai 200433, P. R. China \\
+        yuantang@fudan.edu.cn} \\
+    \IEEEauthorblockA{
+    \IEEEauthorrefmark{2} Department of Computer Science \\
+        State University of New York at Stony Brook \\
+       \{pganapathi, rezaul\}@cs.stonybrook.edu} \\
+%     \IEEEauthorblockA{
+%     \IEEEauthorrefmark{3} Applied Mathematics \\
+%         Massachusetts Institute of Technology \\
+%         stevenj@math.mit.edu} \\
+    \IEEEauthorblockA{
+    \IEEEauthorrefmark{4} MIT Computer Science and Artificial Intelligence Laboratory \\
+        32 Vassar Street, Cambridge, MA 02139 \\
+        \{yuantang, angelee, cel\}@mit.edu} \\
+}
+}%end punt
+
+\date{}
+
+\maketitle
+
+% to generate a separate cover page
+
+% \footnotenonumber{\par
+%   This work was supported in part by a grant from
+%   Intel Corporation and in part by the National Science Foundation
+%   under Grants CCF-0937860 % HECURA
+%   and CNS-1017058. % TLMM
+% 
+%   $\embox$Yuan Tang is Assistant Professor of Computer Science at Fudan
+%   University in China and a Visiting Scientist at MIT CSAIL\@.
+% %
+%   Charles E. Leiserson is Professor of Computer Science and
+%   Engineering at MIT CSAIL\@. }
+
+\input{abstract}
+\IEEEpeerreviewmaketitle
+
+% \category{D.1.3}{Programming Techniques}{Concurrent Programming}[Parallel programming]
+% \category{D.3.2}{Programming Languages}{Language Classifications}[Specialized application languages]
+% \category{G.4}{Mathematical Software}{}[Algorithm design and analysis].
+% 
+\input{intro}
+\input{nphardness}
+\input{algo}
+\input{example}
+\input{analysis}
+\input{ext}
+% introduce the concept of meta-algortihm and how to perform orthogonal
+% query for d-dimensional grid, including parallelization as a sub-section
+% introduce how to perform irregular range query by meta-algorithm
+% \input{concl} 
+% \input{ack}
+
+\bibliographystyle{IEEEtran}
+\bibliography{allpapers}
+
+% \appendix
+% \input{appendix}
+
+\end{document}
+

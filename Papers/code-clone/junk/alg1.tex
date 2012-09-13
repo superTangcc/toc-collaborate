@@ -1,0 +1,552 @@
+% -*- Mode: Latex -*-
+\secput{alg}{Pochoir's cache-oblivious algorithm}
+
+\newtheorem{mydef}{Definition}
+
+This section describes the parallel algorithm \proc{Trap} at the core
+of Pochoir's efficiency.  \proc{Trap} is a cache-oblivious algorithm
+based on ``trapezoidal decompositions'' \cite{FrigoSt05, FrigoSt09},
+but which employs a novel ``hyperspace-cut'' strategy to improve
+parallelism without sacrificing cache-efficiency.  On a
+$d$-dimensional spatial grid with all spatial dimensions roughly equal
+to the time dimension $h$, \proc{Trap} achieves $\Theta(h^{ d + 1 - \lg{
+      \left( d + 2 \right) } } / d )$ parallelism, while the original
+parallel trapezoidal decomposition algorithm in \cite{FrigoSt09}
+reaches only $\Theta(h^{ d + 1 - \lg{ \left( 2^d + 1 \right) } } ) =
+O(h)$ parallelism under the same asymptotic cache complexity.
+\celnote{Give bounds.}
+
+\proc{Trap} uses a cache-oblivious \cite{FrigoLePr99}
+divide-and-conquer strategy based on a recursive trapezoidal
+decomposition of the space-time grid, which was introduced by Frigo
+and Strumpen~\cite{FrigoSt05}.  They originally used the technique for
+serial stencil computations, but later extended it to parallel stencil
+computations~\cite{FrigoSt09}.  Whereas Frigo and Strumpen's parallel
+algorithm cuts the spatial dimensions of a hypertrapezoid, or
+``zoid,'' one at a time with ``parallel space cuts,'' \proc{Trap}
+performs a \defn{hyperspace cut} where it applies parallel space cuts
+simultaneously to as many dimensions as possible, yielding
+asymptotically more parallelism when the number of spatial dimensions
+is $2$ or greater.  As we will argue later in this section,
+\proc{Trap} achieves this improvement in parallelism while attaining
+the same cache complexity as Frigo and Strumpen's original parallel
+algorithm.
+
+\proc{Trap} operates as follows.  \Liref{test-cutX} of
+\figref{trap-code} determines whether the $x$-dimension of the zoid
+can be cut with a parallel space cut, and if so, \liref{cutX} trisects
+the zoid, as we shall describe later in this section and in
+\figref{Cut}, but it does not immediately spawn recursive tasks to
+process the subzoids, as Frigo and Strumpen's algorithm would.
+Instead, the code attempts to make a ``hyperspace cut'' by proceeding
+to the $y$-dimension, and if there were more dimensions, to those,
+thereby cutting as many dimensions as possible before spawning
+recursive tasks to handle the subzoids.  The counter $k$ keeps track
+of how many spatial dimensions are cut.  If $k>0$ spatial dimensions
+are trisected, as tested for in \liref{is-cut}, \liref{assign} assigns
+each subzoids to one of $k+1$ dependency levels such that the subzoids
+assigned to the same level are independent and can be processed in
+parallel, as we describe later in this section and in
+\figref{sim-space-cut}.  \Lirefs{parallelSpawnBegin}{parallelSpawnEnd}
+recursively walk all subzoids level by level in parallel.
+\Lirefs{simTimeCutBegin}{simTimeCutEnd} perform a time cut if no space
+cut can be performed.  \Lirefs{simBaseCaseBegin}{simBaseCaseEnd}
+perform the base-case computation if the zoid is sufficiently small
+that no space or time cut is productive.
+
+\begin{figure}
+\centering
+\subfigure[]{\includegraphics[clip,scale=0.4]{figures/upright-parallel-cut.eps}
+\label{fig:1DParallelCut}}
+\subfigure[]{\includegraphics[clip,scale=0.4]{figures/inverted-parallel-cut.eps}
+\label{fig:1DParallelCutInverted}}
+\subfigure[]{\includegraphics[clip,scale=0.4]{figures/time-cut.eps}
+\label{fig:1DTimeCut}}
+%
+\vspace{-0.3cm}
+\caption{Cutting projection
+  trapezoids. \subref{fig:1DParallelCut}~Trisecting an upright
+  trapezoid using a parallel space cut produces two black trapezoids
+  that can be processed in parallel and a gray trapezoid that must be
+  processed after the black ones.  \subref{fig:1DParallelCutInverted}~
+  Trisecting an inverted trapezoid using a parallel space cut produces
+  two black trapezoids that can be processed in parallel and a gray
+  trapezoid that must be processed before the black ones.
+  \subref{fig:1DTimeCut}~A time cut produces a lower and an upper
+  trapezoid where the lower trapezoid must be processed before the
+  upper.}
+\label{fig:Cut}
+\end{figure}
+\newcommand{\semi}{;\hspace{0.5em}} 
+
+We will first introduce some notation and definitions, many of which
+are borrowed or adapted from~\cite{FrigoSt05,FrigoSt09}.  A
+$d$-dimensional \defn{hypertrapezoid}, or \defn{$d$-zoid}, $\zoid{Z} =
+(\id{ta},\linebreak[0] \id{tb}\semi\linebreak[0]
+\id{xa}_0,\linebreak[0] \id{xb}_0,\linebreak[0]
+\id{dxa}_0,\linebreak[0] \id{dxb}_0\semi\linebreak[0]
+\id{xa}_1,\linebreak[0] \id{xb}_1,\linebreak[0]
+\id{dxa}_1,\linebreak[0] \id{dxb}_1\semi\linebreak[0]
+\ldots\semi\linebreak[0] \id{xa}_{d-1},\linebreak[0]
+\id{xb}_{d-1},\linebreak[0] \id{dxa}_{d-1},\linebreak[0]
+\id{dxb}_{d-1})$, where all variables are integers, is the set of
+integer grid points $\ang{t, x_0, x_1, \ldots, x_{d - 1}}$ such that
+$\id{ta}\leq t < \id{tb}$ and $\id{xa}_i + \id{dxa}_{i}(t - \id{ta})
+\leq x_i < \id{xb}_i + \id{dxb}_{i}(t - \id{ta})$ for all $i =
+0,1,\ldots, d-1$.
+%
+The \defn{height} of $\zoid{Z}$ is $\Delta t = \id{ta} - \id{tb}$.
+Define the \defn{projection trapezoid} $\prj{Z}{i}$ of $\zoid{Z}$ along
+spatial dimension $i$ to be the 2D trapezoid that results from
+projecting the zoid $\zoid{Z}$ onto the dimensions $x_i$ and~$t$.  The
+projection trapezoid $\prj{Z}{i}$ has two \defn{bases} (sides parallel to
+the $x_i$ axis) of lengths $\Delta x_i = \id{xb}_i-\id{xa}_i$ and
+$\nabla x_i = (\id{xa}_i+\id{dxa}_i\Delta t) -
+(\id{xb}_i+\id{dxb}_i\Delta t)$.  We define the
+\defn{width}\footnote{Frigo and Strumpen \cite{FrigoSt05,FrigoSt09}
+  define width as the average of the two bases.} $w_i$ of $\prj{Z}{i}$ to
+be the length of the longer of the two bases (parallel sides)
+of~$\prj{Z}{i}$, that is $w_i=\max\set{\Delta x_i, \nabla x_i}$.  The
+value $w_i$ is also called the \defn{width} of $\zoid{Z}$ along spatial
+dimension~$i$.  We say that $\prj{Z}{i}$ is \defn{upright} if $w_i=\Delta
+x_i$ --- the longer base corresponds to time $\id{ta}$ --- and
+\defn{inverted} otherwise.  A zoid $\zoid{Z}$ is \defn{well-defined} if
+its height is positive, its widths along all spatial dimensions are
+positive, and the lengths of its bases along all spatial dimensions
+are nonnegative.  A projection trapezoid $\prj{Z}{i}$ is \defn{minimal}
+if $\prj{Z}{i}$ is upright and $\nabla x_i = 0$, or $\prj{Z}{i}$ is inverted
+and $\Delta x_i = 0$.  A zoid $\zoid{Z}$ is \defn{minimal} if all
+$\prj{Z}{i}$'s are minimal.  Let $\sigma_i$ be the
+\defn{slope}\footnote{Actually, the reciprocal of slope, but we follow
+  Frigo and Strumpen's terminology.} of a stencil\celnote{Need to
+  define stencil.} along dimension~$i$, where we assume for simplicity
+that the stencil is symmetric in every dimension.  (Generalizing to
+asymmetric slopes is straightforward.)  We define the \defn{normalized
+  width} of a zoid $\zoid{Z}$ along dimension $i$ by $\widehat{w}_i = w_i
+/ 2 \sigma_i$.
+
+\subheading{Parallel space cuts}
+
+Our trapezoidal decomposition differs from that of Strumpen and Frigo
+in the way we do parallel space cuts.  A \defn{parallel space cut} can
+be applied along a given spatial dimension $i$ of a well-defined zoid
+$\zoid{Z}$ provided that the projection trapezoid $\prj{Z}{i}$ can be
+trisected into 3 well-defined subtrapezoids, as shown in
+\figreftwo{1DParallelCut}{1DParallelCutInverted}.  The triangle-shaped
+gray subtrapezoid in the middle is a minimal trapezoid.  The larger
+base of $\prj{Z}{i}$ is split in the middle, and each half forms the
+larger base of a black subtrapezoid.  These three subtrapezoids of
+$\prj{Z}{i}$ correspond to three subzoids of~$\zoid{Z}$.  Since the two
+black subzoids have no interdependencies, they can be processed in
+parallel.  As shown in \figref{1DParallelCut}, for an upright
+projection trapezoid, the subzoids corresponding to the black
+trapezoids are processed first, after which the subzoid corresponding
+to the gray subtrapezoid can be processed.  For an inverted projection
+trapezoid, as shown in \figref{1DParallelCutInverted}, the opposite is
+done.  In either case, the 3 subzoids can be processed in parallel in
+the time to process 2 of them, what we shall call 2 \defn{parallel
+  steps}.  The following lemma describes the general case.
+
+\begin{figure}
+\centering
+
+\subfigure[]{\includegraphics[clip,width=2.5in]{figures/hyperspace-cut.eps}
+\label{fig:dep-level}}
+\hspace{2cm}
+\subfigure[]{\includegraphics[clip,scale=0.3]{figures/dep-graph.eps}
+\label{fig:dep-graph}}
+ \vspace{-0.3cm}
+ \caption{Dependency levels of subzoids resulting from a hyperspace
+   cut along both spatial dimensions of a $3$-zoid.
+   \subref{fig:dep-level}~Labeling of coordinates of subzoids and
+   their dependency levels.  \subref{fig:dep-graph}~The corresponding
+   dependency graph.}%
+ \label{fig:sim-space-cut}%
+\end{figure}%
+
+\begin{lemma}
+  All $3^k$ subzoids created by a hyperspace cut on $k \geq 1$ of the
+  $d \geq k$ spatial dimensions of a $(d + 1)$-zoid can be processed
+  in $k + 1$ parallel steps.
+\label{lem:simParallelStepsNew}
+\end{lemma}
+\begin{proof}
+  Assume without loss of generality that the hyperspace cut is applied
+  to the first $k$ spatial dimensions of a given zoid~$\zoid{Z}$.  For
+  each such dimension $i$, let us label the projection subtrapezoids
+  in 2D space-time resulting from the parallel space cut (see
+  \figreftwo{1DParallelCut}{1DParallelCutInverted}) with the numbers
+  $1$, $2$, and $3$, where the black trapezoids are labeled $1$ and
+  $3$ and the gray trapezoid is labeled~$2$.  When the hyperspace cut
+  consisting of all $k$ parallel space cuts is applied, a set $S$ of
+  $3^{k}$ subzoids is created in $(k + 1)$-dimensional space-time.
+  Each subzoid can be identified by a unique $k$-tuple $\ang{u_0, u_1,
+    \ldots, u_{k - 1}}$, where $u_i\in\set{1,2,3}$ for $i=0,1,\ldots,
+  k-1$.  Let $I_i=1$ if its projection trapezoid $\ang{u_0, u_1,
+    \ldots, u_{k - 1}}_i$ along the $i$th dimension is upright and
+  $I_i=0$ if the projection trapezoid is inverted.  The
+  \defn{dependency level} of a zoid $\ang{u_0, u_1, \ldots, u_{k -
+      1}}\in S$ is given by
+\[
+\id{dep}(\ang{u_0, u_1, \ldots, u_{k -
+      1}}) = \sum_{i=0}^{k-1}((u_i+I_i)\bmod 2)\ .
+\]
+\figref{dep-level} shows the dependency levels for the subzoids of a
+zoid generated by a hyperspace cut with $k = 2$.  
+
+We claim that all zoids in $S$ with the same dependency level are
+independent, and thus all of $S$ can be processed in $k+1$ parallel
+steps.  As illustrated in \figref{dep-graph}, we can construct a
+directed graph $G = (S, E)$ that captures the dependency relationships
+among the subzoids of $S$ as follows.  Given any pair of zoids $\ang{
+  u_0, u_1, \ldots, u_{k - 1}}, \ang{u'_0, u'_1, \ldots, u'_{k -
+    1}}\in S$, we include an edge $(\ang{ u_0, u_1, \ldots, u_{k -
+    1}}, \ang{u'_0, u'_1, \ldots, u'_{k - 1}})\in E$ (meaning that
+$\ang{u'_0, u'_1, \ldots, u'_{k - 1}}$ directly depends on some grid
+points in $\ang{ u_0, u_1, \ldots, u_{k - 1}}$) if there exists a
+dimension $i$ in the range $0\leq i<k$ such that the following
+conditions hold:
+\begin{closeitemize}
+
+\item $u_j=u'_j$ for all $j\in\set{0,1,\ldots,i-1,i+1,\ldots,k}$, 
+
+\item $(I_i+u_i) \bmod 2 = 0$,
+
+\item $(I_i+u'_i) \bmod 2 = 1$. 
+
+\end{closeitemize}
+Observe that under these conditions $\id{dep}(\ang{ u'_0, u'_1,
+  \ldots, u'_{k - 1}}) = \id{dep}(\ang{ u_0, u_1, \ldots, u_{k - 1}})
++ 1$. Thus, along any path in $G$, the dependency levels are strictly
+increasing, and no two nodes with the same dependency level can lie on
+the same path.  As a result, all zoids in $S$ with the same dependency
+level form an antichain and can be processed simultaneously.  Since
+there are $k + 1$ distinct dependency levels, all zoids in $S$ can be
+processed in $k + 1$ parallel steps with step $i\in\set{0,1,\ldots,k}$
+processing all zoids having dependency level~$i$.
+\end{proof}
+
+\subheading{The \proc{Trap} algorithm}
+
+Given a well-defined zoid $\zoid{Z}$, the algorithm \proc{Trap} from
+\figref{trap-code} works by recursively decomposing $\zoid{Z}$ into
+smaller well-defined zoids as follows.
+
+\paragraph{Hyperspace cut.}
+\Lirefs{hyper<}{hyper>} in \figref{trap-code} apply a hyperspace cut
+involving all dimensions on which a parallel space cut can be applied,
+as shown in \figreftwo{1DParallelCut}{1DParallelCutInverted}) If the
+number $k$ of dimensions of $\zoid{Z}$ on which a space cut can be
+applied (see \figreftwo{1DParallelCut}{1DParallelCutInverted}) is at
+least $1$, as tested for in \liref{is-cut} of \figref{trap-code}, then
+dependency levels are computed for all resulting subzoids in
+\liref{assign}, and then \lirefs{parallelSpawn<}{parallelSpawn>}
+recursively processes them in order according to dependency level as
+described in the proof of \lemref{simParallelStepsNew}.
+
+\paragraph{Time cut.}
+If a hyperspace cut is not applicable and $\zoid{Z}$ has height greater
+than $1$, as tested for in \liref{test-cutT}, then
+\lirefs{simTimeCut<}{simTimeCut>} cut $\zoid{Z}$ in the middle of
+its time dimension and recursively process the lower subzoid followed
+by the upper subzoid, as shown in \figref{1DTimeCut}.
+
+\paragraph{Base case.}
+If neither a hyperspace cut nor a time cut can be applied, $\zoid{Z}$ is
+processed directly by calling the stencil-specific kernel function in
+\lirefs{simBaseCase<}{simBaseCase>}.  As a practical matter, the base
+case is \defn{coarsened} by choosing suitable a larger threshold than
+$1$ for $\Delta t$ in \liref{test-cutT}, which cuts down on overhead
+due to the recursion.
+
+\subheading{Analysis}
+
+We can analyze the parallelism using a work/span
+analysis~\cite[Ch.~27]{CormenLeRi+09}.  The \defn{work} $T_1$ of a
+computation is its serial running time, and the \defn{span} $T_\infty$
+is the longest path of dependencies, or equivalently, the running time
+on an infinite number of processors assuming no overheads for
+scheduling.
+
+The next lemma provides a tight bound on the span of \proc{Trap}
+algorithm assuming that the normalized width in each spatial dimension
+equals the length of the time dimension.
+\begin{lemma}
+  Consider a minimal $d$-zoid $\zoid{Z}$ with height $h=\Delta t$ and
+  normalized widths $\widehat{w}_i = h$ for all $i \in
+  \set{0,1,\ldots, d-1}$.  Then the span of \proc{Trap} when
+  processing $\zoid{Z}$ is $T_{\infty}(\zoid{Z}) = \Theta(dh^{\lg{(d +
+      2)}})$.
+\label{lem:HyperspaceCutSimpleCase}
+\end{lemma}
+
+\begin{proof}
+
+  For simplicity we assume that a call to the kernel function and a
+  spawn cost at most one unit of the span, as in~\cite{FrigoSt09}.  We
+  need only consider $d$-zoids $\zoid{Z}$ where each $\prj{Z}{i}$ is either
+  minimal with ${\widehat{w}}_i = h$, or nonminimal with
+  ${\widehat{w}}_i = 2 {\widehat{w}}'_i = 2h$, where $h$ is the height
+  of $\zoid{Z}$.  Spatial cuts can only be applied on the nonminimal
+  projection trapezoids.
+
+  Without loss of generality, suppose that dimensions of $\zoid{Z}$ are
+  ordered so that the first $k\geq 0$ projection trapezoids $\zoid{Z}$
+  are nonminimal.  Using \lemref{simParallelStepsNew}, the span of
+  \proc{Trap} when $\zoid{Z}$ undergoes a hyperspace cut can be described
+  by the recurrence
+\begin{eqnarray*}
+\lefteqn{T_{\infty}(h, \widehat{w}_0, \widehat{w}_1, \ldots, \widehat{w}_{k - 1}, \widehat{w}_{k}, \ldots, \widehat{w}_{d - 1})}\\
+& = & ( k + 1 ) T_{\infty}(h, h, \ldots, h, \widehat{w}_{k}, \ldots, \widehat{w}_{d - 1})
++ \Theta\paren{\sum_{i = 0}^k\lg(3^k)}\\
+& = & ( k + 1 ) T_{\infty}(h, h, \ldots, h, \widehat{w}_{k}, \ldots, \widehat{w}_{d - 1})
++ \Theta(k^2)\ .
+\end{eqnarray*}
+The second line follows because a parallel \For with $r$ iterations
+adds $\Theta(\lg r)$ to the span, and since the number of zoids at all
+levels is $3^k$, this value upper-bounds the number of iterations at
+any given level.  Moreover, the lower bound on the number of zoids on
+a given level is at least the average $3^k/(k+1)$, whose logarithm is
+asymptotically the same as $\lg(3^k)$, and hence the bound is
+asymptotically tight.
+
+A time cut can be applied when the zoid $\zoid{Z}$ is minimal.  Assume
+without loss of generality that the first $k\geq 0$ projection
+trapezoids $\prj{Z}{i}$'s are upright and the rest inverted.  Then the
+base of each projection trapezoid $\prj{Z}{i}$ for the lower zoid
+generated by the hyperspace cut has the same normalized length
+$\widehat{w}_i$ as for $\zoid{Z}$ if $0\leq i <k$ and have normalized
+length $\widehat{w}_i-h/2=h/2$ for $k\leq i < d$.  Similarly, the base
+of each projection trapezoid $\prj{Z}{i}$ for the upper zoid has
+normalized length $\widehat{w}_i-h/2=h/2$ if $0\leq i <k$ and
+normalized length $\widehat{w}_i$ for $k\leq i < d$.  Thus, the
+recurrence for the span of \proc{Trap} when $\zoid{Z}$ undergoes a
+time cut can be written as follows:
+\begin{eqnarray*}
+\lefteqn{T_{\infty}(h, \widehat{w}_0, \widehat{w}_1, \ldots, \widehat{w}_{d - 1})}\\
+& = & T_{\infty}(h/2, \widehat{w}_0, \ldots, \widehat{w}_{k - 1},
+\widehat{w}_{k} - h/2, \ldots, \widehat{w}_{d - 1} - h/2)\\
+&  & + T_{\infty}(h/2, \widehat{w}_0 - h/2, \ldots, 
+\widehat{w}_{k - 1} - h/2, \widehat{w}_{k}, \ldots, \widehat{w}_{d - 1}) + \Theta(1)\\
+& = & T_{\infty}(h/2, \widehat{w}_0, \ldots, \widehat{w}_{k - 1},
+\widehat{w}_{k}/2, \ldots, \widehat{w}_{d - 1}/2)\\
+&  & + T_{\infty}(h/2, \widehat{w}_0/2, \ldots, \widehat{w}_{k - 1}/2,
+\widehat{w}_{k}, \ldots, \widehat{w}_{d - 1}) + \Theta(1)\ .
+\end{eqnarray*}
+
+\begin{eqnarray*}
+\lefteqn{T_{\infty}(h, \widehat{w}_0, \widehat{w}_1, \ldots, \widehat{w}_{d - 1})}\\
+& = & T_{\infty}{\left(\frac{h}{2}, {\widehat{w}}_0, \ldots, {\widehat{w}}_{k - 1},
+{\widehat{w}}_{k} - {h \over 2}, \ldots, {\widehat{w}}_{d - 1} - {h \over 2}\right)}\\
+& & + T_{\infty}{\left(\frac{h}{2}, {\widehat{w}}_0 - {h \over 2}, \ldots, 
+{\widehat{w}}_{k - 1} - {h \over 2}, {\widehat{w}}_{k}, \ldots, {\widehat{w}}_{d - 1}\right)} + 2~\\
+& = & T_{\infty}{\left(\frac{h}{2}, {\widehat{w}}_0, \ldots, {\widehat{w}}_{k - 1},
+{{\widehat{w}}_{k} \over 2}, \ldots, {{\widehat{w}}_{d - 1} \over 2}\right)}~\\
+& & + T_{\infty}{\left(\frac{h}{2}, {{\widehat{w}}_0 \over 2}, \ldots, {{\widehat{w}}_{k - 1} \over 2},
+{\widehat{w}}_{k}, \ldots, {\widehat{w}}_{d - 1}\right)} + 2
+\end{eqnarray*}
+
+Let us denote $T_{\infty}(h, h, h, \ldots, h)$ by
+$T_{\infty}(h)$. Since ${\widehat{w}}_i = h$ for $0 \leq i < d$, if we
+apply hyperspace cuts on the subzoids on the right hand side of the
+recurrence above, we obtain the following:
+\[
+T_{\infty}{\left(h\right)} 
+= ( d + 2 ) T_{\infty}(h/2)
++ \sum_{i = 0}^{k}{\lg{\left( \choose{k}{i} 2^i \right)}} + \sum_{i = 0}^{d - k}{\lg{\left( \choose{d - k}{i} 2^i \right)}} + 2\ ,
+\]
+%
+\punt{
+\begin{eqnarray*}
+T_{\infty}{\left(h\right)} 
+&=& ( d + 2 ) T_{\infty}{\left({h \over 2}\right)}
++ 2 + \sum_{i = 0}^{k}{\lg{\left( \choose{k}{i} 2^i \right)}} + \sum_{i = 0}^{d - k}{\lg{\left( \choose{d - k}{i} 2^i \right)}},
+% & = & ( d + 2 )^{ \lg{ h } } + { { ( d + 2 )^{ \lg{ h } } - 1 } \over { d + 1 } } \left( 2 + \sum_{i = 0}^{d}{\lg{\left( \choose{d}{i} 2^i \right)}} \right)
+\end{eqnarray*}
+}
+% punt ends
+
+\noindent
+where we assume that $k (\geq 0)$ $\prj{Z}{i}$'s
+of $\zoid{Z}$ are nonminimal.
+
+The solution to the recurrence above is given by
+$\Theta(d (d + 2)^{\lg{h}}) = \Theta( dh^{\lg{( d + 2)}} )$.
+%
+\end{proof}
+
+
+
+
+\begin{corollary}
+  The span of \proc{Trap} when visiting a $d$-dimensional
+  cubic grid $\m{G}$ with ${\widehat{w}}_i = h, \forall{i} \in [0, d)$, 
+  is $T_{\infty}(\m{G}) = \Theta(dh^{\lg{(d + 2)}})$, where $h$ is the 
+  height of $\m{G}$, and ${\widehat{w}}$ is its normalized width in 
+  the $i$th spatial dimension.
+\label{cor:HyperspaceCutGrid}
+\end{corollary}
+%
+\begin{proof}(Sketch)
+%
+Let $vol(\zoid{Z})$ denote the space-time volume of a zoid
+$\zoid{Z}$, and let $vol(\m{G}) = V$.
+\proc{Trap} will first apply a hyperspace cut on $\m{G}$ involving all
+spatial dimensions, and the resulting subzoids will be evaluated in $d + 1$
+parallel steps (see \lemref{simParallelStepsNew}). In the $i$th ($i \in [0, d]$) 
+step $\choose{d}{i} 2^i$ subzoids will be evaluated in parallel.
+Let $V_i$ be the combined space-time volume of all subzoids
+in step $i$. Hence step $i$ will add $T_{\infty}(\prj{Z}{i})$ to the span, where
+$\prj{Z}{i}$ is a subzoid with height $h$ and space-time volume
+$V_i / \paren{ \choose{d}{i} 2^i }$. Observe that
+$\prj{Z}{0}$ is a minimal zoid of volume $V_0 = V / (d + 1)$,
+and according to \lemref{HyperspaceCutSimpleCase}, 
+$T_{\infty}(\prj{Z}{0}) = \Theta(dh^{\lg{(d + 2)}})$.
+Also $\sum_{i = 1}^{d}{V_i} = dV / (d + 1)$,
+and thus $\sum_{i = 1}^{d}{vol(\prj{Z}{i})} \leq \paren{dV / (d + 1)} / \paren{\choose{d}{1} 2^1}
+= \paren{ V / (d + 1) } / 2 = vol(\prj{Z}{0}) / 2$. Hence,
+the contribution of $\prj{Z}{0}$ to $T_{\infty}(\m{G})$
+will dominate, and the claim follows.
+%
+\end{proof}
+
+
+The following corollary follows from the observation
+that when all normalized spatial dimensions are equal but
+smaller than the time dimension, \proc{Trap}
+performs a sequence of time cuts until the
+time dimension becomes equal to the spatial dimensions,
+and at that point \lemref{HyperspaceCutSimpleCase}
+applies.
+
+\begin{corollary}
+The span of \proc{Trap} when visiting a minimal $d$-zoid $\zoid{Z}$ 
+with ${\widehat{w}}_i = w, \forall{i} \in [0, d)$,
+and $h = 2^k w$ for some integer $k \geq 0$,
+is $T_{\infty}(\zoid{Z}) = \Theta({ dh^{1 + \lg{(d + 2)}} / w})$, where 
+$h$ is the height of $\zoid{Z}$, and
+${\widehat{w}}$ is its normalized width in the $i$th 
+spatial dimension.
+\label{cor:HyperspaceCutSimpleCase}
+\end{corollary}
+
+Let \proc{Strap} be the version of Frigo and Strumpen's parallel stencil
+algorithm \cite{FrigoSt09} that performs the space cuts
+as in \figreftwo{1DParallelCut}{1DParallelCutInverted}.
+%
+Then the major difference between \proc{Trap} and \proc{Strap} (as
+well as the original parallel algorithm in \cite{FrigoSt09}) is in the
+way the space cuts are applied.  Unlike our algorithm, \proc{Strap}
+applies the space cuts one at a time.  Each space cut results in one
+synchronization point, and hence a sequence of $k$ space cuts applied
+by \proc{Strap} introduces $2^k - 1$ synchronization points compared
+to only $k$ synchronization points generated by \proc{Trap} (see
+\lemref{simParallelStepsNew}).  Thus, each space cut virtually doubles
+\proc{Strap}'s span.
+%
+\figref{dep-level} shows a simple example where \proc{Strap} produces
+$2^2 - 1 = 3$ synchronization points while \proc{Trap} introduces only
+$2$.
+
+The following theorem bounds the span of
+\proc{Strap} under the same conditions as in
+\lemref{HyperspaceCutSimpleCase}.  The proof is a straightforward
+extension of the observation above, and hence has been omitted.
+
+\begin{theorem}
+  The span of \proc{Strap} when visiting a minimal $d$-zoid $\zoid{Z}$ with
+  ${\widehat{w}}_i = h, \forall{i} \in [0, d)$, is $T_{\infty}(\zoid{Z})
+  = \Theta(h^{\lg{(2^d + 1)}})$, where $h$ is the height of $\zoid{Z}$, and
+  ${\widehat{w}}$ is its normalized width in the $i$th spatial
+  dimension.
+\label{thm:SpaceCutSimpleCase}
+\end{theorem}
+
+A corollary similar to \corref{HyperspaceCutSimpleCase}
+follows.
+
+\begin{corollary}
+  The span of \proc{Strap} when visiting a minimal $d$-zoid $\zoid{Z}$ with ${\widehat{w}}_i = w, \forall{i} \in [0, d)$, and
+  $h = 2^k w$ for some integer $k \geq 0$, is $T_{\infty}(\zoid{Z}) =
+  \Theta(h^{1 +\lg(2^d + 1)} / w )$, where $h$ is the height of
+  $\zoid{Z}$, and ${\widehat{w}}$ is its normalized width in the $i$th
+  spatial dimension.
+\label{cor:SpaceCutSimpleCase}
+\end{corollary}
+
+The cache complexities of \proc{Trap} and \proc{Strap} are the same
+which follows from the observation that both algorithms apply exactly
+the same time cuts in exactly the same order, and immediately before
+each time cut both are in exactly the same state in terms of the
+spatial cuts applied.
+%
+Thus, they arrive at exactly the same configuration\footnote{number,
+  shape and size} of subzoids before each time cut.  For any
+fixed integer $r > 1$, a space cut in Frigo and Strumpen's parallel
+stencil algorithm produces $r$ black zoids and between $r - 1$
+and $r + 1$ gray zoids. \proc{Strap} is a special case of that
+algorithm with $r = 2$.  For larger values of $r$ Frigo and Strumpen's
+algorithm achieves more parallelism but the cache efficiency
+drops. Our algorithm (\proc{Trap}) can also be modified to work with
+the same larger values of $r$ and achieve even more parallelism than
+that algorithm while asymptotically matching its cache complexity.
+
+\figref{Parallelism} shows the results of using the Cilkview
+scalability analyzer \cite{YuxiongLe10} to compare the parallelism of
+\proc{Trap} and \proc{Strap} on three benchmarks.  We measured the two
+algorithms with uncoarsened base cases.  As can be seen from the
+figure, \proc{Trap}'s asymptotic advantage in parallelism borne out in
+practice for these benchmarks.
+
+We used the Linux perf tool \cite{perf} in order to verify that
+\proc{Trap} does not suffer any loss in cache efficiency compared to
+the original space-cut algorithm. \figref{CacheComplexity} also plots
+the cache miss ratio of straightforward parallel loop algorithm.  The
+parallel-loop algorithm exhibits poorer cache performance compared to
+the two cache-oblivious algorithms.
+
+\definecolor{Red}{rgb}{0.5,0,0}
+\definecolor{Blue}{rgb}{0,0,0.5}
+\definecolor{Black}{rgb}{0,0,0}
+\begin{figure}
+\centering
+%% \subfigure[]{\input{heat_2D_P_span.tex}}
+%% \label{fig:heat2DPSpan}
+
+\subfigure[]{\input{heat_2D_NP_span.tex}}
+\label{fig:heat2DNPSpan}
+
+\subfigure[]{\input{dfd_span.tex}}
+\label{fig:dfdSpan}
+
+\caption{Parallelism comparison between space cut and hyperspace cut.   This measurement is of code without base-case coursening.
+%% (a) 2D periodic heat equation.  Space-time size is $1000N^2$.
+ (a) 2D non-periodic heat equation. Space-time size is $1000N^2$.
+ (b) 3D non-periodic wave equation. Space-time size is $1000N^3$.
+}
+\label{fig:Parallelism}
+\end{figure}
+
+\begin{figure}[t]
+\centering
+%% \subfigure[]{\input{heat2DPCache}}
+%% \label{fig:heat2DPCache}
+
+\subfigure[]{\input{heat2DNPCache}}
+\label{fig:heat2DNPCache}
+
+\subfigure[]{\input{dfdCache}}
+\label{fig:dfdCache}
+\caption{Cache miss ratios of the two trapezoidal algorithms and the loop-based algorithm on three applications.  The cache miss ratio is the ratio of the cache misses to the number of memory references.  This measurement is of code without base-case coursening.
+%% (a) 2D periodic heat equation.  Space-time size is $1000N^2$.
+ (a) 2D non-periodic heat equation.  Space-time is $1000N^2$.
+ (b) 3D non-periodic wave equation.  Space-time is $1000N^3$.
+}
+\label{fig:CacheComplexity}
+\end{figure}
+
+
+% LocalWords:  uncoarsened Strumpen's Frigo Cilkview subtrapezoids subtrapezoid
+% LocalWords:  tuple interdependencies tuples parallelized Pochoir's Strumpen
+% LocalWords:  antichain subgrids hyperrectangle hypertrapezoid zoid subzoids
+% LocalWords:  subwidth subwidths nonnegative subzoid zoids nonminimal

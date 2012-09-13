@@ -1,0 +1,592 @@
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2011.11.9)  6 SEP 2012 00:47
+entering extended mode
+ %&-line parsing enabled.
+**code-clone
+(./code-clone.tex
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, farsi, arabic, croatian, bulgarian, ukrainian, russian, czech, slov
+ak, danish, dutch, finnish, french, basque, ngerman, german, german-x-2009-06-1
+9, ngerman-x-2009-06-19, ibycus, monogreek, greek, ancientgreek, hungarian, san
+skrit, italian, latin, latvian, lithuanian, mongolian2a, mongolian, bokmal, nyn
+orsk, romanian, irish, coptic, serbian, turkish, welsh, esperanto, uppersorbian
+, estonian, indonesian, interlingua, icelandic, kurmanji, slovenian, polish, po
+rtuguese, spanish, galician, catalan, swedish, ukenglish, pinyin, loaded.
+(./IEEEtran.cls
+Document Class: IEEEtran 2007/03/05 V1.7a by Michael Shell
+-- See the "IEEEtran_HOWTO" manual for usage information.
+-- http://www.michaelshell.org/tex/ieeetran/
+\@IEEEtrantmpdimenA=\dimen102
+\@IEEEtrantmpdimenB=\dimen103
+\@IEEEtrantmpcountA=\count79
+\@IEEEtrantmpcountB=\count80
+\@IEEEtrantmptoksA=\toks14
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 366.
+
+(/usr/share/texmf-texlive/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+-- Using 8.5in x 11in (letter) paper.
+-- Using DVI output.
+\@IEEEnormalsizeunitybaselineskip=\dimen104
+-- This is an 11 point document.
+\CLASSINFOnormalsizebaselineskip=\dimen105
+\CLASSINFOnormalsizeunitybaselineskip=\dimen106
+\IEEEnormaljot=\dimen107
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <6> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <11> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <11> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <17> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <20> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <20> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 724.
+\IEEEilabelindentA=\dimen108
+\IEEEilabelindentB=\dimen109
+\IEEEilabelindent=\dimen110
+\IEEEelabelindent=\dimen111
+\IEEEdlabelindent=\dimen112
+\IEEElabelindent=\dimen113
+\IEEEiednormlabelsep=\dimen114
+\IEEEiedmathlabelsep=\dimen115
+\IEEEiedtopsep=\skip41
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@IEEEsubequation=\count85
+\abovecaptionskip=\skip42
+\belowcaptionskip=\skip43
+\c@figure=\count86
+\c@table=\count87
+\@IEEEeqnnumcols=\count88
+\@IEEEeqncolcnt=\count89
+\@IEEEtmpitemindent=\dimen116
+\c@IEEEbiography=\count90
+\@IEEEtranrubishbin=\box26
+) (./supertech-sig.sty
+Package: supertech-sig 1998/10/16{} macros for the Supertech group at MIT
+ (/usr/share/texmf-texlive/tex/latex/mh/mathtools.sty
+Package: mathtools 2008/08/01 v1.06 mathematical typesetting tools (MH)
+
+(/usr/share/texmf-texlive/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks15
+)
+(/usr/share/texmf-texlive/tex/latex/tools/calc.sty
+Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count91
+\calc@Bcount=\count92
+\calc@Adimen=\dimen117
+\calc@Bdimen=\dimen118
+\calc@Askip=\skip44
+\calc@Bskip=\skip45
+LaTeX Info: Redefining \setlength on input line 76.
+LaTeX Info: Redefining \addtolength on input line 77.
+\calc@Ccount=\count93
+\calc@Cskip=\skip46
+)
+(/usr/share/texmf-texlive/tex/latex/mh/mhsetup.sty
+Package: mhsetup 2007/12/03 v1.2 programming setup (MH)
+)
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2000/07/18 v2.13 AMS math features
+\@mathmargin=\skip47
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texmf-texlive/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks16
+\ex@=\dimen119
+))
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen120
+)
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count94
+LaTeX Info: Redefining \frac on input line 211.
+\uproot@=\count95
+\leftroot@=\count96
+LaTeX Info: Redefining \overline on input line 307.
+\classnum@=\count97
+\DOTSCASE@=\count98
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
+\Mathstrutbox@=\box27
+\strutbox@=\box28
+\big@size=\dimen121
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+\macc@depth=\count99
+\c@MaxMatrixCols=\count100
+\dotsspace@=\muskip10
+\c@parentequation=\count101
+\dspbrk@lvl=\count102
+\tag@help=\toks17
+\row@=\count103
+\column@=\count104
+\maxfields@=\count105
+\andhelp@=\toks18
+\eqnshift@=\dimen122
+\alignsep@=\dimen123
+\tagshift@=\dimen124
+\tagwidth@=\dimen125
+\totwidth@=\dimen126
+\lineht@=\dimen127
+\@envbody=\toks19
+\multlinegap=\skip48
+\multlinetaggap=\skip49
+\mathdisplay@stack=\toks20
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
+)
+\g_MT_multlinerow_int=\count106
+\l_MT_multwidth_dim=\dimen128
+)
+(/usr/share/texmf-texlive/tex/latex/ltxmisc/url.sty
+\Urlmuskip=\muskip11
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+)
+(/usr/share/texmf-texlive/tex/latex/base/latexsym.sty
+Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
+\symlasy=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
+(Font)                  U/lasy/m/n --> U/lasy/b/n on input line 47.
+)
+(/usr/share/texmf-texlive/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-texlive/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/etc/texmf/tex/latex/config/graphics.cfg
+File: graphics.cfg 2009/08/28 v1.8 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: dvips.def on input line 91.
+
+(/usr/share/texmf-texlive/tex/latex/graphics/dvips.def
+File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+))
+(/usr/share/texmf-texlive/tex/latex/listings/listings.sty
+\lst@mode=\count107
+\lst@gtempboxa=\box29
+\lst@token=\toks21
+\lst@length=\count108
+\lst@currlwidth=\dimen129
+\lst@column=\count109
+\lst@pos=\count110
+\lst@lostspace=\dimen130
+\lst@width=\dimen131
+\lst@newlines=\count111
+\lst@lineno=\count112
+\lst@maxwidth=\dimen132
+
+(/usr/share/texmf-texlive/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
+\c@lstnumber=\count113
+\lst@skipnumbers=\count114
+\lst@framebox=\box30
+)
+(/usr/share/texmf-texlive/tex/latex/listings/listings.cfg
+File: listings.cfg 2007/02/22 1.4 listings configuration
+))
+Package: listings 2007/02/22 1.4 (Carsten Heinz)
+
+(/usr/share/texmf-texlive/tex/latex/cite/cite.sty
+LaTeX Info: Redefining \cite on input line 285.
+LaTeX Info: Redefining \nocite on input line 356.
+Package: cite 2009/08/29  v 5.2
+)
+(/usr/share/texmf-texlive/tex/latex/pslatex/pslatex.sty
+Package: pslatex 1996/07/24 v1.2 pslatex emulation (DPC)
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 65.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/ptmcm/m/n on input line 65.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/ptmcm/m/n on input line 65.
+LaTeX Font Info:    Redeclaring symbol font `letters' on input line 66.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/ptmcm/m/it on input line 66.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/ptmcm/m/it on input line 66.
+LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 67.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/pzccm/m/n on input line 67.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/pzccm/m/n on input line 67.
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 68.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/psycm/m/n on input line 68.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/psycm/m/n on input line 68.
+\symbold=\mathgroup5
+\symitalic=\mathgroup6
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 74.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 74.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 74.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 75.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/ptm/m/it on input line 75.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/ptm/m/it on input line 75.
+)
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 24.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/psycm/m/n --> OMX/cmex/m/n on input line 24.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/psycm/m/n --> OMX/cmex/m/n on input line 24.
+
+(/usr/share/texmf-texlive/tex/latex/graphics/epsfig.sty
+Package: epsfig 1999/02/16 v1.7a (e)psfig emulation (SPQR)
+
+(/usr/share/texmf-texlive/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+\Gin@req@height=\dimen133
+\Gin@req@width=\dimen134
+)
+\epsfxsize=\dimen135
+\epsfysize=\dimen136
+)
+(/usr/share/texmf-texlive/tex/latex/tools/array.sty
+Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen137
+\extrarowheight=\dimen138
+\NC@list=\toks22
+\extratabsurround=\skip50
+\backup@length=\skip51
+)
+(/usr/share/texmf-texlive/tex/latex/multirow/multirow.sty
+\bigstrutjot=\dimen139
+)
+(/usr/share/texmf-texlive/tex/latex/tools/hhline.sty
+Package: hhline 1994/05/23 v2.03 Table rule package (DPC)
+)
+(/usr/share/texmf-texlive/tex/latex/tools/dcolumn.sty
+Package: dcolumn 2001/05/28 v1.06 decimal alignment package (DPC)
+)
+(/usr/share/texmf/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+(/etc/texmf/tex/latex/config/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: dvips.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+
+(/usr/share/texmf/tex/latex/xcolor/x11nam.def
+File: x11nam.def 2007/01/21 v2.11 Predefined colors according to Unix/X11 (UK)
+)) (./clrscode4e.sty
+Package: clrscode4e 
+\c@codelinenumber=\count115
+\c@indent=\count116
+\digitwidth=\skip52
+\savecode=\box31
+\codeboxwidth=\skip53
+\c@linenumberwidth=\count117
+\c@thisindent=\count118
+)
+(./flushend.sty
+Package: flushend 1997/10/01
+\@aaa=\box32
+\@ccc=\box33
+\@viper=\box34
+\hold@viper=\box35
+\atColsBreak=\toks23
+\@extra@skip=\dimen140
+\@nd@page@rule=\dimen141
+) (/usr/share/texmf-texlive/tex/latex/tools/xspace.sty
+Package: xspace 2006/05/08 v1.12 Space after command names (DPC,MH)
+)
+(/usr/share/texmf-texlive/tex/latex/tools/multicol.sty
+Package: multicol 2008/12/05 v1.6h multicolumn formatting (FMi)
+\c@tracingmulticols=\count119
+\mult@box=\box36
+\multicol@leftmargin=\dimen142
+\c@unbalance=\count120
+\c@collectmore=\count121
+\doublecol@number=\count122
+\multicoltolerance=\count123
+\multicolpretolerance=\count124
+\full@width=\dimen143
+\page@free=\dimen144
+\premulticols=\dimen145
+\postmulticols=\dimen146
+\multicolsep=\skip54
+\multicolbaselineskip=\skip55
+\partial@page=\box37
+\last@line=\box38
+\mult@rightbox=\box39
+\mult@grightbox=\box40
+\mult@gfirstbox=\box41
+\mult@firstbox=\box42
+\@tempa=\box43
+\@tempa=\box44
+\@tempa=\box45
+\@tempa=\box46
+\@tempa=\box47
+\@tempa=\box48
+\@tempa=\box49
+\@tempa=\box50
+\@tempa=\box51
+\@tempa=\box52
+\@tempa=\box53
+\@tempa=\box54
+\@tempa=\box55
+\@tempa=\box56
+\@tempa=\box57
+\@tempa=\box58
+\@tempa=\box59
+\c@columnbadness=\count125
+\c@finalcolumnbadness=\count126
+\last@try=\dimen147
+\multicolovershoot=\dimen148
+\multicolundershoot=\dimen149
+\mult@nat@firstbox=\box60
+\colbreak@box=\box61
+)
+\@maxsep=\dimen150
+\@dblmaxsep=\dimen151
+\c@principle=\count127
+\c@theorem=\count128
+\c@xample=\count129
+\savearraycolsep=\skip56
+
+(/usr/share/texmf-texlive/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/share/texmf-texlive/tex/latex/tools/afterpage.sty
+Package: afterpage 1995/10/27 v1.08 After-Page Package (DPC)
+\AP@output=\toks24
+\AP@partial=\box62
+\AP@footins=\box63
+)
+\c@problemnum=\count130
+\c@problempartnum=\count131
+\c@exercisenum=\count132
+\c@exercisepartnum=\count133
+\c@saveenum=\count134
+)
+(/usr/share/texmf-texlive/tex/latex/subfigure/subfigure.sty
+Package: subfigure 2002/03/15 v2.1.5 subfigure package
+\subfigtopskip=\skip57
+\subfigcapskip=\skip58
+\subfigcaptopadj=\dimen152
+\subfigbottomskip=\skip59
+\subfigcapmargin=\dimen153
+\subfiglabelskip=\skip60
+\c@subfigure=\count135
+\c@lofdepth=\count136
+\c@subtable=\count137
+\c@lotdepth=\count138
+
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+(/usr/share/texmf-texlive/tex/latex/subfigure/subfigure.cfg)
+\subfig@top=\skip61
+\subfig@bottom=\skip62
+)
+(/usr/share/texmf-texlive/tex/latex/mdwtools/footnote.sty
+Package: footnote 1997/01/28 1.13 Save footnotes around boxes
+\fn@notes=\box64
+\fn@width=\dimen154
+)
+(/usr/share/texmf-texlive/tex/latex/preprint/fullpage.sty
+Package: fullpage 1999/02/23 1.1 (PWD)
+\FP@margin=\skip63
+) (./morefloats.sty
+\bx@S=\insert233
+\bx@T=\insert232
+\bx@U=\insert231
+\bx@V=\insert230
+\bx@W=\insert229
+\bx@X=\insert228
+\bx@Y=\insert227
+\bx@Z=\insert226
+\bx@AA=\insert225
+\bx@BB=\insert224
+\bx@CC=\insert223
+\bx@DD=\insert222
+\bx@EE=\insert221
+\bx@FF=\insert220
+\bx@GG=\insert219
+\bx@HH=\insert218
+\bx@II=\insert217
+\bx@JJ=\insert216
+)
+(./code-clone.aux)
+\openout1 = `code-clone.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OMS/pzccm/m/n on input line 42.
+LaTeX Font Info:    Try loading font information for OMS+pzccm on input line 42
+.
+ (/usr/share/texmf-texlive/tex/latex/psnfss/omspzccm.fd
+File: omspzccm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/pzccm.
+)
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+\c@lstlisting=\count139
+
+
+LaTeX Warning: No \author given.
+
+(./abstract.tex) [0] (./intro.tex
+LaTeX Font Info:    Calculating math sizes for size <11> on input line 5.
+LaTeX Font Info:    Try loading font information for OT1+ptmcm on input line 5.
+
+
+(/usr/share/texmf-texlive/tex/latex/psnfss/ot1ptmcm.fd
+File: ot1ptmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ptmcm.
+)
+LaTeX Font Info:    Try loading font information for OML+ptmcm on input line 5.
+
+
+(/usr/share/texmf-texlive/tex/latex/psnfss/omlptmcm.fd
+File: omlptmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ptmcm.
+)
+LaTeX Font Info:    Try loading font information for U+lasy on input line 5.
+
+(/usr/share/texmf-texlive/tex/latex/base/ulasy.fd
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.69997> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 5.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5.5> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 5.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 11.
+) (./nphardness.tex
+Overfull \vbox (5.4559pt too high) has occurred while \output is active []
+
+
+[1
+
+] [2]
+Underfull \hbox (badness 10000) in paragraph at lines 102--105
+[]\OT1/ptm/m/n/11 Suppose a $\OT1/ptmcm/m/n/11 3$\OT1/ptm/m/n/11 -dimensional m
+atch-ing prob-lem: $\OMS/pzccm/m/n/11 U \OT1/ptmcm/m/n/11 = \OMS/pzccm/m/n/11 f
+\OT1/ptmcm/m/n/11 1\OML/ptmcm/m/it/11 ; \OT1/ptmcm/m/n/11 2\OML/ptmcm/m/it/11 ;
+ \OT1/ptmcm/m/n/11 3\OML/ptmcm/m/it/11 ; \OT1/ptmcm/m/n/11 4\OML/ptmcm/m/it/11 
+; \OT1/ptmcm/m/n/11 5\OML/ptmcm/m/it/11 ; \OT1/ptmcm/m/n/11 6\OMS/pzccm/m/n/11 
+g$ \OT1/ptm/m/n/11 and $\OMS/pzccm/m/n/11 C \OT1/ptmcm/m/n/11 =
+ []
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 122.
+[3]) (./algo.tex
+File: figures/phantom_node.eps Graphic file (type eps)
+ <figures/phantom_node.eps>
+File: figures/dag-overlap.eps Graphic file (type eps)
+ <figures/dag-overlap.eps>
+Overfull \hbox (52.39627pt too wide) in paragraph at lines 62--63
+ [][] 
+ []
+
+[4]
+
+Package amsmath Warning: Foreign command \atopwithdelims;
+(amsmath)                \frac or \genfrac should be used instead
+(amsmath)                 on input line 158.
+
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 266--283
+[]\OT1/ptm/m/n/11 In re-cur-rence 1[], terms ``$[][]\OMS/pzccm/m/n/11 f\OML/ptm
+cm/m/it/11 d\OT1/ptmcm/m/n/11 (\OML/ptmcm/m/it/11 G\OT1/ptmcm/m/n/11 ([](\OML/p
+tmcm/m/it/11 C[] \OMS/pzccm/m/n/11 ^^@ \OML/ptmcm/m/it/11 C[] \OMS/pzccm/m/n/11
+ \ \OML/ptmcm/m/it/11 C[]\OT1/ptmcm/m/n/11 )\OML/ptmcm/m/it/11 ; q[]\OT1/ptmcm/
+m/n/11 )) \OMS/pzccm/m/n/11 ^^H
+ []
+
+[6]
+Underfull \hbox (badness 6641) in paragraph at lines 359--364
+[]\OT1/ptm/m/n/11 According to the in-duc-tive hy-poth-e-sis, $\OML/ptmcm/m/it/
+11 G\OT1/ptmcm/m/n/11 (\OML/ptmcm/m/it/11 v[]; k\OT1/ptmcm/m/n/11 ) = [][]\OMS/
+pzccm/m/n/11 fC[] ^^L C[]g$\OT1/ptm/m/n/11 , $\OML/ptmcm/m/it/11 G\OT1/ptmcm/m/
+n/11 (\OML/ptmcm/m/it/11 v[]; k\OT1/ptmcm/m/n/11 ) =
+ []
+
+[7]) (./example.tex
+Overfull \hbox (73.47932pt too wide) in paragraph at lines 20--42
+ [][] 
+ []
+
+File: figures/dag.eps Graphic file (type eps)
+<figures/dag.eps>
+Overfull \hbox (14.55437pt too wide) in paragraph at lines 48--49
+ [][] 
+ []
+
+
+Overfull \hbox (10.75035pt too wide) in paragraph at lines 18--52
+[][]   [] 
+ []
+
+) (./analysis.tex [8] [9]
+Overfull \hbox (90.46393pt too wide) in alignment at lines 71--82
+ [][][] []
+ []
+
+) (./ext.tex [10]) (./code-clone.bbl) [11] (./code-clone.aux) ) 
+Here is how much of TeX's memory you used:
+ 5580 strings out of 493849
+ 78649 string characters out of 1152846
+ 166640 words of memory out of 3000000
+ 8756 multiletter control sequences out of 15000+50000
+ 42906 words of font info for 98 fonts, out of 3000000 for 9000
+ 714 hyphenation exceptions out of 8191
+ 40i,20n,42p,281b,349s stack positions out of 5000i,500n,10000p,200000b,50000s
+
+Output written on code-clone.dvi (12 pages, 45888 bytes).

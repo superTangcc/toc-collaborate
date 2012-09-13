@@ -1,0 +1,61 @@
+%\newcommand{\Spawn} {\texttt{spawn}\xspace}
+%\newcommand{\Sync}  {\texttt{sync}\xspace}
+\newcommand{\CilkNoSpace}  {\texttt{cilk}}
+\newcommand{\actref}[1]     {Action~\ref{act:#1}}
+\newcommand{\actrefs}[2]    {Actions~\ref{act:#1}--\ref{act:#2}}
+
+\newcommand\CilkM{Cilk-M\xspace}
+\newcommand\CilkMOne{Cilk-M 1.0\xspace}
+
+\newcommand{\m}[1]{\mathcal{#1}}
+\newcommand{\Oh}[1]{{\mathcal O}\left({#1}\right)}
+\newcommand{\oh}[1]{{o}\left({#1}\right)}
+\newcommand{\Om}[1]{{\Omega}\left({#1}\right)}
+\newcommand{\om}[1]{{\omega}\left({#1}\right)}
+\newcommand{\Th}[1]{{\Theta}\left({#1}\right)}
+
+%% \newenvironment{closeequation}
+%%     {\vspace{-0.72em}
+%%      \begin{equation}}
+%%     {\vspace{-0.25em}
+%%      \end{equation}}
+
+%% Took these from supertech-sig and changed it for space
+
+\def\inlinecode{\lstinline[basicstyle=\ttfamily]}
+
+%% \newenvironment{closeitemize}
+%%     {\begin{list}{$\bullet$}
+%%     {%\advance\leftmargin -1em
+%%      \setlength{\itemsep}{-0.1\baselineskip}
+%%      %\setlength{\topsep}{0.05\baselineskip}
+%%      \setlength{\topsep}{0pt}
+%%      \setlength{\partopsep}{0pt}
+%%      \setlength{\parskip}{0pt}}}
+%%     {\end{list}}
+
+%% \newenvironment{closeenum}
+%%     {\begin{list}{\arabic{ccount}.}
+%%     {\usecounter{ccount}\setlength{\itemsep}{-0.4\baselineskip}
+%%      \setlength{\topsep}{0.05\baselineskip}
+%%      \setlength{\parskip}{0pt}}}
+%%     {\end{list}}
+
+\newcommand{\XXX}[1]{{\footnotesize \textcolor{red}{$\ll$\textsf{XXX: #1}$\gg$}}}
+\newcommand{\nbench}{$12$}
+
+\newcommand{\workerone}{$W_1$\xspace}
+\newcommand{\workertwo}{$W_2$\xspace}
+\newcommand{\workerthree}{$W_3$\xspace}
+
+%% Without the following counter, we get error on \maketitle: 
+%% Package caption Error: No float type 'copyrightbox' defined. 
+%% Some googling shows that this is because the new version of caption 
+%% package is not compatible with how the sig-alternate.cls defines 
+%% the copyrightbox.
+%% The following line (defininig the counter) gets it to compile 
+\newcounter{copyrightbox}
+
+\newcounter{strategy}
+\newcommand{\strategyput}[2]{\subheading{\refstepcounter{strategy}Strategy \thestrategy:~#2\label{str:#1}}}
+\newcommand{\strategyref}[1]{Strategy~\ref{str:#1}}

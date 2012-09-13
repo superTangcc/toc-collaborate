@@ -1,0 +1,200 @@
+\secput{tutorial}{Tutorial}
+
+%First, let's take a look at a very simple example, a 2D heat equation with
+%non-periodic boundary condition to briefly go through the entire
+%procedure of how to specify an arbitrary $D$-dimensional stencil using
+%the embedded domain specific language of Pochoir.
+
+In this section we briefly explain how to specify and execute a 
+simple stencil using Pochoir. We use the non-periodic 2D heat 
+equation as an example. This is a simple
+5-point stencil where each grid point in the current time step depends 
+only on entries in the previous time step. The Pochoir code 
+for this example is given in \figref{2DHeatNP}.
+
+The following is a step by step guide for creating
+and running the heat stencil.
+%
+Note that the order of the steps before actually
+running the stencil can be arbitrary as long as no object is used
+before defining it.
+
+
+\begin{figure}
+\begin{center-code}
+\begin{pochoir-listing}
+Pochoir<2> heat; [@\label{li:Pochoir:decl}@]
+Pochoir_Array<double, 2, 2> h(M, N); [@\label{li:Pochoir_Array:decl}@]
+
+heat.registerArray(h); [@\label{li:regArray}@]
+
+Pochoir_Shape<2> heat_sp[] = {{1, 0, 0},  [@\label{li:Pochoir_Shape:decl}@]
+      {0, 1, 0}, {0, -1, 0}, {0, -1, -1}, 
+                 {0, 0, -1}, {0, 0, 1}}; 
+
+heat.registerShape(heat_sp); [@\label{li:regShape}@]
+
+Pochoir_Boundary_2D(heat_bv, arr, t, i, j) [@\label{li:Pochoir_Boundary:begin}@]
+ /* If fall off the domain, we return 0 
+    as the value for location [@\mbox{arr(t, i, j)}@] */
+   return 0;
+Pochoir_Boundary_End [@\label{li:Pochoir_Boundary:end}@]
+
+heat.registerBoundaryFn(h, heat_bv); [@\label{li:regBoundaryFn}@]
+
+Pochoir_Kernel_2D(heat_fn, t, i, j) [@\label{li:Pochoir_Kernel:begin}@]
+   h(t+1, i, j) = 0.125 * (h(t, i+1, j)     [@\label{li:Stencil_Math:begin}@]
+ - 2.0 * h(t, i, j) + h(t, i-1, j)) 
+ + 0.125 * (h(t, i, j+1) - 2.0 * h(t, i, j) 
+ + h(t, i, j-1)) + h(t, i, j);              [@\label{li:Stencil_Math:end}@]
+Pochoir_Kernel_End [@\label{li:Pochoir_Kernel:end}@]
+
+for (int i = 0; i < M; ++i) [@\label{li:Pochoir_Array:init:begin}@]
+  for (int j = 0; j < N; ++j)    
+     h(0, i, j) = rand( ); /* initialize */ [@\label{li:Pochoir_Array:init:end}@]
+
+heat.run(T, heat_fn); [@\label{li:run}@]
+\end{pochoir-listing}
+\end{center-code}  
+\caption{The procedure for a non-periodic 2D heat equation}
+\label{fig:2DHeatNP}
+\end{figure}
+
+
+
+%\begin{enumerate}
+
+\begin{list}{\labelitemi}{\leftmargin=0em \itemindent=1em}
+
+\item \phead{Create a \code{Pochoir} Object} 
+  %
+  A \code{Pochoir} object holds all information 
+  necessary for a given stencil computation. 
+  We declare \code{heat} as \code{Pochoir<2>}
+  in \Liref{Pochoir:decl} of the code, where
+  the number $2$ within the angle brackets
+  specifies the number of spatial dimensions
+  of the stencil. 
+
+\item \phead{Allocate and Register the Spatial Grid}
+  %
+  Stencil computations are performed on a spatial grid\footnote{with 
+  limited depth in time dimension depending on the computation at hand} 
+  called a \code{Pochoir_Array}. In \Liref{Pochoir_Array:decl} 
+  we declare \code{h} as \code{Pochoir_Array<double, 2, 2>}.
+  The set of parameters within the angle brackets indicates
+  that \code{h} is a double precision floating point array 
+  (as specified by the 1st parameter)
+  with 2 spatial dimensions (2nd parameter),
+  and depth 2 in time dimension (3rd parameter).
+  Pochoir allows computations on any {C++} basic 
+  data types as well as on composite types such as \code{struct}, 
+  \code{union}, etc.
+  The value of the 3rd parameter is derived from
+  the observation that at any time step $t$ the heat stencil 
+  accesses the spatial grid for time steps $t$ and $t - 1$ only.
+  The \code{M} and \code{N} within the parentheses after \code{h} specify the
+  sizes of the two spatial dimensions of \code{h}.
+  In \Liref{regArray} we associate \code{h} with
+  the stencil object \code{heat}.
+
+
+\item \phead{Specify and Register the Shape of the Stencil}
+  %
+  The set of all points in a stencil defines its
+  shape. In Pochoir this set is expressed as
+  a set of constant coordinates relative
+  to some point in the stencil or some other suitable 
+  grid point.
+  %
+  In \Liref{Pochoir_Shape:decl} we specify
+  this set as an array \code{heat_sp} of type \code{Pochoir_Shape<2>},
+  where the number $2$ within the angle brackets
+  is the spatial dimension of the stencil. 
+  Observe that \code{heat_sp} is initialized with
+  a set of points each containing three numbers,
+  where the first number is the relative cooridnate
+  in the time dimension, and the remaining two
+  are for spatial dimensions.
+  These numbers are obtained
+  by computing the coordinates of each grid point 
+  accessed by the heat stencil (see the
+  mathematical formula in \Lirefs{Stencil_Math:begin}{Stencil_Math:end})
+  relative to the point $(t, i, j)$.
+  We associate \code{heat_sp} with
+  the stencil object \code{heat} in \Liref{regShape}.
+
+
+\item \phead{Specify and Register a Boundary Function}
+  %
+  In \Lirefs{Pochoir_Boundary:begin}{Pochoir_Boundary:end} we define 
+  a function that will be called when the computing procedure
+  steps outside the computing domain, that is, if it tries to
+  access \code{h(i, j)} with $\langle i, j \rangle \notin [0, M) \times [0, N)$. 
+  It is a restricted {C++} program, which can only use the \code{if} construct 
+  to specify the boundary conditions. Since we are using a 2D spatial
+  grid we declare the function as \code{Pochoir_Boundary_2D}.
+  The parameter list \code{(heat_bv, arr, t, i, j)} includes
+  the name of the boundary function, the array parameter, index to time
+  dimension, and indices to spatial dimensions.
+  %
+  In \Liref{regBoundaryFn} the boundary function is associated
+  with \code{h}. 
+
+
+\item \phead{Specify the Kernel Function}
+  %
+  In \Lirefs{Pochoir_Kernel:begin}{Pochoir_Kernel:end} we define
+  a function for computing the stencil. Unlike the boundary
+  function, the kernel function has no
+  restriction on the type of {C++} code it can use.
+  For 2D stencils it is declared as
+  \code{Pochoir_Kernel_2D}. The parameter list \code{(heat_fn, t, i, j)} 
+  includes the name of the kernel function, index to time dimension, 
+  and indices to spatial dimensions. 
+
+
+\item \phead{Initialize the Spatial Grid for Time Step 0}
+  %
+  \Lirefs{Pochoir_Array:init:begin}{Pochoir_Array:init:end} 
+  initialize \code{Pochoir_Array} \code{h} with values
+  for time step 0.
+
+\item \phead{Run the Stencil}
+  %
+  Finally, in \Liref{run} we execute the stencil object \code{heat} for 
+  $T$ time steps with kernel function \code{heat_fn}.
+
+% \end{enumerate}
+\end{list}
+
+
+The above is a very simple example of non-periodic 2D heat equation 
+illustrating how to specify and run stencils in our embedded domain
+specific language {Pochoir}. More complicated examples
+(e.g., periodic boundary conditions, stencil computations
+on composite data structures, etc.) are discussed in \secref{examples}.
+
+
+
+% If we need to specify a periodic 2D heat
+% equation, the only thing we need to change is the definition of
+% boundary function as
+% 
+% \begin{figure}[h]
+% \begin{center-code}
+% \begin{pochoir-listing}
+% Pochoir_Boundary_2D(heat_bv_2D, arr, t, i, j) [@\label{li:P:bdry:begin}@]
+% /* first we get a copy of the input indices */
+% int new_i = (i + arr.size(1)) % arr.size(1); [@\label{li:P:bdry:modI}@]
+% int new_j = (j + arr.size(0)) % arr.size(0); [@\label{li:P:bdry:modJ}@]
+% return arr.get(t, new_i, new_j); [@\label{returnNewValue}@]
+% Pochoir_Boundary_End [@\label{li:P:bdry:end}@]
+% \end{pochoir-listing}
+% \end{center-code}  
+% \caption{The boundary function for a Periodic 2D heat equation}
+% \label{fig:2DHeatP}
+% \end{figure}
+% 
+% \Liref{P:bdry:modI} conducts modulo operation of index $i$ over spatial dimension $1$, 
+% \liref{P:bdry:modJ} conducts modulo operation of index $j$ over spatial dimension $0$. 

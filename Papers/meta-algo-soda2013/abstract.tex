@@ -1,0 +1,66 @@
+\begin{abstract}
+
+Algorithms in the literature for performing range queries on
+multidimensional grid typically assume that the ranges are orthogonal.
+This paper extends the algorithm to cover non-orthogonal range queries. 
+Our algorithm works for
+operations drawn from an arbitrary semigroup.  Querying the ``sum'' of
+all the grid points within a given $k$-line bounded polygon in a
+$2$-dimensional grid with $N$ grid points can be accomplished in
+$\Theta(k\alpha^{2}(N))$ time using $\Theta(kN)$ preprocessing space and
+time, where $\alpha(N)$ is a functional inverse of Ackermann's
+function.  Our algorithm extends A. Yao's one-dimensional
+data-reduction method to higher dimensions, as opposed to performing
+dimension reduction, as is done by Chazelle and Rosenberg.  
+
+\punt{%
+The
+preprocessing can be easily parallelized, achieving a parallelism of
+$\Theta(kN/\lg N)$ in the work-span model, assuming $k=O(N)$.
+} %punt
+\punt{%
+ In this paper, we generalize the approach to common partial sum
+query in semi-groups, which only assumes associativity and commutativity.
+In this paper, we consider static partial sum problem, which allows
+preprocessing for later online queries.  Yao's paper \cite{Yao82,
+Yao85} lay out the foundation for general rectangular-shaped partial
+sum query, and achieves an asymptotic bound of $O(N alpha (N))$ in
+preprocessing space and time with $O(alpha(N))$ query overhead for 1D
+space, where $alpha(N)$ is the inverse Ackermann function.  Chazelle
+and Rosenberg \cite{ChazelleRo89} extended it to multi-dimensional
+space via dimension reduction method, and achieves $O(N alpha^d (N))$
+asymptotic bound in preprocessing time and space with $O(alpha^d (N))$
+query overhead, where $d$ stands for the number of dimensions. Later on,
+they \cite{ChazelleRo91} also proved that the bound for 1D algorithm
+is optimal.  However, we find that just by employing dimension
+reduction method only, it is very hard, if not impossible, to handle
+irregular-shaped query, such as triangular query, polygonal query in
+multi-dimensional space. So we introduce the data reduction method into
+the preprocessing stage, which solves arbitrary triangular and even
+polygonal (convex or concave) query in general semi-group at the same
+asymptotic bound (alpha bound) as rectangular query. The notion of data
+reduction results in a much simpler algorithm for range query compared
+with original algorithm proposed by Chazelle and Rosenberg. which we call
+it meta-algorithm for the reason it accepts as input one algorithm and
+output a new algorithm with asymptotic bound improved, We implemented the
+algorithm,  for 1D, 2D, and 3D problem, and compared the performance of
+initial $O(N \log^d N)$ bound algorithm with the algorithm outputed by the
+meta-algorithm, which achieves $O(N (\log^* N)^d)$ bound, $O(N (\log^{**}
+N)^d)$ bound, $\ldots$, up to $N (alpha (N))^d$ bound. Not surprisingly,
+the performance comparison results match well with their theoretical
+asymptotic bound, which proved the efficiency of the meta-algorithm.
+Moreover, the algorithm turns out to be straightforwardly parallelizable
+due to the simple data dependency pattern. We complement with the
+parallelism analysis in work/span model \cite{}. So far, our approach
+has the constraint that all slopes of the irregular-shaped query must be
+known beforehand for proper preprocessing.  How to solve the same problem
+when not all slopes are known in advance is left as an open problem.
+} %punt
+\end{abstract}
+
+\begin{IEEEkeywords}
+polygonal partial sum problem, semi-group, multi-dimensional algorithm,
+parallel algorithm, meta-algorithm, higher-order function
+
+\end{IEEEkeywords}
+% LocalWords:  LocalWords Pochoir Cilk multicore

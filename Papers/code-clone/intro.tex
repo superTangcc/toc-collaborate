@@ -1,0 +1,36 @@
+\secput{intro}{Introduction}
+
+Problem formulation:
+
+Given a $g \times m$ ($g$ rows, $m$ columns) bit-matrix, each entry of
+which is either $0$ or $1$. Suppose that initially all rows and columns
+are distinct, we can put ``x'' on some entries of the bit-matrix to
+make these columns identical. For example, in following $3 \times 3$
+bit-matrix, if we put ``x'' on entries $(2, 0)$ and $(2, 1)$ \footnote{
+all coordinates of bit-matrix follows a convention in programming language
+{C}}, we can make the first and second column identical like that shown
+on the right-hand side.
+
+\[ 
+\begin{pmatrix} 
+0 & 0 & 1 \\ 
+1 & 1 & 0 \\ 
+0 & 1 & 0 
+\end{pmatrix}
+\Longrightarrow 
+\begin{pmatrix} 
+0 & 0 & 1 \\ 
+1 & 1 & 0 \\ 
+x & x & 0 
+\end{pmatrix} 
+\]
+
+However, columns such as those in pairs $(\{0, 1, x\}^T, \{0, 1, 1\}^T)$ 
+or $(\{0, 1, 0\}^T, \{0, 1, x\})$ are not considered identical.
+
+The question is: how to find the minimum number of ``x'' we should place
+on any $g \times m$ bit-matrix to make the number of distinct columns
+less than or equal to a given number $k$ ($k \leq m$) 
+    
+
+

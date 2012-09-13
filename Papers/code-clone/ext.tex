@@ -1,0 +1,19 @@
+\secput{ext}{Extension the code-clone selection puzzle from point to region}
+
+The extension of code-clone selection puzzle from point to region is 
+straightforward. The differences are
+
+\begin{itemize}
+\item The entry in bit-matrix can be 'x'. $\{0, 1, x\}$
+
+\item The 'x' in bit-matrix comes from contraction of a whole region to 
+one bit-vector via bit-wise operation $\otimes$
+
+\item After this contraction, each bit-vector will be associated with
+a weight $w_i$ to denote the number of points it represents.
+
+\item In computing the $k$-medians out of the {DAG}, we also need to 
+take the weights of each node into account. 
+\end{itemize}
+
+But the basic algorithm and complexity bound shouldn't change.

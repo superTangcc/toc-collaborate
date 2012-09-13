@@ -1,0 +1,80 @@
+./meta_2D_2Star_par 200 200
+Meta-algo preprocessing takes : 19.828 ms
+Meta-algo PASSED, array_size (200 x 200)!!
+Meta-algo query takes : 0.000893 ms, naive scan takes : 0.014738 ms
+./meta_2D_2Star_par 400 400
+Meta-algo preprocessing takes : 65.209 ms
+Meta-algo PASSED, array_size (400 x 400)!!
+Meta-algo query takes : 0.001184 ms, naive scan takes : 0.053705 ms
+./meta_2D_2Star_par 600 600
+Meta-algo preprocessing takes : 143.228 ms
+Meta-algo PASSED, array_size (600 x 600)!!
+Meta-algo query takes : 0.001501 ms, naive scan takes : 0.119083 ms
+./meta_2D_2Star_par 800 800
+Meta-algo preprocessing takes : 262.391 ms
+Meta-algo PASSED, array_size (800 x 800)!!
+Meta-algo query takes : 0.001684 ms, naive scan takes : 0.232838 ms
+./meta_2D_2Star_par 1000 1000
+Meta-algo preprocessing takes : 400.273 ms
+Meta-algo PASSED, array_size (1000 x 1000)!!
+Meta-algo query takes : 0.001941 ms, naive scan takes : 0.320664 ms
+./meta_2D_2Star_par 1200 1200
+Meta-algo preprocessing takes : 556.019 ms
+Meta-algo PASSED, array_size (1200 x 1200)!!
+Meta-algo query takes : 0.002294 ms, naive scan takes : 0.481395 ms
+./meta_2D_2Star_par 1400 1400
+Meta-algo preprocessing takes : 760.174 ms
+Meta-algo PASSED, array_size (1400 x 1400)!!
+Meta-algo query takes : 0.002918 ms, naive scan takes : 0.710399 ms
+./meta_2D_2Star_par 1600 1600
+Meta-algo preprocessing takes : 1041.697 ms
+Meta-algo PASSED, array_size (1600 x 1600)!!
+Meta-algo query takes : 0.002963 ms, naive scan takes : 0.905158 ms
+./meta_2D_2Star_par 1800 1800
+Meta-algo preprocessing takes : 1244.315 ms
+Meta-algo PASSED, array_size (1800 x 1800)!!
+Meta-algo query takes : 0.003317 ms, naive scan takes : 1.138424 ms
+./meta_2D_2Star_par 2000 2000
+Meta-algo preprocessing takes : 1420.939 ms
+Meta-algo PASSED, array_size (2000 x 2000)!!
+Meta-algo query takes : 0.003320 ms, naive scan takes : 1.419097 ms
+./meta_2D_2Star_par 2200 2200
+Meta-algo preprocessing takes : 1638.004 ms
+Meta-algo PASSED, array_size (2200 x 2200)!!
+Meta-algo query takes : 0.003408 ms, naive scan takes : 1.784670 ms
+./meta_2D_2Star_par 2400 2400
+Meta-algo preprocessing takes : 1808.686 ms
+Meta-algo PASSED, array_size (2400 x 2400)!!
+Meta-algo query takes : 0.003651 ms, naive scan takes : 2.014296 ms
+./meta_2D_2Star_par 2600 2600
+Meta-algo preprocessing takes : 2044.463 ms
+Meta-algo PASSED, array_size (2600 x 2600)!!
+Meta-algo query takes : 0.003577 ms, naive scan takes : 2.314842 ms
+./meta_2D_2Star_par 2800 2800
+Meta-algo preprocessing takes : 2275.843 ms
+Meta-algo PASSED, array_size (2800 x 2800)!!
+Meta-algo query takes : 0.003909 ms, naive scan takes : 2.711414 ms
+./meta_2D_2Star_par 3000 3000
+Meta-algo preprocessing takes : 2551.524 ms
+Meta-algo PASSED, array_size (3000 x 3000)!!
+Meta-algo query takes : 0.003822 ms, naive scan takes : 3.186782 ms
+./meta_2D_2Star_par 3200 3200
+Meta-algo preprocessing takes : 3061.590 ms
+Meta-algo PASSED, array_size (3200 x 3200)!!
+Meta-algo query takes : 0.003817 ms, naive scan takes : 3.593142 ms
+./meta_2D_2Star_par 3400 3400
+Meta-algo preprocessing takes : 3320.866 ms
+Meta-algo PASSED, array_size (3400 x 3400)!!
+Meta-algo query takes : 0.004237 ms, naive scan takes : 3.849788 ms
+./meta_2D_2Star_par 3600 3600
+Meta-algo preprocessing takes : 3550.731 ms
+Meta-algo PASSED, array_size (3600 x 3600)!!
+Meta-algo query takes : 0.004074 ms, naive scan takes : 4.684131 ms
+./meta_2D_2Star_par 3800 3800
+Meta-algo preprocessing takes : 3854.199 ms
+Meta-algo PASSED, array_size (3800 x 3800)!!
+Meta-algo query takes : 0.004605 ms, naive scan takes : 5.131041 ms
+./meta_2D_2Star_par 4000 4000
+Meta-algo preprocessing takes : 4186.833 ms
+Meta-algo PASSED, array_size (4000 x 4000)!!
+Meta-algo query takes : 0.004593 ms, naive scan takes : 5.589320 ms

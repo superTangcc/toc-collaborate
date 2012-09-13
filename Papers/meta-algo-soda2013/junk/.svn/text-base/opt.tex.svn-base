@@ -1,0 +1,500 @@
+% -*- Mode: LaTeX -*-
+\secput{opt}{How the Pochoir compiler works}
+
+% In addition to the algorithmic improvements described in
+% \secref{alg}, Pochoir employs several code-generation optimizations
+% in order to improve the handling of boundary conditions.  This
+% section describes two such optimizations: code cloning and
+% coarsening of the base case.  These optimizations are transparent to
+% user's specification, so the advantage is that user simply specifies
+% a mathematical formula for his/her stencil and gets all performance
+% improvements from Pochoir for free.  Provided that the first pass of
+% executable spec. succeeds, Pochoir guarantees that subsequent
+% optimizations will not introduce any new bugs.
+
+
+The Pochoir compiler transforms code written in the Pochoir
+specification language into optimized C++ code that employs the Intel
+Cilk extensions.  The compiler is written in Haskell \cite{PeytonJones98},
+and it performs numerous optimizations, the most important of which
+are code cloning, loop-index calculations, boundary conditions, and
+coarsening of the base case in recursion.  This section describes how
+the Pochoir compiler implements each of these optimization.
+
+Before compiling the code with the Pochoir compiler, users are
+expected to debug their stencil codes using the Pochoir template
+library.  This C++ template library is employed by both Phases 1 and 2
+and includes both loop-based and trapezoidal algorithms.  Differences
+between stencils, such as dimensionality or data structure, are
+incorporated into these generic algorithms at compile-time via {C++}
+template metaprogramming.
+
+\punt{
+\begin{figure}[t]
+\begin{center-code}
+\lstset{language=Pochoir_bf}
+\begin{pochoir-listing}
+Pochoir_Boundary_2D(klein_bottle, arr, t, x, y) [@\label{li:KB:bdry:begin}@]
+    int new_x = (x + arr.size(1)) % arr.size(1); [@\label{li:KB:bdry:modI}@]
+    if ( y < 0 || y >= arr.size(0) )       [@\label{li:KB:bdry:modJmodItest}@]
+        new_x = arr.size(1) - 1 - new_x;    [@\label{li:KB:bdry:modJmodI}@]
+    int new_y = (y + arr.size(0)) % arr.size(0); [@\label{li:KB:bdry:modJ}@]
+    return arr.get(t, new_x, new_y); [@\label{li:KB:bdry:returnNewValue}@]
+Pochoir_Boundary_End [@\label{li:KB:bdry:end}@]
+\end{pochoir-listing}
+\end{center-code}
+\caption{Pochoir code for specifying klein bottle as boundary condition}
+\label{fig:2DHeatKB}
+\end{figure}
+}
+
+\begin{figure}
+\begin{center}
+\begin{tabular}{c}
+\begin{minipage}[t]{3.2in}
+\lstset{language=Pochoir_bf}
+\begin{pochoir-listing}
+Pochoir_Boundary_2D(dirichlet, arr, t, x, y)
+    return 100+0.2*t;
+Pochoir_Boundary_End
+\end{pochoir-listing}
+\end{minipage}
+\\
+\textrm{\small (a)} %  Dirichlet boundary condition 
+\\
+\begin{minipage}[t]{3.2in}
+\lstset{language=Pochoir_bf}
+\begin{pochoir-listing}
+Pochoir_Boundary_2D(neumann, arr, t, x, y)
+    int newx = x;
+    if (x<0) newx = 0;
+    if (x>=arr.size(1)) newx=arr.size(1);
+    int newy = y;
+    if (y<0) newy = 0;
+    if (y>=arr.size(0)) newy=arr.size(0);
+    return arr.get(t, newx, newy);
+Pochoir_Boundary_End
+\end{pochoir-listing}
+\end{minipage}
+\\
+\textrm{\small (b)} % Neumann boundary condition
+\\
+% \textrm{(one in which the \textit{value}}
+% & \textrm{(one in which the \textit{derivative}} \\
+% \textrm{at the boundary is constrained).} 
+% & \textrm{ at the boundary is constrained).} \\
+\end{tabular}
+\end{center}
+\caption{Pochoir code for specifying nonperiodic boundary conditions.
+  \textbf{(a)}~A Dirichlet condition with constrained boundary value
+  (set equal to a function of~$t$). \textbf{(b)}~A Neumann condition
+  with constrained derivative at the boundary (set equal to~$0$).}
+\label{fig:boundary}
+\end{figure}
+
+\subheading{Handling boundary conditions by code cloning}
+%\subheading{Code cloning}
+%\label{sec:codeCloning}
+
+Handling boundary conditions can easily dominate the runtime of a
+stencil computation.  For example, we implemented % \celnote{Loops or trapezoidal?} 
+  the $2$D heat equation on a periodic torus in Pochoir.  A
+reference that falls off one edge of the grid ``wraps around'' to the
+opposite parallel edge, which can be implemented by employing a modulo
+operation to every grid-point access.  For a $5000^2$ spatial grid
+over $5000$ time steps, the runtime degraded by a factor of $2.3$.
+
+For nonperiodic stencil computations, where a value must be provided
+on the boundary, performance can degrade even more if a test is made
+at every point to determine whether the index falls off the grid.
+Stencil implementers often handle constant nonperiodic boundary
+conditions with the simple trick of introducing \defn{ghost cells}
+\cite{Datta09} around the periphery of the grid.  Ghost cells are read
+but never written.  The stencil computation can apply the kernel
+function to the grid points on the real grid, and accesses that ``fall
+off'' the edge obtain their values from the ghost cells without any
+need to check boundary conditions.
+
+In practice, however, nonperiodic boundary conditions can be more
+complicated than simple constants, and we wanted to allow Pochoir
+users flexibility in the kinds of boundary conditions they could
+specify.  For example, Dirichlet boundary conditions may specify
+boundary values that change with time, and Neumann boundary conditions
+may specify the value the derivative should take on the
+boundary~\cite{FeshbachMo81}.  \figref{boundary}(a) shows a Pochoir
+specification of a Dirichlet boundary condition, and
+\figref{boundary}(b) shows the Pochoir specification of a Neumann
+boundary condition.
+
+To handle boundaries efficiently, the Pochoir compiler generates two
+code clones of the kernel function: a slower \defn{boundary} clone and
+a faster \defn{interior} clone.  The boundary clone is used for
+\defn{boundary} trapezoids: those that contain at least one point
+whose computation requires an off-grid access.  The interior clone is
+used for \defn{interior} trapezoids: those all of whose points can be
+updated without indexing off the edge of the grid.  Whether a
+trapezoid is interior or boundary is determined at run time.
+
+In the base case of the recursive trapezoidal decomposition, the
+boundary clone invokes the relatively expensive boundary function to
+perform the relatively expensive checks on the coordinates of each
+point in the trapezoid to see whether they fall outside the boundary.
+If so, it calls the user-supplied boundary function to determine what
+value to use.  The base case of interior clone avoids that
+calculation, since it knows that no such test is necessary, and it
+simply accesses the necessary grid points.
+
+The trapezoidal-decomposition algorithm exploits the fact that all
+subtrapezoids of an interior trapezoid remain interior.  If all the
+dimensions of the grid are approximately the same size, the boundary
+of the grid is much smaller than its (hyper)volume.  Consequently, the
+faster interior clones dominate the running time, and the slower
+boundary clones contribute little.
+
+\subheading{Loop indexing}
+
+Because the interior trapezoids asymptotically dominate the computing
+time, most of the optimizations performed by Pochoir compiler focus on
+the interior clone.  Three important optimizations relate to loop
+indexing.  The particular optimization is chosen automatically by the
+Pochoir compiler, or it can be mandated by user as a command-line
+option to the Pochoir compiler.  Consistent with their command-line
+names, the optimizations are called \code{-split-macro-shadow},
+\code{-split-pointer}, and \code{-split-opt-pointer}.
+
+The \code{-split-macro-shadow} command-line option causes the Pochoir
+compiler to employ macro tricks on the interior clone to eliminate the
+boundary-checking overhead.  \figref{1DHeat-macro} is an example code
+generated by supplying option \code{-split-macro-shadow} to the
+Pochoir compiler operating on the Pochoir specification of the 1D heat
+equation from \figref{1DHeat-orig}.  In \figref{1DHeat-macro},
+\liref{macro:def} defines a macro to replace the original address
+calculating and boundary checking function with one that simply
+calculates the address but without boundary checking.
+%  \Liref{macro:undef} undefines such macros after use to avoid side-effect on the rest part of the program.
+
+The \code{-split-pointer} command-line option causes the Pochoir
+compiler to transform the array index into C-style pointer
+manipulation to traverse all grid points in the interior region.  In
+this strategy, we use a C-style pointer to represent each term in the
+stencil formula.  The resulting 1D heat code is shown in
+\figref{1DHeat-pointer}.  The resulting array indexing appears on
+\liref{pointer:term}.  For each consecutive iteration, the code
+increments each pointer.  When iterating outer loops, the code adds a
+precomputed constant to each pointer as shown in
+\lirefs{pointer:inc:begin}{pointer:inc:end}.
+	
+The \code{-split-opt-pointer} command line option is similar to
+\code{-split-pointer}, but it reduces the number of pointers used to
+reduce the impact of register spilling.  The resulting 1D heat code is
+shown in \figref{1DHeat-opt-pointer}.
+
+The Pochoir compiler tries to select the best optimizing strategy. 
+The \code{-split-pointer} optimization strategies require the compiler to
+fully understand the {C++} syntax of the user's specification.
+Because our prototype {Haskell} compiler does not contain a complete
+{C++} front end, the Pochoir compiler cannot guarantee a complete
+understanding of arbitrary user-supplied {C++} syntax.  If the
+compiler does understand the code, then the compiler uses the
+\code{-split-opt-pointer} or \code{-split-pointer} optimizations,
+depending on how many live pointers are in the inner loop.  The
+Pochoir compiler uses the heuristic that if the number of spatial
+dimensions is less than $3$, it employs \code{-split-pointer} and
+otherwise \code{-split-opt-pointer}.  In the case where the compiler cannot
+understand the code, it employs the \code{-split-macro-shadow}
+optimization.
+
+%% Usage note:  Variables are ``live'', not ``alive''.
+
+%  The decision making diagram of
+% Pochoir compiler is visualized in \figref{optLevelDecisionMaking}
+ 
+\figref{optPerf} demonstrates the performance difference generated by
+different optimizing options on 2D Heat equation on a torus.  The
+testing machine is an Intel Core i7 (Nehalem) machine.  Our other
+benchmarks show similar performance-comparison curves for the
+different optimizing strategies.  Due to the page limitations, we omit
+those graphs here.
+
+%\begin{figure}[t]
+%\centering
+%\includegraphics[scale=0.5]{figures/optLevelDecisionMaking.eps}
+%\caption{Optimization Level Decision Making Diagram of Pochoir Compiler}
+%\label{fig:optLevelDecisionMaking}
+%\end{figure}
+
+\begin{figure}[t]
+\centering
+\input{heat_2D_P_speed_cmp.tex}
+
+\caption{Demonstration of performance difference generated by
+  different optimizing options on 2D Heat equation on torus.  The grid
+  is $N^2$ with $1000$ time steps.}
+\label{fig:optPerf}
+\end{figure}
+
+\begin{figure}[t]
+\begin{center-code}
+\lstset{language=Pochoir_bf}
+\begin{pochoir-listing}
+Pochoir_Kernel_1D(heat_1D_fn, t, i)
+   a(t+1, i) = 0.125 * (a(t, i-1) + 2 * a(t, i) + a(t, i+1));
+Pochoir_Kernel_End
+\end{pochoir-listing}
+\end{center-code}
+\caption{1D heat equation in original Pochoir specification}
+\label{fig:1DHeat-orig}
+\end{figure}
+
+\begin{figure}[t]
+\begin{center-code}
+\lstset{language=Pochoir_bf}
+\begin{pochoir-listing}
+/* a.interior() is a function to dereference the value without checking boundary conditions */
+#define a(t, i) a.interior(t, i) [@\label{li:macro:def}@]
+Pochoir_Kernel_1D(heat_1D_fn, t, i)
+   a(t + 1, i) = 0.125 * (a(t, i - 1) + 2 * a(t, i) + a(t, i + 1));
+Pochoir_Kernel_End
+#undef a(t, i) [@\label{li:macro:undef}@]
+\end{pochoir-listing}
+\end{center-code}
+\caption{1D heat equation transformed by \code{-split-macro-shadow}.}
+\label{fig:1DHeat-macro}
+\end{figure}
+
+\begin{figure}[t]
+\begin{center-code}
+\lstset{language=Pochoir_bf}
+\begin{pochoir-listing}
+Pochoir_Kernel_1D(heat_1D_fn, t, i)
+/* the base address of Pochoir_Array 'a' */
+double *a_base = a.data();
+/* The pointers to be used in inner most loop */
+double *iter0, *iter1, *iter2, *iter3;
+/* total size of Pochoir_Array 'a' */
+const int l_a_total_size = a.total_size();
+int gap_a_0;
+const int l_stride_a_0 = a.stride(0);
+
+for (int t = t0; t < t1; ++t) {
+    double * baseIter_1;
+    double * baseIter_0;
+    baseIter_0 = a_base + ((t + 1) & 0x1) * l_a_total_size + (l_grid.x0[0]) * l_stride_a_0;
+    baseIter_1 = a_base + ((t) & 0x1) * l_a_total_size + (l_grid.x0[0]) * l_stride_a_0;
+    iter0 = baseIter_0 + (0) * l_stride_a_0; [@\label{li:pointer:inc:begin}@]
+    iter1 = baseIter_1 + (-1) * l_stride_a_0;
+    iter2 = baseIter_1 + (0) * l_stride_a_0;
+    iter3 = baseIter_1 + (1) * l_stride_a_0; [@\label{li:pointer:inc:end}@]
+    for (int i = l_grid.x0[0]; i < l_grid.x1[0]; ++i, ++iter0, ++iter1, ++iter2, ++iter3) { [@\label{li:pointer:pp}@]
+
+    (*iter0) = 0.125 * ((*iter1) + 2 * (*iter2) + (*iter3)); [@\label{li:pointer:term}@]
+    } 
+}
+Pochoir_Kernel_End
+\end{pochoir-listing}
+\end{center-code}
+\caption{1D heat equation transformed by \code{-split-pointer}.}
+\label{fig:1DHeat-pointer}
+\end{figure}
+
+\begin{figure}[t]
+\begin{center-code}
+\lstset{language=Pochoir_bf}
+\begin{pochoir-listing}
+Pochoir_Kernel_1D(heat_1D_fn, t, i)
+/* the base address of Pochoir_Array 'a' */
+double *a_base = a.data();
+/* The pointers to be used in inner most loop */
+double *pt_a_0, *pt_a_1;
+/* total size of Pochoir_Array 'a' */
+const int l_a_total_size = a.total_size();
+int gap_a_0;
+const int l_stride_a_0 = a.stride(0);
+
+for (int t = t0; t < t1; ++t) {
+    pt_a_0 = a_base + ((t + 1) & 0x1) * l_a_total_size + (l_grid.x0[0]) * l_stride_a_0;
+    pt_a_1 = a_base + ((t) & 0x1) * l_a_total_size + (l_grid.x0[0]) * l_stride_a_0;
+
+    for (int i = l_grid.x0[0]; i < l_grid.x1[0]; ++i, ++pt_a_0, ++pt_a_1) {
+
+    pt_a_0[0] = 0.125 * (pt_a_1[l_stride_a_0 * (-1)] + 2 * pt_a_1[0] + pt_a_1[l_stride_a_0 * (1)]);
+    } 
+}
+Pochoir_Kernel_End
+\end{pochoir-listing}
+\end{center-code}
+\caption{1D heat equation transformed by \code{-split-opt-pointer}.}
+\label{fig:1DHeat-opt-pointer}
+\end{figure}
+
+\subheading{Periodic and nonperiodic boundary conditions} 
+
+Typical stencil codes discriminate between periodic and nonperiodic
+stencils, implementing them in different ways.  To make the
+specification of boundary functions as flexible as possible, we
+investigated how periodic and nonperiodic stencils could be
+implemented using the same algorithmic framework, leaving the choice
+of boundary function up to the user.  Our unified algorithm works for
+both periodic and nonperiodic boundary functions.  It also works for
+periodic/nonperiodic combinations such as is needed for a 2D
+cylindrical domain, where one dimension is periodic and the other is
+nonperiodic.
+
+In the trapezoidal decomposition, for each spatial dimension, the
+\proc{Trap} algorithm cuts and distributes each nonleaf trapezoid into
+two black subtrapezoids and one grey trapezoid.  For the first cut on
+any spatial dimension of a given grid, however, we actually cut the
+dimension into two black trapezoids, and three gray trapezoids as
+shown in \figref{NP1D}, \figref{P1D}, and \figref{PNP1D}.  For a
+nonperiodic boundary condition, the first and third gray subtrapezoid
+do not depend on each other and can run in parallel as shown in
+\figref{NP1D}.  For a periodic boundary condition, except for the
+first and third gray trapezoid, all other trapezoids are interior and
+require no modulo operation.  Consequently, all interior trapezoids
+can run in parallel as in the nonperiodic case.  The first and third
+gray trapezoids on each spatial dimension are boundary trapezoids
+which require a modulo operation for each index calculation.  Besides
+the modulo operation on the indices, the update of some points in the
+first and third trapezoids may require accessing points in their
+counterpart trapezoids.  Thus, the updating of points in the first and
+third gray trapezoids must be synchronized at each time step.  To
+simplify the synchronization, Pochoir merges them into one big gray
+trapezoid as shown in \figref{P1D}.
+
+In order to unify these two different algorithms, Pochoir merges the
+leftmost and rightmost gray trapezoids on each spatial dimension as if
+they were periodic.  The merge itself is still correct even in the
+nonperiodic case, but it can reduce the parallelism in the resulting
+code.  Even this possible impact on performance is effectively reduced
+when the merged trapezoids are further cut.  As the algorithm cuts
+into a merged trapezoid, it creates interior subtrapezoids that can
+run in parallel, and the part of the computation that must handle the
+boundary case becomes relatively small.  The first two rows of
+\figref{benchmarks} show the impact of this algorithmic unification.
+The performance of periodic stencil becomes approximately the same as
+for nonperiodic case with ghost cells.  That is, the overhead for
+handling boundary conditions is negligible.\bradleynote{How does this show that the overhead is negligible?  Aren't we paying the overhead for the periodic case even in the nonperiodic case?}
+
+The unified code still performs extra modulo operations that the
+nonperiodic code avoids.  In Pochoir's unified algorithm, the indices
+of all target points (the terms on the left side of assignment
+operator of stencil formula, which is essentially a write operation)
+still require a modulo operation to map them back into the original
+(before-merge) location.  In contrast, the indices of source points
+(the term on the right side of assignment operator of stencil formula,
+which is essentially a read operation) do not require a modulo
+operation, as is shown in \figref{PNP1D}.  Pochoir simply calls the
+user-supplied boundary function, which contains a modulo operation for
+the periodic case, to supply a correct value in both periodic and
+nonperiodic cases to the source points.  \punt{The reason that we cannot
+call the boundary function to supply a value to the target point is
+because we need to update each target point by new value instead of
+supplying it from an old value.}  \punt{ For the stencils we measured
+  these extra modulo operations on induce only a negligible
+  performance cost because the number of target calculations is far
+  less than the number of source calculations.}
+
+\begin{figure*}
+\centering
+%includegraphics[clip,scale=0.5]{figures/NP_1D.eps}
+%
+%{\small (a) Nonperiodic.}
+%
+%\includegraphics[clip,scale=0.5]{figures/P_1D.eps}
+%
+%{\small (b) Periodic.}
+%
+%\includegraphics[clip,scale=0.5]{figures/PNP_1D.eps}
+%
+%{\small (c) A mix of periodic and nonperiodic.}
+
+\subfigure[]{\includegraphics[clip,scale=0.4]{figures/NP_1D.eps}
+\label{fig:NP1D}}
+\subfigure[]{\includegraphics[clip,scale=0.4]{figures/P_1D.eps}
+\label{fig:P1D}}
+\subfigure[]{\includegraphics[clip,scale=0.4]{figures/PNP_1D.eps}
+\label{fig:PNP1D}}
+\vspace{-0.2cm}
+\caption{1D trapezoidal decomposition for different boundary
+  conditions. (a) Nonperiodic.  (b) Periodic.  (c) A mix of periodic
+  and nonperiodic.}
+\label{fig:PNP}
+\end{figure*}
+
+\subheading{Coarsening of base cases}
+
+Previous work \cite{DattaMuVo08, KamilShDa06, KamilShHu05, Nitsure06}
+found that although the recursive trapezoidal algorithm reduces the
+cache-miss rate, its overall performance often suffers from the
+overhead of recursive function calls.  One way to reduce that overhead
+is to coarsen the base case of the recursion.  For example, we found
+that proper coarsening of the base case of the $2$D heat-equation
+stencil (running for $5000$ time steps on a $5000 \times 5000$
+toroidal grid) improves the performance by a factor of $36$.
+
+Choosing the optimal size of the base case can be difficult.  We
+integrated the ISAT autotuner~\cite{Isat10} into Pochoir.  Despite the
+advantage of finding the optimal coarsening factor on any specific
+hardware/software platform, the autotuning process can take hours to
+find the optimal value, which may be unacceptable for some users.  
+
+In practice, Pochoir employs some heuristics to choose a reasonable
+coarsening.  One principle is that to maximize data reuse, we want to
+make the spatial dimensions all about the same size.  Another
+principle is that to exploit hardware prefetching, we want to avoid
+cutting the unit-stride spatial dimension and avoid odd-shaped base
+cases.  For example, for $2$D problems, a square-shaped computing
+domain often offers the best performance.  We found that for $3$D
+problems, the effect of hardware prefetching is more important than
+cache efficiency for reasonably sized base cases.  Consequently,
+Pochoir employs a strategy that never cuts the unit-stride spatial
+dimension, and it cuts the rest of the spatial dimensions into small
+hypercubes to ensure that the entire base case stays in cache.  Given
+all that potential complexity, the compiler actually makes a fairly
+simple choice.  For $2$D problems, Pochoir stops the recursion at
+$100\times 100$ space chunks with $5$ time steps.  For $3$D problems,
+the recursion stops at $1000\times 3 \times 3$ with $3$ time steps.
+  
+\punt{
+\subheading{Autotuning}
+
+Although we adopted different coarsening thresholds for interior or
+boundary region, the exact coarsening factor can not be optimal unless
+we employ some autotuning tools. The ISAT~\cite{Isat10} tool set is
+such a tool we integrated in Pochoir package.  And the Pochoir
+compiler will call it at Pochoir compile-time to get the optimal
+parameters for a specific user's stencil. The tuning parameters
+include the coarsening factor for interior and boundary region, how
+many black/gray sub-hyper-trapezoids to cut in each spatial dimension,
+and so on.  }
+%The second optimization we performed on the \proc{Trap} algorithm in
+%\figref{trap-code} is {\em basecase coarsening}. We first introduce
+%coarsening parameters $threshold_{x}$ and $threahold_{y}$ to the
+%algorithm. Then we modify the algorithm such that the basecase will be
+%invoked if $x_{1}-x_{0} < threshold_{x}$ or $y_{1}-y_{0} <
+%threshold_{y}$.  This optimization avoids recursive calls on small
+%subproblem sizes and increases the basecase size to faciliate compiler
+%vectorization. 
+%The boundary clone and the interior clone mentioned above use
+%different coarsening parameters. The boundary clone always has
+%$threshold_{x}=threshold_{y}=1$. For the interior clone, we use an
+%autotuning tool~\cite{Isat10} to empirically determine the
+%$threshold_{x}$ and $threshold_{y}$ for individual stencil kernels.
+
+%\subheading{$P = NP$: One unified algorithm for both nonperiodic and periodic stencils}
+%Usually, people will employ different algorithm for periodic and nonperiodic stencil, 
+%respectively. But it will only complicate the user's specification.
+%We observe that, if we just treat nonperiodic boundary condition as a special
+%case of periodic one, we can use one unified algorithm for both. 
+%In Pochoir, all the difference between periodic and nonperiodic stencil lies in the registered
+%boundary function. The boundary function of nonperiodic specifies what value to supply 
+%if Pochoir find some point falls off the boundary. For periodic stencil, when a 
+%point falls off the boundary, the boundary function should supply a value with respect to modulo
+%operation. By proper optimization of the boundary
+%conditions as introduced in above sub-sections, the overhead of unification is minimal 
+%
+
+% LocalWords:  Pochoir Neumann subregions runtime nonperiodic autotuning ISAT
+% LocalWords:  undefines semilogarithmic Nehalem dereference indices nonleaf
+% LocalWords:  prefetching metaprogramming subtrapezoids subtrapezoid autotuner
+% LocalWords:  Pochoir's Cilk

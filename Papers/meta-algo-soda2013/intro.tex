@@ -1,0 +1,167 @@
+\secput{intro}{Introduction}
+
+We consider the \defn{polygonal partial-sum problem} in which a static
+$2$-dimensional grid $A$ with $N$ entries chosen from a
+commutative semigroup $(S, \oplus)$ is given and can be preprocessed
+for subsequent querying.  Each query designates a polytopal region $q$
+of grid coordinates, and the problem is to compute the ``sum'' of the
+points in the region:
+%
+\begin{equation} 
+\sum_{(k_1,\ldots,k_d) \in q} A[k_1,\ldots,k_d]\ .
+\label{eq:defIrregularRangeQuery}
+\end{equation}
+The polygonal query is restricted in that the normals to the sides
+of the polygon must be known at
+preprocessing time.  Polygonal query regions generalize the assumption
+common in the literature of orthotope-shaped queries (boxes).  For
+example, in two dimensions, a query region could be triangular with
+sides of known slope or even a complex polygon.
+
+Since $(S, \oplus)$ is a commutative semigroup, $\oplus$ is an
+associative and commutative operator.  No additional restrictions are
+imposed on this semigroup as is sometimes done for similar problems in
+the literature:
+\begin{itemize}
+
+\item We do not assume idempotence ($a \oplus a = a$ for $a \in S$).
+
+\item We do not assume any partial or total ordering of the elements
+  of~$S$.
+
+\item We do not assume the existence of an inverse operation
+  (subtraction), since otherwise a trivial $\Theta(N)$-time,
+  $\Theta(N)$-space preprocessing algorithm for solving this problem
+  exists~\cite{Yao82}.
+\end{itemize} 
+
+We use the \defn{arithmetic model} for complexity analysis, the same
+complexity model used by A. Yao \cite{Yao82, Yao85} and Chazelle and
+Rosenberg \cite{ChazelleRo89, ChazelleRo91}.  In this model, the space
+bound of the preprocessing algorithm is counted in units of semigroup
+elements.  The preprocessing time and query time count the number of
+arithmetic (semigroup) operations performed, ignoring the time needed
+to find the proper memory cells~\cite{Yao82}\footnote{Actually, it's
+a simple LCA (Lowest Common Ancestor) problem for complete binary tree, 
+which can be done by using bit-tricks in $O(1)$ time}.
+
+Many results have been reported in the literature on $1$-D and
+multidimensional orthogonal range-query problems, the special case
+of the polytopal partial-sum problem when the query is an orthotope.
+Yao's work \cite{Yao82, Yao85} on $1$-D orthogonal queries laid down
+the foundation for later research on general partial-sums in semigroups.
+Chazelle and Rosenberg \cite{ChazelleRo89} extended Yao's $1$D algorithm
+to multidimensional grids using the method of \defn{dimension reduction}.
+The key idea behind the dimension reduction method for a $d$-dimensional
+orthogonal partial-sums query is as follows.  During preprocessing of
+a $d$-dimensional grid, pick one grid dimension $i \in [1, d]$, and
+decompose the grid into a $1$-D sequence of $(d-1)$-dimensional grids.
+Apply Yao's $1$-D algorithm on the $1$-D sequence by treating each
+$(d-1)$-dimensional grid as a semigroup element and applying $\oplus$
+on them component-wise.  The same procedure is then applied recursively
+on each $(d-1)$-dimensional grid.  During the query stage, a query range
+is decomposed into a small number of slices by considering the problem
+as a $1$-D grid of $(d-1)$-dimensional grids.  This process produces
+a set of $(d-1)$-dimensional subproblems, each of which can be solved
+recursively.  For the base case, the $1$-D case can be solved using a
+``two-path'' recursion --- one solving ``small'' queries (intrablock
+queries), and the other solving ``large'' queries (interblock queries). In
+\cite{ChazelleRo91}, they further proved that the asymptotic bound of
+Yao's $1$-D algorithm is optimal.
+
+To the best of our knowledge, all previous research assumes orthogonal
+query ranges.  During the development of the Pochoir stencil compiler
+\cite{TangChKu11, TangChLu11}, however, we encountered the problem of
+querying octagonally shaped ranges in a $2$-D grid.  Our study of that
+problem led us to this research.
+
+In summary, our contributions are as follows:
+\begin{itemize}
+
+\item We extend the concept of range queries in a multidimensional
+  grid from orthotopes to polytopes, the faces of which have normals
+  known during the preprocessing stage.
+
+\item We introduce the notion of a \defn{meta-algorithm} to handle
+  range queries over a multi-dimensional grid, including orthogonal
+  range queries in arbitrary $d$-dimensional grids and polygonal range
+  queries in $2$-dimensionals. Compared with dimension reduction method,
+  the \defn{meta-algorithm} treats the input algorithm as a black box,
+  doesn't need to know any internal data structures created or used by
+  the input algorithm, which has the advantage that any initial algorithm
+  that just does the work can be plugged into the \defn{meta-algorithm}
+  and possibly hit the optimal asymptotic bound by undergoing several
+  rounds of self-application. The key idea of \defn{meta-algorithm} is
+  established on the observation that all algorithms operate on data,
+  by simply manipulating or compressing the input data to the algorithm,
+  we can achieve the effect of reducing the asymptotic bound without
+  any apriori knowledge of the input algorithm.
+  %\celnote{Compare with dimension reduction.}
+
+\item We show that the sum of all the grid points within a given
+%  $k$-faceted polytope in a $d$-dimensional 
+  $k$-sided polygon in a $2$-dimensional 
+  grid with $N$ grid points
+  can be computed in the same asymptotic bound as 
+% orthotope range.
+  orthogonal range. 
+  \punt{i.e. $\Theta(k\alpha^d(N))$ time using $\Theta(kN)$
+  preprocessing space and time, where $\alpha(N)$ is a functional
+  inverse of Ackermann's function.}
+
+% \item We parallelize the preprocessing stage, achieving a parallelism
+%   of $\Theta(kN/\log N)$ in the work-span model
+%   \cite[Ch.~27]{CormenLeRi09}, assuming $k=O(N)$.
+
+\item We implemented the meta-algorithm for $1$-D and $2$-D
+  grids. To the best of our knowledge, this is the first experimental
+  study and performance results of static partial sum algorithm 
+  with $\alpha$ bound in general semi-group, where $\alpha(n)$ stands
+  for the functional inverse of Ackermann's function. 
+  \punt{and parallelized it using Intel Cilk
+  Plus~\cite{IntelCilkPlus10}.\celnote{This contribution needs to be
+  quantified, compared with other implementations, or dropped.}
+  \yuannote{To the best of my knowledge, there is no previous
+  implementation on partial sum in semi-group, since Chazelle and
+  Rosenberg's algorithm is very tricky / hard to implement, or in some
+  sense, un-implementable.  But there is some implementation on RMQ. But
+  first it's a different problem with different bound; secondly, if
+  I recall correctly, their O(N) bound algorithm sometimes is slower
+  than some naive algorithm due to the heavy internal overhead which is
+  not counted in the simple arithmetic model. But our implementation,
+  as you will see in \secref{expr}, the performance numbers match well
+  with their theoretical bounds. }} % end punt
+\end{itemize}
+
+The main constraint of our current approach is that the normals of all
+sides of the query polygon must be given beforehand.  Whether
+polygonal partial-sum queries can be efficiently answered when not all
+slopes are known in advance is left as an open problem. As for how to
+extend the methodology of processing $2$-D polygonal range queries to
+even higher-dimensional polytopal range queries is another open problem.
+
+\punt{
+The main constraint of our current approach is that the normals of all
+facets of the query polytope must be given beforehand.  Whether
+polytopal partial-sum queries can be efficiently answered when not all
+slopes are known in advance is left as an open problem.
+}
+% punt ends
+
+% organization of the paper
+The rest of the paper is organized as follows.  \secref{meta}
+elaborates on the notion of meta-algorithm and illustrates its use to
+answer orthogonal range queries in $d$-dimensional grids.
+\secref{poly} explains how to answer polytopal queries using the
+meta-algorithm.  \secref{expr} presents some experimental results for
+$1$D, $2$D, and $3$D grids.
+%  of bounds from $N \log^d (N)$, $N (\log^*
+% (N))^d$, $\ldots$, up to $N \alpha(N)^d$, parallelized them by Intel
+% Cilk Plus. 
+% Finally, we offer some concluding remarks in \secref{future}.  
+
+% LocalWords:  semigroup orthotope idempotence preprocessing Yao 
+% LocalWords:  online semigroups subproblems intrablock interblock 
+% LocalWords:  octagonally orthotopes polyhedra polytope Ackermann's
+% LocalWords:  parallelize parallelized
+% LocalWords:  Chazelle Yao's Pochoir Cilk polytopal

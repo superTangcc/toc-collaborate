@@ -1,0 +1,174 @@
+\appput{proofs}{Proofs}
+\begin{lemma}
+For Sequential Space Cut algorithm, if we don't count in time cut, 
+after cutting into all $d$ spatial dimensions one after another, we 
+will have $2^d$ number of parallel steps.
+\label{lem:seqParallelSteps}
+\end{lemma}
+%Proof of \lemref{seqParallelSteps}:
+
+\begin{proof}
+We can prove this lemma by induction on the number of spatial dimension $d$.
+\begin{enumerate}
+	\item If it's a cut into its first spatial dimension, then it cuts the 
+	original big hyper-trapezoid into $r$ black sub-hyper-trapezoids, and 
+	$r+1$ gray sub-hyper-trapezoids, and we put a sync between all black and
+	gray sub-hyper-trapezoids, so apparently we will have two $2$ parallel steps.
+	Conclusion proved.
+	\item Let's assume after cutting its $i$'s spatial dimension, it has $2^i$
+	number of parallel steps.
+	\item After conducting the spatial cut on $i$ number of spatial dimensions, 
+	by assumption, we have $2^i$ number of parallel steps. And for spatial cut on 
+	dimension $i+1$, it will further divide each hyper-trapezoid into $r$ black
+	sub-hyper-trapezoids, and $r+1$ gray sub-hyper-trapezoids. For all new black 
+	sub-hyper-trapezoids, it will be in a new parallel step, and for all new gray
+	sub-hyper-trapezoids, it will be in a new parallel step. From a recurrence tree
+	point of view, it is a binary tree. So, on depth level (number of spatial dimensions)
+	$i+1$, it will have $2^{i+1}$ parallel 
+	steps.
+	\end{enumerate}
+\end{proof}
+
+\begin{lemma}
+For Simultaneous Space Cut algorithm, if we don't count in time cut, after cutting
+all $d$ spatial dimensions, we will have $d+1$ number of parallel steps.
+\label{lem:simParallelSteps}
+\end{lemma}
+%Proof of \lemref{simParallelSteps}:
+\begin{proof}
+We can prove this lemma by induction on the number of spatial dimension $d$.
+\begin{enumerate}
+	\item If there's only one ($1$) spatial dimension, after spatial cut, it divides
+	the original big hyper-trapezoid into $r$ black sub-hyper-trapezoids, and 
+	$r+1$ gray sub-hyper-trapezoids. The black sub-hyper-trapezoids will all have the
+	dependency level $0$, because they depends on nothing, and can be executed immediately;
+	and all gray sub-hyper-trapezoids will have dependency level $1$, because they have to
+	wait for all black sub-hyper-trapezoids finish execution before they can be executed.
+	\item Assumes that for $i$-dimensional spatial grid, it has $i+1$ dependency levels.
+	\item for simultaneous spatial cut algorithm, if we assume that the length of $i+1$'th 
+	spatial dimension is $0$, that is, we can only cut into $i$ spatial dimensions. By assumption,
+	we can have $i+1$ dependency levels. Then, we make the length of $i+1$ dimension the same
+	as other spatial dimensions, then we can cut it into $r$ black sub-hyper-trapezoids, and
+	$r+1$ sub-hyper-trapezoids. All these new black sub-hyper-trapezoids will inherit the
+	same dependency level as its father hyper-trapezoids because it has no extra 
+	dependency on dimension $i+1$. All sub-hyper-trapezoids whose color is gray on $i+1$ dimension will increase
+	its dependency level inherited from its father hyper-trapezoids by $1$, because it will 
+	have additional dependency on all sub-hyper-trapezoids
+	whose color is black on dimension $i+1$. Before cutting on dimension $i+1$, the largest dependency 
+	level is $i+1$, so after this incremental, the largest dependency level will be $i+2$
+\end{enumerate}
+\end{proof}
+
+%The proof of \thmref{SeqSpaceCut} is a simple extension of \cite{MatteoProof}.
+\begin{theorem}
+For Sequential Space Cut algorithm, the critical path (span) of the
+algorithm will be $\Theta (N^{\log_{(t \cdot (2r+1)^d)} (t \cdot 2^d)})$,
+where $t$ is the number of time cut that guarantees if conducting $t$
+time cuts for each turn cutting into time dimension, we can
+always cut into some spatial dimension right after. Such $t$ always exists 
+because in the worst case, for a hyper-trapezoid of height $h$, we can always cut it into
+$h$ sub-hyper-trapezoids of height $1$, and for each sub-hyper-trapezoid, either 
+it is qualified to be a base case, or it can have a space cut right after. 
+%\label{thm:SeqSpaceCut}
+\end{theorem}
+\begin{proof}
+For Sequential Space Cut algorithm, we will have following inductive equations:
+
+\begin{equation}
+\begin{array}{l}
+A_1(N) = 2 A_2(N/(2r+1)) + \Theta (1) \label{eq:seqSpaceCutBegin} \\
+A_2(N) = 2 A_3(N/(2r+1)) + \Theta (1) \label{eq:seqSpaceCutMid} \\
+\cdots \\
+A_d(N) = 2 B(N/(2r+1)) + \Theta (1) \label{eq:seqSpaceCutEnd}\\
+B(N)   = t A_1(N/t) + \Theta (1) \label{eq:seqTimeCut}
+\end{array}
+\label{eq:SeqSpaceCut}
+\end{equation}
+
+In \eqref{SeqSpaceCut}, \eqreftwo{seqSpaceCutBegin}{seqSpaceCutEnd}
+are direct mathematical representation of \lemref{seqParallelSteps}.
+In \eqref{seqTimeCut}, we assume that for each time cut, there
+exists a positive constant $t$, that if we cut the hyper-trapezoid into
+$t$ pieces of volume-equivalent sub-hyper-trapezoids, for
+the upper most sub-hyper-trapezoid, it can either perform a space cut on 
+at least one spatial dimension, or eligible to be the base case. This $t$
+must exist, because we can always cut the hyper-trapezoid into sub-hyper-trapezoids
+of height $1$, which trivially satisfy the condition. Even at this time, the volumes
+of each sub-hyper-trapezoids are not equal, but asymptotically, the solution to the recurrence
+should be the same.
+
+By induction on \eqref{SeqSpaceCut}, we will have 
+
+\begin{eqnarray*}
+A_1(N) & = & 2^d \cdot t \cdot A_1(N/(2r+1)^{d} \cdot t) + \Theta (1) \\
+       & = & \Theta (N^{log_{t \cdot (2r+1)^d} t \cdot 2^d})
+\end{eqnarray*}
+
+\label{prf:SeqSpaceCut}
+\end{proof}
+
+\begin{theorem}
+For Simultaneous Space Cut algorithm, the critical path (span) of the
+algorithm will be $\Theta (N^{\log_{(t \cdot (2r+1)^d)} (t \cdot (d+1))})$,
+where $t$ is the number of time cut that guarantees if conducting $t$
+time cuts for each turn cutting into time dimension, we can
+always cut into some spatial dimension right after. Such $t$ always exists 
+because in the worst case, for a hyper-trapezoid of height $h$, we can always cut it into
+$h$ sub-hyper-trapezoids of height $1$, and for each sub-hyper-trapezoid, either 
+it is qualified to be a base case, or it can have a space cut right after. 
+%\label{thm:SimSpaceCut}
+\end{theorem}
+%Proof of \thmref{SimSpaceCut}:
+
+\begin{proof}
+For Simultaneous Space Cut algorithm, we will have following inductive equations:
+
+\begin{equation}
+\begin{array}{l}
+A(N) = (d + 1) B(N/((2r+1)^d) + \Theta (1) \label{eq:simSpaceCut}\\
+B(N) = t A(N/t) + \Theta (1) \label{eq:simTimeCut}
+\end{array}
+\label{eq:SimSpaceCut}
+\end{equation}
+
+In \eqref{SimSpaceCut}, \eqref{simSpaceCut} is direct mathematical 
+representation of \lemref{simParallelSteps}. 
+And in \eqref{seqTimeCut}, we assume that for each time cut, there
+exists a positive constant $t$, that if we cut the hyper-trapezoid into
+$t$ pieces of sub-hyper-trapezoids which are of the same volume of points, 
+for the upper most sub-hyper-trapezoid, it can either perform a simultaneous
+space cut, or eligible to be the base case. 
+
+By induction on \eqref{SimSpaceCut}, we will have
+
+\begin{eqnarray*}
+A(N) & = & t \cdot (d+1) \cdot A(\frac{N}{t \cdot (2r+1)^d}) + \Theta (1) \\
+     & = & \Theta (N^{\log_{t \cdot 3^d} (t \cdot (d+1))})
+\end{eqnarray*}
+\end{proof}
+
+\begin{theorem}
+For blocked loop-based algorithm, the parallelism is $O(r)$, where $r$ is the number of 
+black trapezoids by each space cut. The span is $O(\frac{T \cdot N}{r}$. 
+If we assume there are $P$ processors/cores in the system,
+the span is upper bounded by $\frac{T \cdot N}{P}$. 
+If we assume there are infinite number of processors/cores in
+the system, the span will be upper bounded by $T$.
+\end{theorem}
+\begin{proof}
+If we still assume we cut black and gray sub-trapezoids of same size.
+If we still let $w_{\bot}$ represent the longest bar of trapezoid, which is
+the bottom bar of black trapezoid and top bar of gray trapezoid. Let $w_{\top}$
+represent the shortest bar of trapezoid, which is the top bar of black trapezoid
+and bottom bar of gray trapezoid. $N$ is the number of points in spatial grid.
+$T$ is the total number of time steps to run. We can have following equations:
+
+\begin{eqnarray}
+w_{\bot} + w_{\top} & = & N/r \\
+span_{pair} & = & 2 \times (\frac{1}{2} \cdot (w_{\bot} + w_{\top}) \cdot h)) = h \cdot (w_{\bot} + w_{\top}) \\
+span_{total} & = & \frac{T}{h} \times span_{pair} \\
+			 & = & \frac{T}{h} \times h \times (w_{\bot} + w_{\top}) \\
+			 & = & \frac{T \cdot N}{r}
+\end{eqnarray}
+So, the theorem is trivially proved.
+\end{proof}
